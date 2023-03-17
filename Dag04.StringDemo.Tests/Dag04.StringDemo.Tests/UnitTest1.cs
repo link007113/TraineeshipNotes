@@ -22,15 +22,19 @@ namespace Dag04.StringDemo.Tests
         }
 
         [TestMethod]
-        public void TestIsPalindroom()
+        public void TestIsPalindrome()
         {
             string input1 = "water";
             bool output1 = StringOperations.IsPalindrome(input1);
             string input2 = "lepel";
             bool output2 = StringOperations.IsPalindrome(input2);
+            string input3 = null;
+            bool output3 = StringOperations.IsPalindrome(input3);
+
 
             Assert.AreEqual(false, output1);
-            Assert.AreEqual(false, output2);
+            Assert.AreEqual(true, output2);
+            Assert.AreEqual(true, output3);
         }
     }
 }

@@ -14,9 +14,16 @@
         }
 
         public static bool IsPalindrome(string input)
-        { 
-            string reversedString = input.Reverse().ToString();
-            return input == reversedString;        
+        {
+            if (input == null)
+            {
+                input = string.Empty;
+            }
+
+            char[] chars = input.ToCharArray();
+            Array.Reverse(chars);
+            string reversedString = new string(chars);
+            return input == reversedString;
         }
 
     }
