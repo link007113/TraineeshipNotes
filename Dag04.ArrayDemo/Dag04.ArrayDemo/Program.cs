@@ -1,4 +1,6 @@
-﻿namespace Dag04.ArrayDemo
+﻿using System.Collections;
+
+namespace Dag04.ArrayDemo
 {
     internal class Program
     {
@@ -7,11 +9,13 @@
             BlueSlope();
             Console.ReadKey();
             RedSlope();
+            Console.ReadKey();
+            BlackSlope();
         }
 
         static void BlueSlope()
         {
-            //blauwe piste
+            Console.WriteLine("Blauwe piste"); 
             // afdrukken
             // som
             // max getal
@@ -29,7 +33,7 @@
 
         static void RedSlope()
         {
-            // rode piste
+            Console.WriteLine("Rode piste");
             // maak een array met alle tafel uitkomsten
 
             int table;
@@ -49,7 +53,55 @@
                 }
 
 
-            }        
+            }
         }
+
+        private static void BlackSlope()
+        {
+            Console.WriteLine("Zwarte piste");
+            int[][] arraysWithNumbers = new int[][]{
+            new int[] {1, 2, 3},
+            new int[] {4, 5},
+            new int[] {6, 7, 8, 9},
+            new int[] {10}
+            };
+
+            int maxLength = 0;
+            foreach (int[] innerArray in arraysWithNumbers)
+            {
+                if (innerArray.Length > maxLength)
+                {
+                    maxLength = innerArray.Length;
+                }
+            }
+
+            int[] flatArray = new int[arraysWithNumbers.Length * maxLength];
+            int index = 0;
+            for (int valueIndex = 0; valueIndex < maxLength; valueIndex++)
+            {
+                for (int innerArrayIndex = 0; innerArrayIndex < arraysWithNumbers.Length; innerArrayIndex++)
+                {
+                    if (valueIndex < arraysWithNumbers[innerArrayIndex].Length)
+                    {
+                        flatArray[index] = arraysWithNumbers[innerArrayIndex][valueIndex];
+                        index++;
+                    }
+                }
+            }
+
+            Array.Sort(flatArray);
+
+            Console.WriteLine(string.Join(", ", flatArray));
+
+
+            flatArray = new int[arraysWithNumbers.Length * maxLength];
+
+
+            int[] flatArrayWithLinq = arraysWithNumbers.SelectMany(subArr => subArr).ToArray();
+
+            Console.WriteLine(string.Join(", ", flatArrayWithLinq));
+        }
+
     }
+
 }
