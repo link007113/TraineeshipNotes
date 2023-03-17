@@ -28,13 +28,21 @@ namespace Dag04.StringDemo.Tests
             bool output1 = StringOperations.IsPalindrome(input1);
             string input2 = "lepel";
             bool output2 = StringOperations.IsPalindrome(input2);
-            string input3 = null;
-            bool output3 = StringOperations.IsPalindrome(input3);
+            string? input3 = null;
+            bool output3 = StringOperations.IsPalindrome(input3!);
 
 
             Assert.AreEqual(false, output1);
             Assert.AreEqual(true, output2);
             Assert.AreEqual(true, output3);
+        }
+
+        [TestMethod]
+        public void TestIsPalindromeExtra()
+        {
+            string input = "A man, a plan, a canal: Panama";
+            bool output = StringOperations.IsPalindromeExtraCheck(input);
+            Assert.AreEqual(true, output);    
         }
     }
 }
