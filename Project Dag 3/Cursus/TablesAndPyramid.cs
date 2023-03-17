@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Cursus
 {
-    internal class Old_Methods
+    internal class TablesAndPyramid
     {
-        static void TablesAndPyramid()
+        static void TablesAndPyramids()
         {
             int table;
             int multiplication = 1;

@@ -44,7 +44,6 @@ class Program
     static double CalculatePaintUsage(double surface, double paintUsage)
     {
         return Math.Ceiling(surface / paintUsage);
-
     }
     #region Helpers
     private static double ParseInputToDouble(string message)
