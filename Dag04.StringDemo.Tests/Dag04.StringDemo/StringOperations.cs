@@ -1,4 +1,6 @@
-﻿namespace Dag04.StringDemo
+﻿using System.Text.RegularExpressions;
+
+namespace Dag04.StringDemo
 {
     public class StringOperations
     {
@@ -10,49 +12,30 @@
 
         public static string AToEAndEToI(string input)
         {
-            return input.Replace('e', 'i').Replace('a', 'e'); 
+            return input.Replace('e', 'i').Replace('a', 'e');
         }
 
-        public static bool IsPalindrome(string input)
+        public static bool IsPalindrome(string input, bool doExtraCheck = false)
         {
             if (input == null)
             {
                 input = string.Empty;
             }
 
+            if (doExtraCheck)
+            {
+                Regex rgx = new Regex("[^a-zA-Z]");
+                input = rgx.Replace(input, "");
+
+            }
+
             char[] chars = input.ToCharArray();
             Array.Reverse(chars);
             string reversedString = new string(chars);
-            return input == reversedString;
+            return input.ToLower() == reversedString.ToLower();
         }
 
-        public static bool IsPalindromeExtraCheck(string input)
-        {
-            // Heel eerlijk, dit moest ik ff opzoeken...
-            int left = 0;
-            int right = input.Length - 1;
-            while (left < right)
-            {
-                while (left < right && !char.IsLetterOrDigit(input[left]))
-                {
-                    left++;
-                }
 
-                while (left < right && !char.IsLetterOrDigit(input[right]))
-                {
-                    right--;
-                }
-
-                if (char.ToLower(input[left]) != char.ToLower(input[right]))
-                {
-                    return false;
-                }
-
-                left++;
-                right--;
-            }
-            return true;
-        }
 
     }
 }
