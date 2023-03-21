@@ -1,3 +1,4 @@
+## Inleiding
 Structs lijken een beetje op classes, in die zin dat ze gegevensstructuren vertegenwoordigen die gegevensleden en functieleden kunnen bevatten. 
 
 In tegenstelling tot classes zijn structs echter Value types en worden deze niet op de heap gezet. 
