@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dag06/Operator Overloading.md",
+                "file": "Dag06/Operator Overloading & Overrides.md",
                 "mode": "source",
                 "source": false
               }
@@ -132,10 +132,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7d55cd65df93f671",
+  "active": "0e9fa094df768502",
   "lastOpenFiles": [
     "Dag06/Structs.md",
-    "Dag06/Operator Overloading.md",
+    "Dag06/Operator Overloading & Overrides.md",
     "Dag06/Casting & Boxing.md",
     "Dag06/CTS.md",
     "Dag06/Enum.md",
