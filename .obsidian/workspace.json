@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dag06/CTS.md",
+                "file": "Dag06/Enum.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "59e1b316aea490bd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dag06/Casting & Boxing.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -107,12 +120,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "136cb5773f58610d",
+  "active": "59e1b316aea490bd",
   "lastOpenFiles": [
     "Dag06/Enum.md",
+    "Dag06/Casting & Boxing.md",
+    "Dag06/CTS.md",
     "Misc/Tips.md",
     "Misc/markdown-cheat-sheet.md",
-    "Dag06/CTS.md",
     "Dag06/Structs.md",
     "Dag07/Untitled.canvas",
     "Misc/Unconfirmed 558697.crdownload",
