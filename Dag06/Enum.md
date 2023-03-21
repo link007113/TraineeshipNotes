@@ -2,7 +2,7 @@
 
 Enum geeft je de mogelijkheid om een keuze lijst te maken. 
 
-Je hebt de mogelijkheid om op een Enum een Extension Method te maken.
+Je hebt de mogelijkheid om op een Extension Method te maken.
 Dat is een Static method in een static class en heeft als de eerste parameter heeft het 'this'-keyword.
 
 ### Voorbeeld:
