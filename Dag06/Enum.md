@@ -14,7 +14,10 @@ namespace Dag06.EnumDemoLibrary
     }
     public static class WeatherFunctions
     {
-        public static string WhichJacket(Weather weather) => weather switch
+        // Extension Method
+        // Static method in een static class
+        // De eerste parameter heeft het 'this'-keyword
+        public static string WhichJacket(this Weather weather) => weather switch
         {
             Weather.Sunny => "Geen jas",
             Weather.Cloudy => "jas",
@@ -38,7 +41,7 @@ namespace Dag06.EnumDemoConsole
 
         static void WheaterProcessor(Weather weather)
         {
-            Console.WriteLine(weather);
+            Console.WriteLine(weather.WhichJacket()); 
             int weatherNumber = (int)weather;
         }
     }
