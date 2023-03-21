@@ -18,9 +18,6 @@ namespace Dag06.EnumDemoLibrary
     }
     public static class WeatherFunctions
     {
-        // Extension Method
-        // Static method in een static class
-        // De eerste parameter heeft het 'this'-keyword
         public static string WhichJacket(this Weather weather) => weather switch
         {
             Weather.Sunny => "Geen jas",
