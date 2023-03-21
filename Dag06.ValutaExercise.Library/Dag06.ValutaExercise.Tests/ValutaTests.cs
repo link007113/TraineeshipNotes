@@ -8,7 +8,7 @@ namespace Dag06.ValutaExercise.Tests
         [TestMethod]
         public void Given_ValutaEuro_Then_ValutaIsValid()
         {
-            Valuta euro = Valuta.Euro;
+            ValutaEnum euro = ValutaEnum.Euro;
             bool output = IsValutaValidInTheNetherlands(euro);
             Assert.AreEqual(true, output);
 
@@ -17,7 +17,7 @@ namespace Dag06.ValutaExercise.Tests
         [TestMethod]
         public void Given_ValutaFlorijn_Then_ValutaIsInvalid()
         {
-            Valuta euro = Valuta.Florijn;
+            ValutaEnum euro = ValutaEnum.Florijn;
             bool output = IsValutaValidInTheNetherlands(euro);
             Assert.AreEqual(false, output);
 
@@ -26,7 +26,7 @@ namespace Dag06.ValutaExercise.Tests
         [TestMethod]
         public void Given_ValutaGulden_Then_OutputWillBeHfl()
         {
-            Valuta gulden = Valuta.Gulden;
+            ValutaEnum gulden = ValutaEnum.Gulden;
             string output = gulden.Code();
             Assert.AreEqual("Hfl", output);
         }
@@ -35,8 +35,8 @@ namespace Dag06.ValutaExercise.Tests
         public void Given_StringEur_Then_OutputWillBeEuroValuta()
         {
             string input = "EUR";
-            Valuta output = input.ToValuta();
-            Assert.AreEqual(Valuta.Euro, output);
+            ValutaEnum output = input.ToValuta();
+            Assert.AreEqual(ValutaEnum.Euro, output);
         }
 
         [TestMethod]
@@ -45,7 +45,7 @@ namespace Dag06.ValutaExercise.Tests
             string input = "AAA";
             void act()
             {
-                Valuta output = input.ToValuta();
+                ValutaEnum output = input.ToValuta();
             }
 
 
@@ -54,14 +54,59 @@ namespace Dag06.ValutaExercise.Tests
             Assert.IsTrue(ex.Message.StartsWith("This Valuta does"));
         }
 
-
-        public static bool IsValutaValidInTheNetherlands(Valuta valuta) => valuta switch
+        [TestMethod]
+        public void Given_ValutaStructGulden10_Then_OutputWillBeEuro454()
         {
-            Valuta.Dukaat => false,
-            Valuta.Gulden => false,
-            Valuta.Florijn => false,
-            Valuta.Euro => true
+            ValutaStruct input = new(ValutaEnum.Gulden, 10.00M);
+            ValutaStruct output = input.ConvertTo(ValutaEnum.Euro);
+            Assert.AreEqual(4.54M, output.Amount, 2);
+            
+        }
 
+        [TestMethod]
+        public void Given_ValutaStructGulden10_Then_OutputWillString()
+        {
+            ValutaStruct input = new(ValutaEnum.Gulden, 10.00M);
+            string output = input.ToString();
+            Assert.AreEqual("Gulden: 10.00", output);
+
+        }
+
+        [TestMethod]
+        public void Given_ValutaStructGuldenAndFlorijn_Then_OutputWillBeFlorijn20()
+        {
+            ValutaStruct input1 = new(ValutaEnum.Gulden, 10.00M);
+            ValutaStruct input2 = new(ValutaEnum.Florijn, 10.00M);
+            ValutaStruct output = input1 + input2;
+            Assert.AreEqual(20M, output.Amount, 2);
+
+        }
+
+        [TestMethod]
+        public void Given_Decimal20_Then_OutputWillBeValutaStructEuro20()
+        {
+            decimal input = 20M; 
+            ValutaStruct output = (ValutaStruct)input;
+            Assert.AreEqual(20M, output.Amount, 2);
+
+        }
+
+        [TestMethod]
+        public void Given_ValutaStructEuro20_Then_OutputWillBeDecimal20()
+        {
+            ValutaStruct input = new(ValutaEnum.Euro, 20M);
+           decimal output = (decimal)input;
+            Assert.AreEqual(20M, output, 2);
+
+        }
+
+        public static bool IsValutaValidInTheNetherlands(ValutaEnum valuta) => valuta switch
+        {
+            ValutaEnum.Dukaat => false,
+            ValutaEnum.Gulden => false,
+            ValutaEnum.Florijn => false,
+            ValutaEnum.Euro => true,
+            _ => throw new InvalidValutaException()
         };
     }
 }
