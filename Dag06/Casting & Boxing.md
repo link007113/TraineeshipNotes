@@ -15,4 +15,11 @@ Als je een waarde groter dan de max waarde in een int probeert te stoppen, treed
 
 Hierdoor gaat hij van het grootste positieve getal naar het laagste negatieve getal.
 
+
+Meer info:
+[Casting and type conversions - C# Programming Guide | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
 ## Boxing
+
+
+Meer info:
+[Boxing and Unboxing - C# Programming Guide | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing)
