@@ -30,5 +30,10 @@ int i = 123;
 object o = i;
 ```
 
+### Object Class
+
+Ondersteunt alle Classes in de .NET Class hiërarchie en levert low-level diensten aan afgeleide Classes. Dit is de ultieme basis Class van alle .NET Classes
+
 Meer info:
 [Boxing and Unboxing - C# Programming Guide | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing)
+
