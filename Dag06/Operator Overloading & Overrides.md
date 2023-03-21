@@ -13,12 +13,18 @@ return new Time(a.Hours + b.Hours, a.Minutes + b.Minutes)
 ```
 
 ```c#
-// Overschrijft Time ==== Time
-public static bool operator== (Time a, Time b)
-{
+// Overschrijft Time == Time & Time != Time
+        public static bool operator ==(Time a, Time b)
+        {
 
-return new Time(a.Hours == b.Hours, a.Minutes + b.Minutes)
-}
+            return a.Hours == b.Hours && a.Minutes == b.Minutes;
+        }
+
+        public static bool operator !=(Time a, Time b)
+        {
+
+            return !(a ==b);
+        }
 ```
 
 Zo kan je ook de wijze waarop een type gecast word overschrijven
