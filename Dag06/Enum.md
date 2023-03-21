@@ -12,7 +12,19 @@ namespace Dag06.EnumDemoLibrary
         Cloudy,
         Rainy,
     }
+    public static class WeatherFunctions
+    {
+        public static string WhichJacket(Weather weather) => weather switch
+        {
+            Weather.Sunny => "Geen jas",
+            Weather.Cloudy => "jas",
+            Weather.Rainy => "Regen Jas",
+            _ => ""
+        };
+
+    }
 }
+
 
 namespace Dag06.EnumDemoConsole
 {
