@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dag06/Enum.md",
+                "file": "Dag06/CTS.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,11 +109,11 @@
   },
   "active": "136cb5773f58610d",
   "lastOpenFiles": [
-    "Dag06/CTS.md",
     "Dag06/Enum.md",
-    "Dag06/Structs.md",
-    "Misc/markdown-cheat-sheet.md",
     "Misc/Tips.md",
+    "Misc/markdown-cheat-sheet.md",
+    "Dag06/CTS.md",
+    "Dag06/Structs.md",
     "Dag07/Untitled.canvas",
     "Misc/Unconfirmed 558697.crdownload",
     "Misc",
