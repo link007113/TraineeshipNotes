@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "7d55cd65df93f671",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Dag06/Operator Overloading.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -120,12 +132,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "59e1b316aea490bd",
+  "active": "7d55cd65df93f671",
   "lastOpenFiles": [
+    "Dag06/Structs.md",
+    "Dag06/Operator Overloading.md",
     "Dag06/Casting & Boxing.md",
     "Dag06/CTS.md",
     "Dag06/Enum.md",
-    "Dag06/Structs.md",
     "Misc/markdown-cheat-sheet.md",
     "Misc/Tips.md",
     "Dag07/Untitled.canvas",
