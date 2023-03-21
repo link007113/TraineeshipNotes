@@ -54,23 +54,23 @@ namespace Dag05.ReceiptMaker
         }
 
 
-        //[TestMethod]
-        //public void TestAutoGenerateReceiptNr()
-        //{
-        //    Receipt receipt = new Receipt();
-        //    receipt.Scan("Appel", 2M);
-        //    receipt.Scan("Kaas", 5M);
-        //    receipt.Scan("Ham", 1.15M);
-        //    receipt.Scan("Spek", 1.15M);
+        [TestMethod]
+        public void TestAutoGenerateReceiptNr()
+        {
+            Receipt receipt = new Receipt();
+            receipt.Scan("Appel", 2M);
+            receipt.Scan("Kaas", 5M);
+            receipt.Scan("Ham", 1.15M);
+            receipt.Scan("Spek", 1.15M);
 
-        //    Receipt receipt2 = new Receipt();
-        //    receipt2.Scan("Appel", 2M);
-        //    receipt2.Scan("Kaas", 5M);
-        //    receipt2.Scan("Ham", 1.15M);
-        //    receipt2.Scan("Spek", 1.15M);
+            Receipt receipt2 = new Receipt();
+            receipt2.Scan("Appel", 2M);
+            receipt2.Scan("Kaas", 5M);
+            receipt2.Scan("Ham", 1.15M);
+            receipt2.Scan("Spek", 1.15M);
 
-        //    Assert.AreEqual(1,receipt.ReceiptNr);
-        //    Assert.AreEqual(2,receipt.ReceiptNr);
-        //}
+            Assert.AreEqual(2, receipt.ReceiptNr);
+            Assert.AreEqual(3, receipt2.ReceiptNr);
+        }
     }
 }

@@ -17,8 +17,8 @@ namespace ReceiptMakerLibrary
         public Receipt()
         {
             _rows = new List<Row>();
-            ReceiptNr = ReceiptNr + 1;
-            _receiptNr = ReceiptNr;
+            _receiptNr = _receiptNr + 1;
+            ReceiptNr = _receiptNr;
         }
 
         public decimal TotalPrice
