@@ -80,35 +80,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "aad64ce0bc13e7f9",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Dag06/Enum.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "28463d340ff121eb",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Dag06/Enum.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
             "id": "0d9aa2b323bd2268",
             "type": "leaf",
             "state": {
@@ -116,16 +87,6 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "f5462c0e95c8f2fa",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Dag06/Enum.md"
               }
             }
           }
@@ -146,7 +107,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "136cb5773f58610d",
+  "active": "0d9aa2b323bd2268",
   "lastOpenFiles": [
     "Dag06/CTS.md",
     "Dag06/Enum.md",

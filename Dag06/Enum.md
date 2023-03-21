@@ -5,9 +5,10 @@ Enum geeft je de mogelijkheid om een keuze lijst te maken.
 ```c#
 public enum Weather
 {
-	Sunny,  // Conventie: Beginnend met hoofdletter en daarna kleine letters.
-	Cloudy,
-	Rainy,
+	Sunny = 1,  // Conventie: Beginnend met hoofdletter en daarna kleine letters.
+	Cloudy = 2,
+	Rainy = 4,
+	Snowy = 8,
 }
 
 namespace Dag06.EnumDemoConsole
@@ -16,7 +17,8 @@ namespace Dag06.EnumDemoConsole
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Weather w = Weather.Sunny;
+            WeatherProcessor(w);
         }
 
         static void WheaterProcessor(Weather weather)
