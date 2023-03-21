@@ -21,11 +21,7 @@ namespace ReceiptMakerLibrary
             ReceiptNr = _receiptNr;
         }
 
-        public decimal TotalPrice
-        {
-            get { return _rows.Sum(r => r.TotalPricePerRow); }
-
-        }
+        public decimal TotalPrice =>_rows.Sum(r => r.TotalPricePerRow);                
 
         public void Scan(string articleName, decimal price)
         {
@@ -47,10 +43,6 @@ namespace ReceiptMakerLibrary
             {
                 throw new ArgumentOutOfRangeException(nameof(_rows.Count), "Receipt doesn't have space for more items.");
             }
-
-
-
-
         }
 
         public override string ToString()

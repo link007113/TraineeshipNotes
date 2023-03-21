@@ -17,9 +17,7 @@
             Price = price;            
         }
 
-        public decimal TotalPricePerRow
-        {
-            get { return Price * Count; }
+        public decimal TotalPricePerRow =>  Price * Count; 
 
         }
 
