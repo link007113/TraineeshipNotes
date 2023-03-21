@@ -6,20 +6,22 @@ Een variabele van een struct-type bevat direct de gegevens van de struct, terwij
 
 Bijv:
 ```c#
-        public struct Time
-        {
-            public int Hours { get; }
-            public int Minuts { get; }
-
-            public Time(int hours, int minuts)
-            {
-                Hours = hours;
-                Minuts = minuts;
-            }
-            
+    public struct Time
+    {
+        public int Hours { get; }
+        public int Minutes { get; }
+        public Time(int hours, int minutes)
+        {      
+            Hours = hours + minutes / 60;
+            Minutes = minutes % 60;
         }
-
-
+        public Time AddMinutes(int minutes)
+        {
+            Time newTime = new Time(Hours, Minutes + minutes);
+            return newTime;
+        
+        }
+    }
 ```
 
 
