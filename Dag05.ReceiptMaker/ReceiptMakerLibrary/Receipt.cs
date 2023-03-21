@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -8,11 +9,16 @@ namespace ReceiptMakerLibrary
 {
     public class Receipt
     {
+        public long ReceiptNr;
+
+        private static long _receiptNr ;
         private List<Row> _rows;
 
         public Receipt()
         {
             _rows = new List<Row>();
+            ReceiptNr = ReceiptNr + 1;
+            _receiptNr = ReceiptNr;
         }
 
         public decimal TotalPrice
@@ -47,7 +53,7 @@ namespace ReceiptMakerLibrary
 
         }
 
-        public string Print()
+        public override string ToString()
         {
             string receiptPrint = string.Empty;
 
@@ -55,12 +61,12 @@ namespace ReceiptMakerLibrary
             {
                 receiptPrint += $"Aantal:{row.Count}|\tNaam: {row.Name}\tPrijs:{row.Price}\t|{row.TotalPricePerRow}\n";
             }
-            receiptPrint += "_____________________________\n";
+            receiptPrint += "___________________________________________\n";
             receiptPrint += $"\t\t\tTotaal:{TotalPrice}\n";
+            receiptPrint += $"Bonnummer:{ReceiptNr}\t\t\t\n";
 
             return receiptPrint;
-        }
-
+        }        
 
     }
 }
