@@ -18,8 +18,17 @@ Hierdoor gaat hij van het grootste positieve getal naar het laagste negatieve ge
 
 Meer info:
 [Casting and type conversions - C# Programming Guide | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
+
 ## Boxing
 
+Boxing is het omzetten van een waardetype naar het type object of naar een interfacetype dat door dit waardetype wordt geïmplementeerd.
+
+Unboxing haalt het waardetype uit het object. Boxing is impliciet; unboxing is expliciet.
+
+```c#
+int i = 123;
+object o = i;
+```
 
 Meer info:
 [Boxing and Unboxing - C# Programming Guide | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/boxing-and-unboxing)
