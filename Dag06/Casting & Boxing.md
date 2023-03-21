@@ -1,7 +1,7 @@
 ## Casting
 
-==Casting== is het omzetten van het ene data type naar de andere.
-Bijv:
+Casting is het omzetten van het ene data type naar de andere.
+- Bijv:
 ```c#
 int i = 3;
 long l = i;
@@ -15,7 +15,6 @@ Als je een waarde groter dan de max waarde in een int probeert te stoppen, treed
 
 Hierdoor gaat hij van het grootste positieve getal naar het laagste negatieve getal.
 
-
 Meer info:
 [Casting and type conversions - C# Programming Guide | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/types/casting-and-type-conversions)
 
@@ -23,11 +22,16 @@ Meer info:
 
 Boxing is het omzetten van een waardetype naar het type object of naar een interfacetype dat door dit waardetype wordt geïmplementeerd.
 
+```c#
+int i = 1;
+object o = i;
+```
+
 Unboxing haalt het waardetype uit het object. Boxing is impliciet; unboxing is expliciet.
 
 ```c#
-int i = 123;
-object o = i;
+object o = 3; 
+int i = (int)o;
 ```
 
 ### Object Class

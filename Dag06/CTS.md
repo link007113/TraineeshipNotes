@@ -67,3 +67,5 @@ Werk je met pointers. Hierdoor kan hij dus aangepast worden door verschillende m
 
 Meer info:
 [Common Type System & Common Language Specification | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/standard/common-type-system)
+
+[Managed Execution Process | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/standard/managed-execution-process)
