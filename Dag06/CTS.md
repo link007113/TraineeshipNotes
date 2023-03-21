@@ -69,3 +69,4 @@ Meer info:
 [Common Type System & Common Language Specification | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/standard/common-type-system)
 
 [Managed Execution Process | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/standard/managed-execution-process)
+[Stack and Heap Memory in C# with Examples - Dot Net Tutorials](https://dotnettutorials.net/lesson/stack-and-heap-dotnet/)
