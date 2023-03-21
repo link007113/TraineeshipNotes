@@ -25,6 +25,22 @@ return new Time(a.Hours + b.Hours, a.Minutes + b.Minutes)
 
             return !(a ==b);
         }
+
+        public override bool Equals(object? obj)
+        {
+            return obj != null &&
+                obj.GetType() == typeof(Time) &&
+                this == (Time)obj;
+
+            //  return obj is Time &&
+            //  this == (Time)obj;
+
+            //  return (obj is Time that) && this == that;
+        }
+        public override int GetHashCode()
+        {
+            return Hours * 60 + Minutes;
+        }
 ```
 
 Zo kan je ook de wijze waarop een type gecast word overschrijven
@@ -50,3 +66,4 @@ public override string ToString()
             return $"H:{this.Hours} M:{this.Minutes} uur";
 }
 ```
+
