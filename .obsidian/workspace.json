@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dag06/CTS.md",
+                "file": "Dag06/Enum.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Dag06/CTS.md",
+                "file": "Dag06/Enum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Dag06/CTS.md",
+                "file": "Dag06/Enum.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Dag06/CTS.md"
+                "file": "Dag06/Enum.md"
               }
             }
           }
@@ -148,16 +148,16 @@
   },
   "active": "136cb5773f58610d",
   "lastOpenFiles": [
-    "Misc/markdown-cheat-sheet.md",
     "Dag06/CTS.md",
+    "Dag06/Enum.md",
+    "Dag06/Structs.md",
+    "Misc/markdown-cheat-sheet.md",
     "Misc/Tips.md",
     "Dag07/Untitled.canvas",
     "Misc/Unconfirmed 558697.crdownload",
     "Misc",
     "New folder",
     "Dag07",
-    "Dag06/Structs.md",
-    "Dag06/Enum.md",
     "TraineeshipNotes",
     "Dag06"
   ]
