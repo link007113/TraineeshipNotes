@@ -2,6 +2,10 @@
 
 Enum geeft je de mogelijkheid om een keuze lijst te maken. 
 
+Je hebt de mogelijkheid om op een Enum een Extension Method te maken.
+Dat is een Static method in een static class en heeft als de eerste parameter heeft het 'this'-keyword.
+
+### Voorbeeld:
 ```c#
 namespace Dag06.EnumDemoLibrary
 {
@@ -28,7 +32,6 @@ namespace Dag06.EnumDemoLibrary
     }
 }
 
-
 namespace Dag06.EnumDemoConsole
 {
     internal class Program
@@ -41,8 +44,7 @@ namespace Dag06.EnumDemoConsole
 
         static void WheaterProcessor(Weather weather)
         {
-            Console.WriteLine(weather.WhichJacket()); 
-            int weatherNumber = (int)weather;
+            Console.WriteLine(weather.WhichJacket());           
         }
     }
 }
