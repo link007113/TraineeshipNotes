@@ -3,12 +3,15 @@
 Enum geeft je de mogelijkheid om een keuze lijst te maken. 
 
 ```c#
-public enum Weather
+namespace Dag06.EnumDemoLibrary
 {
-	Sunny = 1,  // Conventie: Beginnend met hoofdletter en daarna kleine letters.
-	Cloudy = 2,
-	Rainy = 4,
-	Snowy = 8,
+    [Flags]
+    public enum Weather
+    {
+        Sunny,
+        Cloudy,
+        Rainy,
+    }
 }
 
 namespace Dag06.EnumDemoConsole
