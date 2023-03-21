@@ -22,6 +22,15 @@ Bijv:
         
         }
     }
+        public void Main()
+        {
+            Time time = new Time(3,15);
+            Console.WriteLine($"H:{time.Hours} M:{time.Minutes} uur");
+
+            Time time1 = time.AddMinutes(50);
+            Console.WriteLine($"H:{time1.Hours} M:{time1.Minutes} uur");
+
+        }
 ```
 
 
