@@ -24,7 +24,17 @@
             "fl" => ValutaEnum.Florijn,
             "EUR" => ValutaEnum.Euro,
             _ => throw new InvalidValutaException("This Valuta doesn't exists")
-        };        
+        };
+
+
+        public static bool IsValutaValidInTheNetherlands(ValutaEnum valuta) => valuta switch
+        {
+            ValutaEnum.Dukaat => false,
+            ValutaEnum.Gulden => false,
+            ValutaEnum.Florijn => false,
+            ValutaEnum.Euro => true,
+            _ => throw new InvalidValutaException()
+        };
 
     }
 

@@ -9,7 +9,7 @@ namespace Dag06.ValutaExercise.Tests
         public void Given_ValutaEuro_Then_ValutaIsValid()
         {
             ValutaEnum euro = ValutaEnum.Euro;
-            bool output = IsValutaValidInTheNetherlands(euro);
+            bool output = ValutaExtensions.IsValutaValidInTheNetherlands(euro);
             Assert.AreEqual(true, output);
 
         }
@@ -18,7 +18,7 @@ namespace Dag06.ValutaExercise.Tests
         public void Given_ValutaFlorijn_Then_ValutaIsInvalid()
         {
             ValutaEnum euro = ValutaEnum.Florijn;
-            bool output = IsValutaValidInTheNetherlands(euro);
+            bool output = ValutaExtensions.IsValutaValidInTheNetherlands(euro);
             Assert.AreEqual(false, output);
 
         }
@@ -100,13 +100,6 @@ namespace Dag06.ValutaExercise.Tests
 
         }
 
-        public static bool IsValutaValidInTheNetherlands(ValutaEnum valuta) => valuta switch
-        {
-            ValutaEnum.Dukaat => false,
-            ValutaEnum.Gulden => false,
-            ValutaEnum.Florijn => false,
-            ValutaEnum.Euro => true,
-            _ => throw new InvalidValutaException()
-        };
+
     }
 }
