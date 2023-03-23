@@ -17,3 +17,6 @@ In c# heb je de mogelijkheid om zelf Exceptions te defineren. Dit kan je op de v
         }
     }
 ```
+
+Meer info:
+[How to create user-defined exceptions](https://learn.microsoft.com/en-us/dotnet/standard/exceptions/how-to-create-user-defined-exceptions)
