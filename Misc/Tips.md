@@ -6,6 +6,7 @@ public decimal TotalPricePerRow =>  Price * Count;
 
 ## Meerdere testen tegelijk uitvoeren
 
+Deze manier werkt alleen met primitive types
 ```c#
 [DataTestMethod]
 [DataRow(ValutaEnum.Florijn,DisplayName = "Florijn is invalid")]
