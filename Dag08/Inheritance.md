@@ -28,6 +28,28 @@ Hierdoor hoef je properties en functionaliteit van de basis class niet opnieuw t
 
 
 
+[TestClass]
+    public class BirdTest
+    {
+        [TestMethod]
+        public void Bird_Has_Initial_Weight()
+        {
+            Animal bird = new Bird(0.2);
+            Assert.IsTrue(bird.Weight == 0.2);
+        }
+
+        [TestMethod]
+        public void Eat_BirdWithWeight02_GainsWeight()
+        {
+            double weigth = 0.2;
+            Bird bird = new(weigth);
+            bird.Eat(0.6);
+
+            Assert.IsTrue(bird.Weight == 0.8);
+
+        }
+    }
+
 ```
 
 
