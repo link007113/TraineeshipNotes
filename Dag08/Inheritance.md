@@ -2,6 +2,7 @@
 
 Inheritance is het baseren van een Class op een andere Class.
 Hierdoor hoef je properties en functionaliteit van de base class niet opnieuw te defineren en kan je de derived class die gebruiken voor extra properties en functionaliteit. 
+Voor 
 
 De derived class kan geen gebruik maken van de private properties en functionaliteit.
 Als je dit wel wil gebruik dan protected.
