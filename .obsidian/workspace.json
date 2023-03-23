@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dag08/Abstract classes.md",
+                "file": "Dag08/Interfaces.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,16 +109,16 @@
   },
   "active": "b3b442ce36ea83b1",
   "lastOpenFiles": [
+    "Dag08/InheritanceUitleg.jpeg",
     "Dag08/Inheritance.md",
-    "Dag08/Abstract classes.md",
     "Dag08/Composition.md",
+    "Dag08/Abstract classes.md",
+    "Misc/Tips.md",
+    "Dag06/Casting & Boxing.md",
     "Dag08/Interfaces.md",
     "Misc/markdown-cheat-sheet.md",
-    "Dag08/InheritanceUitleg.jpeg",
     "Pasted image 20230323132714.png",
-    "Misc/Tips.md",
     "Dag06/Custom Exceptions.md",
-    "Dag06/Casting & Boxing.md",
     "Dag06/CTS.md",
     "Dag08/Records.md",
     "Dag06/Structs.md",
