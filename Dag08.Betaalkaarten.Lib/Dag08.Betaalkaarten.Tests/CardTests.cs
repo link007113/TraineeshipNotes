@@ -31,16 +31,26 @@ namespace Dag08.Betaalkaarten.Tests
         }
 
         [TestMethod]
-        public void Pay_Cards_UnderZero_Results_false()
+        public void Pay_Cards_UnderZero_Results_SaldoTooLowException()
         {
             // Act
-            bool paymentSucceedsNormalCard = _normalCard.Pay(-10);
-            bool paymentSucceedsVipCardWithNormalDiscount = _VipCardWithNormalDiscount.Pay(-10);
-            bool paymentSucceedsVipCardWithExtraDiscount = _VipCardWithExtraDiscount.Pay(-10);
+            void act_normalCard()
+            {
+                _normalCard.Pay(-10);
+            }
+            void act_VipCardWithNormalDiscount()
+            {
+                _VipCardWithNormalDiscount.Pay(-10);
+            }
+            void act_VipCardWithExtraDiscount()
+            {
+                _VipCardWithExtraDiscount.Pay(-10);
+            }
+
             //Assert
-            Assert.IsFalse(paymentSucceedsNormalCard, "Normal Card");
-            Assert.IsFalse(paymentSucceedsVipCardWithNormalDiscount, "Vip Card with normal discount");
-            Assert.IsFalse(paymentSucceedsVipCardWithExtraDiscount, "Vip Card with extra discount");
+            Assert.ThrowsException<SaldoTooLowException>(act_normalCard);
+            Assert.ThrowsException<SaldoTooLowException>(act_VipCardWithNormalDiscount);
+            Assert.ThrowsException<SaldoTooLowException>(act_VipCardWithExtraDiscount);
         }
 
         [TestMethod]

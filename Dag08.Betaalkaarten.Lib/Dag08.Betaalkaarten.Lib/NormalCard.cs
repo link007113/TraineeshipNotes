@@ -12,7 +12,7 @@
         {
             if (amount < 0 || Saldo - amount < 0)
             {
-                return false;
+                throw new SaldoTooLowException($"“Uw saldo van {Math.Round(Saldo, 2, MidpointRounding.AwayFromZero)} Euro is ontoereikend om een bedrag van {Math.Round(Saldo, 2, MidpointRounding.AwayFromZero)} mee te betalen”");
             }
             else
             {
