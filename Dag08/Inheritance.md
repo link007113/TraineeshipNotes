@@ -55,6 +55,25 @@ Als je dit wel wil gebruik dan protected.
 
 ```
 
+Om basis functionaltiteit te overschreven van de methodes uit de basis-Class is het de gewoonte om in de basis de Method virtual te maken:
+
+```c#
+	public class Animal
+    {
+        public virtual string MakeNoise()
+        {
+            return "snffff";
+        }
+    }
+    public class Bird : Animal
+    {    
+        public override string MakeNoise()
+        {
+            return "Tjilp";
+        }
+    }
+```
+
 
 ### Meer info:
 [Inheritance](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance)
