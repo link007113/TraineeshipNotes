@@ -1,7 +1,15 @@
 ## Inleiding
 
 Interfaces zijn complete abstracte classes.
-Ze kunnen geen variable bevatten.
+Ze kunnen geen variable bevatten. Ze kunnen wel properties bevatten
+
+
+### Voorbeeld:
+
+```c#
+
+
+```
 
 
 
