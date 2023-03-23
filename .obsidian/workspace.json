@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Misc/Tips.md",
+                "file": "Dag06/Casting & Boxing.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,6 +109,9 @@
   },
   "active": "b3b442ce36ea83b1",
   "lastOpenFiles": [
+    "Dag06/CTS.md",
+    "Dag06/Custom Exceptions.md",
+    "Misc/Tips.md",
     "Dag06/Casting & Boxing.md",
     "Misc/markdown-cheat-sheet.md",
     "Dag08/Records.md",
@@ -119,9 +122,6 @@
     "Dag06/Structs.md",
     "Dag06/Operator Overloading & Overrides.md",
     "Dag06/Enum.md",
-    "Dag06/Custom Exceptions.md",
-    "Dag06/CTS.md",
-    "Misc/Tips.md",
     "Dag07/Untitled.canvas",
     "Misc/Unconfirmed 558697.crdownload",
     "Misc",

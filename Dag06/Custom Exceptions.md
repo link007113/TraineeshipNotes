@@ -1,4 +1,5 @@
-In c# heb je de mogelijkheid om zelf Exceptions te defineren. Dit kan je op de volgende manier doen:
+In c# heb je de mogelijkheid om zelf Exceptions te defineren. 
+Je kan ook dit laten genereren door Visual Studio doormiddel van Exception code snippet.
 
 ### Voorbeeld:
 ```c#
