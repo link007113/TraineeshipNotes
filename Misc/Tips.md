@@ -32,3 +32,31 @@ public void Given_ValutaOther_Then_ValutaIsInvalid(ValutaEnum valuta)
 ```
 
 ## Test Setup maken
+
+Om 1 variable te hergebruiken kan je net als in normale Classes velden gebruiken over meerdere testen. De TestInitialize wordt uitgevoerd voor elke test.
+
+```c#
+    [TestClass]
+    public class BirdTest
+    {
+        private Bird _sut;
+        [TestInitialize]
+        public void TestIntialize()
+        {
+            _sut = new Bird(0.2);
+        }
+
+        [TestMethod]
+        public void Bird_Has_Initial_Weight()
+        {
+            Assert.IsTrue(_sut.Weight == 0.2);
+        }
+
+        [TestMethod]
+        public void Eat_BirdWithWeight02_GainsWeight()
+        {
+            _sut.Eat(0.6);
+            Assert.IsTrue(_sut.Weight == 0.8);
+        }
+    }
+```
