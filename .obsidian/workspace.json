@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dag08/Inheritance.md",
+                "file": "Misc/Tips.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,6 +109,7 @@
   },
   "active": "b3b442ce36ea83b1",
   "lastOpenFiles": [
+    "Dag08/Inheritance.md",
     "Dag08/Abstract classes.md",
     "Misc/Tips.md",
     "Dag06/Custom Exceptions.md",
@@ -117,7 +118,6 @@
     "Misc/markdown-cheat-sheet.md",
     "Dag08/Records.md",
     "Dag08/Interfaces.md",
-    "Dag08/Inheritance.md",
     "Dag08/Composition.md",
     "Dag06/Structs.md",
     "Dag06/Operator Overloading & Overrides.md",
