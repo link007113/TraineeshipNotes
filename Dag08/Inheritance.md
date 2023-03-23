@@ -54,7 +54,6 @@ Als je dit wel wil gebruik dan protected.
     }
 
 ```
-
 Om basis functionaltiteit te overschreven van de methodes uit de basis-Class is het de gewoonte om in de basis de Method virtual te maken:
 
 ```c#
