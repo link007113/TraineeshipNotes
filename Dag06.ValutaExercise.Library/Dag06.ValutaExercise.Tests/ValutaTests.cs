@@ -14,13 +14,14 @@ namespace Dag06.ValutaExercise.Tests
 
         }
 
-        [TestMethod]
-        public void Given_ValutaFlorijn_Then_ValutaIsInvalid()
-        {
-            ValutaEnum euro = ValutaEnum.Florijn;
-            bool output = ValutaExtensions.IsValutaValidInTheNetherlands(euro);
+        [DataTestMethod]
+        [DataRow(ValutaEnum.Florijn,DisplayName = "Florijn is invalid")]
+        [DataRow( ValutaEnum.Dukaat, DisplayName = "Dukaat is invalid")]
+        [DataRow(ValutaEnum.Gulden, DisplayName = "Gulden is invalid")]
+        public void Given_ValutaFlorijn_Then_ValutaIsInvalid(ValutaEnum valuta)
+        {          
+            bool output = ValutaExtensions.IsValutaValidInTheNetherlands(valuta);
             Assert.AreEqual(false, output);
-
         }
 
         [TestMethod]

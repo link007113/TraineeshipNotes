@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace Dag06.ValutaExercise.Library
 {
+
+
     public class InvalidValutaException : Exception
     {
         public InvalidValutaException() 
@@ -19,7 +21,5 @@ namespace Dag06.ValutaExercise.Library
         public InvalidValutaException(string message, Exception innerException) : base(message, innerException) 
         { 
         }
-        
-
     }
 }
