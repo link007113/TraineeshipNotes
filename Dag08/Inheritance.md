@@ -72,7 +72,7 @@ Om basis functionaltiteit te overschreven van de methodes uit de basis-Class is 
         }
     }
 ```
-
+![[Pasted image 20230323132714.png]]
 
 ### Meer info:
 [Inheritance](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance)
