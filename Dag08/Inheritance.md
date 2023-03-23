@@ -6,7 +6,6 @@ Hierdoor hoef je properties en functionaliteit van de basis class niet opnieuw t
 De class die inherend kan geen gebruik maken van de private properties en functionaliteit.
 Als je dit wel wil gebruik dan protected.
 
-
 ```c#
  public class Animal
     {
