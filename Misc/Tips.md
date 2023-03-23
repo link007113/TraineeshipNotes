@@ -3,7 +3,8 @@
 // Dit heet een function-arrow
 public decimal TotalPricePerRow =>  Price * Count; 
 ```
-
+### Meer info:
+[# C#-coderingsconventies](https://learn.microsoft.com/nl-nl/dotnet/csharp/fundamentals/coding-style/coding-conventions)
 ## Meerdere testen tegelijk uitvoeren
 
 Deze manier werkt alleen met primitive types:
