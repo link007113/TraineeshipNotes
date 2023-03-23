@@ -63,6 +63,10 @@ Om basis functionaltiteit te overschreven van de methodes uit de basis-Class is 
         {
             return "snffff";
         }
+        public string Soort()
+        {
+            return "Animal";
+        }
     }
     public class Bird : Animal
     {    
@@ -70,9 +74,15 @@ Om basis functionaltiteit te overschreven van de methodes uit de basis-Class is 
         {
             return "Tjilp";
         }
+        public string Soort()
+        {
+            return "Bird";
+        }
     }
 ```
-![[Pasted image 20230323132714.png]]
+
+![alt text](https://github.com/link007113/TraineeshipNotes/raw/main/Dag08/InheritanceUitleg.jpeg)
+
 
 ### Meer info:
 [Inheritance](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/object-oriented/inheritance)
