@@ -65,7 +65,7 @@ Werk je met pointers. Hierdoor kan hij dus aangepast worden door verschillende m
 - Stack is een lineaire gegevensstructuur, terwijl Heap een hiërarchische gegevensstructuur is. Stackgeheugen zal nooit gefragmenteerd raken, terwijl Heap-geheugen gefragmenteerd kan raken doordat geheugenblokken eerst worden toegewezen en vervolgens worden vrijgegeven. Stack heeft alleen toegang tot lokale variabelen, terwijl Heap u toegang geeft tot variabelen wereldwijd.
 
 
-Meer info:
+### Meer info:
 [Common Type System & Common Language Specification | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/standard/common-type-system)
 
 [Managed Execution Process | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/standard/managed-execution-process)

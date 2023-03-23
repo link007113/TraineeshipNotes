@@ -47,5 +47,5 @@ namespace Dag06.EnumDemoConsole
 }
 ```
 
-Meer info:
+### Meer info:
 [Enumeration types - C# reference | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/enum)
