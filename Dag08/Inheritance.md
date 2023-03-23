@@ -7,6 +7,8 @@ Inheritance wordt vooral gebruikt voor technische onderdelen en niet domein onde
 De derived class kan geen gebruik maken van de private properties en functionaliteit.
 Als je dit wel wil gebruik dan protected.
 
+Een class kan maar van 1 Base class derived zijn. 
+
 ```c#
  public class Animal
     {
