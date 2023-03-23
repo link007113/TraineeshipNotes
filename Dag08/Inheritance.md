@@ -3,6 +3,10 @@
 Inheritance is het baseren van een Class op een andere Class.
 Hierdoor hoef je properties en functionaliteit van de basis class niet opnieuw te defineren en kan je de class die inherend gebruiken voor extra properties en functionaliteit. 
 
+De class die inherend kan geen gebruik maken van de private properties en functionaliteit.
+Als je dit wel wil gebruik dan protected.
+
+
 ```c#
  public class Animal
     {
