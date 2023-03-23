@@ -30,3 +30,5 @@ public void Given_ValutaOther_Then_ValutaIsInvalid(ValutaEnum valuta)
     Assert.AreEqual(false, output);
 }
 ```
+
+## Test Setup maken

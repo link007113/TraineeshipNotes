@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dag08/Inheritance.md",
+                "file": "Misc/Tips.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,8 +109,8 @@
   },
   "active": "b3b442ce36ea83b1",
   "lastOpenFiles": [
-    "Misc/Tips.md",
     "Dag08/Inheritance.md",
+    "Misc/Tips.md",
     "Dag08/Abstract classes.md",
     "Dag06/Custom Exceptions.md",
     "Dag06/Casting & Boxing.md",
