@@ -1,5 +1,8 @@
 ## Inleiding
 
+Interfaces zijn complete abstracte classes.
+Ze kunnen geen variable bevatten.
+
 
 
 ### Meer info:
