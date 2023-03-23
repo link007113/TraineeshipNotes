@@ -29,9 +29,13 @@ Je kan wel nog normale methods gebruiken in abstracte classes, in tegenoverstell
         }
     }
 ```
+s
+Bij voorkeur alle classes die niet daadwerkelijk gebruikt worden abstract maken. 
+Dus bijv:
 
-
-
+- Animal - Abstract
+- Bird - Abstract
+- Chicken - Niet abstract
 
 ### Meer info:
 [Abstract Classes](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/abstract)
