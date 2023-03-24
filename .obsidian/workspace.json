@@ -42,9 +42,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "03e4caa619a1bdbd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 1/Dag09/Collections.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "87f18fc203aa442f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 1/Dag08/Unit Testing.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -132,18 +156,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "41e0f3589f1a9f3e",
+  "active": "87f18fc203aa442f",
   "lastOpenFiles": [
-    "Blok 1/Dag10/Delegates.md",
+    "Misc/Tips.md",
+    "Blok 1/Dag08/Unit Testing.md",
+    "Blok 1/Dag09/Collections.md",
+    "Blok 1/Dag09/Generics.md",
     "Blok 1/Dag10/Events.md",
-    "Blok 1/Dag08/Test Driven Development.md",
+    "Blok 1/Dag10/Delegates.md",
     "Blok 1/Dag10",
     "Blok 1/Dag09/Records.md",
     "Blok 1/Dag09/Composition.md",
     "Blok 1/Dag08/Inheritance.md",
     "Blok 1/Dag08/Interfaces.md",
     "Blok 1/Dag08/Abstract classes.md",
-    "Misc/Tips.md",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "Blok 1",
     "Blok 1/Dag06/Operator Overloading & Overrides.md",
