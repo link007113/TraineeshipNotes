@@ -102,14 +102,6 @@ Om Collections te begrijpen hebben we de implementatie van List nagemaakt.
 ```
 Bovenstaande manier is de MyEnumerator class te maken is wat ingewikkeld. Gelukkig is daar een makkelijkere manier voor.
 
-## Indexer
-
-Indexers maken het mogelijk instanties van een class of struct te indexeren, net als arrays. De geïndexeerde waarde kan worden ingesteld of opgehaald zonder expliciet een type of instantie-lid te specificeren. Indexers lijken op "properties".
-
-### Meer info:
-[Indexers](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/)
-## IEnumerable
-
 
 ## Yield
 
@@ -137,10 +129,24 @@ public IEnumerable<int> Integers()
 Het volgende plaatje laat zien hoe yield werkt.
 ![[Pasted image 20230324124204.png]]
 
-Dus in het voorbeeld hierboven kunnen we ook het volgende doen:
-```c#
+Dus in het voorbeeld bij het voorbeeld van List de methode GetEnumerator vervangen voor het volgende:
 
+```c#
+public IEnumerator GetEnumerator()
+{
+    for (int index = 0; index < _count; index++)
+    {
+        yield return _items[index];
+    }
+}
 ```
+## Indexer
+
+Indexers maken het mogelijk instanties van een class of struct te indexeren, net als arrays. De geïndexeerde waarde kan worden ingesteld of opgehaald zonder expliciet een type of instantie-lid te specificeren. Indexers lijken op "properties".
+
+### Meer info:
+[Indexers](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/)
+## IEnumerable
 
 
 
