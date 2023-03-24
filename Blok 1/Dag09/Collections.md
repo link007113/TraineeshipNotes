@@ -1,11 +1,12 @@
 
 
 Om Collections te begrijpen hebben we de implementatie van List nagemaakt.
+Let wel de Add methode is aangepast zodat deze een gesorteerde lijst maakt.
 
-## Eigen implementatie van List'\<T\> Class
+## Eigen implementatie van List'\<int\> Class
 
 ```c#
-    public class IntList : IEnumerable
+    public class SortedIntList : IEnumerable
     {
         private int[] _items;
         private int _count;
@@ -15,9 +16,15 @@ Om Collections te begrijpen hebben we de implementatie van List nagemaakt.
             get { return _count; }
         }
 
-        public IntList()
+        public SortedIntList()
         {
             _items = new int[4];
+            _count = 0;
+        }
+
+        public SortedIntList(int size)
+        {
+            _items = new int[size];
             _count = 0;
         }
 
@@ -29,7 +36,7 @@ Om Collections te begrijpen hebben we de implementatie van List nagemaakt.
                 CheckBounds(index);
                 return _items[index];
             }
-            set
+            private set
             {
                 CheckBounds(index);
                 _items[index] = value;
@@ -44,14 +51,34 @@ Om Collections te begrijpen hebben we de implementatie van List nagemaakt.
             }
         }
 
-        public void Add(int x)
+        public void Add(int item)
         {
+            // Als er geen ruimte meer is verdubbelen we de ruimte van de array
             if (_count >= _items.Length)
             {
                 Resize(ref _items, _items.Length * 2);
             }
 
-            _items[_count] = x;
+            // Array.BinarySearch methode om de juiste positie te vinden om het nieuwe item in de array in te voegen.
+            int index = Array.BinarySearch(_items, 0, _count, item);
+            if (index < 0)
+            {
+                index = ~index;
+            }
+            else if (index < _items.Length && _items[index] == item)
+            {
+                // Zoek eerste positie van dubble item
+                int duplicateIndex = index;
+                while (duplicateIndex < _count && _items[duplicateIndex] == item)
+                {
+                    duplicateIndex++;
+                }
+                index = duplicateIndex;
+            }
+
+            // Array.Copy gebruik ik om de items te verplaatsen om plaats te maken voor het nieuwe item
+            Array.Copy(_items, index, _items, index + 1, _count - index);
+            _items[index] = item;
             _count++;
         }
 
