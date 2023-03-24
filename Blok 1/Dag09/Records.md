@@ -15,23 +15,15 @@ Een record is een reference type net als een class, maar ook wordt het voor waar
             Length = length;
         }
 
-        public double CalculateVolume() => Height * Width * Length;
-
-        public double CalculateSurface()
-        {
-            double surfaceLongWalls = (Height * Width) * 2;
-            double surfaceShortWalls = (Height * Length) * 2;
-            return surfaceLongWalls + surfaceShortWalls;
-        }
-    }
 ```
 De ToString van een record laat standaard de naam van het record zien en de waardes van de properties en velden.
 
-De constructor voor een struct kan je korter opschrijven dan die van een class:
-
+Het declareren van een record kan je korter opschrijven dan die van een class:
 ```c#
-
+public record Bar(double Height, double Width, double Length);
 ```
+
+
 
 
 
