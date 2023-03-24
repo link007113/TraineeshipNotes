@@ -56,7 +56,17 @@ public static void PrintSmallest<T>(SortedListImpl<T> items)
         }
 ```
 
-Zoals hierboven beschreven staat zie je bij de PrintSmallest dat er gebruikt wordt van een type constraints. Hieraan kan je meegeven dat de methode alleen geld voor types die de IComparable interface implementeren.
+Zoals hierboven beschreven staat zie je bij de PrintSmallest dat er gebruikt wordt van een type constraints. Hieraan kan je meegeven dat de methode alleen geld voor types die de IComparable interface implementeren. Van die constraints kunnen gecombineerd worden door ze te scheiden met een komma.
+
+Nog meer voorbeelden zijn:
+
+```c#
+where T: IComparable<T>, // type constraint
+where T: Person, // type constraint
+where T : class, // must be reference type
+where T: struct, // must be value type
+where T: new() // must have a default constructor
+```
 
 ### Meer info:
 [Generic classes and methods | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)
