@@ -26,3 +26,4 @@ public class SecondClass
     }
 }
 ```
+Inheritance wordt aangeduid als een "is - een" relatie en composition als een "heeft - een" relatie tussen classes. 
