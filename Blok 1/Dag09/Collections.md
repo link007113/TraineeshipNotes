@@ -136,7 +136,7 @@ public IEnumerable<int> Integers()
 ```
 
 Het volgende plaatje laat zien hoe yield werkt.
-![[Pasted image 20230324124204.png]]
+![[https://github.com/link007113/TraineeshipNotes/blob/main/Blok%201/Dag08/YieldUitleg.png?raw=true]]
 
 Dus in het voorbeeld bij het voorbeeld van List de methode GetEnumerator vervangen voor het volgende:
 

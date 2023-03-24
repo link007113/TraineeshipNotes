@@ -86,7 +86,7 @@ Om basis functionaliteit te overschrijven van de methodes uit de basis-Class is 
     }
 ```
 
-![alt text](https://github.com/link007113/TraineeshipNotes/raw/main/Dag08/InheritanceUitleg.jpeg)
+![alt text](https://github.com/link007113/TraineeshipNotes/blob/main/Blok%201/Dag08/InheritanceUitleg.jpeg?raw=true)
 
 
 ### Meer info:
