@@ -12,6 +12,22 @@ Stappen plan voor test driven development
 
 Dit noemen we de "Red-Green-Refactor cycle"
 
+## Unit Test Template
+Voor de makkelijkheid zet ik hier een voorbeeld neer hoe de unit test method eruit moet zien:
+
+```c#
+[TestMethod]
+public void MethodName_StateUnderTest_ExpectedBehavior() 
+{ 
+    // Arrange
+    Sphere sphere = new Sphere(15);
+    // Act
+    var output = sphere.CalculateVolume();
+    // Assert
+    Assert.IsTrue(output == 14137.166941154068);
+}
+```
+
 ## Meerdere testen tegelijk uitvoeren
 
 Deze manier werkt alleen met primitive types:
