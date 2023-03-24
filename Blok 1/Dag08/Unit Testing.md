@@ -17,7 +17,7 @@ Voor de makkelijkheid zet ik hier een voorbeeld neer hoe de unit test method eru
 
 ```c#
 [TestMethod]
-public void MethodName_StateUnderTest_ExpectedBehavior() 
+public void MethodName_Arrange_Object_Result_Is_Assert() 
 { 
     // Arrange
     Sphere sphere = new Sphere(15);
@@ -27,6 +27,9 @@ public void MethodName_StateUnderTest_ExpectedBehavior()
     Assert.IsTrue(output == 14137.166941154068);
 }
 ```
+### Meer voorbeelden van naming conventions voor unit tests
+[Unit Test Naming Conventions](https://medium.com/@stefanovskyi/unit-test-naming-conventions-dd9208eadbea)
+
 
 ## Meerdere testen tegelijk uitvoeren
 
