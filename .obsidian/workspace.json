@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dag08/Interfaces.md",
+                "file": "Blok 1/Dag09/Composition.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,28 +109,29 @@
   },
   "active": "b3b442ce36ea83b1",
   "lastOpenFiles": [
-    "Dag08/Inheritance.md",
-    "Dag08/Interfaces.md",
-    "Dag06/Operator Overloading & Overrides.md",
+    "Blok 1/Dag08/Interfaces.md",
+    "Blok 1",
+    "Blok 1/Dag08/InheritanceUitleg.jpeg",
+    "Blok 1/Dag08/Inheritance.md",
+    "Blok 1/Dag08/Abstract classes.md",
+    "Blok 1/Dag06/Operator Overloading & Overrides.md",
     "Misc/Tips.md",
-    "Dag09/Records.md",
-    "Dag09/Composition.md",
-    "Dag09",
-    "Dag08/InheritanceUitleg.jpeg",
-    "Dag08/Abstract classes.md",
-    "Dag06/Casting & Boxing.md",
+    "Blok 1/Dag09/Records.md",
+    "Blok 1/Dag09/Composition.md",
+    "Blok 1/Dag09",
+    "Blok 1/Dag06/Casting & Boxing.md",
     "Misc/markdown-cheat-sheet.md",
     "Pasted image 20230323132714.png",
-    "Dag06/Custom Exceptions.md",
-    "Dag06/CTS.md",
-    "Dag06/Structs.md",
-    "Dag06/Enum.md",
+    "Blok 1/Dag06/Custom Exceptions.md",
+    "Blok 1/Dag06/CTS.md",
+    "Blok 1/Dag06/Structs.md",
+    "Blok 1/Dag06/Enum.md",
     "Dag07/Untitled.canvas",
     "Misc/Unconfirmed 558697.crdownload",
     "Misc",
     "New folder",
-    "Dag08",
+    "Blok 1/Dag08",
     "TraineeshipNotes",
-    "Dag06"
+    "Blok 1/Dag06"
   ]
 }
