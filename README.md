@@ -3,7 +3,7 @@ In deze repository heb ik de notities opgeslagen die ik heb gemaakt tijdens de T
 
 Ik heb de notities georganizeerd per blok per dag per onderwerp.
 
-Deze notities heb ik gemaakt met [Obsidian](https://obsidian.md/) (bedankt Daan!)
+Deze notities heb ik gemaakt met [Obsidian](https://obsidian.md/) (bedankt [Daan](https://github.com/dtrommel/.NET_Trainee_Notes)!)
 
 # Blok 1
 - [Programming with C#](https://training.infosupport.com/trainingen/cnetin/)
