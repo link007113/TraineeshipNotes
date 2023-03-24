@@ -104,7 +104,10 @@ Bovenstaande manier is de MyEnumerator class te maken is wat ingewikkeld. Gelukk
 
 ## Indexer
 
+Indexers maken het mogelijk instanties van een class of struct te indexeren, net als arrays. De geïndexeerde waarde kan worden ingesteld of opgehaald zonder expliciet een type of instantie-lid te specificeren. Indexers lijken op "properties".
 
+### Meer info:
+[Indexers](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/)
 ## IEnumerable
 
 
