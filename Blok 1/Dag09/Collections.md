@@ -171,6 +171,24 @@ public IEnumerator GetEnumerator()
 
 Indexers maken het mogelijk instanties van een class of struct te indexeren, net als arrays. De geïndexeerde waarde kan worden ingesteld of opgehaald zonder expliciet een type of instantie-lid te specificeren. Indexers lijken op "properties".
 
+In het voorbeeld van de List heb ik een indexer gedefineerd:
+```c#
+public int this[int index]
+{
+    get
+    {
+        CheckBounds(index);
+        return _items[index];
+    }
+    private set
+    {
+        CheckBounds(index);
+        _items[index] = value;
+    }
+}
+```
+Hierin wordt eerst gekeken of de index wel aangevraagd mag worden, door te bepalen of deze niet groter is dan de huidige grootte van de array en of die niet negatief is. Als dat beide niet het geval is wordt de waarde van de gevraagde positie terug gegeven. 
+
 ### Meer info:
 [Indexers](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/)
 
