@@ -188,6 +188,25 @@ Hierin wordt eerst gekeken of de index wel aangevraagd mag worden, door te bepal
 ### Meer info:
 [Indexers](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/)
 
+## Hash Codes
+
+In C# is GetHashCode een methode die een unieke gehele waarde voor een object teruggeeft. Deze waarde wordt vaak gebruikt in hashtabellen, dat zijn gegevensstructuren waarmee je objecten snel kunt opzoeken aan de hand van hun hashcode.
+
+Bij het gebruik van generieken in C# kunt je je eigen methode GetHashCode implementeren om een aangepaste berekening van de hashcode voor objecten van een specifiek type te bieden. Dit kan handig zijn als je je eigen manier van de operator + wilt definiëren voor objecten van dat type.
+
+Bijvoorbeeld dat je een Person-Class hebt die een Name en een Age hebben. Je zou een aangepaste GetHashCode methode kunnen implementeren voor deze Class die de hashcode berekent op basis van zowel de Name als de Age properties. Dit zou ervoor zorgen dat twee Persoon objecten met dezelfde Naam en Leeftijd waarden dezelfde hash code hebben, en efficiënt kunnen worden opgezocht in een hash tabel.
+
+Bijv:
+```c#
+public override int GetHashCode()
+{
+    int hash = 17;
+    hash = hash * 23 + Name.GetHashCode();
+    hash = hash * 23 + Age.GetHashCode();
+    return hash;
+}
+
+```
 
 ### Meer info:
 [Collections (C#) | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections)
