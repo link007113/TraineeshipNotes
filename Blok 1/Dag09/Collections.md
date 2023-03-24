@@ -113,6 +113,34 @@ Indexers maken het mogelijk instanties van een class of struct te indexeren, net
 
 ## Yield
 
+De functie geeft een object terug dat de interface IEnumerable<> implementeert. Als een aanroepende functie over dit object gaat foreach-ing, wordt de functie opnieuw aangeroepen totdat deze "yields".
+```c#
+public void Consumer()
+{
+    foreach(int i in Integers())
+    {
+        Console.WriteLine(i.ToString());
+    }
+}
+
+public IEnumerable<int> Integers()
+{
+    yield return 1;
+    yield return 2;
+    yield return 4;
+    yield return 8;
+    yield return 16;
+    yield return 16777216;
+}
+```
+
+Dus in het voorbeeld hierboven kunnen we ook het volgende doen:
+```c#
+
+```
+
+het volgende plaatje laat zien hoe yield werkt:
+![[Pasted image 20230324124204.png]]
 
 ### Meer info:
 [Collections (C#) | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections)
