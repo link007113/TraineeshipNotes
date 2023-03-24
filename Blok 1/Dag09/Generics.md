@@ -37,7 +37,26 @@ public static void PrintFirstItem<T>(SortedListImpl<T> items)
 {
     Console.WriteLine(items[0]);
 }
+
+public static void PrintSmallest<T>(SortedListImpl<T> items)
+        where T: IComparable<T>
+        { 
+        T first = items[0];
+            T second = items[1];    
+
+            int result = first.CompareTo(second);
+            if (result <= 0)
+            {
+                Console.WriteLine(first);
+            }
+            else
+            {
+                Console.WriteLine(second);
+            }
+        }
 ```
+
+Zoals hierboven beschreven staat zie je bij de PrintSmallest dat er gebruikt wordt van een type constraints. Hieraan kan je meegeven dat de methode alleen geld voor types die de IComparable interface implementeren.
 
 ### Meer info:
 [Generic classes and methods | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/generics)
