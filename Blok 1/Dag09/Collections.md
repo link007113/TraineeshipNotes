@@ -3,6 +3,7 @@ Een aantal zijn:
 - List
 - Dictionary
 - IEnumerable
+- Array
 - 
 
 
