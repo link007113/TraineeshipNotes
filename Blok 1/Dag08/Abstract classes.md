@@ -1,6 +1,6 @@
 ## Inleiding
 
-De abstract modifier kan worden gebruikt voor classes, methoden, eigenschappen, indexers en gebeurtenissen. Een abstracte class wordt gebruikt om aan te geven dat een Class alleen bedoeld is om een base te dienen voor andere classes, niet om zelf te instantiëren. Leden gemarkeerd als abstract moeten geïmplementeerd worden door niet-abstracte classes die afgeleid zijn van de abstracte class.
+De abstract modifier kan worden gebruikt voor classes, methoden, eigenschappen, indexers en gebeurtenissen. Een abstracte class wordt gebruikt om aan te geven dat een Class alleen bedoeld is om een base te dienen voor andere classes, niet om zelf te instantiëren. Sterker nog, abstracte classes kan je niet instantiëren. Leden gemarkeerd als abstract moeten geïmplementeerd worden door niet-abstracte classes die afgeleid zijn van de abstracte class.
 
 In een abstracte class kan je de methode abstract maken. Hierdoor is er niet gedefineerd in de base wat er gedaan moet worden, maar alle classes die je van de base afleid moeten dan een implementatie van die class maken. 
 
