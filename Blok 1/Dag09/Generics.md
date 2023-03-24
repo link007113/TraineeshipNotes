@@ -2,8 +2,12 @@ Met Generics maak je classes en methodes type onafhankelijk. Hierdoor hoef je du
 
 De types kan je filteren door gebruik te maken van constraints.
 
+Het aanmaken van een generic class doe je doorgaans door NaamClass<\T>\ te gebruiken. 
+
+Hieronder een voorbeeld waarin de lijst met ints van Collection is aangepast naar een generic list.
+
 ```c#
-public class SortedList<T> : IEnumerable
+public class SortedListImpl<T> : IEnumerable
 {
     private T[] _items;
     private int _count;
@@ -21,11 +25,68 @@ public class SortedList<T> : IEnumerable
         _items = new T[size];
         _count = 0;
     }
+    //indexer
+    public T this[int index]
+    {
+        get
+        {
+            CheckBounds(index);
+            return _items[index];
+        }
+        private set
+        {
+            CheckBounds(index);
+            _items[index] = value;
+        }
+    }
+    private void CheckBounds(int index)
+    {
+        if (index >= _count || index < 0)
+        {
+            throw new IndexOutOfRangeException();
+        }
+    }
+    public void Add(T item)
+    {
+        // Als er geen ruimte meer is verdubbelen we de ruimte van de array
+        if (_count >= _items.Length)
+        {
+            Resize(ref _items, _items.Length * 2);
+        }
+        // Array.BinarySearch methode om de juiste positie te vinden om het nieuwe item in de array in te voegen.
+        int index = Array.BinarySearch(_items, 0, _count, item);
+        if (index < 0)
+        {
+            index = ~index;
+        }
+        // Array.Copy gebruik ik om de items te verplaatsen om plaats te maken voor het nieuwe item
+        Array.Copy(_items, index, _items, index + 1, _count - index);
+        _items[index] = item;
+        _count++;
+    }
+    // Bestaat al op de Array Class, maar voor demo herschreven
+    private static void Resize(ref T[] array, int newSize)
+    {
+        T[] newArray = new T[newSize];
+        for (int index = 0; index < array.Length; index++)
+        {
+            newArray[index] = array[index];
+        }
+        array = newArray;
+    }
+    // Nodig voor de ForEach
+    public IEnumerator GetEnumerator()
+    {
+        for (int index = 0; index < _count; index++)
+        {
+            yield return _items[index];
+        }
+    }
 }
 ```
 
-Naast dat classes generics kunnen zijn kunnen methods dat ook:
-
+Naast dat classes generics kunnen zijn kunnen methods dat ook.
+Hieronder bijv. de methodes PrintFirstItem en PrintSmallest.
 ```c#
 private static void Main(string[] args)
 {
@@ -57,7 +118,7 @@ public static void PrintSmallest<T>(SortedListImpl<T> items)
         }
 ```
 
-Zoals hierboven beschreven staat zie je bij de PrintSmallest dat er gebruikt wordt van een type constraints. Hieraan kan je meegeven dat de methode alleen geld voor types die de IComparable interface implementeren. Van die constraints kunnen gecombineerd worden door ze te scheiden met een komma.
+Zoals hierboven beschreven staat zie je bij de PrintSmallest dat er gebruik gemaakt wordt van een type constraints. Hieraan kan je meegeven dat de methode in dit geval alleen geld voor types die de IComparable interface implementeren. Van die constraints kunnen gecombineerd worden door ze te scheiden met een komma.
 
 Nog meer voorbeelden zijn:
 
@@ -69,7 +130,7 @@ where T: struct, // must be value type
 where T: new() // must have a default constructor
 ```
 
-Ook voor Generics kan je Extension methods maken:
+Ook voor Generics kan je Extension methods maken. Deze kunnen niet in dezelfde generic class, maar moet in een aparte class gezet worden:
 
 ```c#
 public static class ListExtensions
