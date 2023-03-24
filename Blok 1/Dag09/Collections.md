@@ -1,3 +1,11 @@
+C# heeft heel veel standaard collections.
+Een aantal zijn:
+- List
+- Dictionary
+- IEnumerable
+- 
+
+
 Om Collections te begrijpen hebben we de implementatie van List nagemaakt.
 Let wel de Add methode is aangepast zodat deze een gesorteerde lijst maakt.
 
@@ -136,7 +144,7 @@ public IEnumerable<int> Integers()
 ```
 
 Het volgende plaatje laat zien hoe yield werkt.
-![[https://github.com/link007113/TraineeshipNotes/blob/main/Blok%201/Dag09/YieldUitleg.png?raw=true]]
+![alt text][https://github.com/link007113/TraineeshipNotes/blob/main/Blok%201/Dag09/YieldUitleg.png?raw=true]
 
 Dus in het voorbeeld bij het voorbeeld van List de methode GetEnumerator vervangen voor het volgende:
 
