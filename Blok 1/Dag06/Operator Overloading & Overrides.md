@@ -1,6 +1,6 @@
 ## Inleiding
 
-In c# kan je functionalitiet van de operators overschrijven.
+In c# kan je functionaliteit van de operators overschrijven.
 Hiermee kan je dus bepalen wat er gebeurt als je bijvoorbeeld een object wil samen voegen of wilt vergelijken met elkaar. 
 Dit kan je bijvoorbeeld gebruiken voor je eigen classes.
 De voorbeelden gebruiken de struct van [[Structs]]
@@ -38,7 +38,7 @@ public override int GetHashCode()
 #endregion
 ```
 
-Zo kan je ook de wijze waarop een type gecast word overschrijven
+Zo kan je ook de wijze waarop een type gecast wordt overschrijven
 Bijv.:
 ```c#
 public static explicit operator Time(double timeValue)

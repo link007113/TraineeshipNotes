@@ -11,7 +11,7 @@ Casting kan je afdwingen door (datatype) te gebruiken
 long nummer = 4;
 i = (int)nummer;
 ```
-Als je een waarde groter dan de max waarde in een int probeert te stoppen, treed er een overflow op.
+Als je een waarde groter dan de max waarde in een int probeert te stoppen, treedt er een overflow op.
 
 Hierdoor gaat hij van het grootste positieve getal naar het laagste negatieve getal.
 

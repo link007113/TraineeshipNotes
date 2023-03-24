@@ -22,7 +22,7 @@ Het declareren van een record kan je korter opschrijven dan die van een class:
 ```c#
 public record Bar(double Height, double Width, double Length);
 ```
-Na het aanmaken van een instantie van een record op deze manier kan je de waarde alleen maar zetten bij het instantieeren. Dus je kan het niet meer later aanpassen. Als je dat wel wilt moet je het alsvolgt opschrijven:
+Na het aanmaken van een instantie van een record op deze manier kan je de waarde alleen maar zetten bij het instantiëren. Dus je kan het niet meer later aanpassen. Als je dat wel wilt moet je het als volgt opschrijven:
 
 ```c#
 public record Bar(double height, double width, double length)
@@ -30,9 +30,6 @@ public record Bar(double height, double width, double length)
         public string Color { get; set; }
     }
 ```
-
-
-
 
 ### Meer info:
 

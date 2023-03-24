@@ -4,7 +4,7 @@ De abstract modifier kan worden gebruikt voor classes, methoden, eigenschappen, 
 
 In een abstracte class zet je alle informatie die gedeeld worden over de classes die ervan afgeleid. 
 
-In een abstracte class kan je de methode abstract maken. Hierdoor is er niet gedefineerd in de base wat er gedaan moet worden, maar alle classes die je van de base afleid moeten dan een implementatie van die class maken. 
+In een abstracte class kan je de methode abstract maken. Hierdoor is er niet gedefinieerd in de base wat er gedaan moet worden, maar alle classes die je van de base afleid moeten dan een implementatie van die class maken. 
 
 Je kan wel nog normale methods gebruiken in abstracte classes, in tegenoverstelling van interfaces.
 
@@ -33,7 +33,7 @@ Je kan wel nog normale methods gebruiken in abstracte classes, in tegenoverstell
 ```
 
 Bij voorkeur alle classes die niet daadwerkelijk gebruikt worden abstract maken. 
-Dus bijv:
+Dus bijv.:
 
 - Animal - Abstract
 - Bird - Abstract

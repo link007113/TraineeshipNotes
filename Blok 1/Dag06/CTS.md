@@ -39,10 +39,10 @@ Vaak op de Stack
 Assignment by Value
 Operations on one cannot affect others
 
-Werk je met koppien van waardes.
+Werk je met kopieen van waardes.
 
 ==Reference types== verwijzen naar objecten 
-Kunnen null zijn en kunnen gabrage collected worden. 
+Kunnen null zijn en kunnen garbage collected worden. 
 - Class
 - Record
 - Interface

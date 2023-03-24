@@ -33,7 +33,7 @@ public void MethodName_Arrange_Object_Result_Is_Assert()
 
 ## Meerdere testen tegelijk uitvoeren
 
-Deze manier werkt alleen met primitive types:
+Deze manier werkt alleen met primitieve types:
 -   [Boolean](https://learn.microsoft.com/en-us/dotnet/api/system.boolean?view=net-8.0)
 -   [Byte](https://learn.microsoft.com/en-us/dotnet/api/system.byte?view=net-8.0)
 -   [SByte](https://learn.microsoft.com/en-us/dotnet/api/system.sbyte?view=net-8.0)
@@ -60,7 +60,7 @@ public void Given_ValutaOther_Then_ValutaIsInvalid(ValutaEnum valuta)
 
 ## Test Setup maken
 
-Om 1 variable te hergebruiken kan je net als in normale Classes velden gebruiken over meerdere testen. De TestInitialize wordt uitgevoerd voor elke test.
+Om 1 variabele te hergebruiken kan je net als in normale Classes velden gebruiken over meerdere testen. De TestInitialize wordt uitgevoerd voor elke test.
 
 ```c#
 [TestClass]

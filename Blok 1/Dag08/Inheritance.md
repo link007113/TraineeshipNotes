@@ -3,7 +3,7 @@
 Met Inheritance kunnen we een nieuwe klasse maken die gedrag hergebruikt en uitbreidt van een andere class, een basisclass genaamd, en de nieuw gemaakte class wordt de afgeleide class genoemd. 
 
 Inheritance is het baseren van een Class op een andere Class. De naam die we daarvoor gebruiken is overerven. 
-Hierdoor hoef je properties en functionaliteit van de base class niet opnieuw te defineren en kan je de derived class die gebruiken voor extra properties en functionaliteit. 
+Hierdoor hoef je properties en functionaliteit van de base class niet opnieuw te definiëren en kan je de derived class die gebruiken voor extra properties en functionaliteit. 
 Inheritance wordt vooral gebruikt voor technische onderdelen en niet domein onderdelen. 
 
 De derived class kan geen gebruik maken van de private properties en functionaliteit.
@@ -59,7 +59,7 @@ Een class kan maar van 1 Base class derived zijn.
     }
 
 ```
-Om basis functionaltiteit te overschreven van de methodes uit de basis-Class is het de gewoonte om in de basis de Method virtual te maken:
+Om basis functionaliteit te overschrijven van de methodes uit de basis-Class is het de gewoonte om in de basis de Method virtual te maken:
 
 ```c#
 	public class Animal
