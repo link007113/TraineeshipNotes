@@ -1,6 +1,8 @@
 ## Inleiding
 
-Inheritance is het baseren van een Class op een andere Class.
+Met Inheritance kunnen we een nieuwe klasse maken die gedrag hergebruikt en uitbreidt van een andere class, een basisclass genaamd, en de nieuw gemaakte class wordt de afgeleide class genoemd. 
+
+Inheritance is het baseren van een Class op een andere Class. De naam die we daarvoor gebruiken is overerven. 
 Hierdoor hoef je properties en functionaliteit van de base class niet opnieuw te defineren en kan je de derived class die gebruiken voor extra properties en functionaliteit. 
 Inheritance wordt vooral gebruikt voor technische onderdelen en niet domein onderdelen. 
 

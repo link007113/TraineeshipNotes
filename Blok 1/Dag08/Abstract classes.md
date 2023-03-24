@@ -29,7 +29,7 @@ Je kan wel nog normale methods gebruiken in abstracte classes, in tegenoverstell
         }
     }
 ```
-s
+
 Bij voorkeur alle classes die niet daadwerkelijk gebruikt worden abstract maken. 
 Dus bijv:
 
