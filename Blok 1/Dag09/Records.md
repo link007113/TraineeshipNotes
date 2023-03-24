@@ -16,13 +16,20 @@ Een record is een reference type net als een class, maar ook wordt het voor waar
         }
 
 ```
-De ToString van een record laat standaard de naam van het record zien en de waardes van de properties en velden.
+De ToString()-Method van een record laat standaard de naam van het record zien en de waardes van de properties en velden.
 
 Het declareren van een record kan je korter opschrijven dan die van een class:
 ```c#
 public record Bar(double Height, double Width, double Length);
 ```
+Na het aanmaken van een instantie van een record op deze manier kan je de waarde alleen maar zetten bij het instantieeren. Dus je kan het niet meer later aanpassen. Als je dat wel wilt moet je het alsvolgt opschrijven:
 
+```c#
+public record Bar(double height, double width, double length)
+    {
+        public string Color { get; set; }
+    }
+```
 
 
 
