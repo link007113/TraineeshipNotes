@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 1/Dag08/Interfaces.md",
+                "file": "Blok 1/Dag08/Inheritance.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "protec",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -109,15 +110,15 @@
   },
   "active": "b3b442ce36ea83b1",
   "lastOpenFiles": [
+    "Blok 1/Dag08/Interfaces.md",
     "Blok 1/Dag08/Abstract classes.md",
+    "Misc/Tips.md",
+    "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "Blok 1/Dag08/Inheritance.md",
     "Blok 1/Dag09/Records.md",
-    "Blok 1/Dag08/Interfaces.md",
     "Blok 1/Dag09/Composition.md",
     "Blok 1",
-    "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "Blok 1/Dag06/Operator Overloading & Overrides.md",
-    "Misc/Tips.md",
     "Blok 1/Dag09",
     "Blok 1/Dag06/Casting & Boxing.md",
     "Misc/markdown-cheat-sheet.md",
