@@ -1,11 +1,17 @@
 C# heeft heel veel standaard collections.
 Een aantal zijn:
+
 - List
+	- Vertegenwoordigt een lijst van objecten die per index kunnen worden benaderd. Biedt methoden om lijsten te doorzoeken, sorteren en wijzigen.
 - Dictionary
-- IEnumerable
-- Array
+	- Vertegenwoordigt een verzameling van key/value die zijn georganiseerd op basis van de key.
 - Stack
+	- Vertegenwoordigt een last in, first out (LIFO) verzameling van objecten.
 - Queue
+	- Vertegenwoordigt een first in, first out (FIFO) verzameling van objecten.
+- IEnumerable
+	- Geeft de enumerator weer, die een eenvoudige iteratie over een verzameling van een gespecificeerd type ondersteunt.
+
 
 Om Collections te begrijpen hebben we de implementatie van List nagemaakt.
 Let wel de Add methode is aangepast zodat deze een gesorteerde lijst maakt.
@@ -120,7 +126,6 @@ public class SortedIntList : IEnumerable
 ```
 Bovenstaande manier is de MyEnumerator class te maken is wat ingewikkeld. Gelukkig is daar een makkelijkere manier voor.
 
-
 ## Yield
 
 De functie geeft een object terug dat de interface IEnumerable<> implementeert. Als een aanroepende functie over dit object gaat foreach-ing, wordt de functie opnieuw aangeroepen totdat deze "yields".
@@ -145,7 +150,7 @@ public IEnumerable<int> Integers()
 ```
 
 Het volgende plaatje laat zien hoe yield werkt.
-![alt text](https://github.com/link007113/TraineeshipNotes/blob/main/Blok%201/Dag09/YieldUitleg.png?raw=true)
+![uitleg](https://github.com/link007113/TraineeshipNotes/blob/main/Blok%201/Dag09/YieldUitleg.png?raw=true)
 
 Dus in het voorbeeld bij het voorbeeld van List de methode GetEnumerator vervangen voor het volgende:
 
@@ -182,9 +187,6 @@ Hierin wordt eerst gekeken of de index wel aangevraagd mag worden, door te bepal
 
 ### Meer info:
 [Indexers](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/)
-
-
-## IEnumerable
 
 
 ### Meer info:
