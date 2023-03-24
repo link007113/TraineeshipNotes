@@ -100,6 +100,7 @@ Om Collections te begrijpen hebben we de implementatie van List nagemaakt.
         }
     }
 ```
+Bovenstaande manier is de MyEnumerator class te maken is wat ingewikkeld. Gelukkig is daar een makkelijkere manier voor.
 
 ## Indexer
 
