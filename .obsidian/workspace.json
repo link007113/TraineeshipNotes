@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 1/Dag09/Records.md",
+                "file": "Blok 1/Dag09/Generics.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,6 +109,7 @@
   },
   "active": "87f18fc203aa442f",
   "lastOpenFiles": [
+    "Blok 1/Dag09/Records.md",
     "Blok 1/Dag10/Events.md",
     "Blok 1/Dag06/Structs.md",
     "Blok 1/Dag06/Operator Overloading & Overrides.md",
@@ -120,7 +121,6 @@
     "Blok 1/Dag08/Interfaces.md",
     "Blok 1/Dag08/Inheritance.md",
     "Blok 1/Dag08/Abstract classes.md",
-    "Blok 1/Dag09/Records.md",
     "Blok 1/Dag09/Generics.md",
     "Blok 1/Dag09/Collections.md",
     "Blok 1/Dag09/Composition.md",

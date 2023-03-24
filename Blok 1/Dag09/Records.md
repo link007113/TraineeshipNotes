@@ -1,19 +1,20 @@
 Een record is een combinatie van een struct en een class.
 Een record is een reference type net als een class, maar ook wordt het voor waardes gebruikt zoals structs.
 
-```c#
-    public record Bar
-    {
-        public double Height { get; }
-        public double Width { get; }
-        public double Length { get; }
+Kort gezegd, een record is een data bak.
 
-        public Bar(double height, double width, double length)
-        {
-            Height = height;
-            Width = width;
-            Length = length;
-        }
+```c#
+public record Bar
+{
+    public double Height { get; }
+    public double Width { get; }
+    public double Length { get; }
+    public Bar(double height, double width, double length)
+    {
+        Height = height;
+        Width = width;
+        Length = length;
+    }
 
 ```
 De ToString()-Method van een record laat standaard de naam van het record zien en de waardes van de properties en velden.
@@ -30,6 +31,24 @@ public record Bar(double height, double width, double length)
         public string Color { get; set; }
     }
 ```
+Zoals bij classes kan je inheritance gebruiken, maar anders dan bij classes kan je pattern matching gebruiken om in een abstract record logica te verwerken die slaan op de derived records:
+
+```c#
+public abstract record Shape
+{
+    public double Diameter() => this switch
+    {
+        Cube(double z) => Math.Sqrt(z),
+        Bar(double x, double y, double z) => Math.Sqrt(x * x + y * y + z * z),
+        Sphere(double r) => 2 * r,
+    };
+}
+public record Bar(double height, double width, double length) : Shape;
+public record Sphere(double Straal) : Shape;
+public record Cube(double Edge) : Bar(Edge, Edge, Edge);
+
+```
+
 
 ### Meer info:
 
