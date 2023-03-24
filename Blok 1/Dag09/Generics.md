@@ -1,5 +1,6 @@
-Met Generics maak je classes en methodes type onafhankelijk.
+Met Generics maak je classes en methodes type onafhankelijk. Hierdoor hoef je dus niet voor elk type een nieuwe class aan te maken, maar kan je je class of methode voor heel veel types gebruiken. 
 
+De types kan je filteren door gebruik te maken van constraints.
 
 ```c#
 public class SortedList<T> : IEnumerable
@@ -66,6 +67,30 @@ where T: Person, // type constraint
 where T : class, // must be reference type
 where T: struct, // must be value type
 where T: new() // must have a default constructor
+```
+
+Ook voor Generics kan je Extension methods maken:
+
+```c#
+public static class ListExtensions
+{
+    public static void Print<T>(this SortedListImpl<T> items)
+    {
+        foreach (T item in items)
+        {
+            Console.WriteLine(item);
+        }
+    }
+}
+
+private static void Main(string[] args)
+{
+    SortedListImpl<int> intList = new SortedListImpl<int>() { 1, 2, 3, 4, 5, 6 };
+    SortedListImpl<string> stringList = new SortedListImpl<string>() { "1", "2", "3" };
+    
+    stringList.Print();
+    intList.Print();
+}
 ```
 
 ### Meer info:

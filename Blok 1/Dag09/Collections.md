@@ -1,5 +1,3 @@
-
-
 Om Collections te begrijpen hebben we de implementatie van List nagemaakt.
 Let wel de Add methode is aangepast zodat deze een gesorteerde lijst maakt.
 
