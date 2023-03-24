@@ -146,8 +146,9 @@ Indexers maken het mogelijk instanties van een class of struct te indexeren, net
 
 ### Meer info:
 [Indexers](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/indexers/)
-## IEnumerable
 
+
+## IEnumerable
 
 
 ### Meer info:
