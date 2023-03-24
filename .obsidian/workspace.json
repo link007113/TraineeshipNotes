@@ -8,67 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b3b442ce36ea83b1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 1/Dag08/Inheritance.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9e63498fd12b76f1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 1/Dag10/Delegates.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "41e0f3589f1a9f3e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 1/Dag10/Events.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "03e4caa619a1bdbd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 1/Dag09/Collections.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "87f18fc203aa442f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 1/Dag08/Unit Testing.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 4
+        ]
       }
     ],
     "direction": "vertical"
@@ -158,8 +109,9 @@
   },
   "active": "87f18fc203aa442f",
   "lastOpenFiles": [
-    "Misc/Tips.md",
     "Blok 1/Dag08/Unit Testing.md",
+    "README.md",
+    "Misc/Tips.md",
     "Blok 1/Dag09/Collections.md",
     "Blok 1/Dag09/Generics.md",
     "Blok 1/Dag10/Events.md",
