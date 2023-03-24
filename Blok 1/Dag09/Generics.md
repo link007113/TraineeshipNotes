@@ -1,4 +1,9 @@
+Met Generics maak je classes en methodes type onafhankelijk.
 
+
+```c#
+
+```
 
 
 ### Meer info:
