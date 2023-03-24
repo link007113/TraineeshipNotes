@@ -134,13 +134,15 @@ public IEnumerable<int> Integers()
 }
 ```
 
+Het volgende plaatje laat zien hoe yield werkt.
+![[Pasted image 20230324124204.png]]
+
 Dus in het voorbeeld hierboven kunnen we ook het volgende doen:
 ```c#
 
 ```
 
-het volgende plaatje laat zien hoe yield werkt:
-![[Pasted image 20230324124204.png]]
+
 
 ### Meer info:
 [Collections (C#) | Microsoft Learn](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/collections)
