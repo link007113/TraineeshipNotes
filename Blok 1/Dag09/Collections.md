@@ -1,13 +1,20 @@
 
 
+Om Collections te begrijpen hebben we de implementatie van List nagemaakt.
+
+## Implementatie van List'\<T\> Class
 
 ```c#
 
 ```
 
+## Indexer
 
 
+## IEnumerable
 
+
+## Yield
 
 
 ### Meer info:
