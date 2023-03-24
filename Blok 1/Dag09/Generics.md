@@ -2,7 +2,8 @@ Met Generics maak je classes en methodes type onafhankelijk.
 
 
 ```c#
-
+public class SortedList<T> : IEnumerable
+    {}
 ```
 
 
