@@ -1,4 +1,7 @@
 Een delegate is een koffer waar een functie in zit. 
+Het is een type dat verwijzingen voorstelt naar methoden met een bepaalde parameterlijst en een bepaald terugkeertype. Wanneer je een delegate instantieert, kun je zijn instantie associëren met elke methode met een compatibele handtekening en retourneertype. Je kunt de methode aanroepen via de instantie van de delegate.
+
+Delegates worden gebruikt om methoden als argumenten door te geven aan andere methoden. Event handlers zijn niets anders dan methoden die worden aangeroepen via delegates. Hieronder is te zien hoe je een delegate defineert en gebruikt:
 
 ```c#
     public class Lightbulb
@@ -54,6 +57,16 @@ Een delegate is een koffer waar een functie in zit.
         }
     }
 ```
+Hierboven zie je dat er in Wire draadje de method peertje.Burn gestopt wordt.
+Deze zou je kunnen gebruiken door:
+
+```c#
+draadje.Invoke(true);
+```
+Hierdoor zou eigenlijk Burn van lightbulb met parameter true aangeroepen worden.
+
+Met de method GetInvocationList kan je een array van Delegates opvragen.
+
 
 
 ### Meer info:
