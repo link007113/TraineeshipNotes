@@ -162,6 +162,10 @@ public IEnumerator GetEnumerator()
     }
 }
 ```
+
+### Meer info:
+[Yield](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/statements/yield)
+
 ## Indexer
 
 Indexers maken het mogelijk instanties van een class of struct te indexeren, net als arrays. De geïndexeerde waarde kan worden ingesteld of opgehaald zonder expliciet een type of instantie-lid te specificeren. Indexers lijken op "properties".
