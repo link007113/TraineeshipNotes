@@ -50,7 +50,7 @@ internal class Program
 }
 ```
 
-
+Events worden standaard gebruikt door Gui based applicaties, bijv. de classes Button, TextBox, ListBox
 
 ### Meer info:
 [Events](https://learn.microsoft.com/en-us/dotnet/standard/events/#events)

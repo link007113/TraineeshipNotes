@@ -130,7 +130,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -148,6 +148,10 @@
   },
   "active": "2bf5a5cdc64cf71a",
   "lastOpenFiles": [
+    "Blok 1/Dag09/Composition.md",
+    "Blok 1/Dag09/Collections.md",
+    "Blok 1/Dag09/YieldUitleg.png",
+    "Blok 1/Dag10/Events.md",
     "Blok 1/Dag10/Delegates.md",
     "Untitled 2.canvas",
     "Blok 1/Dag06/Structs.md",
@@ -155,15 +159,11 @@
     "Untitled.canvas",
     "Blok 1/Dag06/Operator Overloading & Overrides.md",
     "Blok 1/Dag06/Enum.md",
-    "Blok 1/Dag10/Events.md",
     "Misc/markdown-cheat-sheet.md",
     "Blok 1/Dag09/Generics.md",
     "Templates",
     "New folder",
-    "Blok 1/Dag09/Composition.md",
-    "Blok 1/Dag09/Collections.md",
     "Blok 1/Dag09/Records.md",
-    "Blok 1/Dag09/YieldUitleg.png",
     "Blok 1/Dag08/Inheritance.md",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "Blok 1/Dag08/Unit Testing.md",
