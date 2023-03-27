@@ -4,6 +4,7 @@ using System.Collections.Generic;
 namespace Dag09.CollectionExcercise.Lib
 {
     public class SortedListImpl<T> : IEnumerable
+        where T : IComparable<T>
     {
         private T[] _items;
         private int _count;
@@ -56,17 +57,18 @@ namespace Dag09.CollectionExcercise.Lib
                 Resize(ref _items, _items.Length * 2);
             }
 
-            // Array.BinarySearch methode om de juiste positie te vinden om het nieuwe item in de array in te voegen.
-            int index = Array.BinarySearch(_items, 0, _count, item);
-            if (index < 0)
+            for (int i = _count; i >= 0; i--)
             {
-                index = ~index;
+                if (item.CompareTo(_items[i - 1]) < 0)// item is kleiner dan _items[i]
+                {
+                    _items[i] = _items[i - 1];
+                }
+                else
+                {
+                    _items[i] = item;
+                    break;
+                }
             }
-
-            // Array.Copy gebruik ik om de items te verplaatsen om plaats te maken voor het nieuwe item
-            Array.Copy(_items, index, _items, index + 1, _count - index);
-            _items[index] = item;
-            _count++;
         }
 
         // Bestaat al op de Array Class, maar voor demo herschreven
