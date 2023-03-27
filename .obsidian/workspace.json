@@ -11,15 +11,8 @@
             "id": "2bf5a5cdc64cf71a",
             "type": "leaf",
             "state": {
-              "type": "canvas",
-              "state": {
-                "file": "Untitled 1.canvas",
-                "viewState": {
-                  "x": 0,
-                  "y": 0,
-                  "zoom": 0
-                }
-              }
+              "type": "graph",
+              "state": {}
             }
           }
         ]
@@ -99,7 +92,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled 1.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +108,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled 1.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -127,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Untitled 1.canvas"
-              }
+              "state": {}
             }
           }
         ],
@@ -151,10 +140,11 @@
   },
   "active": "2bf5a5cdc64cf71a",
   "lastOpenFiles": [
+    "Untitled 2.canvas",
+    "Blok 1/Dag06/Structs.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
     "Blok 1/Dag10/Delegates.md",
-    "Blok 1/Dag06/Structs.md",
     "Blok 1/Dag06/Operator Overloading & Overrides.md",
     "Blok 1/Dag06/Enum.md",
     "Blok 1/Dag10/Events.md",
