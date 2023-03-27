@@ -68,6 +68,8 @@ Met de method GetInvocationList kan je een array van Delegates opvragen die in e
 
 Met andere woorden, als aan een delegate meerdere methoden zijn toegewezen, zal het aanroepen van GetInvocationList op die delegate een array van delegates opleveren, waarbij elke delegate een van de methoden vertegenwoordigt die zijn toegewezen aan de oorspronkelijke delegate.
 
+Een multicast delegate heeft vooral een voordeel als alle methodes die erin zitten een returntype van void heeft, anders gooit hij de return type weg bij de invoke. 
+
 
 ### Meer info:
 [Delegates](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/delegates/)
