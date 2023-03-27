@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 1/Dag09/Collections.md",
+                "file": "Blok 1/Dag10/Delegates.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 1/Dag09/Collections.md",
+                "file": "Blok 1/Dag10/Delegates.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 1/Dag09/Collections.md",
+                "file": "Blok 1/Dag10/Delegates.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 1/Dag09/Collections.md"
+                "file": "Blok 1/Dag10/Delegates.md"
               }
             }
           }
@@ -148,12 +148,12 @@
   },
   "active": "87f18fc203aa442f",
   "lastOpenFiles": [
+    "Blok 1/Dag10/Events.md",
+    "Blok 1/Dag10/Delegates.md",
     "Blok 1/Dag09/Generics.md",
     "Blok 1/Dag09/Composition.md",
-    "Blok 1/Dag09/Records.md",
     "Blok 1/Dag09/Collections.md",
-    "Blok 1/Dag10/Delegates.md",
-    "Blok 1/Dag10/Events.md",
+    "Blok 1/Dag09/Records.md",
     "Blok 1/Dag09/YieldUitleg.png",
     "Blok 1/Dag08/Inheritance.md",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
