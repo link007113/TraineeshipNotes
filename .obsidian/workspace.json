@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 1/Dag10/Delegates.md",
+                "file": "Blok 1/Dag10/Events.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 1/Dag10/Delegates.md",
+                "file": "Blok 1/Dag10/Events.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 1/Dag10/Delegates.md",
+                "file": "Blok 1/Dag10/Events.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +125,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 1/Dag10/Delegates.md"
+                "file": "Blok 1/Dag10/Events.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,8 +148,9 @@
   },
   "active": "87f18fc203aa442f",
   "lastOpenFiles": [
-    "Blok 1/Dag09/Generics.md",
+    "Misc/markdown-cheat-sheet.md",
     "Blok 1/Dag10/Delegates.md",
+    "Blok 1/Dag09/Generics.md",
     "Templates",
     "New folder",
     "Blok 1/Dag10/Events.md",
@@ -173,7 +174,6 @@
     "Blok 1/Dag10",
     "Blok 1",
     "Blok 1/Dag09",
-    "Misc/markdown-cheat-sheet.md",
     "Pasted image 20230323132714.png",
     "Dag07/Untitled.canvas",
     "Misc/Unconfirmed 558697.crdownload",
