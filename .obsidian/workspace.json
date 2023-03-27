@@ -134,7 +134,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -146,7 +147,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2bf5a5cdc64cf71a",
+  "active": "2a2d15d2b5c317a8",
   "lastOpenFiles": [
     "Blok 1/Dag10/Delegates.md",
     "Blok 1/Dag10/Events.md",
