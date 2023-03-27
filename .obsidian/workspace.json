@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "6cb62bef76737819",
+        "id": "d364808734df0b87",
         "type": "tabs",
         "children": [
           {
-            "id": "87f18fc203aa442f",
+            "id": "2bf5a5cdc64cf71a",
             "type": "leaf",
             "state": {
               "type": "canvas",
               "state": {
-                "file": "Untitled.canvas",
+                "file": "Untitled 1.canvas",
                 "viewState": {
                   "x": 0,
                   "y": 0,
@@ -99,7 +99,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.canvas",
+                "file": "Untitled 1.canvas",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +116,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.canvas",
+                "file": "Untitled 1.canvas",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -128,7 +128,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.canvas"
+                "file": "Untitled 1.canvas"
               }
             }
           }
@@ -149,10 +149,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "87f18fc203aa442f",
+  "active": "2bf5a5cdc64cf71a",
   "lastOpenFiles": [
-    "Blok 1/Dag10/Delegates.md",
+    "Untitled 1.canvas",
     "Untitled.canvas",
+    "Blok 1/Dag10/Delegates.md",
     "Blok 1/Dag06/Structs.md",
     "Blok 1/Dag06/Operator Overloading & Overrides.md",
     "Blok 1/Dag06/Enum.md",
