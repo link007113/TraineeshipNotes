@@ -148,7 +148,6 @@ public IEnumerable<int> Integers()
     yield return 16777216;
 }
 ```
-
 Het volgende plaatje laat zien hoe yield werkt.
 ![uitleg](https://github.com/link007113/TraineeshipNotes/blob/main/Blok%201/Dag09/YieldUitleg.png?raw=true)
 
