@@ -1,4 +1,7 @@
+Het verschil tussen Delegates en Events is het icoontje
+Ipv, een baksteen is het een bliksemschicht. 
 
+Maar serieus, 
 
 
 

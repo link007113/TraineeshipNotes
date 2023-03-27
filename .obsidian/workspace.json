@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 1/Dag10/Delegates.md",
+                "file": "Blok 1/Dag10/Events.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 1/Dag10/Delegates.md",
+                "file": "Blok 1/Dag10/Events.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 1/Dag10/Delegates.md",
+                "file": "Blok 1/Dag10/Events.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 1/Dag10/Delegates.md"
+                "file": "Blok 1/Dag10/Events.md"
               }
             }
           }
@@ -148,11 +148,11 @@
   },
   "active": "2bf5a5cdc64cf71a",
   "lastOpenFiles": [
+    "Blok 1/Dag10/Delegates.md",
     "Untitled 2.canvas",
     "Blok 1/Dag06/Structs.md",
     "Untitled 1.canvas",
     "Untitled.canvas",
-    "Blok 1/Dag10/Delegates.md",
     "Blok 1/Dag06/Operator Overloading & Overrides.md",
     "Blok 1/Dag06/Enum.md",
     "Blok 1/Dag10/Events.md",
