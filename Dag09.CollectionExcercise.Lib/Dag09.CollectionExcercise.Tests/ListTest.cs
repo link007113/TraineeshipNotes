@@ -42,7 +42,7 @@ namespace Dag09.CollectionExcercise.Tests
         }
 
         [TestMethod]
-        public void Add_FiveElemenst_GiveSortedList()
+        public void Add_FiveElements_GiveSortedList()
         {
             // Arrange
             _sut.Add(3);
@@ -84,7 +84,7 @@ namespace Dag09.CollectionExcercise.Tests
         }
 
         [TestMethod]
-        public void Add_FiveElemenst_ForEachsetMaxInt()
+        public void Add_FiveElements_ForEachsetMaxInt()
         {
             // Arrange
             _sut.Add(2);
