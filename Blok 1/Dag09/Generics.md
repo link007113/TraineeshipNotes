@@ -53,16 +53,18 @@ public class SortedListImpl<T> : IEnumerable
         {
             Resize(ref _items, _items.Length * 2);
         }
-        // Array.BinarySearch methode om de juiste positie te vinden om het nieuwe item in de array in te voegen.
-        int index = Array.BinarySearch(_items, 0, _count, item);
-        if (index < 0)
-        {
-            index = ~index;
-        }
-        // Array.Copy gebruik ik om de items te verplaatsen om plaats te maken voor het nieuwe item
-        Array.Copy(_items, index, _items, index + 1, _count - index);
-        _items[index] = item;
-        _count++;
+            for (int i = _count; i >= 0; i--)
+            {
+                if (item.CompareTo(_items[i - 1]) < 0)// item is kleiner dan _items[i]
+                {
+                    _items[i] = _items[i - 1];
+                }
+                else
+                {
+                    _items[i] = item;
+                    break;
+                }
+            }
     }
     // Bestaat al op de Array Class, maar voor demo herschreven
     private static void Resize(ref T[] array, int newSize)

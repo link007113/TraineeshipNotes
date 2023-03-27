@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 1/Dag10/Delegates.md",
+                "file": "Blok 1/Dag09/Generics.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 1/Dag10/Delegates.md",
+                "file": "Blok 1/Dag09/Generics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 1/Dag10/Delegates.md",
+                "file": "Blok 1/Dag09/Generics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 1/Dag10/Delegates.md"
+                "file": "Blok 1/Dag09/Generics.md"
               }
             }
           }
@@ -148,8 +148,10 @@
   },
   "active": "87f18fc203aa442f",
   "lastOpenFiles": [
-    "Blok 1/Dag10/Events.md",
     "Blok 1/Dag10/Delegates.md",
+    "Templates",
+    "New folder",
+    "Blok 1/Dag10/Events.md",
     "Blok 1/Dag09/Generics.md",
     "Blok 1/Dag09/Composition.md",
     "Blok 1/Dag09/Collections.md",
@@ -176,7 +178,6 @@
     "Dag07/Untitled.canvas",
     "Misc/Unconfirmed 558697.crdownload",
     "Misc",
-    "New folder",
     "Blok 1/Dag08",
     "TraineeshipNotes",
     "Blok 1/Dag06"
