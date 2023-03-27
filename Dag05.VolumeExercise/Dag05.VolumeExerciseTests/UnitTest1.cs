@@ -12,22 +12,24 @@ namespace Dag05.VolumeExerciseTests
             double width = 15.5;
             double length = 20;
 
-            Bar bar = new Bar(height,width,length);
+            Bar bar = new Bar(height, width, length);
 
             var output = bar.CalculateVolume();
 
             Assert.IsTrue(output == 3100);
-            
         }
 
         [TestMethod]
-        public void TestSphereCalculateVolume() 
-        { 
+        public void TestSphereCalculateVolume()
+        {
+            // Arrange
             Sphere sphere = new Sphere(15);
+
+            // Act
             var output = sphere.CalculateVolume();
 
+            // Assert
             Assert.IsTrue(output == 14137.166941154068);
-
         }
 
         [TestMethod]
@@ -42,7 +44,6 @@ namespace Dag05.VolumeExerciseTests
             var output = bar.CalculateSurface();
 
             Assert.IsTrue(output == 1100);
-
         }
 
         [TestMethod]
@@ -52,7 +53,6 @@ namespace Dag05.VolumeExerciseTests
             var output = sphere.CalculateSurface();
 
             Assert.IsTrue(output == 2827.4333882308138);
-
         }
     }
 }

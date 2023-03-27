@@ -1,25 +1,16 @@
 ﻿namespace Dag05.VolumeExerciseLibrary
 {
-    public class Bar
+    public abstract record Shape
     {
-        double Height;
-        double Width;
-        double Length;
-
-        public Bar(double height, double width, double length)
+        public double Diameter() => this switch
         {
-            Height = height;
-            Width = width;
-            Length = length;
-        }
-
-        public double CalculateVolume() => Height * Width *Length;
-        public double CalculateSurface()
-        {
-            double surfaceLongWalls = (Height * Width) * 2;
-            double surfaceShortWalls = (Height * Length) * 2;
-            return surfaceLongWalls + surfaceShortWalls;
-        }
-
+            Cube(double z) => Math.Sqrt(z),
+            Bar(double x, double y, double z) => Math.Sqrt(x * x + y * y + z * z),
+            Sphere(double r) => 2 * r,
+        };
     }
+
+    public record Bar(double height, double width, double length) : Shape;
+    public record Sphere(double Straal) : Shape;
+    public record Cube(double Edge) : Bar(Edge, Edge, Edge);
 }
