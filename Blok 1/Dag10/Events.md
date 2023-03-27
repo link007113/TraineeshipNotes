@@ -54,3 +54,59 @@ Events worden standaard gebruikt door Gui based applicaties, bijv. de classes Bu
 
 ### Meer info:
 [Events](https://learn.microsoft.com/en-us/dotnet/standard/events/#events)
+## Design patterns
+
+```c#
+    public class Switch
+    {   // Naamgeving Delegate is naam van Event + EventHandler
+        // Naamgeving Event = Actie in verleden tijd
+        public event SwitchToggledEventHandler SwitchToggled;
+
+        private bool _IsOn = false;
+
+        public void SwitchMe()
+        {
+            _IsOn = !_IsOn;
+            OnSwitchToggled(new SwitchToggledEventArgs(_IsOn));
+        }
+
+        // On+Naam van Event
+        protected virtual void OnSwitchToggled(SwitchToggledEventArgs e)
+        {
+            if (SwitchToggled != null)
+            {
+                SwitchToggledEventHandler temp = SwitchToggled;
+                temp.Invoke(this, e);
+            }
+        }
+    }
+    
+    public delegate void SwitchToggledEventHandler(object sender, SwitchToggledEventArgs e);
+
+    public class SwitchToggledEventArgs : EventArgs
+    {
+        public bool State { get; }
+
+        public SwitchToggledEventArgs(bool state)
+        {
+            State = state;
+        }
+    }
+    public class Lightbulb
+    {
+        public void Burn(object sender, SwitchToggledEventArgs e)
+        {
+            bool isOn = e.State;
+            Console.WriteLine($"Lightbulb is {(isOn ? "on" : "off")}");
+        }
+    }
+	private static void Main(string[] args)
+	{
+	    Switch sw = new Switch();
+	    Lightbulb lightbulb = new Lightbulb();
+	    sw.SwitchToggled += lightbulb.Burn;
+	    sw.SwitchMe();
+	}  
+```
+### Meer info:
+[Standard .NET event patterns](https://learn.microsoft.com/en-us/dotnet/csharp/event-pattern)
