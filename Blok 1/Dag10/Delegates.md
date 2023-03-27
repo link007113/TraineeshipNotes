@@ -65,7 +65,9 @@ draadje.Invoke(true);
 ```
 Hierdoor zou eigenlijk Burn van lightbulb met parameter true aangeroepen worden.
 
-Met de method GetInvocationList kan je een array van Delegates opvragen die in de 
+Met de method GetInvocationList kan je een array van Delegates opvragen die in een multicast delegate opgeslagen zit.
+
+
 
 
 
