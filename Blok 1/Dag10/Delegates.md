@@ -4,7 +4,7 @@ Een delegate is een koffer waar een functie in zit.
 
 
 ```c#
-public Lightbuld
+public Lightbulb
 ```
 
 
