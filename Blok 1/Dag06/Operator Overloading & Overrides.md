@@ -3,7 +3,7 @@
 In c# kan je functionaliteit van de operators overschrijven.
 Hiermee kan je dus bepalen wat er gebeurt als je bijvoorbeeld een object wil samen voegen of wilt vergelijken met elkaar. 
 Dit kan je bijvoorbeeld gebruiken voor je eigen classes.
-De voorbeelden gebruiken de struct van [[Structs]]
+De voorbeelden gebruiken de struct van [[Structs|ditiseentest]]
 ```c#
 // Overschrijft Time + Time
 public static Time operator+ (Time a, Time b)
