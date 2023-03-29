@@ -85,3 +85,6 @@ public class BirdTest
     }
 }
 ```
+
+Een paar handige tips voor het schrijven van tests kan je vinden op:
+[13 Tips for Writing Useful Unit Tests](https://betterprogramming.pub/13-tips-for-writing-useful-unit-tests-ca20706b5368)
