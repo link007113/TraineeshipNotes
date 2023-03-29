@@ -11,15 +11,14 @@ namespace Dag06.ValutaExercise.Tests
             ValutaEnum euro = ValutaEnum.Euro;
             bool output = ValutaExtensions.IsValutaValidInTheNetherlands(euro);
             Assert.AreEqual(true, output);
-
         }
 
         [DataTestMethod]
-        [DataRow(ValutaEnum.Florijn,DisplayName = "Florijn is invalid")]
-        [DataRow( ValutaEnum.Dukaat, DisplayName = "Dukaat is invalid")]
+        [DataRow(ValutaEnum.Florijn, DisplayName = "Florijn is invalid")]
+        [DataRow(ValutaEnum.Dukaat, DisplayName = "Dukaat is invalid")]
         [DataRow(ValutaEnum.Gulden, DisplayName = "Gulden is invalid")]
         public void Given_ValutaFlorijn_Then_ValutaIsInvalid(ValutaEnum valuta)
-        {          
+        {
             bool output = ValutaExtensions.IsValutaValidInTheNetherlands(valuta);
             Assert.AreEqual(false, output);
         }
@@ -49,7 +48,6 @@ namespace Dag06.ValutaExercise.Tests
                 ValutaEnum output = input.ToValuta();
             }
 
-
             var ex = Assert.ThrowsException<InvalidValutaException>(act);
 
             Assert.IsTrue(ex.Message.StartsWith("This Valuta does"));
@@ -61,7 +59,6 @@ namespace Dag06.ValutaExercise.Tests
             ValutaStruct input = new(ValutaEnum.Gulden, 10.00M);
             ValutaStruct output = input.ConvertTo(ValutaEnum.Euro);
             Assert.AreEqual(4.54M, output.Amount, 2);
-            
         }
 
         [TestMethod]
@@ -70,7 +67,6 @@ namespace Dag06.ValutaExercise.Tests
             ValutaStruct input = new(ValutaEnum.Gulden, 10.00M);
             string output = input.ToString();
             Assert.AreEqual("Gulden: 10.00", output);
-
         }
 
         [TestMethod]
@@ -80,27 +76,22 @@ namespace Dag06.ValutaExercise.Tests
             ValutaStruct input2 = new(ValutaEnum.Florijn, 10.00M);
             ValutaStruct output = input1 + input2;
             Assert.AreEqual(20M, output.Amount, 2);
-
         }
 
         [TestMethod]
         public void Given_Decimal20_Then_OutputWillBeValutaStructEuro20()
         {
-            decimal input = 20M; 
+            decimal input = 20M;
             ValutaStruct output = (ValutaStruct)input;
             Assert.AreEqual(20M, output.Amount, 2);
-
         }
 
         [TestMethod]
         public void Given_ValutaStructEuro20_Then_OutputWillBeDecimal20()
         {
             ValutaStruct input = new(ValutaEnum.Euro, 20M);
-           decimal output = (decimal)input;
+            decimal output = (decimal)input;
             Assert.AreEqual(20M, output, 2);
-
         }
-
-
     }
 }

@@ -16,7 +16,6 @@ namespace Day11.BarExcercise.Program
             string waiterName = "John";
             int table = 1;
 
-            bar.OpenTable(table);
             bar.TakeOrder(table, waiterName, Drinks.Cola);
             Console.WriteLine(bar.AskBill(table));
             bar.PayBill(table, 25m);
@@ -31,7 +30,6 @@ namespace Day11.BarExcercise.Program
 
             int table = 1;
 
-            bar.OpenTable(table);
             bar.TakeOrder(table, waiterName1, Drinks.Cola);
 
             List<Drinks> drinks = new List<Drinks>();

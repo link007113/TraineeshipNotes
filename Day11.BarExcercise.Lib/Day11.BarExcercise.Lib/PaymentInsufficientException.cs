@@ -3,7 +3,7 @@
 namespace Day11.BarExcercise.Lib
 {
     [Serializable]
-    internal class PaymentInsufficientException : Exception
+    public class PaymentInsufficientException : Exception
     {
         public PaymentInsufficientException()
         {

@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day11.BarExcercise.Lib", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day11.BarExcercise.Program", "Day11.BarExcercise.Program\Day11.BarExcercise.Program.csproj", "{655C9FAD-D808-4E01-8CDB-626DA32AD32B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day11.BarExcercise.Tests", "Day11.BarExcercise.Tests\Day11.BarExcercise.Tests.csproj", "{53902210-B594-4E72-9F8C-6788E64F920E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{655C9FAD-D808-4E01-8CDB-626DA32AD32B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{655C9FAD-D808-4E01-8CDB-626DA32AD32B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{655C9FAD-D808-4E01-8CDB-626DA32AD32B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53902210-B594-4E72-9F8C-6788E64F920E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53902210-B594-4E72-9F8C-6788E64F920E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53902210-B594-4E72-9F8C-6788E64F920E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53902210-B594-4E72-9F8C-6788E64F920E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
