@@ -17,7 +17,7 @@ namespace Day11.BarExcercise.Program
 
             string waiterName1 = "John";
             string waiterName2 = "Barry";
-            string waiterName3 = "Bob";
+            string waiterName3 = "Dave";
 
             List<Drinks> drinks1 = new List<Drinks>();
             drinks1.Add(Drinks.Cola);
