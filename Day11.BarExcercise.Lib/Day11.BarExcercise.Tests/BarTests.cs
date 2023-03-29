@@ -255,7 +255,7 @@ namespace Day11.BarExcercise.Tests
             // Assert
             Assert.IsTrue(bar.GetWaiterTipSummary(waiterName1).Contains("Waiter John earned 41,75 €"));
             Assert.IsTrue(bar.GetWaiterTipSummary(waiterName2).Contains("Waiter Barry earned 20,88 €"));
-            Assert.IsTrue(bar.GetWaiterTipSummary(waiterName3).Contains("Waiter Bob earned 20,88 €"));
+            Assert.IsTrue(bar.GetWaiterTipSummary(waiterName3).Contains("Waiter Dave earned 20,88 €"));
         }
 
         [TestMethod]
