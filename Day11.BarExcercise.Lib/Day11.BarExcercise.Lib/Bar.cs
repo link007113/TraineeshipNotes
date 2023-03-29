@@ -19,7 +19,7 @@ namespace Day11.BarExcercise.Lib
 
         public void TakeOrder(int tableNumber, string waiterName, Drinks drink)
         {
-            var drinks = new List<Drinks>
+            List<Drinks> drinks = new List<Drinks>
             {
                 drink
             };
@@ -67,16 +67,16 @@ namespace Day11.BarExcercise.Lib
 
         private static string ReceiptBuilder(int tableNumber, Dictionary<Drinks, int> bill, decimal totalAmount)
         {
-            var receipt = new StringBuilder();
+            StringBuilder receipt = new StringBuilder();
             receipt.AppendLine($"Bill for table {tableNumber}\n");
 
-            foreach (var item in bill)
+            foreach (KeyValuePair<Drinks, int> item in bill)
             {
-                var itemPrice = ConvertDecimalToCurrencyString(item.Key.GetDrinkPrice() * item.Value);
+                string itemPrice = ConvertDecimalToCurrencyString(item.Key.GetDrinkPrice() * item.Value);
                 receipt.AppendLine($"{item.Value} - {item.Key}: {itemPrice}");
             }
 
-            var maxLength = receipt.ToString().Split('\n').Max(line => line.Length);
+            int maxLength = receipt.ToString().Split('\n').Max(line => line.Length);
             receipt.AppendLine(new string('-', maxLength));
             receipt.AppendLine($"Total amount: {ConvertDecimalToCurrencyString(totalAmount)}");
 
@@ -85,11 +85,11 @@ namespace Day11.BarExcercise.Lib
 
         private Dictionary<Drinks, int> GetCountPerDrink(int tableNumber)
         {
-            var countPerDrink = new Dictionary<Drinks, int>();
+            Dictionary<Drinks, int> countPerDrink = new Dictionary<Drinks, int>();
 
-            foreach (var drinksPerOrder in GetDrinksForTableNumber(tableNumber))
+            foreach (List<Drinks> drinksPerOrder in GetDrinksForTableNumber(tableNumber))
             {
-                foreach (var drink in drinksPerOrder)
+                foreach (Drinks drink in drinksPerOrder)
                 {
                     if (countPerDrink.ContainsKey(drink))
                     {
@@ -115,9 +115,9 @@ namespace Day11.BarExcercise.Lib
 
             decimal totalAmount = 0;
 
-            foreach (var drinksPerOrder in GetDrinksForTableNumber(tableNumber))
+            foreach (List<Drinks> drinksPerOrder in GetDrinksForTableNumber(tableNumber))
             {
-                foreach (var drink in drinksPerOrder)
+                foreach (Drinks drink in drinksPerOrder)
                 {
                     totalAmount += drink.GetDrinkPrice();
                 }
