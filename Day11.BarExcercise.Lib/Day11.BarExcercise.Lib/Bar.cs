@@ -67,20 +67,20 @@ namespace Day11.BarExcercise.Lib
 
         private static string ReceiptBuilder(int tableNumber, Dictionary<Drinks, int> bill, decimal totalAmount)
         {
-            var billString = new StringBuilder();
-            billString.AppendLine($"Bill for table {tableNumber}\n");
+            var receipt = new StringBuilder();
+            receipt.AppendLine($"Bill for table {tableNumber}\n");
 
             foreach (var item in bill)
             {
                 var itemPrice = ConvertDecimalToCurrencyString(item.Key.GetDrinkPrice() * item.Value);
-                billString.AppendLine($"{item.Value} - {item.Key}: {itemPrice}");
+                receipt.AppendLine($"{item.Value} - {item.Key}: {itemPrice}");
             }
 
-            var maxLength = billString.ToString().Split('\n').Max(line => line.Length);
-            billString.AppendLine(new string('-', maxLength));
-            billString.AppendLine($"Total amount: {ConvertDecimalToCurrencyString(totalAmount)}");
+            var maxLength = receipt.ToString().Split('\n').Max(line => line.Length);
+            receipt.AppendLine(new string('-', maxLength));
+            receipt.AppendLine($"Total amount: {ConvertDecimalToCurrencyString(totalAmount)}");
 
-            return billString.ToString();
+            return receipt.ToString();
         }
 
         private Dictionary<Drinks, int> GetCountPerDrink(int tableNumber)
