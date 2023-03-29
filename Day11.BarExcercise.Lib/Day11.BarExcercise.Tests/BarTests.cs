@@ -138,9 +138,9 @@ namespace Day11.BarExcercise.Tests
             string bill = bar.AskBill(tableNumber);
 
             // Assert
-            Assert.IsTrue(bill.Contains("2.50"));
-            Assert.IsTrue(bill.Contains("4.00"));
-            Assert.IsTrue(bill.Contains("6.50"));
+            Assert.IsTrue(bill.Contains("2,50"));
+            Assert.IsTrue(bill.Contains("4,00"));
+            Assert.IsTrue(bill.Contains("6,50"));
         }
 
         [TestMethod]
@@ -158,9 +158,9 @@ namespace Day11.BarExcercise.Tests
             string bill = bar.AskBill(tableNumber);
 
             // Assert
-            Assert.IsTrue(bill.Contains("2.50"));
-            Assert.IsTrue(bill.Contains("8.00"));
-            Assert.IsTrue(bill.Contains("10.50"));
+            Assert.IsTrue(bill.Contains("2,50"));
+            Assert.IsTrue(bill.Contains("8,00"));
+            Assert.IsTrue(bill.Contains("10,50"));
         }
 
         [TestMethod]
@@ -214,7 +214,7 @@ namespace Day11.BarExcercise.Tests
             bar.PayBill(tableNumber, amountPaid);
 
             // Assert
-            Assert.IsTrue(bar.GetWaiterTipSummary(waiterName).Contains("Waiter John earned $21.50"));
+            Assert.IsTrue(bar.GetWaiterTipSummary(waiterName).Contains("Waiter John earned 21,50 €"));
         }
 
         [TestMethod]
@@ -253,9 +253,9 @@ namespace Day11.BarExcercise.Tests
             bar.PayBill(tableNumber1, amountPaid1);
 
             // Assert
-            Assert.IsTrue(bar.GetWaiterTipSummary(waiterName1).Contains("Waiter John earned $41.75"));
-            Assert.IsTrue(bar.GetWaiterTipSummary(waiterName2).Contains("Waiter Barry earned $20.88"));
-            Assert.IsTrue(bar.GetWaiterTipSummary(waiterName3).Contains("Waiter Bob earned $20.88"));
+            Assert.IsTrue(bar.GetWaiterTipSummary(waiterName1).Contains("Waiter John earned 41,75 €"));
+            Assert.IsTrue(bar.GetWaiterTipSummary(waiterName2).Contains("Waiter Barry earned 20,88 €"));
+            Assert.IsTrue(bar.GetWaiterTipSummary(waiterName3).Contains("Waiter Bob earned 20,88 €"));
         }
 
         [TestMethod]

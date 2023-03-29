@@ -172,7 +172,7 @@ namespace Day11.BarExcercise.Lib
             return $"Waiter {waiterName} earned {ConvertDecimalToCurrencyString(tipAmount)} in tip.";
         }
 
-        private static string ConvertDecimalToCurrencyString(decimal amount) => amount.ToString("C2");
+        private static string ConvertDecimalToCurrencyString(decimal amount) => amount.ToString("C", new CultureInfo("fr-FR"));
 
         private void CheckIfTableExists(int tableNumber)
         {

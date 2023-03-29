@@ -6,6 +6,7 @@ namespace Day11.BarExcercise.Program
     {
         private static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
             Order1();
         }
 
