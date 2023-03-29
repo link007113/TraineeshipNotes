@@ -110,6 +110,21 @@ namespace Day11.BarExcercise.Tests
         }
 
         [TestMethod]
+        public void AskBill_WithoutOrder_ResultsInArgumentOutOfRangeException()
+        {
+            // Arrange
+            int tableNumber = 1;
+
+            // Act
+            void act()
+            {
+                string bill = bar.AskBill(tableNumber);
+            }
+            // Assert
+            Assert.ThrowsException<ArgumentOutOfRangeException>(act);
+        }
+
+        [TestMethod]
         public void AskBill_PricesAreCorrect_With2ItemsOfDiffrentTypes()
         {
             // Arrange
@@ -203,7 +218,7 @@ namespace Day11.BarExcercise.Tests
         }
 
         [TestMethod]
-        public void FullBarMode()
+        public void PayBill_PayMoreThanAmount_TipForWaiter_AndDivideTipFair()
         {
             // Arrange
             int tableNumber1 = 1;
@@ -241,6 +256,22 @@ namespace Day11.BarExcercise.Tests
             Assert.IsTrue(bar.GetWaiterTipSummary(waiterName1).Contains("Waiter John earned $41.75"));
             Assert.IsTrue(bar.GetWaiterTipSummary(waiterName2).Contains("Waiter Barry earned $20.88"));
             Assert.IsTrue(bar.GetWaiterTipSummary(waiterName3).Contains("Waiter Bob earned $20.88"));
+        }
+
+        [TestMethod]
+        public void PayBill_WithoutOrder_ResultsInArgumentOutOfRangeException()
+        {
+            // Arrange
+            int tableNumber = 1;
+            decimal amount = 1000m;
+
+            // Act
+            void act()
+            {
+                bar.PayBill(tableNumber, amount);
+            }
+            // Assert
+            Assert.ThrowsException<ArgumentOutOfRangeException>(act);
         }
     }
 }

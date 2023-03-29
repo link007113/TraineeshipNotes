@@ -178,7 +178,7 @@ namespace Day11.BarExcercise.Lib
         {
             if (!tables.ContainsKey(tableNumber))
             {
-                throw new ArgumentException("Table does not exist");
+                throw new ArgumentOutOfRangeException("Table does not exist");
             }
         }
 
