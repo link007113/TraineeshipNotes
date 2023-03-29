@@ -27,6 +27,20 @@ public void MethodName_Arrange_Object_Result_Is_Assert()
     Assert.IsTrue(output == 14137.166941154068);
 }
 ```
+
+Ook een voorbeeld als je een exception verwacht
+```c#
+[TestMethod]
+public void MethodName_Arrange_Object_Result_Is_Assert() 
+{ 
+    // Arrange
+    Sphere sphere = new Sphere(15);
+    // Act
+    var output = sphere.CalculateVolume();
+    // Assert
+    Assert.IsTrue(output == 14137.166941154068);
+}
+```
 ### Meer voorbeelden van naming conventions voor unit tests
 [Unit Test Naming Conventions](https://medium.com/@stefanovskyi/unit-test-naming-conventions-dd9208eadbea)
 

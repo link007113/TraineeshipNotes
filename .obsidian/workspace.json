@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "void act",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,7 +65,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -147,7 +148,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2bf5a5cdc64cf71a",
+  "active": "06e186dc693f8e78",
   "lastOpenFiles": [
     "Blok 1/Dag09/Collections.md",
     "Blok 1/Dag06/Enum.md",
