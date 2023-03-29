@@ -18,7 +18,8 @@
 
     public class Switch
     {
-        public Wire wire { get; set; }
+        public event Wire wire;
+
         private bool _isOn = false;
 
         public void SwitchMe()
@@ -34,28 +35,24 @@
     {
         private static void Main()
         {
-            Lightbulb peertje = new Lightbulb();
-            Wire draadje = new Wire(peertje.Burn);
             Switch schakelaar = new Switch();
+
+            Lightbulb peertje = new Lightbulb();
+            schakelaar.wire += peertje.Burn;
+
             TubeLight tl = new TubeLight();
-            Wire draadjeNaarTL = new Wire(tl.Ignite);
-
-            Wire totaalDraad = draadje + draadjeNaarTL;
-
-            schakelaar.wire = totaalDraad;
+            schakelaar.wire += tl.Ignite;
 
             Lightbulb peertje2 = new Lightbulb();
 
             schakelaar.wire += peertje2.Burn;
 
-            foreach (var del in schakelaar.wire.GetInvocationList())
-            {
-            }
-
             Console.WriteLine("Let's turn on the light");
             schakelaar.SwitchMe();
             Console.WriteLine("Let's turn off the light");
             schakelaar.SwitchMe();
+
+            schakelaar.wire -= peertje2.Burn;
         }
     }
 }
