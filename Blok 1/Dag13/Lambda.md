@@ -54,6 +54,7 @@ int Kwdraatje(int n) // inner method // nested method
 ```
 
 ### Meer info:
+[Lambda expression => operator defines a lambda expression](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-operator)
 [Lambda expressions and anonymous functions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions)
 
 - [Expression lambda](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions#expression-lambdas) that has an expression as its body:
