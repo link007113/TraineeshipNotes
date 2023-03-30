@@ -21,6 +21,10 @@ Als basis om lambda uit te leggen hebben we de volgende code:
         }
     }
 ```
+We kunnen de method Square herschrijven met Lambda, dat ziet er alsvolgt uit:
+```c#
+public int Square(int n) => n * n;
+```
 
 
 ### Meer info:
