@@ -52,6 +52,11 @@ internal class Program
 
 Events worden standaard gebruikt door Gui based applicaties, bijv. de classes Button, TextBox, ListBox
 
+## Event handlers
+
+- Publisher - Zegt dat er een event gebeurt is: Hierboven is dat de Switch
+- Subriber - Moet het event afhandelen: Hierboven is dat de Lightbulb
+
 ### Meer info:
 [Events](https://learn.microsoft.com/en-us/dotnet/standard/events/#events)
 ## Design patterns
@@ -110,3 +115,5 @@ Events worden standaard gebruikt door Gui based applicaties, bijv. de classes Bu
 ```
 ### Meer info:
 [Standard .NET event patterns](https://learn.microsoft.com/en-us/dotnet/csharp/event-pattern)
+
+
