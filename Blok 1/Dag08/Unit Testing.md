@@ -72,6 +72,61 @@ public void Given_ValutaOther_Then_ValutaIsInvalid(ValutaEnum valuta)
     Assert.AreEqual(false, output);
 }
 ```
+## Testen van events - Handout van Marco
+
+Maak een mock class in je test project:
+
+```c#
+    internal class LeeftijdChangedMock
+    {
+        public bool LeeftijdChangedSpyHasBeenCalled = false;
+        public LeeftijdEventArgs ActualEventArgs = null;
+
+        public void LeeftijdChangedSpy(object sender, LeeftijdEventArgs e)
+        {
+            LeeftijdChangedSpyHasBeenCalled = true;
+            ActualEventArgs = e;
+        }
+    }
+```
+
+Schrijf twee testen:
+
+-   testen of het event geraised wordt
+-   testen of het event met de juiste waardes wordt geraised
+
+```c#
+    [TestMethod]
+    public void Verjaar_RaisesLeeftijdChangedEvent()
+    {
+        // arrange
+        var mock = new LeeftijdChangedMock();
+        Persoon persoon = new Persoon("Evert 't Reve", 22);
+        persoon.leeftijdEvent += new LeeftijdEventHandler(mock.LeeftijdChangedSpy);
+
+        // act
+        persoon.Verjaar();
+
+        // assert
+        Assert.IsTrue(mock.LeeftijdChangedSpyHasBeenCalled);
+    }
+
+    [TestMethod]
+    public void RaisingEvent_provides_oudeleeftijdEnNieuweLeeftijd()
+    {
+        // arrange
+        var mock = new LeeftijdChangedMock();
+        Persoon persoon = new Persoon("Evert 't Reve", 22);
+        persoon.leeftijdEvent += new LeeftijdEventHandler(mock.LeeftijdChangedSpy);
+
+        // act
+        persoon.Verjaar();
+
+        // assert
+        Assert.AreEqual(22, mock.ActualEventArgs.OudeLeeftijd);
+        Assert.AreEqual(23, mock.ActualEventArgs.NieuweLeeftijd);
+    }
+```
 
 ## Test Setup maken
 
