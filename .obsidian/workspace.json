@@ -18,6 +18,30 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "b283f4d4fdfa8bdc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 1/Dag13/Streams.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "85b5d573ffa62902",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 1/Dag13/FileSystemWatcher.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ]
       }
@@ -149,10 +173,12 @@
   },
   "active": "2bf5a5cdc64cf71a",
   "lastOpenFiles": [
-    "Blok 1/Dag10/Delegates.md",
+    "Blok 1/Dag13/Files.md",
+    "Blok 1/Dag13/FileSystemWatcher.md",
+    "Blok 1/Dag13/Streams.md",
     "Blok 1/Dag10/Events.md",
+    "Blok 1/Dag10/Delegates.md",
     "Blok 1/Dag09/Collections.md",
-    "Blok 1/Dag13/Untitled.md",
     "Blok 1/Dag13",
     "Blok 1/Dag08/Unit Testing.md",
     "Blok 1/Dag06/Enum.md",

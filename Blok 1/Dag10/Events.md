@@ -55,7 +55,10 @@ Events worden standaard gebruikt door Gui based applicaties, bijv. de classes Bu
 ## Event handlers
 
 - Publisher - Zegt dat er een event gebeurt is: Hierboven is dat de Switch
-- Subriber - Moet het event afhandelen: Hierboven is dat de Lightbulb
+	-  Naamgeving Event = Actie in verleden tijd
+		public event SwitchToggledEventHandler SwitchToggled;
+- Subscriber - Moet het event afhandelen: Hierboven is dat de Lightbulb
+	- Kan je herkennen aan de Kan je public void Burn(object sender, SwitchToggledEventArgs e)
 
 ### Meer info:
 [Events](https://learn.microsoft.com/en-us/dotnet/standard/events/#events)
