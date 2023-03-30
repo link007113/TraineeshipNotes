@@ -41,7 +41,6 @@ We kunnen de method Square herschrijven met Lambda, dat ziet er alsvolgt uit:
 public int Square(int n) => n * n;
 ```
 
-
 ### Meer info:
 [Lambda expressions and anonymous functions](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/lambda-expressions)
 
