@@ -1,4 +1,4 @@
-
+Language-Integrated Query (LINQ) is de naam voor een aantal methodes die het mogelijk maakt om een soort van query's te maken rechtstreeks in de C#-taal. 
 
 
 ### Meer info:
