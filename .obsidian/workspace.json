@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 1/Dag13/Lambda.md",
+                "file": "Blok 1/Dag13/Linq.md",
                 "mode": "source",
                 "source": false
               }
@@ -108,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 1/Dag13/Lambda.md",
+                "file": "Blok 1/Dag13/Linq.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 1/Dag13/Lambda.md",
+                "file": "Blok 1/Dag13/Linq.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 1/Dag13/Lambda.md"
+                "file": "Blok 1/Dag13/Linq.md"
               }
             }
           }
@@ -161,8 +161,8 @@
   },
   "active": "b283f4d4fdfa8bdc",
   "lastOpenFiles": [
-    "Blok 1/Dag13/Linq.md",
     "Blok 1/Dag13/Lambda.md",
+    "Blok 1/Dag13/Linq.md",
     "Blok 1/Dag13/Untitled",
     "Blok 1/Dag13/Files.md",
     "Blok 1/Dag13/FileSystemWatcher.md",
