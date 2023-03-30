@@ -4,25 +4,23 @@ Een lambda is eigenlijk een functie gewrapped in een delegate.
 Als basis om lambda uit te leggen hebben we de volgende code:
 
 ```c#
-    internal class Program
+internal class Program
+{
+    private static void Main()
     {
-        private static void Main()
-        {
-            MyMath math = new MyMath();
-            Func<int, int> kwadraat = new Func<int, int>(math.Square);
-
-            int result = kwadraat(5);
-            Console.WriteLine(result);
-        }
+        MyMath math = new MyMath();
+        Func<int, int> kwadraat = new Func<int, int>(math.Square);
+        int result = kwadraat(5);
+        Console.WriteLine(result);
     }
-
-    public class MyMath
+}
+public class MyMath
+{
+    public int Square(int n)
     {
-        public int Square(int n)
-        {
-            return n * n;
-        }
+        return n * n;
     }
+}
 ```
 
 Je zou Func<int, int> kwadraat = new Func<int, int>(math.Square); kunnen vervangen door 1 van de volgende voorbeelden:
