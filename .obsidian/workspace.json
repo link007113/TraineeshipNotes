@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 1/Dag08/Unit Testing.md",
+                "file": "Blok 1/Dag09/Collections.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "void act",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,8 +65,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -97,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 1/Dag08/Unit Testing.md",
+                "file": "Blok 1/Dag09/Collections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 1/Dag08/Unit Testing.md",
+                "file": "Blok 1/Dag09/Collections.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 1/Dag08/Unit Testing.md"
+                "file": "Blok 1/Dag09/Collections.md"
               }
             }
           }
@@ -148,8 +147,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "06e186dc693f8e78",
+  "active": "2bf5a5cdc64cf71a",
   "lastOpenFiles": [
+    "Blok 1/Dag08/Unit Testing.md",
     "Blok 1/Dag09/Collections.md",
     "Blok 1/Dag06/Enum.md",
     "Blok 1/Dag10/Events.md",
@@ -168,7 +168,6 @@
     "Blok 1/Dag09/Records.md",
     "Blok 1/Dag08/Inheritance.md",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
-    "Blok 1/Dag08/Unit Testing.md",
     "README.md",
     "Blok 1/Dag06/Custom Exceptions.md",
     "Blok 1/Dag06/CTS.md",
