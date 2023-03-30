@@ -36,9 +36,21 @@ var kwadraat3 = (int x) => x * x;
 int result3 = kwadraat3(5);
 Console.WriteLine(result3);
 ```
-We kunnen de method Square herschrijven met Lambda, dat ziet er alsvolgt uit:
+We kunnen de method Square herschrijven, dat ziet er alsvolgt uit:
 ```c#
 public int Square(int n) => n * n;
+```
+Overigens heet dit geen lambda, maar een arrow function.
+
+
+
+Een method kan je een inner method gebruiken. Dit wordt onderwater vertaald naar een lambda expressie. 
+
+```c#
+int Kwdraatje(int n) // inner method // nested method
+{
+    return n * n;
+}
 ```
 
 ### Meer info:
