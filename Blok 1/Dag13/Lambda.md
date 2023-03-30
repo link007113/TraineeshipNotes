@@ -1,3 +1,6 @@
+
+Een lambda is eigenlijk een functie gewrapped in een delegate.
+
 Als basis om lambda uit te leggen hebben we de volgende code:
 
 ```c#
@@ -20,6 +23,18 @@ Als basis om lambda uit te leggen hebben we de volgende code:
             return n * n;
         }
     }
+```
+
+Je zou Func<int, int> kwadraat = new Func<int, int>(math.Square); kunnen vervangen door 1 van de volgende voorbeelden:
+
+```c#
+Func<int, int> kwadraat2 = x => x * x;
+int result2 = kwadraat2(5);
+Console.WriteLine(result2);
+
+var kwadraat3 = (int x) => x * x;
+int result3 = kwadraat3(5);
+Console.WriteLine(result3);
 ```
 We kunnen de method Square herschrijven met Lambda, dat ziet er alsvolgt uit:
 ```c#
