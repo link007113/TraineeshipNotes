@@ -9,7 +9,17 @@ De Garbage Collector controleert periodiek het geheugen dat door de toepassing w
 
 ## IDisposable
 
-IDisposable is een interface in C# die een mechanisme biedt voor het vrijgeven van onbeheerde resources, zoals file handles, databaseverbindingen en netwerkverbindingen. Deze resources worden niet automatisch verzameld door het .NET framework, dus het is belangrijk om ze op de juiste manier op te ruimen wanneer ze niet langer nodig zijn om resource leaks en andere problemen te voorkomen.
+IDisposable is een interface in C# die een mechanisme biedt voor het vrijgeven van onbeheerde resources, zoals file handles, databaseverbindingen en netwerkverbindingen. 
+Deze resources worden niet automatisch opgeruimd door het .NET framework, dus het is belangrijk om ze op de juiste manier op te ruimen wanneer ze niet langer nodig zijn om resource leaks en andere problemen te voorkomen.
+
+Een aantal voorbeelden hiervan zijn:
+
+- FileStream: gebruikt voor het lezen en schrijven van bestanden op de schijf.
+- MemoryStream: gebruikt voor het werken met geheugenbuffers als streams.
+- SqlConnection, SqlCommand, SqlDataReader: gebruikt voor toegang tot een SQL Server-database.
+- StreamReader, StreamWriter: gebruikt voor het lezen en schrijven van tekstbestanden.
+- TcpClient, NetworkStream: gebruikt voor netwerkcommunicatie.
+- Process: gebruikt voor het starten van externe processen.
 
 ## Using
 
@@ -45,8 +55,6 @@ In dit voorbeeld implementeert de class FileParser de IDisposable interface en h
 Het using statement wordt gebruikt om een nieuwe instantie van FileParser genaamd fileParser aan te maken, en roept vervolgens de methode DoSomething daarop aan. Wanneer het codeblok in het using statement klaar is met uitvoeren, wordt automatisch de Dispose-methode van fileParser aangeroepen, die op zijn beurt de FileStream verwijdert.
 
 Het gebruik van het using statement zorgt ervoor dat de bestandsstroom correct wordt verwijderd, zelfs als er een uitzondering optreedt binnen het codeblok. Dit helpt om bronlekken en andere problemen te voorkomen die kunnen optreden wanneer onbeheerde bronnen niet goed worden opgeruimd.
-
-
 
 ### Meer Info:
 
