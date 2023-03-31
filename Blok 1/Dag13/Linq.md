@@ -29,6 +29,8 @@ static void Main(string[] args)
 
 Zoals je kan zien heeft de tweede manier veel weg van SQL, waar de eerste manier veel meer voelt als traditionele c# code.
 
+De LINQ queries worden pas uitgevoerd waarneer er omgevraagd wordt. Dus zodra je bijvoorbeeld q4 wilt gebruiken in een ForEach zal hij de query expressie uitvoeren. 
+
 De lijst van LINQ methodes is erg lang, maar een paar voorbeelden daarvan zijn:
 
 - .Sum()
