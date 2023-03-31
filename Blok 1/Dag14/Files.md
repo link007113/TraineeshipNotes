@@ -4,15 +4,27 @@ Hieronder volgt een eenvoudig voorbeeld van hoe de File-Class in C# kan worden g
 ```c#
 using System.IO;
 
-var file name = "myfile.txt";
+var fileName = "myfile.txt";
 var text = "This is a test."
 
-File.WriteAllText(filename, text);
+File.WriteAllText(fileName, text);
 
-var readText = File.ReadAllText(filename);
+var readText = File.ReadAllText(fileName);
 Console.WriteLine(readText);
 
 ```
-In dit voorbeeld wordt eerst de naam van het bestand en de tekst die naar het bestand geschreven moet worden opgeslagen. Vervolgens wordt de tekst naar het bestand geschreven met behulp van de WriteAllText-methode van de File-Class. Dit creëert het bestand als het niet bestaat en schrijft de tekst naar het bestand. Daarna wordt de tekst weer uit het bestand gelezen en naar de console geschreven met behulp van de ReadAllText-methode.
+In dit voorbeeld wordt eerst de naam van het bestand en de tekst die naar het bestand geschreven moet worden opgeslagen.  Vervolgens wordt de tekst naar het bestand geschreven met behulp van de WriteAllText-methode van de File-Class. Dit creëert het bestand als het niet bestaat en schrijft de tekst naar het bestand. Daarna wordt de tekst weer uit het bestand gelezen en naar de console geschreven met behulp van de ReadAllText-methode.
 
-Er zijn veel verschillende toepassingen van het werken met bestanden in C#. Zo kunnen bestanden worden gebruikt om configuratiegegevens op te slaan, logboeken bij te houden, tijdelijke gegevens op te slaan en nog veel meer. Bestanden zijn een krachtige tool voor het opslaan en bewaren van gegevens en kunnen in combinatie met Streams en andere .NET-klassen worden gebruikt voor complexe bewerkingen.
+In de bovenstaande code wordt het bestand opgeslagen in dezelfde map als de C# toepassing of executable.
+
+Als u echter een andere map wilt opgeven om het bestand op te slaan, kunt u het volledige pad naar het bestand opgeven in de eerste parameter van de File-methoden. 
+Bijvoorbeeld:
+
+```c#
+var filename = @"C\:myfiles.txt";
+File.WriteAllText(filename, text);
+
+```
+In dit voorbeeld wordt het bestand opgeslagen in de map "C\:myfiles". Vergeet niet dat de map moet bestaan voordat er een bestand naar toe kan worden geschreven.
+
+Er zijn veel verschillende toepassingen van het werken met bestanden in C#. Zo kunnen bestanden worden gebruikt om configuratiegegevens op te slaan, log-bestanden bij te houden, tijdelijke gegevens op te slaan en nog veel meer. 

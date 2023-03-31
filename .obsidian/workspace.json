@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 1/Dag14/Files.md",
+                "file": "Blok 1/Dag13/Lambda.md",
                 "mode": "source",
                 "source": false
               }
@@ -121,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 1/Dag14/Files.md",
+                "file": "Blok 1/Dag13/Lambda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 1/Dag14/Files.md",
+                "file": "Blok 1/Dag13/Lambda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 1/Dag14/Files.md"
+                "file": "Blok 1/Dag13/Lambda.md"
               }
             }
           }
@@ -174,10 +174,10 @@
   },
   "active": "6de940e0417b0af9",
   "lastOpenFiles": [
-    "Blok 1/Dag14/Streams.md",
-    "Blok 1/Dag14/Files.md",
-    "Blok 1/Dag14/Garbage Collection.md",
     "Blok 1/Dag13/LINQ.md",
+    "Blok 1/Dag14/Files.md",
+    "Blok 1/Dag14/Streams.md",
+    "Blok 1/Dag14/Garbage Collection.md",
     "Misc/markdown-cheat-sheet.md",
     "Blok 1/Dag13/LinqVolgorde.png",
     "Blok 1/Dag13/Lambda.md",
