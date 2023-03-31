@@ -34,6 +34,8 @@ var kwadraat3 = (int x) => x * x;
 int result3 = kwadraat3(5);
 Console.WriteLine(result3);
 ```
+
+## Arrow Function 
 We kunnen de method Square herschrijven, dat ziet er alsvolgt uit:
 ```c#
 public int Square(int n) => n * n;
@@ -43,28 +45,36 @@ Overigens heet dit geen lambda, maar een arrow function.
 Hier moet je wel opassen in het volgende voorbeeld:
 
 ```c#
-        private static void Main()
-        {
-            static void Main(string[] args)
-            {
-                Ding ding = new Ding();
-                Console.WriteLine(ding.Dng);
-                Console.WriteLine(ding.Dnga);
-                Ding.a = 7;
-                Console.WriteLine(ding.Dng);
-                Console.WriteLine(ding.Dnga);
-            }
-        }
-
-        internal class Ding
-        {
-            public static int a = 5;
-            public int Dng => a + 3;
-
-            public int Dnga = a + 3;
-        }
+private static void Main()
+{
+    static void Main(string[] args)
+    {
+        Ding ding = new Ding();
+        Console.WriteLine(ding.Dng);
+        Console.WriteLine(ding.Dnga);
+        Ding.a = 7;
+        Console.WriteLine(ding.Dng);
+        Console.WriteLine(ding.Dnga);
+        ding.Dnga = 7; // field is te overschrijven
+        Console.WriteLine(ding.Dng);
+        Console.WriteLine(ding.Dnga);
+    }
+}
+internal class Ding
+{
+    public static int a = 5;
+    public int Dng => a + 3; // functie
+    public int Dnga = a + 3; // field, geheugenplaats
+}
 ```
+Dnga is eigenlijk hier gewoon een field en die wordt bij initialiseren al gewoon gezet op 8.
 
+Dng is een functie en die wordt telkens uitgevoerd als hij aangevraagd wordt. 
+
+Dus als static int a veranderd wordt zal Dnga 8 blijven terug geven, terwijl Dng de som van a + 3 blijft uitvoeren. 
+
+
+## Nested Method
 
 Een method kan je een inner method (soms nested method genoemd) gebruiken. Dit wordt onder water vertaald naar een lambda expressie. 
 ```c#
