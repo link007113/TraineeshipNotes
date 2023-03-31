@@ -43,12 +43,26 @@ Overigens heet dit geen lambda, maar een arrow function.
 Hier moet je wel opassen in het volgende voorbeeld:
 
 ```c#
-internal class Ding
-{
-    public static int a = 5;
-    public int Dng => a + 3;
-    public int Dnga = a + 3;       
-}
+        private static void Main()
+        {
+            static void Main(string[] args)
+            {
+                Ding ding = new Ding();
+                Console.WriteLine(ding.Dng);
+                Console.WriteLine(ding.Dnga);
+                Ding.a = 7;
+                Console.WriteLine(ding.Dng);
+                Console.WriteLine(ding.Dnga);
+            }
+        }
+
+        internal class Ding
+        {
+            public static int a = 5;
+            public int Dng => a + 3;
+
+            public int Dnga = a + 3;
+        }
 ```
 
 
