@@ -1,8 +1,10 @@
-De garbage collector beheert de toewijzing en vrijgave van geheugen voor een applicatie. 
+Garbage collection is een proces waarbij het .NET framework automatisch geheugen vrijmaakt dat niet langer door een toepassing wordt gebruikt.
+
+Met andere woorden, wanneer er objecten worden gemaakt, nemen ze RAM-geheugen in beslag. Wanneer die objecten niet langer nodig zijn, is het belangrijk om dat geheugen vrij te maken, zodat het kan worden gebruikt door andere delen van de toepassing of door andere toepassingen die op de computer draaien.
 
 Automatisch geheugenbeheer kan veel voorkomende problemen elimineren, zoals het vergeten vrij te maken van een object en het veroorzaken van een SystemOutOfMemoryException.
 
-
+De Garbage Collector controleert periodiek het geheugen dat door de toepassing wordt gebruikt en identificeert objecten die niet langer worden gebruikt en daarom veilig uit het geheugen kunnen worden verwijderd. Vervolgens wordt het geheugen van die objecten vrijgemaakt, zodat het beschikbaar is voor ander gebruik.
 
 
 ## IDisposable
