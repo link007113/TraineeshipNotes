@@ -12,7 +12,7 @@ static void Main(string[] args)
     var q3 = primes.Where(n => n >= 18) // eerste manier
                    .Select(x => x * x);    
                    
-    var q4 = from p in primes // tweede manier
+    var q4 = from p in primes // query expressie
              where p >= 18
              select p * p;
          
