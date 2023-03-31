@@ -38,7 +38,11 @@ using (var fileParser = new FileParser("myfile.txt"))
 }// Ruim de unmanaged resources op. 
 ```
 
+In dit voorbeeld implementeert de class FileParser de IDisposable interface en heeft een private field genaamd \_fileStream dat een FileStream is. De constructor van FileParser initialiseert het field\_fileStream, en de methode DoSomething voert wat werk uit met de bestandsstroom.
 
+Het using statement wordt gebruikt om een nieuwe instantie van FileParser genaamd fileParser aan te maken, en roept vervolgens de methode DoSomething daarop aan. Wanneer het codeblok in het using statement klaar is met uitvoeren, wordt automatisch de Dispose-methode van fileParser aangeroepen, die op zijn beurt de FileStream verwijdert.
+
+Het gebruik van het using statement zorgt ervoor dat de bestandsstroom correct wordt verwijderd, zelfs als er een uitzondering optreedt binnen het codeblok. Dit helpt om bronlekken en andere problemen te voorkomen die kunnen optreden wanneer onbeheerde bronnen niet goed worden opgeruimd.
 
 
 
