@@ -49,7 +49,7 @@ De lijst van LINQ methodes is erg lang, maar een paar voorbeelden daarvan zijn:
 ## Volgorde van LINQ Statements
 
 
-![[LinqVolgorde.png]]
+![Volgorde van LINQ Statements](https://github.com/link007113/TraineeshipNotes/raw/main/Blok%201/Dag13/LinqVolgorde.png)
 
 ### Meer info:
 [Language Integrated Query (LINQ) (C#)](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/)
