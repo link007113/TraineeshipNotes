@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 1/Dag13/LINQ.md",
+                "file": "Blok 1/Dag13/Lambda.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 1/Dag13/LINQ.md",
+                "file": "Blok 1/Dag13/Lambda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 1/Dag13/LINQ.md",
+                "file": "Blok 1/Dag13/Lambda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 1/Dag13/LINQ.md"
+                "file": "Blok 1/Dag13/Lambda.md"
               }
             }
           }
@@ -162,8 +162,10 @@
   },
   "active": "f9b358bd4402c8da",
   "lastOpenFiles": [
-    "Blok 1/Dag13/Lambda.md",
     "Blok 1/Dag13/LINQ.md",
+    "Blok 1/Dag06/CTS.md",
+    "Blok 1/Dag08/Unit Testing.md",
+    "Blok 1/Dag13/Lambda.md",
     "Misc/Tips.md",
     "Misc/markdown-cheat-sheet.md",
     "Blok 1/Dag14/Files.md",
@@ -172,7 +174,6 @@
     "Blok 1/Dag13/Untitled",
     "Blok 1/Dag13/Files.md",
     "Blok 1/Dag13/FileSystemWatcher.md",
-    "Blok 1/Dag08/Unit Testing.md",
     "Blok 1/Dag10/Events.md",
     "Blok 1/Dag10/Delegates.md",
     "Blok 1/Dag09/Collections.md",
@@ -193,7 +194,6 @@
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "README.md",
     "Blok 1/Dag06/Custom Exceptions.md",
-    "Blok 1/Dag06/CTS.md",
     "Blok 1/Dag06/Casting & Boxing.md",
     "Blok 1/Dag08/Interfaces.md",
     "Blok 1/Dag08/Abstract classes.md",

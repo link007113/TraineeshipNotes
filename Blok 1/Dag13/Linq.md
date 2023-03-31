@@ -1,92 +1,40 @@
-Language-Integrated Query (LINQ) is de naam voor een aantal methodes die het mogelijk maakt om een soort van query's te maken rechtstreeks in de C#-taal. 
+Language-Integrated Query (LINQ) is de naam voor een aantal methodes die het mogelijk maakt om een soort van query's te maken rechtstreeks in de C#-taal. LINQ kan je gebruiken op alles wat de interface IEnumerables implementeerd, dat is praktisch alle standaard Reference Types, zoals string, List<>, Array enz.
 
-De meest voorkomende schrijf manieren zijn de volgende:
+De meest voorkomende schrijfmanieren zijn de volgende:
 
 ```c#
-static void Main(string[] args)
-
-        {
-
-            List<int> primes = new List<int> { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 };
-
-  
-
-            List<int> squaresOfLargePrimes = primes.FindAll(n => n >= 18)
-
-                                                   .ConvertAll(x => x * x);
-
-            PrintList(squaresOfLargePrimes);
-
-  
-
-            IEnumerable<int> p1 = Enumerable.Where(primes, n => n >= 18);
-
-            PrintList(p1);
-
-            IEnumerable<int> q1 = Enumerable.Select(p1, x => x * x);
-
-            PrintList(q1);
-
-  
-
-            IEnumerable<int> p2 = primes.Where(n => n >= 18);
-
-            PrintList(p2);
-
-            IEnumerable<int> q2 = p2.Select(x => x * x);
-
-            PrintList(q2);
-
-  
-
-            var q3 = primes.Where(n => n >= 18)
-
-                           .Select(x => x * x);
-
-            PrintList(q3);
-
-  
-
-            var q4 = from p in primes
-
-                     from q in primes
-
-                     where p >= 18
-
-                     let x = (from q in primes select p).Max()
-
-                     where p >= 18 
-
-                     group p * p by x into groep
-
-                     where groep.Count() > 1
-
-                     select groep.First();
-
-  
-
-            PrintList(q4);
-
-  
-
-            List<Person> people = new List<Person>
-
-            {
-
-                new(){ Name = "Evert 't Reve", Age = 22},
-
-                new(){ Name = "Mats Nevenstam", Age= 44},
-
-                new(){ Name = "Karina van Irak", Age = 33},
-
-            };
-
-            var oudste = people.Max(p => p.Age);
-
-            Console.WriteLine(oudste);
-
-        }
+static void Main(string[] args)
+{
+    List<int> primes = new List<int> { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 };
+    
+    
+    var q3 = primes.Where(n => n >= 18) // eerste manier
+                   .Select(x => x * x);    
+                   
+    var q4 = from p in primes // tweede manier
+             where p >= 18
+             select p * p;
+         
+    List<Person> people = new List<Person>
+{
+    new(){ Name = "Evert 't Reve", Age = 22},
+    new(){ Name = "Mats Nevenstam", Age= 44},
+    new(){ Name = "Karina van Irak", Age = 33},
+};
+    var oudste = people.Max(p => p.Age);
+    Console.WriteLine(oudste);
+}
 ```
+
+Zoals je kan zien heeft de tweede manier veel weg van SQL, waar de eerste manier veel meer voelt als traditionele c# code.
+
+De lijst van LINQ methodes is erg lang, maar een paar voorbeelden daarvan zijn:
+
+- .Sum()
+- .Where()
+- .Select()
+- .ToList()
+- .Max()
 
 ### Meer info:
 [Language Integrated Query (LINQ) (C#)](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/)
