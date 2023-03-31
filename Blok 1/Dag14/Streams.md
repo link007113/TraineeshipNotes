@@ -3,7 +3,6 @@ Een Stream in C# is een manier om gegevens in te lezen of uit te schrijven naar 
 Met Streams kun je gegevens op een efficiënte manier lezen of schrijven, omdat ze de gegevens in kleine stukjes (buffers) verwerken. Dit betekent dat Streams slechts een klein deel van de gegevens in het geheugen hoeven te houden, waardoor Streams geschikt zijn voor het werken met grote hoeveelheden gegevens.
 
 Streams zijn ook erg flexibel omdat ze in verschillende formaten kunnen worden gebruikt. In C# zijn er bijvoorbeeld FileStreams voor het lezen en schrijven van bestanden, MemoryStreams voor het lezen en schrijven van gegevens in het geheugen en NetworkStreams voor het lezen en schrijven van gegevens via netwerkverbindingen.
-
 ```c#
 // Example of reading and writing a file using a FileStream
 using (var stream = new FileStream("myfile.txt", FileMode.OpenOrCreate))

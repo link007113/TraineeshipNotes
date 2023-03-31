@@ -21,10 +21,14 @@ Als u echter een andere map wilt opgeven om het bestand op te slaan, kunt u het 
 Bijvoorbeeld:
 
 ```c#
-var filename = @"C\:myfiles.txt";
+var filename = @"C:\myfiles.txt";
 File.WriteAllText(filename, text);
-
 ```
+
 In dit voorbeeld wordt het bestand opgeslagen in de map "C\:myfiles". Vergeet niet dat de map moet bestaan voordat er een bestand naar toe kan worden geschreven.
+
+Om het path te maken kan je gebruik maken van verschillende methodes uit de Path en Directory Classes.
+
+De Path-Class biedt methoden voor het werken met bestands- en mapnamen, terwijl de Directory-Class methoden biedt voor het werken met bestanden en mappen zelf.
 
 Er zijn veel verschillende toepassingen van het werken met bestanden in C#. Zo kunnen bestanden worden gebruikt om configuratiegegevens op te slaan, log-bestanden bij te houden, tijdelijke gegevens op te slaan en nog veel meer. 
