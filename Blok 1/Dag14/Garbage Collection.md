@@ -16,17 +16,14 @@ Het using statement is een handige manier om ervoor te zorgen dat IDisposable ob
 class FileParser : IDisposable
 {
     private FileStream _fileStream;
-
     public FileParser(string fileName)
     {
         _fileStream = new FileStream(fileName, FileMode.OpenOrCreate);
     }
-
     public void ReadLine()
     {
         // Do some work with the file stream
     }
-
     public void Dispose()
     {
         _fileStream.Dispose();
@@ -34,16 +31,11 @@ class FileParser : IDisposable
 }
 
 // Example of using IDisposable and using
-using (var myObject = new MyClass("myfile.txt"))
+using (var fileParser = new FileParser("myfile.txt"))
 {
-    myObject.DoSomething();
-}
-
-using(FileStream stream = new FileStream("path", FileMode.Open))
-{
-// doe dingen met filestream
+    fileParser.DoSomething();// doe dingen met filestream
 // Klaar!
-} // Ruim de unmanaged resources op. 
+}// Ruim de unmanaged resources op. 
 ```
 
 
