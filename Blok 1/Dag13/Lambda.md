@@ -42,6 +42,14 @@ Overigens heet dit geen lambda, maar een arrow function.
 
 Hier moet je wel opassen in het volgende voorbeeld:
 
+```c#
+internal class Ding
+{
+    public static int a = 5;
+    public int Dng => a + 3;
+    public int Dnga = a + 3;       
+}
+```
 
 
 Een method kan je een inner method (soms nested method genoemd) gebruiken. Dit wordt onder water vertaald naar een lambda expressie. 

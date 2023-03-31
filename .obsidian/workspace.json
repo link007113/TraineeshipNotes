@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 1/Dag13/LINQ.md",
+                "file": "Blok 1/Dag13/Lambda.md",
                 "mode": "source",
                 "source": false
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 1/Dag13/LINQ.md",
+                "file": "Blok 1/Dag13/Lambda.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 1/Dag13/LINQ.md",
+                "file": "Blok 1/Dag13/Lambda.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 1/Dag13/LINQ.md"
+                "file": "Blok 1/Dag13/Lambda.md"
               }
             }
           }
@@ -186,13 +186,13 @@
   },
   "active": "9e9acef88022c678",
   "lastOpenFiles": [
+    "Blok 1/Dag13/LINQ.md",
     "Blok 1/Dag14/Streams.md",
     "Blok 1/Dag14/Garbage Collection.md",
     "Blok 1/Dag14/Files.md",
     "Blok 1/Dag14/Untitled.md",
     "Blok 1/Dag14/FileSystemWatcher.md",
     "Blok 1/Dag13/Lambda.md",
-    "Blok 1/Dag13/LINQ.md",
     "Blok 1/Dag06/CTS.md",
     "Blok 1/Dag08/Unit Testing.md",
     "Misc/Tips.md",
