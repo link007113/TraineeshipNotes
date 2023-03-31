@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f9b358bd4402c8da",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 1/Dag13/LINQ.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -147,10 +160,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b283f4d4fdfa8bdc",
+  "active": "f9b358bd4402c8da",
   "lastOpenFiles": [
     "Blok 1/Dag13/Lambda.md",
     "Blok 1/Dag13/LINQ.md",
+    "Misc/Tips.md",
+    "Misc/markdown-cheat-sheet.md",
+    "Blok 1/Dag14/Files.md",
+    "Blok 1/Dag13/Untitled.md",
+    "Blok 1/Dag14",
     "Blok 1/Dag13/Untitled",
     "Blok 1/Dag13/Files.md",
     "Blok 1/Dag13/FileSystemWatcher.md",
@@ -167,7 +185,6 @@
     "Blok 1/Dag06/Structs.md",
     "Untitled 1.canvas",
     "Blok 1/Dag06/Operator Overloading & Overrides.md",
-    "Misc/markdown-cheat-sheet.md",
     "Blok 1/Dag09/Generics.md",
     "Templates",
     "New folder",
@@ -180,14 +197,12 @@
     "Blok 1/Dag06/Casting & Boxing.md",
     "Blok 1/Dag08/Interfaces.md",
     "Blok 1/Dag08/Abstract classes.md",
-    "Misc/Tips.md",
     "Blok 1/Dag10",
     "Blok 1",
     "Blok 1/Dag09",
     "Pasted image 20230323132714.png",
     "Dag07/Untitled.canvas",
     "Misc/Unconfirmed 558697.crdownload",
-    "Misc",
-    "Blok 1/Dag08"
+    "Misc"
   ]
 }
