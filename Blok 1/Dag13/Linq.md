@@ -46,5 +46,7 @@ De lijst van LINQ methodes is erg lang, maar een paar voorbeelden daarvan zijn:
 - .First()
 - .Count()
 
+
+
 ### Meer info:
 [Language Integrated Query (LINQ) (C#)](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/concepts/linq/)
