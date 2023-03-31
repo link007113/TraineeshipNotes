@@ -1,4 +1,5 @@
-Language-Integrated Query (LINQ) is de naam voor een aantal methodes die het mogelijk maakt om een soort van query's te maken rechtstreeks in de C#-taal. LINQ kan je gebruiken op alles wat de interface IEnumerables implementeerd, dat is praktisch alle standaard Reference Types, zoals string, List<>, Array enz.
+Language-Integrated Query (LINQ) is de naam voor een aantal methodes die het mogelijk maakt om een soort van query's te maken rechtstreeks in de C#-taal. LINQ kan je gebruiken op alles wat de interface IEnumerables implementeerd, dat is praktisch alle standaard Reference Types, zoals string, List<>, Array enz. 
+De queries zijn ook uit tevoeren op databases (LINQ to SQL)  en XML bestanden. 
 
 De meest voorkomende schrijfmanieren zijn de volgende:
 
