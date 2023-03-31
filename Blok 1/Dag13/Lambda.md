@@ -1,5 +1,5 @@
 
-Een lambda is eigenlijk een functie gewrapped in een delegate.
+Een lambda expressie is een korte, anonieme functie die in-line kan worden gedefinieerd. Het wordt vaak gebruikt om code te schrijven die als argument aan een andere functie kan worden doorgegeven of om snel en gemakkelijk een delegate te maken.
 
 Als basis om lambda uit te leggen hebben we de volgende code:
 
