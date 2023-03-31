@@ -10,10 +10,10 @@ static void Main(string[] args)
     List<int> primes = new List<int> { 2, 3, 5, 7, 11, 13, 17, 19, 23, 29 };
     
     
-    var q3 = primes.Where(n => n >= 18) // eerste manier
+    var q3 = primes.Where(n => n >= 18) // extension method syntax
                    .Select(x => x * x);    
-                   
-    var q4 = from p in primes // query expressie
+               
+    var q4 = from p in primes // comprehension syntax
              where p >= 18
              select p * p;
          
