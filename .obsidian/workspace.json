@@ -30,9 +30,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6de940e0417b0af9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 1/Dag14/Garbage Collection.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9e9acef88022c678",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 1/Dag14/Garbage Collection.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e1996f3b3b9221c2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 1/Dag14/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -109,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 1/Dag13/Lambda.md",
+                "file": "Blok 1/Dag14/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 1/Dag13/Lambda.md",
+                "file": "Blok 1/Dag14/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 1/Dag13/Lambda.md"
+                "file": "Blok 1/Dag14/Untitled.md"
               }
             }
           }
@@ -160,10 +196,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f9b358bd4402c8da",
+  "active": "e1996f3b3b9221c2",
   "lastOpenFiles": [
-    "Blok 1/Dag13/LINQ.md",
+    "Blok 1/Dag14/Garbage Collection.md",
+    "Blok 1/Dag14/Untitled.md",
+    "Blok 1/Dag14/FileSystemWatcher.md",
+    "Blok 1/Dag14/Streams.md",
     "Blok 1/Dag13/Lambda.md",
+    "Blok 1/Dag13/LINQ.md",
     "Blok 1/Dag06/CTS.md",
     "Blok 1/Dag08/Unit Testing.md",
     "Misc/Tips.md",
@@ -194,9 +234,6 @@
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "README.md",
     "Blok 1/Dag06/Custom Exceptions.md",
-    "Blok 1/Dag06/Casting & Boxing.md",
-    "Blok 1/Dag08/Interfaces.md",
-    "Blok 1/Dag08/Abstract classes.md",
     "Blok 1/Dag10",
     "Blok 1",
     "Blok 1/Dag09",
