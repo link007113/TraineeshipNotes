@@ -7,7 +7,7 @@ Automatisch geheugenbeheer kan veel voorkomende problemen elimineren, zoals het 
 
 ## IDisposable
 
-
+Alles wat een IDisposable implementeert heeft een Dispose methode. Hiermee geef je aan dat de unmanaged resource opgeruimt moet worden. 
 
 
 
