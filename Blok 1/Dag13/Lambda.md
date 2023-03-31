@@ -40,6 +40,10 @@ public int Square(int n) => n * n;
 ```
 Overigens heet dit geen lambda, maar een arrow function.
 
+Hier moet je wel opassen in het volgende voorbeeld:
+
+
+
 Een method kan je een inner method (soms nested method genoemd) gebruiken. Dit wordt onder water vertaald naar een lambda expressie. 
 ```c#
 private static void Main()
