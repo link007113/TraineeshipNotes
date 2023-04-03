@@ -4,47 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "d364808734df0b87",
+        "id": "cb670db53f9690ab",
         "type": "tabs",
         "children": [
           {
-            "id": "b283f4d4fdfa8bdc",
+            "id": "bdc951ff4a5a2d00",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 1/Dag13/LINQ.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f9b358bd4402c8da",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 1/Dag13/Lambda.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6de940e0417b0af9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 1/Dag10/Events.md",
+                "file": "Blok 1/Oefening Einde Blok 1.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -121,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 1/Dag10/Events.md",
+                "file": "Blok 1/Oefening Einde Blok 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 1/Dag10/Events.md",
+                "file": "Blok 1/Oefening Einde Blok 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 1/Dag10/Events.md"
+                "file": "Blok 1/Oefening Einde Blok 1.md"
               }
             }
           }
@@ -172,8 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6de940e0417b0af9",
+  "active": "bdc951ff4a5a2d00",
   "lastOpenFiles": [
+    "Blok 1/Oefening Einde Blok 1.md",
+    "Blok 1/Dag10/Events.md",
     "Blok 1/Dag10/Delegates.md",
     "Blok 1/Dag14/Garbage Collection.md",
     "Blok 1/Dag14/Streams.md",
@@ -192,7 +169,6 @@
     "Blok 1/Dag13/Untitled",
     "Blok 1/Dag13/Files.md",
     "Blok 1/Dag13/FileSystemWatcher.md",
-    "Blok 1/Dag10/Events.md",
     "Blok 1/Dag09/Collections.md",
     "Blok 1/Dag13",
     "Blok 1/Dag06/Enum.md",
