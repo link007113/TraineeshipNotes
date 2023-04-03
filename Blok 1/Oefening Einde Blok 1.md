@@ -1,5 +1,9 @@
 Voor de eindoefening moeten we een Console Applicatie maken om Black Jack te spelen.
+Het spel moet verdeeld worden over 3 projecten
 
+- Console voor de UI Logica
+- Lib voor de game logica
+- MSTest voor de tests
 
 ```
 Voorbeeld:
