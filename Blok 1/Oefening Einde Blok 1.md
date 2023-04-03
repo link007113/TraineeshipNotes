@@ -50,6 +50,12 @@ Hand Value is 30 -> Player has Busted
 Player has 12 money
 
 Do you want to keep playing? (Y)es or (N)o?
+
+
+Suits: Spades, Hearts, Diamonds, Clubs
+Ranks: Ace, King, Queen, Jack, Ten, Nine, Eight, Seven, Six, Five, Four, Three, Two
+
+Game contains 52 cards from 6 decks. 
 ```
 
 
