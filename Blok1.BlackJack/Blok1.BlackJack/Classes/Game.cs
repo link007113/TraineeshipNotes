@@ -10,7 +10,7 @@ namespace Blok1.BlackJack.Classes
     {
         public Player Player { get; }
         public Player Dealer { get; }
-        public Shoe Shoe { get; }
+        public Shoe Shoe { get; private set; }
 
         public Game(string name)
         {
@@ -61,7 +61,7 @@ namespace Blok1.BlackJack.Classes
             sb.AppendLine($"Balance of {Player.Name}:\t{Player.Balance}");
             sb.AppendLine($"{Player.Name}'s hand:{Player.Hand}");
             sb.AppendLine();
-            sb.AppendLine($"{Dealer.Name}'s hand:{Dealer.Hand}");
+            sb.AppendLine($"{Dealer.Name}'s hand:\n{Dealer.Hand}");
             return sb.ToString();
         }
 
@@ -94,6 +94,14 @@ namespace Blok1.BlackJack.Classes
             }
 
             return outcome;
+        }
+
+        public void RestartGame()
+        {
+            Player.ClearHand();
+            Dealer.ClearHand();
+            Shoe = new Shoe();
+            Shoe.Shuffle();
         }
     }
 }

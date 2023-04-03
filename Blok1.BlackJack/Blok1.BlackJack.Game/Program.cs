@@ -27,8 +27,9 @@ namespace Blok1.BlackJack.Games
         {
             Console.WriteLine("Do you want to play another round?");
             string answer = Console.ReadLine();
-            if (answer.ToUpper() == "Y")
+            if (answer.ToUpper() == "Y" || answer == "")
             {
+                game.RestartGame();
                 return true;
             }
             else

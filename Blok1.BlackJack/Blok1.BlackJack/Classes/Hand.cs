@@ -63,13 +63,23 @@ namespace Blok1.BlackJack.Classes
             Bet = bet;
         }
 
-        public void ShowAllCards() => Cards.Where(c => !c.Visible).Select(c => c.Visible = true);
+        public void ShowAllCards()
+        {
+            foreach (var card in Cards)
+            {
+                card.Visible = true;
+            }
+        }
 
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.AppendLine($"Bet: {Bet}");
-            sb.AppendLine($"Total value: {TotalValue}");
+
+            if (!Cards.Any(c => !c.Visible))
+            {
+                sb.AppendLine($"Bet: {Bet}");
+                sb.AppendLine($"Total value: {TotalValue}");
+            }
             sb.AppendLine("Cards:");
             foreach (var card in Cards)
             {
