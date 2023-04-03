@@ -70,13 +70,10 @@ namespace Blok1.BlackJack.Classes
             var sb = new StringBuilder();
             sb.AppendLine($"Bet: {Bet}");
             sb.AppendLine($"Total value: {TotalValue}");
-            sb.AppendLine($"Is BlackJack: {IsBlackJack}");
-            sb.AppendLine($"Is Bust: {IsBust}");
-            sb.AppendLine($"Can Split: {CanSplit}");
             sb.AppendLine("Cards:");
             foreach (var card in Cards)
             {
-                sb.AppendLine(card.ToString());
+                sb.AppendLine($"\t{card.ToString()}");
             }
             return sb.ToString();
         }

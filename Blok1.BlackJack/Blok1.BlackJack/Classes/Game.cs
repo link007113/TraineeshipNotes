@@ -58,14 +58,10 @@ namespace Blok1.BlackJack.Classes
         public override string ToString()
         {
             var sb = new StringBuilder();
-            sb.AppendLine($"Player:\t{Player.Name}");
-            sb.AppendLine($"Balance:\t{Player.Balance}");
-            sb.AppendLine($"Hand:");
-            sb.AppendLine($"{Player.Hand}");
+            sb.AppendLine($"Balance of {Player.Name}:\t{Player.Balance}");
+            sb.AppendLine($"{Player.Name}'s hand:{Player.Hand}");
             sb.AppendLine();
-            sb.AppendLine($"Dealer:\t{Dealer.Name}");
-            sb.AppendLine($"Hand:");
-            sb.AppendLine($"{Dealer.Hand}");
+            sb.AppendLine($"{Dealer.Name}'s hand:{Dealer.Hand}");
             return sb.ToString();
         }
 

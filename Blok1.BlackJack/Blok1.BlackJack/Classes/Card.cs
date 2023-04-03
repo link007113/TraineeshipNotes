@@ -27,7 +27,7 @@ namespace Blok1.BlackJack.Classes
 
         public override string ToString()
         {
-            return Visible ? $"{Rank} of {Suit}" : "Facedown Card";
+            return Visible ? $"{Rank} of {Suit}" : "## Face Down ##";
         }
     }
 }
