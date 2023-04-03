@@ -78,5 +78,8 @@ namespace Blok1.BlackJack.Tests
             Assert.AreEqual(3, game.Player.Hand.Cards.Count);
             Assert.AreEqual(2, game.Dealer.Hand.Cards.Count);
         }
+
+        [TestMethod]
+        public void
     }
 }

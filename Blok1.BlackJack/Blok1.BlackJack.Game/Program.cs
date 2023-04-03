@@ -23,21 +23,6 @@ namespace Blok1.BlackJack.Games
             } while (RestartGame(game));
         }
 
-        private static bool RestartGame(Game game)
-        {
-            Console.WriteLine("Do you want to play another round?");
-            string answer = Console.ReadLine();
-            if (answer.ToUpper() == "Y" || answer == "")
-            {
-                game.RestartGame();
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-
         private static void PrintGame(Game game)
         {
             Console.Clear();
@@ -103,6 +88,29 @@ namespace Blok1.BlackJack.Games
         public static void DecideWinner(Game game)
         {
             Console.WriteLine(game.DecideWinner());
+        }
+
+        private static bool RestartGame(Game game)
+        {
+            if (game.Player.Balance > 0)
+            {
+                Console.WriteLine("Do you want to play another round?");
+                string answer = Console.ReadLine();
+                if (answer.ToUpper() == "Y" || answer == "")
+                {
+                    game.RestartGame();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                Console.WriteLine("You don't have any money left.. ");
+                return false;
+            }
         }
     }
 }
