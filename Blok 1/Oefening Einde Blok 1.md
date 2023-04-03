@@ -23,7 +23,7 @@ Player  has
 Hand Value is 13
 Bet: 3
 
-(H)it or (S)tand or (D)ouble Down? H
+(H)it or (S)tand or (D)ouble Down or Split (P)airs? H <-- as long as your hand has onkly two cards
 
 Dealer has 
 - Ace of Spades (Face up) 
@@ -36,7 +36,7 @@ Player  has
 Hand Value is 20
 Bet: 3
 
-(H)it or (S)tand or (D)ouble Down?
+(H)it or (S)tand? <- As long as your hand has more than two cards
 Dealer has 
 - Ace of Spades (Face up) 
 - 4 Ruiten (Face down)
