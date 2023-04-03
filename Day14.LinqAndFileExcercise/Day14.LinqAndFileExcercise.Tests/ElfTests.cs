@@ -12,6 +12,13 @@ namespace Day14.LinqAndFileExcercise.Tests
         }
 
         [TestMethod]
+        public void GetAllElves_ResultInFilledListWithFoodItems()
+        {
+            List<Elf> elves = Elf.GetAllElves();
+            Assert.IsTrue(elves[0].FoodItems.Count != 0);
+        }
+
+        [TestMethod]
         public void GetMaxAmountOfCalories_ResultsInMaxAmountIs66719()
         {
             // Arrange
