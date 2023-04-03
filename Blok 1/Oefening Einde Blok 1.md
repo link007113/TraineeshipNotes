@@ -40,7 +40,7 @@ Player  has
 Hand Value is 13
 Bet: 3
 
-(H)it or (S)tand or (D)ouble Down or Split (P)airs? H <-- as long as your hand has onkly two cards
+(H)it or (S)tand or (D)ouble Down or Split (P)airs? H <-- as long as your hand has only two cards
 
 Dealer has 
 - Ace of Spades (Face up) 
