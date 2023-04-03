@@ -1,4 +1,17 @@
 Voor de eindoefening moeten we een Console Applicatie maken om Black Jack te spelen.
+
+### Blauwe Piste:
+
+Schrijf code zodat je spel werkt. Voor het basisspel. Alleen Hit of Stand implementatie
+
+### Rode Piste:
+
+Blauwe piste + Unit testen. Volledig spel
+
+### Zwarte Piste:
+
+Code voor volledig spel + unit testen + architectuur
+
 Het spel moet verdeeld worden over 3 projecten
 
 - Console voor de UI Logica
