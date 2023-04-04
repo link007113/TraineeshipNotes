@@ -45,6 +45,16 @@ namespace Blok1.BlackJack.Classes
             }
         }
 
+        public bool CanPair()
+        {
+            if (Cards.Count != 2)
+            {
+                return false;
+            }
+
+            return Cards[0].Rank == Cards[1].Rank;
+        }
+
         public int TotalValue
         {
             get
@@ -60,7 +70,7 @@ namespace Blok1.BlackJack.Classes
 
         public void PlaceBet(decimal bet)
         {
-            Bet = bet;
+            Bet += bet;
         }
 
         public void ShowAllCards()

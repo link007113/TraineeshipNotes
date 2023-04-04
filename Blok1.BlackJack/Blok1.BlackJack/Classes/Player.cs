@@ -9,7 +9,20 @@ namespace Blok1.BlackJack.Classes
     public class Player
     {
         public string Name { get; set; }
+        //public List<Hand> Hands { get; set; } = new List<Hand>();
+
+        //public IEnumerable<Hand> Hand
+        //{
+        //    get
+        //    {
+        //        for (int i = 0; i < Hands.Count; i++)
+        //        {
+        //            yield return Hands[i];
+        //        }
+        //    }
+        //}
         public Hand Hand { get; set; }
+
         public decimal Balance { get; set; }
         public bool IsDealer { get; }
 
@@ -17,6 +30,7 @@ namespace Blok1.BlackJack.Classes
         {
             Name = name;
             Balance = balance;
+            //Hands.Add(new Hand());
             Hand = new Hand();
         }
 
@@ -37,6 +51,7 @@ namespace Blok1.BlackJack.Classes
 
         public void ClearHand()
         {
+            //Hands = new List<Hand>();
             Hand = new Hand();
         }
 
@@ -51,5 +66,16 @@ namespace Blok1.BlackJack.Classes
             Balance += Hand.Bet * 2.5M;
             ClearHand();
         }
+
+        //public void SplitPair()
+        //{
+        //    if (Hand.CanPair())
+        //    {
+        //        var secondHand = new Hand();
+        //        secondHand.Cards.Add(Hand.Cards[1]);
+        //        Hand.Cards.RemoveAt(1);
+        //        Hands.Add(secondHand);
+        //    }
+        //}
     }
 }

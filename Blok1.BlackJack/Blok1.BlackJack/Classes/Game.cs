@@ -59,7 +59,7 @@ namespace Blok1.BlackJack.Classes
         {
             var sb = new StringBuilder();
             sb.AppendLine($"Balance of {Player.Name}:\t{Player.Balance}");
-            sb.AppendLine($"{Player.Name}'s hand:{Player.Hand}");
+            sb.AppendLine($"{Player.Name}'s hand:\n{Player.Hand}");
             sb.AppendLine();
             sb.AppendLine($"{Dealer.Name}'s hand:\n{Dealer.Hand}");
             return sb.ToString();
