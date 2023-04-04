@@ -82,13 +82,14 @@ namespace Blok1.BlackJack.Tests
         public void GameDecideWinnerOutcomeIsPush()
         {
             // Arrange
-            _sut.Player.Hand.AddCard(new Card(Suit.Clubs, Rank.Ace));
             _sut.Player.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
-            _sut.Dealer.Hand.AddCard(new Card(Suit.Clubs, Rank.Ace));
+            _sut.Player.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            _sut.Dealer.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
             _sut.Dealer.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
 
             // Act
-            string outcome = _sut.DecideWinner();
+            _sut.DecideWinner();
+            string outcome = _sut.Player.Hand.GameResult;
 
             // Assert
             Assert.AreEqual("Push!", outcome);
@@ -104,7 +105,8 @@ namespace Blok1.BlackJack.Tests
             _sut.Dealer.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
 
             // Act
-            string outcome = _sut.DecideWinner();
+            _sut.DecideWinner();
+            string outcome = _sut.Player.Hand.GameResult;
 
             Assert.AreEqual("You lose!", outcome);
         }
@@ -119,7 +121,8 @@ namespace Blok1.BlackJack.Tests
             _sut.Dealer.Hand.AddCard(new Card(Suit.Clubs, Rank.Three));
 
             // Act
-            string outcome = _sut.DecideWinner();
+            _sut.DecideWinner();
+            string outcome = _sut.Player.Hand.GameResult;
 
             // Assert
             Assert.AreEqual("You win!", outcome);

@@ -8,8 +8,21 @@ namespace Blok1.BlackJack.Classes
 {
     public class Player
     {
-        public string Name { get; set; }
-        //public List<Hand> Hands { get; set; } = new List<Hand>();
+        public Player(string name, decimal balance = 20M)
+        {
+            Name = name;
+            Balance = balance;
+            Hands.Add(new Hand());
+        }
+
+        public Player(string name, decimal balance, bool isDealer = false) : this(name, balance = 20M)
+        {
+            IsDealer = isDealer;
+        }
+
+        public decimal Balance { get; set; }
+        public Hand Hand => Hands.FirstOrDefault();
+        public List<Hand> Hands { get; set; } = new List<Hand>();
 
         //public IEnumerable<Hand> Hand
         //{
@@ -21,61 +34,61 @@ namespace Blok1.BlackJack.Classes
         //        }
         //    }
         //}
-        public Hand Hand { get; set; }
-
-        public decimal Balance { get; set; }
         public bool IsDealer { get; }
 
-        public Player(string name, decimal balance = 20M)
+        public string Name { get; set; }
+
+        public void AddWinnings() => AddWinnings(Hand);
+
+        public void AddWinnings(Hand hand)
         {
-            Name = name;
-            Balance = balance;
-            //Hands.Add(new Hand());
-            Hand = new Hand();
+            Balance += hand.Bet * 2;
         }
 
-        public Player(string name, decimal balance, bool isDealer = false) : this(name, balance = 20M)
+        public void AddWinningsBlackJack() => AddWinningsBlackJack(Hand);
+
+        public void AddWinningsBlackJack(Hand hand)
         {
-            IsDealer = isDealer;
+            Balance += hand.Bet * 2.5M;
         }
 
-        public void PlaceBet(decimal bet)
+        public void ReturnBet() => AddWinningsPush(Hand);
+
+        public void AddWinningsPush(Hand hand)
+        {
+            Balance += hand.Bet;
+        }
+
+        public void ClearHand()
+        {
+            Hands = new List<Hand>();
+            Hands.Add(new Hand());
+        }
+
+        public void PlaceBet(decimal bet) => PlaceBet(bet, Hand);
+
+        public void PlaceBet(decimal bet, Hand hand)
         {
             if (bet > Balance)
             {
                 throw new ArgumentOutOfRangeException("Not enough money");
             }
             Balance -= bet;
-            Hand.PlaceBet(bet);
+            hand.PlaceBet(bet);
         }
 
-        public void ClearHand()
+        public void SplitPair() => SplitPair(Hand);
+
+        public void SplitPair(Hand hand)
         {
-            //Hands = new List<Hand>();
-            Hand = new Hand();
+            if (hand.CanPair())
+            {
+                var secondHand = new Hand();
+                PlaceBet(hand.Bet, secondHand);
+                secondHand.Cards.Add(hand.Cards[1]);
+                hand.Cards.Remove(hand.Cards[1]);
+                Hands.Add(secondHand);
+            }
         }
-
-        public void AddWinnings()
-        {
-            Balance += Hand.Bet * 2;
-            ClearHand();
-        }
-
-        public void AddWinningsBlackJack()
-        {
-            Balance += Hand.Bet * 2.5M;
-            ClearHand();
-        }
-
-        //public void SplitPair()
-        //{
-        //    if (Hand.CanPair())
-        //    {
-        //        var secondHand = new Hand();
-        //        secondHand.Cards.Add(Hand.Cards[1]);
-        //        Hand.Cards.RemoveAt(1);
-        //        Hands.Add(secondHand);
-        //    }
-        //}
     }
 }

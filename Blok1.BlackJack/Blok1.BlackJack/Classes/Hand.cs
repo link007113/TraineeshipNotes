@@ -21,6 +21,23 @@ namespace Blok1.BlackJack.Classes
         public decimal Bet { get; private set; }
         public List<Card> Cards { get; }
 
+        public string GameResult { get; set; }
+
+        public bool CanDoubleDown
+        {
+            get
+            {
+                if (Cards.Count == 2)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+        }
+
         public bool IsBlackJack
         {
             get
@@ -94,6 +111,10 @@ namespace Blok1.BlackJack.Classes
             foreach (var card in Cards)
             {
                 sb.AppendLine($"\t{card.ToString()}");
+            }
+            if (!string.IsNullOrEmpty(GameResult))
+            {
+                sb.AppendLine($"\t{GameResult}");
             }
             return sb.ToString();
         }

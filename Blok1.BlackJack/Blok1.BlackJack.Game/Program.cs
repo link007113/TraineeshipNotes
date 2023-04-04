@@ -1,5 +1,7 @@
 ﻿using Blok1.BlackJack.Enums;
 using Blok1.BlackJack.Classes;
+using System.Text;
+using System.Numerics;
 
 namespace Blok1.BlackJack.Games
 {
@@ -17,9 +19,17 @@ namespace Blok1.BlackJack.Games
                 PlaceBets(game);
                 DealCards(game);
                 PrintGame(game);
-                AskPlayerChoice(game);
-                PrintGame(game);
-                DecideWinner(game);
+                if (game.Player.Hand.IsBlackJack)
+                {
+                    DecideWinner(game);
+                    PrintGame(game);
+                }
+                else
+                {
+                    AskPlayerChoice(game);                    
+                    DecideWinner(game);
+                    PrintGame(game);
+                }
             } while (RestartGame(game));
         }
 
@@ -31,7 +41,18 @@ namespace Blok1.BlackJack.Games
 
         private static void AskPlayerChoice(Game game)
         {
-            Console.WriteLine("(H)it or (S)tand?");
+            string extraOptions = string.Empty;
+
+            if (game.Player.Hand.CanDoubleDown)
+            {
+                extraOptions += " or (D)ouble Down";
+            }
+            if (game.Player.Hand.CanSplit)
+            {
+                extraOptions += " or Split (P)airs";
+            }
+
+            Console.WriteLine($"(H)it or (S)tand{extraOptions}?");
             string playerChoice = Console.ReadLine();
             ProcessPlayerChoice(game, playerChoice);
         }
@@ -53,11 +74,18 @@ namespace Blok1.BlackJack.Games
         {
             Console.WriteLine("Press a key to deal the cards");
             Console.ReadKey();
-            game.DealCards();
+            //game.DealCards();
+            game.Player.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            game.Player.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            game.Dealer.Hand.AddCard(new Card(Suit.Clubs, Rank.Three));
+            game.Dealer.Hand.AddCard(new Card(Suit.Clubs, Rank.Two));
         }
 
         public static void ProcessPlayerChoice(Game game, string playerChoice)
         {
+            bool canDoubleDown = game.Player.Hand.CanDoubleDown;
+            bool canSplit = game.Player.Hand.CanSplit;
+
             switch (playerChoice.ToUpper())
             {
                 case "H":
@@ -74,7 +102,27 @@ namespace Blok1.BlackJack.Games
                     break;
 
                 case "D":
-                    game.PlayerDoubleDown();
+                    if (canDoubleDown)
+                    {
+                        game.PlayerDoubleDown();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Double down is not allowed in this situation.");
+                        AskPlayerChoice(game);
+                    }
+                    break;
+
+                case "P":
+                    if (canSplit)
+                    {
+                        game.PlayerSplit();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Splitting pairs is not allowed in this situation.");
+                        AskPlayerChoice(game);
+                    }
                     break;
 
                 default:
@@ -87,7 +135,7 @@ namespace Blok1.BlackJack.Games
 
         public static void DecideWinner(Game game)
         {
-            Console.WriteLine(game.DecideWinner());
+            game.DecideWinner();
         }
 
         private static bool RestartGame(Game game)

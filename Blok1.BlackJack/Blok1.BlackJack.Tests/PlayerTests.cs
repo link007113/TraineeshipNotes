@@ -1,5 +1,6 @@
 ﻿using Blok1.BlackJack.Enums;
 using Blok1.BlackJack.Classes;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Blok1.BlackJack.Tests
 {
@@ -89,6 +90,31 @@ namespace Blok1.BlackJack.Tests
 
             // Assert
             Assert.AreEqual(45, player.Balance);
+        }
+
+        [TestMethod]
+        public void PlayerHandReturnBetGivesBalancePlusBet()
+        {
+            // Arrange
+            var player = new Player("Test");
+            player.Hand.PlaceBet(10);
+            // Act
+            player.ReturnBet();
+            // Assert
+            Assert.AreEqual(30, player.Balance);
+        }
+
+        [TestMethod]
+        public void PlayerSplitPairResultsInMoreHands()
+        {
+            // Arrange
+            var player = new Player("Test");
+            player.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            player.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            // Act
+            player.SplitPair();
+            // Assert
+            Assert.AreEqual(2, player.Hands.Count);
         }
     }
 }
