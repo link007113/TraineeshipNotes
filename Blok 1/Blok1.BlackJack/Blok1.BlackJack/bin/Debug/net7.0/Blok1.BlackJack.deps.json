@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Blok1.BlackJack/1.0.0": {
+        "runtime": {
+          "Blok1.BlackJack.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Blok1.BlackJack/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
