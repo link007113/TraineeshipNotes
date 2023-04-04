@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using Blok1.BlackJack.Enums;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Blok1.BlackJack.Classes
 {
@@ -76,7 +74,7 @@ namespace Blok1.BlackJack.Classes
         {
             get
             {
-                return Cards.Sum(c => c.Value);
+                return Cards.Sum(c => c.Rank.GetValue(Cards.Where(c => c.Rank != Rank.Ace).Sum(c => c.Value)));
             }
         }
 

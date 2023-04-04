@@ -1,5 +1,4 @@
 ﻿using Blok1.BlackJack.Enums;
-using Blok1.BlackJack.Classes;
 
 namespace Blok1.BlackJack.Classes
 {
@@ -50,11 +49,23 @@ namespace Blok1.BlackJack.Classes
             Cards = shuffledShoe;
         }
 
-        public Card DrawCard() => DrawCard(true);
-
-        public Card DrawCard(bool visible)
+        public Card DrawCard(bool visible = true)
         {
             Card givenCard = Cards.First();
+            Cards.Remove(givenCard);
+            givenCard.Visible = visible;
+            return givenCard;
+        }
+
+        /// <summary>
+        /// You Cheater!
+        /// </summary>
+        /// <param name="visible"></param>
+        /// <param name="rank"></param>
+        /// <returns></returns>
+        public Card DrawCard(Rank rank, bool visible = true)
+        {
+            Card givenCard = Cards.First(c => c.Rank == rank);
             Cards.Remove(givenCard);
             givenCard.Visible = visible;
             return givenCard;

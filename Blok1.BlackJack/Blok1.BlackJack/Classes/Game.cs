@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Blok1.BlackJack.Enums;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace Blok1.BlackJack.Classes
 {
@@ -27,30 +24,26 @@ namespace Blok1.BlackJack.Classes
 
         public void DealCards()
         {
-            Player.Hand.AddCard(Shoe.DrawCard());
-            Dealer.Hand.AddCard(Shoe.DrawCard());
+            Player.PrimaryHand.AddCard(Shoe.DrawCard());
+            Dealer.PrimaryHand.AddCard(Shoe.DrawCard());
 
-            Player.Hand.AddCard(Shoe.DrawCard());
-            Dealer.Hand.AddCard(Shoe.DrawCard(false));
+            Player.PrimaryHand.AddCard(Shoe.DrawCard());
+            Dealer.PrimaryHand.AddCard(Shoe.DrawCard(false));
         }
 
         public void PlayerHit(Hand hand)
         {
-            hand.AddCard(Shoe.DrawCard());
+            hand.AddCard(Shoe.DrawCard(Rank.Ace));
         }
-
-        public void PlayerHit() => PlayerHit(Player.Hand);
 
         public void PlayerStand()
         {
-            Dealer.Hand.ShowAllCards();
-            while (Dealer.Hand.TotalValue < 17)
+            Dealer.PrimaryHand.ShowAllCards();
+            while (Dealer.PrimaryHand.TotalValue < 17)
             {
-                Dealer.Hand.AddCard(Shoe.DrawCard());
+                Dealer.PrimaryHand.AddCard(Shoe.DrawCard());
             }
         }
-
-        public void PlayerDoubleDown() => PlayerDoubleDown(Player.Hand);
 
         public void PlayerDoubleDown(Hand hand)
         {
@@ -59,9 +52,9 @@ namespace Blok1.BlackJack.Classes
             PlayerStand();
         }
 
-        public void PlayerSplit()
+        public void PlayerSplit(Hand splittingHand)
         {
-            Player.SplitPair();
+            Player.SplitPair(splittingHand);
             foreach (Hand hand in Player.Hands)
             {
                 PlayerHit(hand);
@@ -74,7 +67,7 @@ namespace Blok1.BlackJack.Classes
             sb.AppendLine($"Balance of {Player.Name}:\t{Player.Balance}");
             if (Player.Hands.Count == 1)
             {
-                sb.AppendLine($"{Player.Name}'s hand:\n{Player.Hand}");
+                sb.AppendLine($"{Player.Name}'s hand:\n{Player.PrimaryHand}");
                 sb.AppendLine();
             }
             else
@@ -87,7 +80,7 @@ namespace Blok1.BlackJack.Classes
                 sb.AppendLine();
             }
 
-            sb.AppendLine($"{Dealer.Name}'s hand:\n{Dealer.Hand}");
+            sb.AppendLine($"{Dealer.Name}'s hand:\n{Dealer.PrimaryHand}");
             return sb.ToString();
         }
 
@@ -99,38 +92,37 @@ namespace Blok1.BlackJack.Classes
                 {
                     hand.GameResult = "You lose!";
                 }
-                else if (Dealer.Hand.IsBust)
+                else if (Dealer.PrimaryHand.IsBust)
                 {
                     Player.AddWinnings(hand);
                     hand.GameResult = "You win!";
                 }
-                else if (hand.TotalValue == 21 && Dealer.Hand.TotalValue != 21)
+                else if (hand.TotalValue == 21 && Dealer.PrimaryHand.TotalValue != 21)
                 {
                     Player.AddWinningsBlackJack(hand);
                     hand.GameResult = "You win!";
                 }
-                else if (hand.TotalValue == Dealer.Hand.TotalValue)
+                else if (hand.TotalValue == Dealer.PrimaryHand.TotalValue)
                 {
                     Player.AddWinningsPush(hand);
                     hand.GameResult = "Push!";
                 }
-                else if (hand.TotalValue > Dealer.Hand.TotalValue)
+                else if (hand.TotalValue > Dealer.PrimaryHand.TotalValue)
                 {
                     Player.AddWinnings(hand);
                     hand.GameResult = "You win!";
                 }
-                else if (hand.TotalValue < Dealer.Hand.TotalValue)
+                else if (hand.TotalValue < Dealer.PrimaryHand.TotalValue)
                 {
                     hand.GameResult = "You lose!";
                 }
             }
-
         }
 
         public void RestartGame()
         {
-            Player.ClearHand();
-            Dealer.ClearHand();
+            Player.ClearHands();
+            Dealer.ClearHands();
             Shoe = new Shoe();
             Shoe.Shuffle();
         }

@@ -1,8 +1,5 @@
 ﻿using Blok1.BlackJack.Enums;
 using Blok1.BlackJack.Classes;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Numerics;
-using System.Diagnostics;
 
 namespace Blok1.BlackJack.Tests
 {
@@ -54,16 +51,16 @@ namespace Blok1.BlackJack.Tests
         public void GameDealsCardsResultInPlayerAndDealerHaveTwoCards()
         {
             _sut.DealCards();
-            Assert.AreEqual(2, _sut.Player.Hand.Cards.Count);
-            Assert.AreEqual(2, _sut.Dealer.Hand.Cards.Count);
+            Assert.AreEqual(2, _sut.Player.PrimaryHand.Cards.Count);
+            Assert.AreEqual(2, _sut.Dealer.PrimaryHand.Cards.Count);
         }
 
         [TestMethod]
         public void GameDealsCardsResultInDealerHaveOneVisibleAndOneInvisibleCard()
         {
             _sut.DealCards();
-            Assert.AreEqual(1, _sut.Dealer.Hand.Cards.Count(c => c.Visible));
-            Assert.AreEqual(1, _sut.Dealer.Hand.Cards.Count(c => !c.Visible));
+            Assert.AreEqual(1, _sut.Dealer.PrimaryHand.Cards.Count(c => c.Visible));
+            Assert.AreEqual(1, _sut.Dealer.PrimaryHand.Cards.Count(c => !c.Visible));
         }
 
         [TestMethod]
@@ -72,24 +69,24 @@ namespace Blok1.BlackJack.Tests
             // Arrange
             _sut.DealCards();
             // Act
-            _sut.PlayerHit();
+            _sut.PlayerHit(_sut.Player.PrimaryHand);
             // Assert
-            Assert.AreEqual(3, _sut.Player.Hand.Cards.Count);
-            Assert.AreEqual(2, _sut.Dealer.Hand.Cards.Count);
+            Assert.AreEqual(3, _sut.Player.PrimaryHand.Cards.Count);
+            Assert.AreEqual(2, _sut.Dealer.PrimaryHand.Cards.Count);
         }
 
         [TestMethod]
         public void GameDecideWinnerOutcomeIsPush()
         {
             // Arrange
-            _sut.Player.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
-            _sut.Player.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
-            _sut.Dealer.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
-            _sut.Dealer.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            _sut.Dealer.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            _sut.Dealer.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
 
             // Act
             _sut.DecideWinner();
-            string outcome = _sut.Player.Hand.GameResult;
+            string outcome = _sut.Player.PrimaryHand.GameResult;
 
             // Assert
             Assert.AreEqual("Push!", outcome);
@@ -99,14 +96,14 @@ namespace Blok1.BlackJack.Tests
         public void GameDecideWinnerOutcomeIsDealerWin()
         {
             // Arrange
-            _sut.Player.Hand.AddCard(new Card(Suit.Clubs, Rank.Two));
-            _sut.Player.Hand.AddCard(new Card(Suit.Clubs, Rank.Three));
-            _sut.Dealer.Hand.AddCard(new Card(Suit.Clubs, Rank.Ace));
-            _sut.Dealer.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Two));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Three));
+            _sut.Dealer.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ace));
+            _sut.Dealer.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
 
             // Act
             _sut.DecideWinner();
-            string outcome = _sut.Player.Hand.GameResult;
+            string outcome = _sut.Player.PrimaryHand.GameResult;
 
             Assert.AreEqual("You lose!", outcome);
         }
@@ -115,14 +112,14 @@ namespace Blok1.BlackJack.Tests
         public void GameDecideWinnerOutcomeIsPlayerWin()
         {
             // Arrange
-            _sut.Player.Hand.AddCard(new Card(Suit.Clubs, Rank.Ace));
-            _sut.Player.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
-            _sut.Dealer.Hand.AddCard(new Card(Suit.Clubs, Rank.Two));
-            _sut.Dealer.Hand.AddCard(new Card(Suit.Clubs, Rank.Three));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ace));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            _sut.Dealer.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Two));
+            _sut.Dealer.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Three));
 
             // Act
             _sut.DecideWinner();
-            string outcome = _sut.Player.Hand.GameResult;
+            string outcome = _sut.Player.PrimaryHand.GameResult;
 
             // Assert
             Assert.AreEqual("You win!", outcome);
@@ -133,15 +130,15 @@ namespace Blok1.BlackJack.Tests
         {
             // Arrange
             _sut.DealCards();
-            _sut.PlayerHit();
+            _sut.PlayerHit(_sut.Player.PrimaryHand);
             _sut.PlayerStand();
 
             // Act
             _sut.RestartGame();
 
             // Assert
-            Assert.AreEqual(0, _sut.Player.Hand.Cards.Count);
-            Assert.AreEqual(0, _sut.Dealer.Hand.Cards.Count);
+            Assert.AreEqual(0, _sut.Player.PrimaryHand.Cards.Count);
+            Assert.AreEqual(0, _sut.Dealer.PrimaryHand.Cards.Count);
             Assert.AreEqual(312, _sut.Shoe.Cards.Count);
         }
 
@@ -150,13 +147,13 @@ namespace Blok1.BlackJack.Tests
         {
             // Arrange
             _sut.DealCards();
-            _sut.PlayerHit();
+            _sut.PlayerHit(_sut.Player.PrimaryHand);
 
             // Act
             _sut.PlayerStand();
 
             //Assert
-            Assert.IsTrue(_sut.Dealer.Hand.Cards.All(c => c.Visible));
+            Assert.IsTrue(_sut.Dealer.PrimaryHand.Cards.All(c => c.Visible));
         }
 
         [TestMethod]
@@ -164,13 +161,13 @@ namespace Blok1.BlackJack.Tests
         {
             // Arrange
             _sut.DealCards();
-            _sut.PlayerHit();
+            _sut.PlayerHit(_sut.Player.PrimaryHand);
 
             // Act
             _sut.PlayerStand();
 
             //Assert
-            Assert.IsTrue(_sut.Dealer.Hand.TotalValue > 17);
+            Assert.IsTrue(_sut.Dealer.PrimaryHand.TotalValue > 17);
         }
 
         [TestMethod]
@@ -182,11 +179,26 @@ namespace Blok1.BlackJack.Tests
             _sut.DealCards();
 
             // Act
-            _sut.PlayerDoubleDown();
+            _sut.PlayerDoubleDown(_sut.Player.PrimaryHand);
 
             // Assert
 
-            Assert.AreEqual(bet * 2, _sut.Player.Hand.Bet);
+            Assert.AreEqual(bet * 2, _sut.Player.PrimaryHand.Bet);
+        }
+
+        [TestMethod]
+        public void GamePlayerSplitPairResultsInTwoHandsOfTen()
+        {
+            // Arrange
+
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            // Act
+            _sut.PlayerSplit(_sut.Player.PrimaryHand);
+            // Assert
+            Assert.AreEqual(2, _sut.Player.Hands.Count);
+            Assert.AreEqual(2, _sut.Player.Hands[0].Cards.Count);
+            Assert.AreEqual(2, _sut.Player.Hands[1].Cards.Count);
         }
     }
 }

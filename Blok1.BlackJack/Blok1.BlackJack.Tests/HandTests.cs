@@ -1,6 +1,5 @@
 ﻿using Blok1.BlackJack.Enums;
 using Blok1.BlackJack.Classes;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Blok1.BlackJack.Tests
 {

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Blok1.BlackJack.Classes
+﻿namespace Blok1.BlackJack.Classes
 {
     public class Player
     {
@@ -21,51 +15,42 @@ namespace Blok1.BlackJack.Classes
         }
 
         public decimal Balance { get; set; }
-        public Hand Hand => Hands.FirstOrDefault();
+        public Hand PrimaryHand => Hands.FirstOrDefault();
         public List<Hand> Hands { get; set; } = new List<Hand>();
-
-        //public IEnumerable<Hand> Hand
-        //{
-        //    get
-        //    {
-        //        for (int i = 0; i < Hands.Count; i++)
-        //        {
-        //            yield return Hands[i];
-        //        }
-        //    }
-        //}
         public bool IsDealer { get; }
 
         public string Name { get; set; }
 
-        public void AddWinnings() => AddWinnings(Hand);
+        public void AddWinnings() => AddWinnings(PrimaryHand);
 
         public void AddWinnings(Hand hand)
         {
             Balance += hand.Bet * 2;
         }
 
-        public void AddWinningsBlackJack() => AddWinningsBlackJack(Hand);
+        public void AddWinningsBlackJack() => AddWinningsBlackJack(PrimaryHand);
 
         public void AddWinningsBlackJack(Hand hand)
         {
             Balance += hand.Bet * 2.5M;
         }
 
-        public void ReturnBet() => AddWinningsPush(Hand);
+        public void ReturnBet() => AddWinningsPush(PrimaryHand);
 
         public void AddWinningsPush(Hand hand)
         {
             Balance += hand.Bet;
         }
 
-        public void ClearHand()
+        public void ClearHands()
         {
-            Hands = new List<Hand>();
-            Hands.Add(new Hand());
+            Hands = new List<Hand>
+            {
+                new Hand()
+            };
         }
 
-        public void PlaceBet(decimal bet) => PlaceBet(bet, Hand);
+        public void PlaceBet(decimal bet) => PlaceBet(bet, PrimaryHand);
 
         public void PlaceBet(decimal bet, Hand hand)
         {
@@ -77,7 +62,7 @@ namespace Blok1.BlackJack.Classes
             hand.PlaceBet(bet);
         }
 
-        public void SplitPair() => SplitPair(Hand);
+        public void SplitPair() => SplitPair(PrimaryHand);
 
         public void SplitPair(Hand hand)
         {

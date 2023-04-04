@@ -1,6 +1,5 @@
 ﻿using Blok1.BlackJack.Enums;
 using Blok1.BlackJack.Classes;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Blok1.BlackJack.Tests
 {
@@ -25,14 +24,14 @@ namespace Blok1.BlackJack.Tests
         public void NewPlayerHasHandOfZero()
         {
             var player = new Player("Test");
-            Assert.AreEqual(0, player.Hand.TotalValue);
+            Assert.AreEqual(0, player.PrimaryHand.TotalValue);
         }
 
         [TestMethod]
         public void NewPlayerHasBetOfZero()
         {
             var player = new Player("Test");
-            Assert.AreEqual(0, player.Hand.Bet);
+            Assert.AreEqual(0, player.PrimaryHand.Bet);
         }
 
         [TestMethod]
@@ -55,13 +54,13 @@ namespace Blok1.BlackJack.Tests
         {
             // Arrange
             var player = new Player("Test");
-            player.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
 
             // Act
-            player.ClearHand();
+            player.ClearHands();
 
             // Assert
-            Assert.AreEqual(0, player.Hand.Cards.Count);
+            Assert.AreEqual(0, player.PrimaryHand.Cards.Count);
         }
 
         [TestMethod]
@@ -69,10 +68,10 @@ namespace Blok1.BlackJack.Tests
         {
             // Arrange
             var player = new Player("Test");
-            player.Hand.PlaceBet(10);
+            player.PrimaryHand.PlaceBet(10);
 
             // Act
-            player.AddWinnings();
+            player.AddWinnings(player.PrimaryHand);
 
             // Assert
             Assert.AreEqual(40, player.Balance);
@@ -83,10 +82,10 @@ namespace Blok1.BlackJack.Tests
         {
             // Arrange
             var player = new Player("Test");
-            player.Hand.PlaceBet(10);
+            player.PrimaryHand.PlaceBet(10);
 
             // Act
-            player.AddWinningsBlackJack();
+            player.AddWinningsBlackJack(player.PrimaryHand);
 
             // Assert
             Assert.AreEqual(45, player.Balance);
@@ -97,7 +96,7 @@ namespace Blok1.BlackJack.Tests
         {
             // Arrange
             var player = new Player("Test");
-            player.Hand.PlaceBet(10);
+            player.PrimaryHand.PlaceBet(10);
             // Act
             player.ReturnBet();
             // Assert
@@ -109,12 +108,26 @@ namespace Blok1.BlackJack.Tests
         {
             // Arrange
             var player = new Player("Test");
-            player.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
-            player.Hand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
             // Act
             player.SplitPair();
             // Assert
             Assert.AreEqual(2, player.Hands.Count);
+        }
+
+        [TestMethod]
+        public void PlayerSplitPairResultsInTwoHandsOfTen()
+        {
+            // Arrange
+            var player = new Player("Test");
+            player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            // Act
+            player.SplitPair();
+            // Assert
+            Assert.AreEqual(10, player.Hands[0].TotalValue);
+            Assert.AreEqual(10, player.Hands[1].TotalValue);
         }
     }
 }
