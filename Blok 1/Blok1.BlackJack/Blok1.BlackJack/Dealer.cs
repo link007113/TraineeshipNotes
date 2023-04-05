@@ -10,23 +10,17 @@ namespace Blok1.BlackJack
     {
         public bool IsDealer => true;
 
-        public HandDealer PrimaryHand => Hands.First() as HandDealer;
+        public HandDealer PrimaryHand;
 
         public Dealer()
         {
             Name = "Dealer";
-            Hands = new List<HandBase>
-            {
-                new HandDealer()
-            };
+            PrimaryHand = new HandDealer();
         }
 
-        public void ClearHands()
+        public override void ClearHands()
         {
-            Hands = new List<HandBase>
-            {
-                new HandDealer()
-            };
+            PrimaryHand = new HandDealer();
         }
     }
 }

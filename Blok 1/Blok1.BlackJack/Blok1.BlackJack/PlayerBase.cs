@@ -2,18 +2,31 @@
 {
     public class PlayerBase
     {
-        public List<HandBase> Hands { get; set; } = new List<HandBase>();
         public virtual bool IsDealer => false;
 
         public string Name { get; protected set; }
-        public virtual HandBase PrimaryHand => Hands.FirstOrDefault();
+        public virtual HandBase PrimaryHand { get; protected set; }
 
-        public void ClearHands()
+        public PlayerBase()
         {
-            Hands = new List<HandBase>
-            {
-                new HandPlayer()
-            };
+            Name = "Alice";
+            PrimaryHand = new HandBase();
+        }
+
+        public PlayerBase(string name)
+        {
+            Name = name;
+            PrimaryHand = new HandBase();
+        }
+
+        public PlayerBase(HandBase primaryHand)
+        {
+            PrimaryHand = primaryHand;
+        }
+
+        public virtual void ClearHands()
+        {
+            PrimaryHand = new HandBase();
         }
     }
 }

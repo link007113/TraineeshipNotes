@@ -5,7 +5,7 @@
         public Suit Suit { get; }
         public Rank Rank { get; }
 
-        public bool FaceUp { get; internal set; }
+        public bool FaceUp { get; protected set; }
 
         public Card(Suit suit, Rank rank) : this(suit, rank, true)
         {
@@ -22,7 +22,12 @@
 
         public override string ToString()
         {
-            return FaceUp ? $"{Rank} of {Suit}" : "## Face Down ##";
+            return FaceUp ? $"{Suit.ToCharacter()} {Rank} of {Suit}" : "## Face Down ##";
+        }
+
+        public virtual void Flip()
+        {
+            FaceUp = !FaceUp;
         }
     }
 }

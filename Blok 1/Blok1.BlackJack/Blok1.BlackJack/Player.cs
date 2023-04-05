@@ -3,9 +3,10 @@
     public class Player : PlayerBase
     {
         public decimal Balance { get; set; }
-        public HandPlayer PrimaryHand => Hands.First() as HandPlayer;
+        public List<HandPlayer> Hands { get; set; } = new List<HandPlayer>();
+        public HandPlayer PrimaryHand => Hands.First();
 
-        public Player(string name, decimal balance = 20M, HandBase hand = null)
+        public Player(string name, decimal balance = 20M, HandPlayer hand = null)
         {
             if (hand == null)
             {
@@ -33,6 +34,14 @@
         public void AddWinningsPush(HandPlayer hand)
         {
             Balance += hand.Bet;
+        }
+
+        public override void ClearHands()
+        {
+            Hands = new List<HandPlayer>
+            {
+                new HandPlayer()
+            };
         }
 
         public void PlaceBet(decimal bet) => PlaceBet(bet, PrimaryHand);

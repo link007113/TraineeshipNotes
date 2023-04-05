@@ -22,7 +22,7 @@ namespace Blok1.BlackJack
             Dealer.PrimaryHand.AddCard(Shoe.DrawCard());
 
             Player.PrimaryHand.AddCard(Shoe.DrawCard());
-            Dealer.PrimaryHand.AddCard(Shoe.DrawCard(false));
+            Dealer.PrimaryHand.AddCard(Shoe.DrawCard(true));
         }
 
         public void DecideWinner()

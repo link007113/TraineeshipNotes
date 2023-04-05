@@ -9,11 +9,16 @@
             Cards = GetDecks();
         }
 
-        public Card DrawCard(bool visible = true)
+        public Card DrawCard(bool facedown = false)
         {
             Card givenCard = Cards.First();
             Cards.Remove(givenCard);
-            givenCard.FaceUp = visible;
+
+            if (facedown)
+            {
+                givenCard.Flip();
+            }
+
             return givenCard;
         }
 

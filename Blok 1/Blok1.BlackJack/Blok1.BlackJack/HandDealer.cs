@@ -10,9 +10,9 @@ namespace Blok1.BlackJack
     {
         public void ShowAllCards()
         {
-            foreach (var card in Cards)
+            foreach (var card in Cards.Where(c => !c.FaceUp))
             {
-                card.FaceUp = true;
+                card.Flip();
             }
         }
     }
