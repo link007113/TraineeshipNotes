@@ -1,4 +1,4 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Blok1.BlackJack.Tests
 {
@@ -6,51 +6,42 @@ namespace Blok1.BlackJack.Tests
     public class CardTests
     {
         [TestMethod]
-        public void NewCardOfAceGivesCardValueOf11()
+        public void FaceUp_ShouldBeFalse_ForNewNonVisibleCard()
         {
-            var card = new Card(Suit.Clubs, Rank.Ace);
-            Assert.AreEqual(11, card.Value);
+            var card = new Card(Suit.Clubs, Rank.Two, false);
+            Assert.IsFalse(card.FaceUp);
         }
 
         [TestMethod]
-        public void NewCardOfJackGivesCardValueOf10()
-        {
-            var card = new Card(Suit.Clubs, Rank.Jack);
-            Assert.AreEqual(10, card.Value);
-        }
-
-        [TestMethod]
-        public void NewCardOfKingGivesCardValueOf10()
-        {
-            var card = new Card(Suit.Clubs, Rank.King);
-            Assert.AreEqual(10, card.Value);
-        }
-
-        [TestMethod]
-        public void NewCardOfQueenGivesCardValueOf10()
-        {
-            var card = new Card(Suit.Clubs, Rank.Queen);
-            Assert.AreEqual(10, card.Value);
-        }
-
-        [TestMethod]
-        public void NewCardOfTenGivesCardValueOf10()
-        {
-            var card = new Card(Suit.Clubs, Rank.Ten);
-            Assert.AreEqual(10, card.Value);
-        }
-
-        [TestMethod]
-        public void NewDefaultCardIsVisible()
+        public void FaceUp_ShouldBeTrue_ForNewDefaultCard()
         {
             var card = new Card(Suit.Clubs, Rank.Two);
             Assert.IsTrue(card.FaceUp);
         }
 
         [TestMethod]
-        public void NewNonVisibleCardIsInVisible()
+        public void Flip_ShouldFlipFaceDownToFaceUp()
         {
-            var card = new Card(Suit.Clubs, Rank.Two, false);
+            // Arrange
+            var card = new Card(Suit.Diamonds, Rank.King, false);
+
+            // Act
+            card.Flip();
+
+            // Assert
+            Assert.IsTrue(card.FaceUp);
+        }
+
+        [TestMethod]
+        public void Flip_ShouldFlipFaceUpToFaceDown()
+        {
+            // Arrange
+            var card = new Card(Suit.Clubs, Rank.Ace);
+
+            // Act
+            card.Flip();
+
+            // Assert
             Assert.IsFalse(card.FaceUp);
         }
 
@@ -77,7 +68,42 @@ namespace Blok1.BlackJack.Tests
             var result = card.ToString();
 
             // Assert
-            Assert.AreEqual("King of Spades", result);
+            Assert.AreEqual("♠ King of Spades", result);
+        }
+
+        [TestMethod]
+        public void Value_ShouldReturn10_ForNewCardOfJack()
+        {
+            var card = new Card(Suit.Clubs, Rank.Jack);
+            Assert.AreEqual(10, card.Value);
+        }
+
+        [TestMethod]
+        public void Value_ShouldReturn10_ForNewCardOfKing()
+        {
+            var card = new Card(Suit.Clubs, Rank.King);
+            Assert.AreEqual(10, card.Value);
+        }
+
+        [TestMethod]
+        public void Value_ShouldReturn10_ForNewCardOfQueen()
+        {
+            var card = new Card(Suit.Clubs, Rank.Queen);
+            Assert.AreEqual(10, card.Value);
+        }
+
+        [TestMethod]
+        public void Value_ShouldReturn10_ForNewCardOfTen()
+        {
+            var card = new Card(Suit.Clubs, Rank.Ten);
+            Assert.AreEqual(10, card.Value);
+        }
+
+        [TestMethod]
+        public void Value_ShouldReturn11_ForNewCardOfAce()
+        {
+            var card = new Card(Suit.Clubs, Rank.Ace);
+            Assert.AreEqual(11, card.Value);
         }
     }
 }

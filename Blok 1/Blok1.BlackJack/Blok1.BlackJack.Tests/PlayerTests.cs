@@ -10,20 +10,13 @@
         }
 
         [TestMethod]
-        public void NewPlayerHasBalanceOf20()
+        public void NewPlayer_HasBalanceOf20()
         {
             Assert.AreEqual(20M, _sut.Balance);
         }
 
         [TestMethod]
-        public void NewPlayerHasBalanceOf9AfterBetOf11()
-        {
-            _sut.PlaceBet(9);
-            Assert.AreEqual(11, _sut.Balance);
-        }
-
-        [TestMethod]
-        public void NewPlayerHasBetOf30ResultsInArgumentOutOfRangeException()
+        public void NewPlayer_HasBetOf30_ResultsInArgumentOutOfRangeException()
         {
             void act()
             {
@@ -33,38 +26,44 @@
         }
 
         [TestMethod]
-        public void NewPlayerHasBetOfZero()
+        public void NewPlayer_HasBetOfZero()
         {
             Assert.AreEqual(0, _sut.PrimaryHand.Bet);
         }
 
         [TestMethod]
-        public void NewPlayerHasHandOfZero()
+        public void NewPlayer_HasHandOfZero()
         {
             Assert.AreEqual(0, _sut.PrimaryHand.TotalValue);
         }
 
         [TestMethod]
-        public void NewPlayerHasNameOfAlice()
+        public void NewPlayer_HasNameOfAlice()
         {
             Assert.AreEqual("Alice", _sut.Name);
         }
 
         [TestMethod]
-        public void PlayerHandAddWinningsBlackJackGivesBalancePlusTwoPointFiveTimesTheBet()
+        public void NewPlayerHas_BalanceOf9_AfterBetOf11()
         {
-            // Arrange
-            _sut.PlaceBet(10);
-
-            // Act
-            _sut.AddWinningsBlackJack(_sut.PrimaryHand);
-
-            // Assert
-            Assert.AreEqual(35, _sut.Balance);
+            _sut.PlaceBet(9);
+            Assert.AreEqual(11, _sut.Balance);
         }
 
         [TestMethod]
-        public void PlayerHandAddWinningsGivesBalancePlusDoubleBet()
+        public void Player_SplitPair_ResultsInMoreHands()
+        {
+            // Arrange
+            _sut.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            _sut.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            // Act
+            _sut.SplitPair();
+            // Assert
+            Assert.AreEqual(2, _sut.Hands.Count);
+        }
+
+        [TestMethod]
+        public void PlayerHand_AddWinnings_GivesBalancePlusDoubleBet()
         {
             // Arrange
             _sut.PlaceBet(10);
@@ -77,7 +76,20 @@
         }
 
         [TestMethod]
-        public void PlayerHandClearGivesClearHand()
+        public void PlayerHand_AddWinningsBlackJack_GivesBalancePlusTwoPointFiveTimesTheBet()
+        {
+            // Arrange
+            _sut.PlaceBet(10);
+
+            // Act
+            _sut.AddWinningsBlackJack(_sut.PrimaryHand);
+
+            // Assert
+            Assert.AreEqual(35, _sut.Balance);
+        }
+
+        [TestMethod]
+        public void PlayerHand_ClearGives_ClearHand()
         {
             // Arrange
             _sut.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
@@ -90,7 +102,7 @@
         }
 
         [TestMethod]
-        public void PlayerHandReturnBetGivesBalancePlusBet()
+        public void PlayerHand_ReturnBet_GivesBalancePlusBet()
         {
             // Arrange
             _sut.PlaceBet(10);
@@ -101,19 +113,7 @@
         }
 
         [TestMethod]
-        public void PlayerSplitPairResultsInMoreHands()
-        {
-            // Arrange
-            _sut.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
-            _sut.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
-            // Act
-            _sut.SplitPair();
-            // Assert
-            Assert.AreEqual(2, _sut.Hands.Count);
-        }
-
-        [TestMethod]
-        public void PlayerSplitPairResultsInTwoHandsOfTen()
+        public void PlayerSplit_PairResults_InTwoHandsOfTen()
         {
             // Arrange
             _sut.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));

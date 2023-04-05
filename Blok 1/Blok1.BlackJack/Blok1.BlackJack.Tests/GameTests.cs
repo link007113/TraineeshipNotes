@@ -10,7 +10,7 @@
         }
 
         [TestMethod]
-        public void GameDealsCardsResultInDealerHaveOneVisibleAndOneInvisibleCard()
+        public void Game_DealsCards_ResultsInDealerHavingOneVisibleAndOneInvisibleCard()
         {
             _sut.DealCards();
             Assert.AreEqual(1, _sut.Dealer.PrimaryHand.Cards.Count(c => c.FaceUp));
@@ -18,7 +18,7 @@
         }
 
         [TestMethod]
-        public void GameDealsCardsResultInPlayerAndDealerHaveTwoCards()
+        public void Game_DealsCards_ResultsInPlayerAndDealerHavingTwoCards()
         {
             _sut.DealCards();
             Assert.AreEqual(2, _sut.Player.PrimaryHand.Cards.Count);
@@ -26,23 +26,7 @@
         }
 
         [TestMethod]
-        public void GameDecideWinnerOutcomeIsDealerWin()
-        {
-            // Arrange
-            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Two));
-            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Three));
-            _sut.Dealer.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ace));
-            _sut.Dealer.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
-
-            // Act
-            _sut.DecideWinner();
-            string outcome = _sut.Player.PrimaryHand.GameResult;
-
-            Assert.AreEqual("You lose!", outcome);
-        }
-
-        [TestMethod]
-        public void GameDecideWinnerOutcomeIsPlayerWin()
+        public void Game_DecideWinner_OutcomeIsPlayerWin()
         {
             // Arrange
             _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ace));
@@ -59,7 +43,7 @@
         }
 
         [TestMethod]
-        public void GameDecideWinnerOutcomeIsPush()
+        public void Game_DecideWinner_OutcomeIsPush()
         {
             // Arrange
             _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
@@ -76,7 +60,24 @@
         }
 
         [TestMethod]
-        public void GamePlayerDoubleDownResultsInDoubleBet()
+        public void Game_DecideWinner_ResultsInDealerWinning()
+        {
+            // Arrange
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Two));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Three));
+            _sut.Dealer.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ace));
+            _sut.Dealer.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+
+            // Act
+            _sut.DecideWinner();
+            string outcome = _sut.Player.PrimaryHand.GameResult;
+
+            // Assert
+            Assert.AreEqual("You lose!", outcome);
+        }
+
+        [TestMethod]
+        public void Game_PlayerDoubleDown_ResultsInDoubleBet()
         {
             // Arrange
             decimal bet = 5;
@@ -87,46 +88,54 @@
             _sut.PlayerDoubleDown(_sut.Player.PrimaryHand);
 
             // Assert
-
             Assert.AreEqual(bet * 2, _sut.Player.PrimaryHand.Bet);
         }
 
         [TestMethod]
-        public void GamePlayerHitResultInPlayerHaveThreeCardsAndDealerHaveTwoCards()
+        public void Game_PlayerHit_ResultInPlayerHaveThreeCardsAndDealerHaveTwoCards()
         {
             // Arrange
             _sut.DealCards();
+
             // Act
             _sut.PlayerHit(_sut.Player.PrimaryHand);
+
             // Assert
             Assert.AreEqual(3, _sut.Player.PrimaryHand.Cards.Count);
             Assert.AreEqual(2, _sut.Dealer.PrimaryHand.Cards.Count);
         }
 
         [TestMethod]
-        public void GamePlayerPlacesBetOf10SetsBalanceOfPlayerTo10()
+        public void Game_PlayerPlacesBetOf10_SetsBalanceOfPlayerTo10()
         {
             // Act
             _sut.PlayerPlaceBet(10);
+
             // Assert
             Assert.AreEqual(10M, _sut.Player.Balance);
         }
 
         [TestMethod]
-        public void GamePlayerPlacesBetOf30ResultsInArgumentOutOfRangeException()
+        public void Game_PlayerPlacesBetOf30_ResultsInArgumentOutOfRangeException()
         {
-            Assert.ThrowsException<ArgumentOutOfRangeException>(() => _sut.PlayerPlaceBet(30));
+            void act()
+            {
+                _sut.PlayerPlaceBet(30);
+            }
+
+            Assert.ThrowsException<ArgumentOutOfRangeException>(act);
         }
 
         [TestMethod]
-        public void GamePlayerSplitPairResultsInTwoHandsOfTen()
+        public void Game_PlayerSplitPair_ResultsInTwoHandsOfTen()
         {
             // Arrange
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
 
-            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
-            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
             // Act
             _sut.PlayerSplit(_sut.Player.PrimaryHand);
+
             // Assert
             Assert.AreEqual(2, _sut.Player.Hands.Count);
             Assert.AreEqual(2, _sut.Player.Hands[0].Cards.Count);
@@ -134,7 +143,7 @@
         }
 
         [TestMethod]
-        public void GamePlayerStandResultsInDealerAllCardsVisible()
+        public void Game_PlayerStand_ResultsInDealerAllCardsVisible()
         {
             // Arrange
             _sut.DealCards();
@@ -143,12 +152,12 @@
             // Act
             _sut.PlayerStand();
 
-            //Assert
+            // Assert
             Assert.IsTrue(_sut.Dealer.PrimaryHand.Cards.All(c => c.FaceUp));
         }
 
         [TestMethod]
-        public void GamePlayerStandResultsInDealerHandTotalValueIsHigherThan17()
+        public void Game_PlayerStand_ResultsInDealerHandTotalValueIsHigherThan17()
         {
             // Arrange
             _sut.DealCards();
@@ -157,12 +166,12 @@
             // Act
             _sut.PlayerStand();
 
-            //Assert
+            // Assert
             Assert.IsTrue(_sut.Dealer.PrimaryHand.TotalValue > 17);
         }
 
         [TestMethod]
-        public void GameResetResultsInResetGame()
+        public void Game_Reset_ResultsInResetGame()
         {
             // Arrange
             _sut.DealCards();
@@ -179,25 +188,27 @@
         }
 
         [TestMethod]
-        public void NewGameWithNameTestHasDealerWithNameDealer()
+        public void NewGame_With_HasPlayerWithBalanceOf20()
         {
-            Assert.AreEqual("Dealer", _sut.Dealer.Name);
-        }
-
-        [TestMethod]
-        public void NewGameWithNameTestHasPlayerWithBalanceOf20()
-        {
+            // Assert
             Assert.AreEqual(20M, _sut.Player.Balance);
         }
 
         [TestMethod]
-        public void NewGameWithNameTestHasPlayerWithNameTest()
+        public void NewGame_WithNameAlice_HasPlayerWithNameAlice()
         {
             Assert.AreEqual("Alice", _sut.Player.Name);
         }
 
         [TestMethod]
-        public void ToString_ShouldContainPlayerNameAndBalanceAndPrimaryHand_WhenPlayerHasOneHand()
+        public void NewGame_WithNameTest_HasDealerWithNameDealer()
+        {
+            // Assert
+            Assert.AreEqual("Dealer", _sut.Dealer.Name);
+        }
+
+        [TestMethod]
+        public void ToString_ShouldContainPlayerNameAndBalanceAndPrimaryPlayerHand_WhenPlayerHasOneHand()
         {
             // Arrange
             _sut.Player.PrimaryHand.AddCard(new Card(Suit.Hearts, Rank.Ace));
