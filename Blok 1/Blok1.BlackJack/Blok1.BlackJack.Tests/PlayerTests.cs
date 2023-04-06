@@ -176,7 +176,7 @@
             _sut.ClearHands();
 
             // Assert
-            Assert.AreEqual(0, _sut.PrimaryHand.Cards.Count);
+            Assert.AreEqual(0, _sut.PrimaryHand.Cards.Count());
         }
 
         [TestMethod]
@@ -199,8 +199,8 @@
             // Act
             _sut.SplitPair();
             // Assert
-            Assert.AreEqual(10, _sut.Hands[0].TotalValue);
-            Assert.AreEqual(10, _sut.Hands[1].TotalValue);
+            Assert.AreEqual(10, _sut.Hands.First().TotalValue);
+            Assert.AreEqual(10, _sut.Hands.Skip(1).First().TotalValue);
         }
 
         [TestMethod]
@@ -212,8 +212,8 @@
             // Act
             _sut.SplitPair();
             // Assert
-            Assert.IsTrue(_sut.Hands[0].IsSplit);
-            Assert.IsTrue(_sut.Hands[1].IsSplit);
+            Assert.IsTrue(_sut.Hands.First().IsSplit);
+            Assert.IsTrue(_sut.Hands.Skip(1).First().IsSplit);
         }
 
         [TestMethod]
@@ -225,7 +225,7 @@
             // Act
             _sut.SplitPair();
             // Assert
-            Assert.AreEqual(2, _sut.Hands.Count);
+            Assert.AreEqual(2, _sut.Hands.Count());
         }
 
         [TestMethod]
@@ -236,11 +236,11 @@
             _sut.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ace));
             // Act
             _sut.SplitPair();
-            _sut.Hands[0].AddCard(new Card(Suit.Diamonds, Rank.King));
-            _sut.Hands[1].AddCard(new Card(Suit.Diamonds, Rank.King));
+            _sut.Hands.First().AddCard(new Card(Suit.Diamonds, Rank.King));
+            _sut.Hands.Skip(1).First().AddCard(new Card(Suit.Diamonds, Rank.King));
             // Assert
-            Assert.IsFalse(_sut.Hands[0].IsBlackJack);
-            Assert.IsFalse(_sut.Hands[1].IsBlackJack);
+            Assert.IsFalse(_sut.Hands.First().IsBlackJack);
+            Assert.IsFalse(_sut.Hands.Skip(1).First().IsBlackJack);
         }
 
         [TestMethod]
@@ -252,7 +252,7 @@
             // Act
             _sut.SplitPair();
             // Assert
-            Assert.AreEqual(_sut.Hands[0].Bet, _sut.Hands[1].Bet);
+            Assert.AreEqual(_sut.Hands.First().Bet, _sut.Hands.Skip(1).First().Bet);
         }
 
         private Player _sut = new("Alice");

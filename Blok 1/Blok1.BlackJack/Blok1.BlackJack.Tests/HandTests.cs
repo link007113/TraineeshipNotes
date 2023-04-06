@@ -6,18 +6,18 @@
         [TestInitialize]
         public void Arrange()
         {
-            _sut = new HandPlayer();
+            _sut = new PlayerHand();
         }
 
         [TestMethod]
         public void IsCharlie_WhenHandHasFiveCardsAndIsNotBust_ShouldReturnTrue()
         {
             // Arrange
-            _sut.Cards.Add(new Card(Suit.Hearts, Rank.Two));
-            _sut.Cards.Add(new Card(Suit.Clubs, Rank.Three));
-            _sut.Cards.Add(new Card(Suit.Spades, Rank.Four));
-            _sut.Cards.Add(new Card(Suit.Diamonds, Rank.Five));
-            _sut.Cards.Add(new Card(Suit.Hearts, Rank.Six));
+            _sut.AddCard(new Card(Suit.Hearts, Rank.Two));
+            _sut.AddCard(new Card(Suit.Clubs, Rank.Three));
+            _sut.AddCard(new Card(Suit.Spades, Rank.Four));
+            _sut.AddCard(new Card(Suit.Diamonds, Rank.Five));
+            _sut.AddCard(new Card(Suit.Hearts, Rank.Six));
 
             // Act
             var result = _sut.IsCharlie;
@@ -30,10 +30,10 @@
         public void IsCharlie_WhenHandHasLessThanFiveCards_ShouldReturnFalse()
         {
             // Arrange
-            _sut.Cards.Add(new Card(Suit.Hearts, Rank.Two));
-            _sut.Cards.Add(new Card(Suit.Clubs, Rank.Three));
-            _sut.Cards.Add(new Card(Suit.Spades, Rank.Four));
-            _sut.Cards.Add(new Card(Suit.Diamonds, Rank.Five));
+            _sut.AddCard(new Card(Suit.Hearts, Rank.Two));
+            _sut.AddCard(new Card(Suit.Clubs, Rank.Three));
+            _sut.AddCard(new Card(Suit.Spades, Rank.Four));
+            _sut.AddCard(new Card(Suit.Diamonds, Rank.Five));
 
             // Act
             var result = _sut.IsCharlie;
@@ -46,11 +46,11 @@
         public void IsCharlie_WhenHandIsBust_ShouldReturnFalse()
         {
             // Arrange
-            _sut.Cards.Add(new Card(Suit.Hearts, Rank.King));
-            _sut.Cards.Add(new Card(Suit.Clubs, Rank.King));
-            _sut.Cards.Add(new Card(Suit.Spades, Rank.King));
-            _sut.Cards.Add(new Card(Suit.Diamonds, Rank.King));
-            _sut.Cards.Add(new Card(Suit.Hearts, Rank.King));
+            _sut.AddCard(new Card(Suit.Hearts, Rank.King));
+            _sut.AddCard(new Card(Suit.Clubs, Rank.King));
+            _sut.AddCard(new Card(Suit.Spades, Rank.King));
+            _sut.AddCard(new Card(Suit.Diamonds, Rank.King));
+            _sut.AddCard(new Card(Suit.Hearts, Rank.King));
 
             // Act
             var result = _sut.IsCharlie;
@@ -167,6 +167,17 @@
         }
 
         [TestMethod]
+        public void TotalValue_Hand_NotHigherThan21_WithFourAces()
+        {
+            _sut.AddCard(new Card(Suit.Hearts, Rank.Ace));
+            _sut.AddCard(new Card(Suit.Diamonds, Rank.Ace));
+            _sut.AddCard(new Card(Suit.Spades, Rank.Ace));
+            _sut.AddCard(new Card(Suit.Clubs, Rank.Ace));
+
+            Assert.IsTrue(_sut.TotalValue <= 21);
+        }
+
+        [TestMethod]
         public void PlayerHand_WithTwoOfTheSameCardsResultInCanSplit()
         {
             _sut.AddCard(new Card(Suit.Clubs, Rank.Ace));
@@ -178,17 +189,17 @@
         public void ShowAllCards_InDealerHand_Results_AllCardsFaceUp()
         {
             // Arrange
-            HandDealer handDealer = new HandDealer();
-            handDealer.AddCard(new Card(Suit.Clubs, Rank.Ace));
-            handDealer.AddCard(new Card(Suit.Clubs, Rank.Ten, false));
+            DealerHand DealerHand = new DealerHand();
+            DealerHand.AddCard(new Card(Suit.Clubs, Rank.Ace));
+            DealerHand.AddCard(new Card(Suit.Clubs, Rank.Ten, false));
 
             // Act
-            handDealer.ShowAllCards();
+            DealerHand.ShowAllCards();
 
             // Assert
-            Assert.IsTrue(handDealer.Cards.All(c => c.FaceUp));
+            Assert.IsTrue(DealerHand.Cards.All(c => c.FaceUp));
         }
 
-        private HandPlayer _sut = new HandPlayer();
+        private PlayerHand _sut = new PlayerHand();
     }
 }
