@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 1/Oefening Einde Blok 1.md",
+                "file": "Misc/Tips.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 1/Oefening Einde Blok 1.md",
+                "file": "Misc/Tips.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 1/Oefening Einde Blok 1.md",
+                "file": "Misc/Tips.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 1/Oefening Einde Blok 1.md"
+                "file": "Misc/Tips.md"
               }
             }
           }
@@ -149,10 +149,31 @@
   },
   "active": "bdc951ff4a5a2d00",
   "lastOpenFiles": [
+    "Blok 1/Dag08/Unit Testing.md",
+    "Blok 1/Dag08/Abstract classes.md",
+    "Blok 1/Dag08/Inheritance.md",
+    "Blok 1/Dag08/InheritanceUitleg.jpeg",
+    "Blok 1/Dag08/Interfaces.md",
+    "Blok 1/Dag09/Records.md",
+    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_21_15/In/PPC0933986",
+    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_21_15/In",
+    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_21_15",
+    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_18_48/In/PPC0933986",
+    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_18_28/In/PPC0933986",
+    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_16_43/In/PPC0933986",
+    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_18_52/In/PPC0933986",
+    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_15_10/In/PPC0933986",
+    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_16_06/In/PPC0933986",
+    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_15_23/In/PPC0933986",
+    "Blok 1/Dag06/CTS.md",
+    "Misc/Tips.md",
+    "Blok 1/Oefening Einde Blok 1.md",
+    "Blok 1/Dag06/Structs.md",
+    "Blok 1/Dag09/Collections.md",
+    "Blok 1/Dag09/Generics.md",
     "Pasted image 20230403113353.png",
     "WhatsApp Image 2023-04-03 at 11.18.24 1.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24.jpeg",
-    "Blok 1/Oefening Einde Blok 1.md",
     "Blok 1/Dag10/Events.md",
     "Blok 1/Dag10/Delegates.md",
     "Blok 1/Dag14/Garbage Collection.md",
@@ -164,36 +185,16 @@
     "Blok 1/Dag13/LinqVolgorde.png",
     "Blok 1/Dag14/Untitled.md",
     "Blok 1/Dag14/FileSystemWatcher.md",
-    "Blok 1/Dag06/CTS.md",
-    "Blok 1/Dag08/Unit Testing.md",
-    "Misc/Tips.md",
     "Blok 1/Dag13/Untitled.md",
-    "Blok 1/Dag14",
-    "Blok 1/Dag13/Untitled",
     "Blok 1/Dag13/Files.md",
     "Blok 1/Dag13/FileSystemWatcher.md",
-    "Blok 1/Dag09/Collections.md",
-    "Blok 1/Dag13",
     "Blok 1/Dag06/Enum.md",
     "Untitled.canvas",
     "Blok 1/Dag09/Composition.md",
     "Blok 1/Dag09/YieldUitleg.png",
     "Untitled 2.canvas",
-    "Blok 1/Dag06/Structs.md",
     "Untitled 1.canvas",
-    "Blok 1/Dag06/Operator Overloading & Overrides.md",
-    "Blok 1/Dag09/Generics.md",
-    "Templates",
-    "New folder",
-    "Blok 1/Dag09/Records.md",
-    "Blok 1/Dag08/Inheritance.md",
-    "Blok 1/Dag08/InheritanceUitleg.jpeg",
-    "Blok 1/Dag10",
-    "Blok 1",
-    "Blok 1/Dag09",
     "Pasted image 20230323132714.png",
-    "Dag07/Untitled.canvas",
-    "Misc/Unconfirmed 558697.crdownload",
-    "Misc"
+    "Dag07/Untitled.canvas"
   ]
 }
