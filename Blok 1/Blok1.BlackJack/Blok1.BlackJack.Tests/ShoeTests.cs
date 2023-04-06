@@ -90,7 +90,7 @@
             CollectionAssert.AreEquivalent(shoe.Cards, unshuffledShoe.Cards);
         }
 
-        private List<Card> _spadesDeck = new List<Card>()
+        private readonly List<Card> _spadesDeck = new()
         {
             new Card(Suit.Spades, Rank.Ace),
             new Card(Suit.Spades, Rank.King),

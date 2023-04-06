@@ -10,6 +10,56 @@
         }
 
         [TestMethod]
+        public void IsCharlie_WhenHandHasFiveCardsAndIsNotBust_ShouldReturnTrue()
+        {
+            // Arrange
+            _sut.Cards.Add(new Card(Suit.Hearts, Rank.Two));
+            _sut.Cards.Add(new Card(Suit.Clubs, Rank.Three));
+            _sut.Cards.Add(new Card(Suit.Spades, Rank.Four));
+            _sut.Cards.Add(new Card(Suit.Diamonds, Rank.Five));
+            _sut.Cards.Add(new Card(Suit.Hearts, Rank.Six));
+
+            // Act
+            var result = _sut.IsCharlie;
+
+            // Assert
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void IsCharlie_WhenHandHasLessThanFiveCards_ShouldReturnFalse()
+        {
+            // Arrange
+            _sut.Cards.Add(new Card(Suit.Hearts, Rank.Two));
+            _sut.Cards.Add(new Card(Suit.Clubs, Rank.Three));
+            _sut.Cards.Add(new Card(Suit.Spades, Rank.Four));
+            _sut.Cards.Add(new Card(Suit.Diamonds, Rank.Five));
+
+            // Act
+            var result = _sut.IsCharlie;
+
+            // Assert
+            Assert.IsFalse(result);
+        }
+
+        [TestMethod]
+        public void IsCharlie_WhenHandIsBust_ShouldReturnFalse()
+        {
+            // Arrange
+            _sut.Cards.Add(new Card(Suit.Hearts, Rank.King));
+            _sut.Cards.Add(new Card(Suit.Clubs, Rank.King));
+            _sut.Cards.Add(new Card(Suit.Spades, Rank.King));
+            _sut.Cards.Add(new Card(Suit.Diamonds, Rank.King));
+            _sut.Cards.Add(new Card(Suit.Hearts, Rank.King));
+
+            // Act
+            var result = _sut.IsCharlie;
+
+            // Assert
+            Assert.IsFalse(result);
+        }
+
+        [TestMethod]
         public void PlayerHand_GetsCards_ResultInBlackJack()
         {
             _sut.AddCard(new Card(Suit.Clubs, Rank.Ace));

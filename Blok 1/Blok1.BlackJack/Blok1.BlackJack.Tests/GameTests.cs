@@ -10,23 +10,39 @@
         }
 
         [TestMethod]
-        public void Game_DealsCards_ResultsInDealerHavingOneVisibleAndOneInvisibleCard()
+        public void DecideWinner_BlackJack_IsWinning()
         {
-            _sut.DealCards();
-            Assert.AreEqual(1, _sut.Dealer.PrimaryHand.Cards.Count(c => c.FaceUp));
-            Assert.AreEqual(1, _sut.Dealer.PrimaryHand.Cards.Count(c => !c.FaceUp));
+            // Arrange
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ace));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
+            // Act
+            _sut.DecideWinner();
+            string outcome = _sut.Player.PrimaryHand.GameResult;
+
+            // Assert
+            Assert.AreEqual("You win!", outcome);
         }
 
         [TestMethod]
-        public void Game_DealsCards_ResultsInPlayerAndDealerHavingTwoCards()
+        public void DecideWinner_Charlie_IsWinning()
         {
-            _sut.DealCards();
-            Assert.AreEqual(2, _sut.Player.PrimaryHand.Cards.Count);
-            Assert.AreEqual(2, _sut.Dealer.PrimaryHand.Cards.Count);
+            // Arrange
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Hearts, Rank.Two));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Three));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Spades, Rank.Four));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Diamonds, Rank.Five));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Hearts, Rank.Six));
+
+            // Act
+            _sut.DecideWinner();
+            string outcome = _sut.Player.PrimaryHand.GameResult;
+
+            // Assert
+            Assert.AreEqual("You win!", outcome);
         }
 
         [TestMethod]
-        public void Game_DecideWinner_OutcomeIsPlayerWin()
+        public void DecideWinner_OutcomeIsPlayerWin()
         {
             // Arrange
             _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ace));
@@ -43,7 +59,7 @@
         }
 
         [TestMethod]
-        public void Game_DecideWinner_OutcomeIsPush()
+        public void DecideWinner_OutcomeIsPush()
         {
             // Arrange
             _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Ten));
@@ -60,7 +76,7 @@
         }
 
         [TestMethod]
-        public void Game_DecideWinner_ResultsInDealerWinning()
+        public void DecideWinner_ResultsInDealerWinning()
         {
             // Arrange
             _sut.Player.PrimaryHand.AddCard(new Card(Suit.Clubs, Rank.Two));
@@ -74,6 +90,22 @@
 
             // Assert
             Assert.AreEqual("You lose!", outcome);
+        }
+
+        [TestMethod]
+        public void Game_DealsCards_ResultsInDealerHavingOneVisibleAndOneInvisibleCard()
+        {
+            _sut.DealCards();
+            Assert.AreEqual(1, _sut.Dealer.PrimaryHand.Cards.Count(c => c.FaceUp));
+            Assert.AreEqual(1, _sut.Dealer.PrimaryHand.Cards.Count(c => !c.FaceUp));
+        }
+
+        [TestMethod]
+        public void Game_DealsCards_ResultsInPlayerAndDealerHavingTwoCards()
+        {
+            _sut.DealCards();
+            Assert.AreEqual(2, _sut.Player.PrimaryHand.Cards.Count);
+            Assert.AreEqual(2, _sut.Dealer.PrimaryHand.Cards.Count);
         }
 
         [TestMethod]
@@ -222,6 +254,24 @@
             Assert.IsTrue(actual.Contains("Alice's hand:"));
             Assert.IsTrue(actual.Contains("Ace of Hearts"));
             Assert.IsTrue(actual.Contains("Jack of Spades"));
+        }
+
+        [TestMethod]
+        public void ToString_ShouldContainPlayerNameAndBalanceAndPrimaryPlayerHandWithAscii_WhenPlayerHasOneHandAndGameResultIsNotEmpty()
+        {
+            // Arrange
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Hearts, Rank.Ace));
+            _sut.Player.PrimaryHand.AddCard(new Card(Suit.Spades, Rank.Jack));
+
+            // Act
+            _sut.Player.PrimaryHand.SetGameResult("You win!");
+            var actual = _sut.ToString();
+
+            // Assert
+            Assert.IsTrue(actual.Contains("Balance of Alice:\t20"));
+            Assert.IsTrue(actual.Contains("Alice's hand:"));
+            Assert.IsTrue(actual.Contains("│ A       │"));
+            Assert.IsTrue(actual.Contains("│ J       │"));
         }
 
         private Game _sut;
