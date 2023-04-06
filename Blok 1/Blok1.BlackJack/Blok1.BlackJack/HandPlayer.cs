@@ -7,32 +7,19 @@ namespace Blok1.BlackJack
     {
         public decimal Bet { get; private set; }
 
-        public override bool CanDoubleDown
-        {
-            get
-            {
-                if (Cards.Count == 2)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-        }
+        public override bool CanDoubleDown => Cards.Count == 2;
 
-        public override bool CanSplit
-        {
-            get
-            {
-                return Cards.Count == 2 && Cards[0].Value == Cards[1].Value;
-            }
-        }
+        public override bool CanSplit => Cards.Count == 2 && Cards[0].Value == Cards[1].Value;
+        public bool IsCharlie => Cards.Count == 5 && !IsBust;
 
-        public HandPlayer(decimal bet = 0) : base()
+        public HandPlayer(decimal bet = 0)
         {
             Bet = bet;
+        }
+
+        public HandPlayer(bool isSplit) : this()
+        {
+            IsSplit = isSplit;
         }
 
         public void PlaceBet(decimal bet)

@@ -1,4 +1,6 @@
-﻿namespace Blok1.BlackJack
+﻿using System.Linq;
+
+namespace Blok1.BlackJack
 {
     public class Shoe
     {
@@ -24,23 +26,25 @@
 
         public void Shuffle()
         {
-            Random random = new Random();
+            Random random = new();
 
             for (int i = Cards.Count; i > 0; i--)
             {
                 int randomIndex = random.Next(i);
                 int lastCardIndex = i - 1;
-                Card shuffledCard = Cards[randomIndex];
-                Cards[randomIndex] = Cards[lastCardIndex];
-                Cards[lastCardIndex] = shuffledCard;
+                SwitchCardPlaces(randomIndex, lastCardIndex);
             }
         }
 
         private List<Card> GetDeck()
         {
-            return (from suit in Enum.GetValues<Suit>()
-                    from rank in Enum.GetValues<Rank>()
-                    select new Card(suit, rank)).ToList();
+            var list = new List<Card>();
+            foreach (var suit in Enum.GetValues<Suit>())
+            {
+                list.AddRange(Enum.GetValues<Rank>().Select(rank => new Card(suit, rank)));
+            }
+
+            return list;
         }
 
         private List<Card> GetDecks(int countOfDecks = 6)
@@ -52,6 +56,13 @@
                 fullShoe.AddRange(GetDeck());
             }
             return fullShoe;
+        }
+
+        private void SwitchCardPlaces(int randomIndex, int lastCardIndex)
+        {
+            Card shuffledCard = Cards[randomIndex];
+            Cards[randomIndex] = Cards[lastCardIndex];
+            Cards[lastCardIndex] = shuffledCard;
         }
     }
 }

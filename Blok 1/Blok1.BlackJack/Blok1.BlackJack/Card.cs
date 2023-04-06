@@ -5,7 +5,7 @@
         public Suit Suit { get; }
         public Rank Rank { get; }
 
-        public bool FaceUp { get; protected set; }
+        public bool FaceUp { get; private set; }
 
         public Card(Suit suit, Rank rank) : this(suit, rank, true)
         {
@@ -23,6 +23,31 @@
         public override string ToString()
         {
             return FaceUp ? $"{Suit.ToCharacter()} {Rank} of {Suit}" : "## Face Down ##";
+        }
+        public string GetAsciiArt()
+        {
+            if (FaceUp)
+            {
+                return $@"
+┌─────────┐
+│ {Rank.ToShortString(),-2}      │
+│         │
+│    {Suit.ToCharacter(),-2}   │
+│         │
+│      {Rank.ToShortString(),2} │
+└─────────┘";
+            }
+            else
+            {
+                return $@"
+┌─────────┐
+│ *       │
+│         │
+│    *    │
+│         │
+│      *  │
+└─────────┘";
+            }
         }
 
         public virtual void Flip()

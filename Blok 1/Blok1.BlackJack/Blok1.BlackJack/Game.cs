@@ -27,35 +27,44 @@ namespace Blok1.BlackJack
 
         public void DecideWinner()
         {
+            string win = "You win!";
+            string lose = "You lose!";
+            string push = "Push!";
+
             foreach (HandPlayer hand in Player.Hands)
             {
-                if (hand.IsBust)
+                if (hand.IsCharlie)
                 {
-                    hand.GameResult = "You lose!";
+                    Player.AddWinnings(hand);
+                    hand.SetGameResult(win);
+                }
+                else if (hand.IsBust)
+                {
+                    hand.SetGameResult(lose);
                 }
                 else if (Dealer.PrimaryHand.IsBust)
                 {
                     Player.AddWinnings(hand);
-                    hand.GameResult = "You win!";
+                    hand.SetGameResult(win);
                 }
                 else if (hand.IsBlackJack && !Dealer.PrimaryHand.IsBlackJack)
                 {
                     Player.AddWinningsBlackJack(hand);
-                    hand.GameResult = "You win!";
+                    hand.SetGameResult(win);
                 }
                 else if (hand.TotalValue == Dealer.PrimaryHand.TotalValue)
                 {
                     Player.AddWinningsPush(hand);
-                    hand.GameResult = "Push!";
+                    hand.SetGameResult(push);
                 }
                 else if (hand.TotalValue > Dealer.PrimaryHand.TotalValue)
                 {
                     Player.AddWinnings(hand);
-                    hand.GameResult = "You win!";
+                    hand.SetGameResult(win);
                 }
                 else if (hand.TotalValue < Dealer.PrimaryHand.TotalValue)
                 {
-                    hand.GameResult = "You lose!";
+                    hand.SetGameResult(lose);
                 }
             }
         }

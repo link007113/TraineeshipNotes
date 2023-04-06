@@ -8,8 +8,6 @@ namespace Blok1.BlackJack
 {
     public class Dealer : PlayerBase
     {
-        public bool IsDealer => true;
-
         public HandDealer PrimaryHand;
 
         public Dealer()

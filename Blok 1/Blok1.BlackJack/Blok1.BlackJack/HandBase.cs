@@ -2,43 +2,17 @@
 
 namespace Blok1.BlackJack
 {
-    public class HandBase
+    public abstract class HandBase
     {
-        public virtual bool CanDoubleDown
-        {
-            get
-            {
-                return false;
-            }
-        }
+        public virtual bool CanDoubleDown => false;
 
-        public virtual bool CanSplit
-        {
-            get
-            {
-                return false;
-            }
-        }
+        public virtual bool CanSplit => false;
 
         public List<Card> Cards { get; }
-
-        public string GameResult { get; set; }
-
-        public bool IsBlackJack
-        {
-            get
-            {
-                return Cards.Count == 2 && TotalValue == 21;
-            }
-        }
-
-        public bool IsBust
-        {
-            get
-            {
-                return TotalValue > 21;
-            }
-        }
+        public string GameResult { get; private set; }
+        public bool IsBlackJack => Cards.Count == 2 && TotalValue == 21 && !IsSplit;
+        public bool IsBust => TotalValue > 21;
+        public bool IsSplit { get; set; }
 
         public int TotalValue
         {
@@ -48,9 +22,7 @@ namespace Blok1.BlackJack
 
                 if (currentTotal > 21 && Cards.Any(c => c.Rank == Rank.Ace))
                 {
-                    currentTotal -= 11;
-                    currentTotal++;
-                    return currentTotal;
+                    currentTotal -= 10;
                 }
 
                 return currentTotal;
@@ -60,6 +32,7 @@ namespace Blok1.BlackJack
         public HandBase()
         {
             Cards = new List<Card>();
+            GameResult = string.Empty;
         }
 
         public void AddCard(Card card)
@@ -67,24 +40,33 @@ namespace Blok1.BlackJack
             Cards.Add(card);
         }
 
+        public void SetGameResult(string result)
+        {
+            GameResult = result;
+        }
+
         public override string ToString()
         {
             var sb = new StringBuilder();
-
-            if (!Cards.Any(c => !c.FaceUp))
+            // TODO: Cards next to each other
+            string cards = string.Empty;
+            sb.AppendLine("Cards:");
+            cards = string.Join(' ', Cards.Select(c => c.GetAsciiArt()));
+            sb.AppendLine(cards);
+            if (!string.IsNullOrEmpty(GameResult))
+            {
+                sb.AppendLine($"{GameResult}");
+            }
+            if (Cards.All(c => c.FaceUp))
             {
                 sb.AppendLine($"Total value: {TotalValue}");
             }
-            sb.AppendLine("Cards:");
-            foreach (var card in Cards)
-            {
-                sb.AppendLine($"\t{card.ToString()}");
-            }
-            if (!string.IsNullOrEmpty(GameResult))
-            {
-                sb.AppendLine($"\t{GameResult}");
-            }
             return sb.ToString();
+        }
+
+        protected HandBase(bool isSplit) : this()
+        {
+            IsSplit = isSplit;
         }
     }
 }
