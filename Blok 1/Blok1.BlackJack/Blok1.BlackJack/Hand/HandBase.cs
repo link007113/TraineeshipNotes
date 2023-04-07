@@ -6,7 +6,17 @@ namespace Blok1.BlackJack
     {
         private readonly List<Card> _cards;
 
-        public IEnumerable<Card> Cards => _cards;
+        public IEnumerable<Card> Cards
+        {
+            get
+            {
+                for (int i = 0; i < _cards.Count; i++)
+                {
+                    yield return _cards[i];
+                }
+            }
+        }
+
         public GameResult GameResult { get; private set; } = GameResult.None;
         public bool IsBlackJack => Cards.Count() == 2 && TotalValue == 21 && !IsSplit;
         public bool IsBust => TotalValue > 21;

@@ -4,18 +4,30 @@ namespace Blok1.BlackJack
 {
     public class Shoe
     {
-        public List<Card> Cards { get; }
-        public bool MarkerReached => Cards.Count > (312 / 100) * 75;
+        private readonly List<Card> _cards;
+
+        public IEnumerable<Card> Cards
+        {
+            get
+            {
+                for (int i = 0; i < _cards.Count; i++)
+                {
+                    yield return _cards[i];
+                }
+            }
+        }
+
+        public bool MarkerReached => _cards.Count <= (312 / 4);
 
         public Shoe()
         {
-            Cards = GetDecks();
+            _cards = GetDecks();
         }
 
         public Card DrawCard(bool facedown = false)
         {
             Card givenCard = Cards.First();
-            Cards.Remove(givenCard);
+            _cards.Remove(givenCard);
 
             if (facedown)
             {
@@ -29,7 +41,7 @@ namespace Blok1.BlackJack
         {
             Random random = new();
 
-            for (int i = Cards.Count; i > 0; i--)
+            for (int i = _cards.Count; i > 0; i--)
             {
                 int randomIndex = random.Next(i);
                 int lastCardIndex = i - 1;
@@ -61,9 +73,9 @@ namespace Blok1.BlackJack
 
         private void SwitchCardPlaces(int randomIndex, int lastCardIndex)
         {
-            Card shuffledCard = Cards[randomIndex];
-            Cards[randomIndex] = Cards[lastCardIndex];
-            Cards[lastCardIndex] = shuffledCard;
+            Card shuffledCard = _cards[randomIndex];
+            _cards[randomIndex] = _cards[lastCardIndex];
+            _cards[lastCardIndex] = shuffledCard;
         }
     }
 }

@@ -7,6 +7,13 @@
             for (int handIndex = 0; handIndex < game.Player.Hands.Count(); handIndex++)
             {
                 PlayerHand hand = game.Player.GetPlayerHand(handIndex);
+                hand.Stands = hand.IsBust ? hand.IsBust : hand.Stands;
+
+                if (hand.Stands)
+                {
+                    continue;
+                }
+
                 string extraOptions = string.Empty;
 
                 if (game.Player.GetCanDoubleDown(hand))
@@ -20,8 +27,9 @@
 
                 if (game.Player.Hands.Count() > 1)
                 {
+                    Console.Clear();
                     Console.WriteLine("Which option would you choose for the following hand:\n");
-                    Console.WriteLine(hand);
+                    Printer.GetPrintForHand(hand, true);
                 }
 
                 Console.WriteLine($"(H)it or (S)tand{extraOptions}?");
@@ -33,8 +41,20 @@
         public static void DealCards(Game game)
         {
             Console.WriteLine("Press a key to deal the cards");
-            Console.ReadKey();
-            game.DealCards();
+            switch (Console.ReadKey().Key)
+            {
+                case ConsoleKey.B:
+                    game.DealCardsBlackJack();
+                    break;
+
+                case ConsoleKey.P:
+                    game.DealCardsPair();
+                    break;
+
+                default:
+                    game.DealCards();
+                    break;
+            }
         }
 
         public static void DecideWinner(Game game)
@@ -91,40 +111,35 @@
             {
                 case ConsoleKey.H:
                     game.PlayerHit(hand);
-                    Printer.PrintGame(game);
-                    if (game.Player.PrimaryHand.TotalValue <= 21)
-                    {
-                        AskPlayerChoice(game);
-                    }
                     break;
 
                 case ConsoleKey.S:
-                    game.PlayerStand();
+                    game.PlayerStand(hand);
                     break;
 
                 case ConsoleKey.D:
                     if (canDoubleDown)
                     {
                         game.PlayerDoubleDown(hand);
+                        break;
                     }
                     else
                     {
                         Console.WriteLine("Double down is not allowed in this situation.");
-                        AskPlayerChoice(game);
+                        break;
                     }
-                    break;
 
                 case ConsoleKey.P:
                     if (canSplit)
                     {
                         game.PlayerSplit(hand);
+                        break;
                     }
                     else
                     {
                         Console.WriteLine("Splitting pairs is not allowed in this situation.");
-                        AskPlayerChoice(game);
+                        break;
                     }
-                    break;
 
                 default:
                     Console.WriteLine("Please enter a valid choice");
@@ -161,6 +176,7 @@
         {
             if (game.Player.Balance > 0)
             {
+                Console.WriteLine($"Balance of {game.Player.Name}:\t{game.Player.Balance}");
                 Console.WriteLine("Do you want to play another round? (Y/N)");
                 var playerChoice = Console.ReadKey();
                 return RestartChoice(game, playerChoice);

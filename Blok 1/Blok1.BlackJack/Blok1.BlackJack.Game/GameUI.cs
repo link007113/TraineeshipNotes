@@ -30,7 +30,11 @@ namespace Blok1.BlackJack.UI
                 }
                 else
                 {
-                    GameController.AskPlayerChoice(Game);
+                    while (Game.Player.Hands.Any(h => !h.Stands && !h.IsBust))
+                    {
+                        GameController.AskPlayerChoice(Game);
+                    }
+
                     GameController.DecideWinner(Game);
                     Printer.PrintGame(Game);
                 }

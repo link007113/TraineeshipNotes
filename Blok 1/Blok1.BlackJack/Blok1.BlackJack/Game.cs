@@ -18,10 +18,34 @@ namespace Blok1.BlackJack
 
         public void DealCards()
         {
-            Player.PrimaryHand.AddCard(Shoe.DrawCard());
+            Player.PrimaryHand.AddCard(new Card(Suit.Hearts, Rank.Queen));
+            //Player.PrimaryHand.AddCard(Shoe.DrawCard());
             Dealer.PrimaryHand.AddCard(Shoe.DrawCard());
 
-            Player.PrimaryHand.AddCard(Shoe.DrawCard());
+            Player.PrimaryHand.AddCard(new Card(Suit.Hearts, Rank.King));
+            //Player.PrimaryHand.AddCard(Shoe.DrawCard());
+            Dealer.PrimaryHand.AddCard(Shoe.DrawCard(true));
+        }
+
+        public void DealCardsBlackJack() // for demo
+        {
+            Player.PrimaryHand.AddCard(new Card(Suit.Hearts, Rank.Ace));
+
+            Dealer.PrimaryHand.AddCard(Shoe.DrawCard());
+
+            Player.PrimaryHand.AddCard(new Card(Suit.Hearts, Rank.King));
+
+            Dealer.PrimaryHand.AddCard(Shoe.DrawCard(true));
+        }
+
+        public void DealCardsPair() // for demo
+        {
+            Player.PrimaryHand.AddCard(new Card(Suit.Hearts, Rank.Queen));
+
+            Dealer.PrimaryHand.AddCard(Shoe.DrawCard());
+
+            Player.PrimaryHand.AddCard(new Card(Suit.Hearts, Rank.King));
+
             Dealer.PrimaryHand.AddCard(Shoe.DrawCard(true));
         }
 
@@ -74,7 +98,7 @@ namespace Blok1.BlackJack
         {
             Player.PlaceBet(hand.Bet, hand);
             PlayerHit(hand);
-            PlayerStand();
+            PlayerStand(hand);
         }
 
         public void PlayerHit(HandBase hand)
@@ -96,8 +120,9 @@ namespace Blok1.BlackJack
             }
         }
 
-        public void PlayerStand()
+        public void PlayerStand(PlayerHand hand)
         {
+            hand.Stands = true;
             Dealer.Stand(Shoe);
         }
 
