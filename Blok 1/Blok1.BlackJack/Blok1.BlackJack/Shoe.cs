@@ -5,6 +5,7 @@ namespace Blok1.BlackJack
     public class Shoe
     {
         public List<Card> Cards { get; }
+        public bool MarkerReached => Cards.Count > (312 / 100) * 75;
 
         public Shoe()
         {
