@@ -11,6 +11,7 @@ namespace Blok1.BlackJack
 
         public bool CanSplit => Cards.Count() == 2 && Cards.First().Value == Cards.Skip(1).First().Value;
         public bool IsCharlie => Cards.Count() == 5 && !IsBust;
+        public bool Stands { get; set; } = false;
 
         public PlayerHand(decimal bet = 0)
         {

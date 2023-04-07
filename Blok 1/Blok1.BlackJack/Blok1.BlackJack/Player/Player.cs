@@ -8,7 +8,17 @@ namespace Blok1.BlackJack
 
         public decimal Balance { get; internal set; }
 
-        public IEnumerable<PlayerHand> Hands { get => _hands; }
+        public IEnumerable<PlayerHand> Hands
+        {
+            get
+            {
+                for (int i = 0; i < _hands.Count; i++)
+                {
+                    yield return _hands[i];
+                }
+            }
+        }
+
         public PlayerHand PrimaryHand => _hands.First();
 
         public Player(string name, decimal balance = 20M)
