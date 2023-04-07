@@ -182,7 +182,7 @@
             _sut.PlayerHit(_sut.Player.PrimaryHand);
 
             // Act
-            _sut.PlayerStand();
+            _sut.PlayerStand(_sut.Player.PrimaryHand);
 
             // Assert
             Assert.IsTrue(_sut.Dealer.PrimaryHand.Cards.All(c => c.FaceUp));
@@ -196,7 +196,7 @@
             _sut.PlayerHit(_sut.Player.PrimaryHand);
 
             // Act
-            _sut.PlayerStand();
+            _sut.PlayerStand(_sut.Player.PrimaryHand);
 
             // Assert
             Assert.IsTrue(_sut.Dealer.PrimaryHand.TotalValue >= 17, $"Value is {_sut.Dealer.PrimaryHand.TotalValue}");
@@ -208,7 +208,7 @@
             // Arrange
             _sut.DealCards();
             _sut.PlayerHit(_sut.Player.PrimaryHand);
-            _sut.PlayerStand();
+            _sut.PlayerStand(_sut.Player.PrimaryHand);
 
             // Act
             _sut.RestartGame();
@@ -216,7 +216,7 @@
             // Assert
             Assert.AreEqual(0, _sut.Player.PrimaryHand.Cards.Count());
             Assert.AreEqual(0, _sut.Dealer.PrimaryHand.Cards.Count());
-            Assert.AreEqual(312, _sut.Shoe.Cards.Count);
+            Assert.AreEqual(312, _sut.Shoe.Cards.Count());
         }
 
         [TestMethod]

@@ -45,7 +45,7 @@
             var shoe = new Shoe();
             int cardsContainedInOneDeck = 52;
             int numberOfDecks = 6;
-            Assert.AreEqual(numberOfDecks * cardsContainedInOneDeck, shoe.Cards.Count);
+            Assert.AreEqual(numberOfDecks * cardsContainedInOneDeck, shoe.Cards.Count());
         }
 
         [TestMethod]
@@ -73,7 +73,7 @@
             // Act
             shoe.Shuffle();
 
-            Assert.AreEqual(shoe.Cards.Count, unshuffledShoe.Cards.Count);
+            Assert.AreEqual(shoe.Cards.Count(), unshuffledShoe.Cards.Count());
         }
 
         [TestMethod]
@@ -87,7 +87,7 @@
             shoe.Shuffle();
 
             // Assert
-            CollectionAssert.AreEquivalent(shoe.Cards, unshuffledShoe.Cards);
+            CollectionAssert.AreEquivalent(shoe.Cards.ToList(), unshuffledShoe.Cards.ToList());
         }
 
         private readonly List<Card> _spadesDeck = new()
@@ -106,5 +106,59 @@
             new Card(Suit.Spades, Rank.Three),
             new Card(Suit.Spades, Rank.Two)
         };
+
+        [TestMethod]
+        public void MarkerReached_Should_Return_True_When_Marker_Is_Reached()
+        {
+            // Arrange
+            var shoe = new Shoe();
+            int numCardsToRemove = 236;
+            for (int i = 0; i < numCardsToRemove; i++)
+            {
+                shoe.DrawCard();
+            }
+
+            // Act
+            bool markerReached = shoe.MarkerReached;
+
+            // Assert
+            Assert.IsTrue(markerReached);
+        }
+
+        [TestMethod]
+        public void MarkerReached_Should_Return_False_When_Marker_Is_Not_Reached()
+        {
+            // Arrange
+            var shoe = new Shoe();
+            int numCardsToRemove = 212;
+            for (int i = 0; i < numCardsToRemove; i++)
+            {
+                shoe.DrawCard();
+            }
+
+            // Act
+            bool markerReached = shoe.MarkerReached;
+
+            // Assert
+            Assert.IsFalse(markerReached);
+        }
+
+        [TestMethod]
+        public void MarkerReached_Should_Return_True_When_All_Cards_Are_Removed()
+        {
+            // Arrange
+            var shoe = new Shoe();
+            var numCardsToRemove = shoe.Cards.Count();
+            for (int i = 0; i < numCardsToRemove; i++)
+            {
+                shoe.DrawCard();
+            }
+
+            // Act
+            bool markerReached = shoe.MarkerReached;
+
+            // Assert
+            Assert.IsTrue(markerReached);
+        }
     }
 }
