@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Misc/Tips.md",
+                "file": "Blok 1/Blok1.BlackJack/Oefening Einde Blok 1.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Misc/Tips.md",
+                "file": "Blok 1/Blok1.BlackJack/Oefening Einde Blok 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Misc/Tips.md",
+                "file": "Blok 1/Blok1.BlackJack/Oefening Einde Blok 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Misc/Tips.md"
+                "file": "Blok 1/Blok1.BlackJack/Oefening Einde Blok 1.md"
               }
             }
           }
@@ -147,27 +147,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "bdc951ff4a5a2d00",
+  "active": "0e9fa094df768502",
   "lastOpenFiles": [
+    "Blok 2",
+    "Misc/Tips.md",
+    "Blok 1/Blok1.BlackJack/Blok1.BlackJack/PlayerBase.cs",
+    "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Suit.cs",
+    "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Shoe.cs",
+    "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Rank.cs",
+    "Blok 1/Blok1.BlackJack/Blok1.BlackJack/HandPlayer.cs",
+    "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Player.cs",
+    "Blok 1/Blok1.BlackJack/Blok1.BlackJack/HandDealer.cs",
+    "Blok 1/Blok1.BlackJack/Blok1.BlackJack/HandBase.cs",
+    "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Game.cs",
+    "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Dealer.cs",
     "Blok 1/Dag08/Unit Testing.md",
     "Blok 1/Dag08/Abstract classes.md",
     "Blok 1/Dag08/Inheritance.md",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "Blok 1/Dag08/Interfaces.md",
     "Blok 1/Dag09/Records.md",
-    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_21_15/In/PPC0933986",
-    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_21_15/In",
-    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_21_15",
-    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_18_48/In/PPC0933986",
-    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_18_28/In/PPC0933986",
-    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_16_43/In/PPC0933986",
-    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_18_52/In/PPC0933986",
-    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_15_10/In/PPC0933986",
-    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_16_06/In/PPC0933986",
-    "Blok 1/Blok1.BlackJack/TestResults/Deploy_ellea01 2023-04-04 14_15_23/In/PPC0933986",
     "Blok 1/Dag06/CTS.md",
-    "Misc/Tips.md",
-    "Blok 1/Oefening Einde Blok 1.md",
+    "Blok 1/Blok1.BlackJack/Oefening Einde Blok 1.md",
     "Blok 1/Dag06/Structs.md",
     "Blok 1/Dag09/Collections.md",
     "Blok 1/Dag09/Generics.md",
@@ -190,7 +191,6 @@
     "Blok 1/Dag13/FileSystemWatcher.md",
     "Blok 1/Dag06/Enum.md",
     "Untitled.canvas",
-    "Blok 1/Dag09/Composition.md",
     "Blok 1/Dag09/YieldUitleg.png",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
