@@ -65,6 +65,7 @@
         public static void PlaceBets(Game game)
         {
             decimal betAmount = 0;
+            decimal Maxbet = 10;
             bool isValidBet = false;
 
             while (!isValidBet)
@@ -73,7 +74,7 @@
 
                 if (decimal.TryParse(Console.ReadLine(), out betAmount))
                 {
-                    if (betAmount > 0 && betAmount <= 10 && betAmount <= game.Player.Balance)
+                    if (betAmount > 0 && betAmount <= Maxbet && betAmount <= game.Player.Balance)
                     {
                         isValidBet = true;
                     }
@@ -83,9 +84,9 @@
                         {
                             Console.WriteLine("Please enter a positive number.");
                         }
-                        else if (betAmount > 10)
+                        else if (betAmount > Maxbet)
                         {
-                            Console.WriteLine("The maximum bet amount is 10.");
+                            Console.WriteLine($"The maximum bet amount is {Maxbet}.");
                         }
                         else if (betAmount > game.Player.Balance)
                         {

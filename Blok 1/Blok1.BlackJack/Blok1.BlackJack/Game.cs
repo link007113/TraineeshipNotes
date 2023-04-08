@@ -18,12 +18,10 @@ namespace Blok1.BlackJack
 
         public void DealCards()
         {
-            Player.PrimaryHand.AddCard(new Card(Suit.Hearts, Rank.Queen));
-            //Player.PrimaryHand.AddCard(Shoe.DrawCard());
+            Player.PrimaryHand.AddCard(Shoe.DrawCard());
             Dealer.PrimaryHand.AddCard(Shoe.DrawCard());
 
-            Player.PrimaryHand.AddCard(new Card(Suit.Hearts, Rank.King));
-            //Player.PrimaryHand.AddCard(Shoe.DrawCard());
+            Player.PrimaryHand.AddCard(Shoe.DrawCard());
             Dealer.PrimaryHand.AddCard(Shoe.DrawCard(true));
         }
 
@@ -55,6 +53,7 @@ namespace Blok1.BlackJack
             {
                 DecideWinnerForHand(hand);
             }
+            Dealer.PrimaryHand.ShowAllCards();
         }
 
         private void DecideWinnerForHand(PlayerHand hand)
