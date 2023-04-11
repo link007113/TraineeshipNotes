@@ -29,6 +29,15 @@ select *  from SalesLT.Product
 where ProductID > 800
 ```
 
+In de Where-clause kan je verschillende operators gebruiken
+* =
+* != of <>
+* is null
+* is not null
+* in
+* not in
+* 
+
 ### Order By
 
 De ORDER BY-clause in t-SQL wordt gebruikt om de resultaten van een SELECT-statement te sorteren op basis van een of meer kolommen in oplopende of aflopende volgorde.
