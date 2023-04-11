@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 21/Blok Doel.md",
+                "file": "Blok 2/Dag 21/Introductie SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 21/Blok Doel.md",
+                "file": "Blok 2/Dag 21/Introductie SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 21/Blok Doel.md",
+                "file": "Blok 2/Dag 21/Introductie SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 21/Blok Doel.md"
+                "file": "Blok 2/Dag 21/Introductie SQL.md"
               }
             }
           }
@@ -162,8 +162,8 @@
   },
   "active": "ca35da5fd961c59f",
   "lastOpenFiles": [
-    "Blok 2/Dag 21/Introductie SQL.md",
     "Blok 2/Dag 21/Blok Doel.md",
+    "Blok 2/Dag 21/Introductie SQL.md",
     "Blok 2/Dag 21.md",
     "Blok 2/Dag 21",
     "Misc/markdown-cheat-sheet.md",

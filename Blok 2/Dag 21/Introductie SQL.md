@@ -1,5 +1,7 @@
 Voor de introductie maken we gebruik van de [adventureworks] database. De volgende 6 onderdelen zijn de basis onderdelen van SQL query's:
 
+## Onderdelen query
+
 ### Select 
 
 Beginnend met Select. Hiermee kan je data selecteren. In dit voorbeeld selecteer je het cijfer 1
@@ -12,6 +14,9 @@ Vervolgens From. Met het volgende statement haal je alle data op uit de Address 
 ```sql
 select *  from SalesLT.Product
 ```
+Met \* kan je alle data van alle tabellen ophalen.
+In plaats daarvan kan je ook de naam gebruiken van kolom. Dit is sneller dan alle data ophalen. 
+
 ### Where
 ```sql
 select *  from SalesLT.Product
@@ -38,3 +43,5 @@ order by ListPrice desc
 
 
 ###
+
+
