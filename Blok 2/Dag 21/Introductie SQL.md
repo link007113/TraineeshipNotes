@@ -33,10 +33,10 @@ In de Where-clause kan je verschillende operators gebruiken:
 
 * = (Gelijk aan)
 * != of <> (Niet gelijk aan)
-* >=
-* <=
-* >
-* <
+* >= (Groter of gelijk aan)
+* <=  (Kleiner of gelijk aan)
+* >  (Groter dan)
+* < (Kleiner dan )
 * IS NULL (NULL als waarde)
 * IS NOT NULL (Alles waar niet NULL als waarde)
 * IN (lijst van waardes)
