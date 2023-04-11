@@ -4,35 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "cb670db53f9690ab",
+        "id": "9f02625ea2ba6431",
         "type": "tabs",
         "children": [
           {
-            "id": "bdc951ff4a5a2d00",
+            "id": "e53cbba73d629b06",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 1/Blok1.BlackJack/Oefening Einde Blok 1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "6144505430adfdd2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 21.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +92,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 1/Blok1.BlackJack/Oefening Einde Blok 1.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +108,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 1/Blok1.BlackJack/Oefening Einde Blok 1.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Blok 1/Blok1.BlackJack/Oefening Einde Blok 1.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -160,10 +139,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0e9fa094df768502",
+  "active": "e53cbba73d629b06",
   "lastOpenFiles": [
-    "Blok 1/Blok1.BlackJack/Oefening Einde Blok 1.md",
     "Blok 2/Dag 21.md",
+    "Misc/markdown-cheat-sheet.md",
+    "Blok 1/Blok1.BlackJack/Oefening Einde Blok 1.md",
     "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Player/PlayerBase.cs",
     "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Player/Player.cs",
     "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Player/Dealer.cs",
@@ -195,7 +175,6 @@
     "Blok 1/Dag14/Files.md",
     "Blok 1/Dag13/LINQ.md",
     "Blok 1/Dag13/Lambda.md",
-    "Misc/markdown-cheat-sheet.md",
     "Blok 1/Dag13/LinqVolgorde.png",
     "Blok 1/Dag14/Untitled.md",
     "Blok 1/Dag14/FileSystemWatcher.md",
