@@ -108,7 +108,7 @@ Simple case
 SELECT
     CONCAT_WS(
         ' ',
-        CASE
+        CASE -- kolom achter Case Keyword
             c.Title
             WHEN 'Ms.' THEN 'Mevrouw'
 			WHEN 'Sra.'THEN 'Mevrouw'
@@ -129,8 +129,24 @@ FROM
 ```
 Searched case
 ```sql
-
-
+SELECT
+    CONCAT_WS(
+        ' ',
+        CASE -- niks achter Case Keyword
+            WHEN c.Title IN('Ms.', 'Sra.') THEN 'Mevrouw'
+            WHEN c.Title IN('Mr.', 'Sr.') THEN 'De heer'
+            ELSE c.Title
+        END,
+        c.FirstName,
+        c.MiddleName,
+        c.LastName
+    ) AS Full_Name,
+    a.AddressLine1,
+    a.City
+FROM
+    SalesLT.Customer AS c
+    LEFT OUTER JOIN SalesLT.CustomerAddress AS ca ON c.CustomerID = ca.CustomerID
+    INNER JOIN SalesLT.Address AS a ON ca.AddressID = a.AddressID --where City in ('Burnaby', 'Seattle')
 ```
 ## Functions
 
