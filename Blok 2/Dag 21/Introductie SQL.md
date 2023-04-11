@@ -79,14 +79,14 @@ Er zijn twee verschillende soorten aliassen
 * Tabel Allias
 
 ```sql
-select 
+SELECT 
 C.FirstName			AS Voornaam  -- Veld Allias
 , C.LastName		AS Achternaam
 , c.EmailAddress	AS Mail_adres
-from SalesLT.Customer As C -- Tabel Allias
-Where	C.FirstName like 'A%'
+FROM SalesLT.Customer As C -- Tabel Allias
+WHERE	C.FirstName like 'A%'
 		and C.LastName like 'E%'
-Order By 
+ORDER BY 
 	FirstName
 	, LastName;
 ```
