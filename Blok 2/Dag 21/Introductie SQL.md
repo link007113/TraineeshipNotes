@@ -91,6 +91,25 @@ ORDER BY
 	, LastName;
 ```
 
+### Uitleg query
+```sql
+
+SELECT C.FirstName AS Voornaam -- Veld Allias , C.LastName AS Achternaam , c.EmailAddress AS Mail_adres
+```
+Met deze eerste regel van de query specificeer je de kolommen die je wilt selecteren uit de SalesLT.Customer-tabel. In dit geval selecteren we de kolommen "FirstName", "LastName" en "EmailAddress". De AS-clausule wordt gebruikt om een alias te geven aan elke kolom, zodat de resultaten gemakkelijker te begrijpen zijn. Bijvoorbeeld, de kolom "FirstName" wordt in de resultaten weergegeven als "Voornaam".
+```sql
+FROM SalesLT.Customer As C -- Tabel Allias
+```
+Deze regel specificeert de tabel waaruit de query gegevens selecteert, in dit geval de "SalesLT.Customer"-tabel. Het "As C"-deel geeft een alias aan de tabel, zodat deze later in de query kan worden gebruikt.
+```sql
+WHERE C.FirstName like 'A%' and C.LastName like 'E%'
+```
+Deze regel voegt voorwaarden toe aan de query om te bepalen welke rijen moeten worden opgenomen in de resultaten. In dit geval zorgt de "where"-clausule ervoor dat alleen rijen worden opgenomen waarvan de waarde in de kolom "FirstName" begint met de letter "A" en de waarde in de kolom "LastName" begint met de letter "E". Het "%" symbool betekent dat er ook andere tekens kunnen voorkomen na de A en de E.
+```sql
+ORDER BY FirstName , LastName;
+```
+Met deze regel wordt de volgorde gespecificeerd waarin de resultaten worden geretourneerd. In dit geval worden de resultaten gesorteerd op voornaam en vervolgens op achternaam. Het "Order by" keyword is hier gebruikt om deze sortering te specificeren.
+
 ## Conventie
 
 De conventie is alles verdeeld over nieuwe regels.
