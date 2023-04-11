@@ -93,6 +93,10 @@ having count(*) > 20
 order by Color desc
 ```
 
+### Join
+
+
+
 ## Functions
 
 Zijn twee versies van Functions: Scalar Functions & Aggregate Functions
