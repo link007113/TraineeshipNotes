@@ -64,3 +64,24 @@ order by Color desc
 ```
 ISNULL() is een scalar function. 
 
+## Volgorde van uitvoer
+
+SQL zal een query in de volgende volgorde uitvoeren:
+
+From > Where > Group By > Having >  Select > Order by
+
+Om deze reden kan je een veld alias pas gebruiken bij de Order By
+
+## Conventie
+
+De conventie is alles verdeeld over nieuwe regels.
+Voorbeeld hiervan is:
+
+```sql
+select 
+	Color		as kleur
+	, ListPrice as prijs
+	, Name		as naam
+from SalesLT.Product;
+
+```
