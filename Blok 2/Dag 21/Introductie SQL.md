@@ -103,7 +103,35 @@ Hierin zijn verschillende varianten:
 
 ### Case
 
+Simple case
+```sql
+SELECT
+    CONCAT_WS(
+        ' ',
+        CASE
+            c.Title
+            WHEN 'Ms.' THEN 'Mevrouw'
+			WHEN 'Sra.'THEN 'Mevrouw'
+			WHEN 'Mr.' THEN 'De heer'
+			WHEN 'Sr.' THEN 'De heer'
+            ELSE c.Title
+        END,
+        c.FirstName,
+        c.MiddleName,
+        c.LastName
+    ) AS Full_Name,
+    a.AddressLine1,
+    a.City
+FROM
+    SalesLT.Customer AS c
+    LEFT OUTER JOIN SalesLT.CustomerAddress AS ca ON c.CustomerID = ca.CustomerID
+    INNER JOIN SalesLT.Address AS a ON ca.AddressID = a.AddressID --where City in ('Burnaby', 'Seattle')
+```
+Complex case
+```sql
 
+
+```
 ## Functions
 
 Zijn twee versies van Functions: Scalar Functions & Aggregate Functions
