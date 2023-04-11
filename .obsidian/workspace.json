@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "ca35da5fd961c59f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 21/Blok Doel.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 21/Introductie SQL.md",
+                "file": "Blok 2/Dag 21/Blok Doel.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 21/Introductie SQL.md",
+                "file": "Blok 2/Dag 21/Blok Doel.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 21/Introductie SQL.md"
+                "file": "Blok 2/Dag 21/Blok Doel.md"
               }
             }
           }
@@ -147,10 +160,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e53cbba73d629b06",
+  "active": "ca35da5fd961c59f",
   "lastOpenFiles": [
-    "Blok 2/Dag 21.md",
     "Blok 2/Dag 21/Introductie SQL.md",
+    "Blok 2/Dag 21/Blok Doel.md",
+    "Blok 2/Dag 21.md",
     "Blok 2/Dag 21",
     "Misc/markdown-cheat-sheet.md",
     "Blok 1/Blok1.BlackJack/Oefening Einde Blok 1.md",
@@ -189,7 +203,6 @@
     "Blok 1/Dag14/FileSystemWatcher.md",
     "Blok 1/Dag13/Untitled.md",
     "Blok 1/Dag13/Files.md",
-    "Blok 1/Dag13/FileSystemWatcher.md",
     "Untitled.canvas",
     "Blok 1/Dag09/YieldUitleg.png",
     "Untitled 2.canvas",

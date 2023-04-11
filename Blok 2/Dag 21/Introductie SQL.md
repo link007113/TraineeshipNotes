@@ -18,7 +18,7 @@ select *  from SalesLT.Product
 where ProductID > 800
 ```
 
-### OrderBy
+### Order By
 
 Dit werkt van laag naar hoog 
 ```sql
@@ -34,7 +34,7 @@ select *  from SalesLT.Product
 where ProductID > 800
 order by ListPrice desc
 ```
-###
+### Group By
 
 
 ###
