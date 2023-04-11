@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 21.md",
+                "file": "Blok 2/Dag 21/Introductie SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 21.md",
+                "file": "Blok 2/Dag 21/Introductie SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 21.md",
+                "file": "Blok 2/Dag 21/Introductie SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 21.md"
+                "file": "Blok 2/Dag 21/Introductie SQL.md"
               }
             }
           }
@@ -150,6 +150,8 @@
   "active": "e53cbba73d629b06",
   "lastOpenFiles": [
     "Blok 2/Dag 21.md",
+    "Blok 2/Dag 21/Introductie SQL.md",
+    "Blok 2/Dag 21",
     "Misc/markdown-cheat-sheet.md",
     "Blok 1/Blok1.BlackJack/Oefening Einde Blok 1.md",
     "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Player/PlayerBase.cs",
@@ -161,7 +163,6 @@
     "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Hand/DealerHand.cs",
     "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Hand",
     "Blok 1/Blok1.BlackJack/Blok1.BlackJack/GameResult.cs",
-    "Blok 1/Blok1.BlackJack/Blok1.BlackJack.Tests/SuitTests.cs",
     "Misc/Tips.md",
     "Blok 1/Dag08/Unit Testing.md",
     "Blok 1/Dag08/Abstract classes.md",
@@ -189,7 +190,6 @@
     "Blok 1/Dag13/Untitled.md",
     "Blok 1/Dag13/Files.md",
     "Blok 1/Dag13/FileSystemWatcher.md",
-    "Blok 1/Dag06/Enum.md",
     "Untitled.canvas",
     "Blok 1/Dag09/YieldUitleg.png",
     "Untitled 2.canvas",
