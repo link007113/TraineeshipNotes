@@ -50,6 +50,17 @@ group by Color
 
 count(\*) is een aggregate function.
 
-###
+### Having
 
+Having is een soort van where clause over de group by.
+In dit geval laat hij de waardes zien van alle colors die vaker dan 20 keer voorkomt. 
+
+```sql
+select ISNULL(color, 'unknown'), count(*) from SalesLT.Product
+where ProductID > 800
+group by Color
+having count(*) > 20
+order by Color desc
+```
+ISNULL() is een scalar function. 
 
