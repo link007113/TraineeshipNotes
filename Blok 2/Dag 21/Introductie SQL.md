@@ -95,6 +95,12 @@ order by Color desc
 
 ### Join
 
+Een JOIN in t-SQL wordt gebruikt om rijen uit twee of meer tabellen te combineren op basis van gemeenschappelijke kolommen, en om een resultaatset te creëren die gegevens uit beide tabellen bevat.
+Hierin zijn verschillende varianten:
+
+* Inner Join
+* Outer Join
+* 
 
 
 ## Functions
