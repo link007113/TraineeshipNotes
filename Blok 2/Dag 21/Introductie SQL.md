@@ -41,6 +41,14 @@ order by ListPrice desc
 ```
 ### Group By
 
+In het volgende voorbeeld zie je alle unieke waardes uit de Color kolom en hoe vaak hij voorkomt
+```sql
+select color, count(*) from SalesLT.Product
+where ProductID > 800
+group by Color
+```
+
+count(\*) is een aggregate function.
 
 ###
 
