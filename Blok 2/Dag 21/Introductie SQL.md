@@ -127,7 +127,7 @@ FROM
     LEFT OUTER JOIN SalesLT.CustomerAddress AS ca ON c.CustomerID = ca.CustomerID
     INNER JOIN SalesLT.Address AS a ON ca.AddressID = a.AddressID --where City in ('Burnaby', 'Seattle')
 ```
-Complex case
+Searched case
 ```sql
 
 
