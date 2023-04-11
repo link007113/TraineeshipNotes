@@ -100,7 +100,8 @@ Hierin zijn verschillende varianten:
 
 * Inner Join
 * Outer Join
-* 
+
+### Case
 
 
 ## Functions
