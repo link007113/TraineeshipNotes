@@ -29,13 +29,20 @@ select *  from SalesLT.Product
 where ProductID > 800
 ```
 
-In de Where-clause kan je verschillende operators gebruiken
+In de Where-clause kan je verschillende operators gebruiken:
+
 * = (Gelijk aan)
 * != of <> (Niet gelijk aan)
-* is null (NULL als waarde)
-* is not null (Alles waar niet NULL als waarde)
-* in (lijst van waardes)
-* not in (alles behalve lijst met waardes)
+* >=
+* <=
+* >
+* <
+* IS NULL (NULL als waarde)
+* IS NOT NULL (Alles waar niet NULL als waarde)
+* IN (lijst van waardes)
+* NOT IN (alles behalve lijst met waardes)
+* BETWEEN (waardes tussen twee waardes)
+* LIKE
 
 ```sql
 SELECT 
