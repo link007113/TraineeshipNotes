@@ -72,6 +72,12 @@ From > Where > Group By > Having >  Select > Order by
 
 Om deze reden kan je een veld alias pas gebruiken bij de Order By
 
+## Aliassen
+
+Er zijn twee verschillende soorten aliassen
+* Veld Allias
+* Tabel Allias
+
 ## Conventie
 
 De conventie is alles verdeeld over nieuwe regels.
