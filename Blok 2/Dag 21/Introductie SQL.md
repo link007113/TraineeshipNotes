@@ -183,3 +183,22 @@ select
 from SalesLT.Product;
 
 ```
+
+
+
+```sql
+SELECT
+    CONCAT_WS(
+        ' ',
+        c.FirstName,
+        c.MiddleName,
+        c.LastName
+    ) AS Full_Name,
+    a.AddressLine1,
+    a.City
+FROM
+    SalesLT.Customer AS c
+    LEFT OUTER JOIN SalesLT.CustomerAddress AS ca ON c.CustomerID = ca.CustomerID
+    INNER JOIN SalesLT.Address AS a ON ca.AddressID = a.AddressID
+	where City in ('Burnaby', 'Seattle')
+```
