@@ -78,6 +78,19 @@ Er zijn twee verschillende soorten aliassen
 * Veld Allias
 * Tabel Allias
 
+```sql
+select 
+C.FirstName			AS Voornaam  -- Veld Allias
+, C.LastName		AS Achternaam
+, c.EmailAddress	AS Mail_adres
+from SalesLT.Customer As C -- Tabel Allias
+Where	C.FirstName like 'A%'
+		and C.LastName like 'E%'
+Order By 
+	FirstName
+	, LastName;
+```
+
 ## Conventie
 
 De conventie is alles verdeeld over nieuwe regels.
