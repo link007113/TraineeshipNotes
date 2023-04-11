@@ -75,6 +75,7 @@ Om deze reden kan je een veld alias pas gebruiken bij de Order By
 ## Conventie
 
 De conventie is alles verdeeld over nieuwe regels.
+Gebruik As in plaats van het weg laten bij een alias
 Voorbeeld hiervan is:
 
 ```sql
