@@ -30,13 +30,20 @@ where ProductID > 800
 ```
 
 In de Where-clause kan je verschillende operators gebruiken
-* =
-* != of <>
-* is null
-* is not null
-* in
-* not in
-* 
+* = (Gelijk aan)
+* != of <> (Niet gelijk aan)
+* is null (NULL als waarde)
+* is not null (Alles waar niet NULL als waarde)
+* in (lijst van waardes)
+* not in (alles behalve lijst met waardes)
+
+```sql
+SELECT 
+*
+FROM SalesLT.Customer AS C
+WHERE Title not in ('Ms.', 'Sra.')
+```
+Dit levert dus alle mannelijke customers op.
 
 ### Order By
 
