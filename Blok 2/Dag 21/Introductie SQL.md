@@ -103,6 +103,8 @@ Hierin zijn verschillende varianten:
 
 ### Case
 
+Een CASE-statement in t-SQL is een expressie die wordt gebruikt om een resultaat terug te geven op basis van een of meer voorwaarden die worden geëvalueerd. Het werkt als een "if-then-else" constructie, waarbij de voorwaarden worden gecontroleerd en het resultaat wordt teruggegeven op basis van de eerste overeenkomende voorwaarde. Er zijn twee soorten CASE-statements: "simple" en "searched".
+
 Simple case
 ```sql
 SELECT
@@ -228,9 +230,6 @@ select
 from SalesLT.Product;
 
 ```
-
-
-
 ```sql
 SELECT
     CONCAT_WS(
