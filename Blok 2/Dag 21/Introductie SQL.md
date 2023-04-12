@@ -39,7 +39,7 @@ In de Where-clause kan je verschillende operators gebruiken:
 * < (Kleiner dan )
 * IS NULL (NULL als waarde)
 * IS NOT NULL (Alles waar niet NULL als waarde)
-* IN (lijst van waardes)
+* IN (lijst van waardes vervangt x = 'A' OR x = 'B' )
 * NOT IN (alles behalve lijst met waardes)
 * BETWEEN (waardes tussen twee waardes)
 * LIKE
@@ -128,7 +128,7 @@ SELECT
 FROM
     SalesLT.Customer AS c
     LEFT OUTER JOIN SalesLT.CustomerAddress AS ca ON c.CustomerID = ca.CustomerID
-    INNER JOIN SalesLT.Address AS a ON ca.AddressID = a.AddressID --where City in ('Burnaby', 'Seattle')
+    INNER JOIN SalesLT.Address AS a ON ca.AddressID = a.AddressID where City in ('Burnaby', 'Seattle')
 ```
 Searched case
 ```sql
@@ -149,7 +149,7 @@ SELECT
 FROM
     SalesLT.Customer AS c
     LEFT OUTER JOIN SalesLT.CustomerAddress AS ca ON c.CustomerID = ca.CustomerID
-    INNER JOIN SalesLT.Address AS a ON ca.AddressID = a.AddressID --where City in ('Burnaby', 'Seattle')
+    INNER JOIN SalesLT.Address AS a ON ca.AddressID = a.AddressID where City in ('Burnaby', 'Seattle')
 ```
 ## Functions
 
