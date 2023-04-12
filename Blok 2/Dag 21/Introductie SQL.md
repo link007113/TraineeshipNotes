@@ -99,7 +99,8 @@ Een JOIN in t-SQL wordt gebruikt om rijen uit twee of meer tabellen te combinere
 Hierin zijn verschillende varianten:
 
 * Inner Join
-* Outer Join
+* Left Outer Join
+* Right Outer Join
 
 ### Case
 
