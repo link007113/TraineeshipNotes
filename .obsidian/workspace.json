@@ -11,8 +11,12 @@
             "id": "a3354cdc68057a87",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 22/Self Join.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -92,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Blok 2/Dag 22/Self Join.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Blok 2/Dag 22/Self Join.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Blok 2/Dag 22/Self Join.md"
+              }
             }
           }
         ],
@@ -141,6 +149,7 @@
   },
   "active": "a3354cdc68057a87",
   "lastOpenFiles": [
+    "Blok 2/Dag 21/Introductie SQL.md",
     "Blok 2/Dag 22/Group by.md",
     "Blok 2/Dag 22/Standaard Databases (System Databases).md",
     "Blok 2/Dag 22/Null waarden.md",
@@ -152,7 +161,6 @@
     "Blok 2/Dag 22/Data types.md",
     "Blok 2/Dag 22/Statement Famillies.md",
     "Blok 2/Dag 22/TOP.md",
-    "Blok 2/Dag 21/Introductie SQL.md",
     "Misc/Tips.md",
     "Misc/markdown-cheat-sheet.md",
     "Blok 2/Dag 21/Blok Doel.md",
