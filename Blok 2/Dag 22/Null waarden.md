@@ -14,5 +14,3 @@ FROM
 
     SalesLT.Customer;
 ```
-
-
