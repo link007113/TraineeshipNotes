@@ -163,6 +163,8 @@ Scalar functions (enkele rij functies):
 -   CAST: Converteert een expressie van het ene gegevenstype naar het andere gegevenstype.
 -   SUBSTRING: Geeft een deel van een string terug.
 
+In t-SQL kun je scaler functions gebruiken om een enkele waarde te retourneren op basis van de ingevoerde parameters. Dit kan bijvoorbeeld handig zijn als je bepaalde berekeningen wilt uitvoeren op gegevens in een database of als je bepaalde waarden wilt manipuleren.
+
 Aggregatiefuncties (meerdere rijen functies):
 
 -   SUM: Bereken de som van een kolom.

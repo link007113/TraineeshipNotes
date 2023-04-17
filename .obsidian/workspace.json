@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 22/Scalar Functions.md",
+                "file": "Blok 2/Dag 21/Introductie SQL.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 22/Scalar Functions.md",
+                "file": "Blok 2/Dag 21/Introductie SQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 22/Scalar Functions.md",
+                "file": "Blok 2/Dag 21/Introductie SQL.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 22/Scalar Functions.md"
+                "file": "Blok 2/Dag 21/Introductie SQL.md"
               }
             }
           }
@@ -149,21 +149,21 @@
   },
   "active": "a3354cdc68057a87",
   "lastOpenFiles": [
-    "Blok 2/Dag 22/Self Join.md",
-    "Blok 2/Dag 21/Introductie SQL.md",
-    "Blok 2/Dag 22/Group by.md",
-    "Blok 2/Dag 22/Standaard Databases (System Databases).md",
-    "Blok 2/Dag 22/Null waarden.md",
-    "Blok 2/Dag 22/Aggregate functions.md",
-    "Blok 2/Dag 22/Scalar Functions.md",
-    "Blok 2/Dag 22/SQL-89 vs SQL-92 syntax.md",
-    "Blok 2/Dag 22/Data Types.pdf",
-    "Blok 2/Dag 22/Data types.md",
+    "Blok 2/Dag 21/Blok Doel.md",
     "Blok 2/Dag 22/Statement Famillies.md",
+    "Blok 2/Dag 22/Standaard Databases (System Databases).md",
+    "Blok 2/Dag 22/Data Types.pdf",
+    "Blok 2/Dag 22/Self Join.md",
+    "Blok 2/Dag 22/Null waarden.md",
+    "Blok 2/Dag 22/Scalar Functions.md",
+    "Blok 2/Dag 22/Aggregate functions.md",
     "Blok 2/Dag 22/TOP.md",
+    "Blok 2/Dag 22/Group by.md",
+    "Blok 2/Dag 21/Introductie SQL.md",
+    "Blok 2/Dag 22/SQL-89 vs SQL-92 syntax.md",
+    "Blok 2/Dag 22/Data types.md",
     "Misc/Tips.md",
     "Misc/markdown-cheat-sheet.md",
-    "Blok 2/Dag 21/Blok Doel.md",
     "Blok 2/Dag 22",
     "Blok 2/Dag 21.md",
     "Blok 2/Dag 21",
