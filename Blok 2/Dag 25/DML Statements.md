@@ -27,6 +27,14 @@ VALUES
 ('AEG12',670)
 ```
 
+Je kan ook data overhevelen naar een andere tabel:
+
+```sql
+INSERT into RaceAutos
+(Naam, maxSnelHeid)
+select top 10 left(FirstName, 15), 100 + CustomerID from SalesLT.Customer
+```
+
 ## Update
 ```sql
 INSERT into RaceAutos
