@@ -4,35 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "17046f4088d1a27f",
+        "id": "818510a40aeedc3a",
         "type": "tabs",
         "children": [
           {
-            "id": "a3354cdc68057a87",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 25/Group By + Having.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f95c43b51b4cdc68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 25/Self-Contained Sub Query.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4bf7951025e329bf",
+            "id": "997abc0e903caae3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -42,33 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "1a3b8f90794b99c2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 21/Introductie SQL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e6d18f3e18111de0",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 22/Functions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,13 +147,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4bf7951025e329bf",
+  "active": "997abc0e903caae3",
   "lastOpenFiles": [
-    "Blok 2/Dag 25/Self-Contained Sub Query.md",
-    "Blok 2/Dag 25/Exists.md",
-    "Blok 2/Dag 25/Group By + Having.md",
     "Blok 2/Dag 22/Functions.md",
     "Blok 2/Dag 21/Introductie SQL.md",
+    "Blok 2/Dag 25/Exists.md",
+    "Blok 2/Dag 25/Self-Contained Sub Query.md",
+    "Blok 2/Dag 25/Group By + Having.md",
     "Blok 2/Dag 25/Schema.md",
     "Blok 2/Dag 25/Results.md",
     "Blok 2/Dag 22/Data Types.pdf",
