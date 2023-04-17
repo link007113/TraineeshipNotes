@@ -1,5 +1,5 @@
 
-Een self contained sub query of beter bekent als inner query.
+Een self-contained sub query.
 Een inner query kan je los van de outer query draaien. 
 
 In het voorbeeld hieronder wil je alle info hebben van het product met de hoogste listprice.
