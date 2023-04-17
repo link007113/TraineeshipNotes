@@ -10,4 +10,6 @@ Zo zijn meer karakters te gebruiken:
 - % = 0 of meer karakters
 - _ = Exact 1 karakter
 - \[ABab] = exact 1 karakter: A, B, a of b
-- \[A-Z]= exact 1 karakter: A, B .... of Z
+- \[A-Z] = exact 1 karakter: A, B .... of Z
+- \[^Abab] = exact 1 karakter alles behalve: A, B, a of b
+- - \[^A-Z] = exact 1 karakter alles behalve: A, B .... of Z
