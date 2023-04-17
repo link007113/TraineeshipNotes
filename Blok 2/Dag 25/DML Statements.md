@@ -28,7 +28,6 @@ VALUES
 ```
 
 Je kan ook data overhevelen naar een andere tabel:
-
 ```sql
 INSERT into RaceAutos
 (Naam, maxSnelHeid)
