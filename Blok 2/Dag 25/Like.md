@@ -12,4 +12,4 @@ Zo zijn meer karakters te gebruiken:
 - \[ABab] = exact 1 karakter: A, B, a of b
 - \[A-Z] = exact 1 karakter: A, B .... of Z
 - \[^Abab] = exact 1 karakter alles behalve: A, B, a of b
-- - \[^A-Z] = exact 1 karakter alles behalve: A, B .... of Z
+- \[^A-Z] = exact 1 karakter alles behalve: A, B .... of Z
