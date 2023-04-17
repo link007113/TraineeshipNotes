@@ -30,3 +30,6 @@ FROM
 WHERE a.city = N'London')
 
 ```
+
+Om hem naar een query met exist te herschrijven ziet hij er alsvolgt uit:
+

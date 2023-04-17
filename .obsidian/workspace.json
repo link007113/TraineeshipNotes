@@ -68,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 25/Self-Contained Sub Query.md",
+                "file": "Blok 2/Dag 25/Exists.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 25/Self-Contained Sub Query.md",
+                "file": "Blok 2/Dag 25/Exists.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 25/Self-Contained Sub Query.md"
+                "file": "Blok 2/Dag 25/Exists.md"
               }
             }
           }
@@ -196,10 +196,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f95c43b51b4cdc68",
+  "active": "4bf7951025e329bf",
   "lastOpenFiles": [
-    "Blok 2/Dag 25/Exists.md",
     "Blok 2/Dag 25/Self-Contained Sub Query.md",
+    "Blok 2/Dag 25/Exists.md",
     "Blok 2/Dag 25/Group By + Having.md",
     "Blok 2/Dag 22/Functions.md",
     "Blok 2/Dag 21/Introductie SQL.md",
