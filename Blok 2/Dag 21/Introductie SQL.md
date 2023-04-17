@@ -69,29 +69,6 @@ select *  from SalesLT.Product
 where ProductID > 800
 order by ListPrice desc
 ```
-### Group By
-
-De GROUP BY-clause in t-SQL wordt gebruikt om rijen in een SELECT-statement te groeperen op basis van de waarden in een of meer kolommen, en aggregatiefuncties zoals SUM, AVG, MAX, enzovoort toe te passen op de gegevens binnen elke groep.
-In het volgende voorbeeld zie je alle unieke waardes uit de Color kolom en hoe vaak hij voorkomt
-```sql
-select color, count(*) from SalesLT.Product
-where ProductID > 800
-group by Color
-```
-### Having
-
-De HAVING-clause in t-SQL wordt gebruikt om de resultaten van een GROUP BY-statement te filteren op basis van een of meer voorwaarden die worden toegepast op de resultaten van de aggregatiefuncties in de groepen.
-
-HAVING is een soort van where clause over de group by.
-In dit geval laat hij de waardes zien van alle colors die vaker dan 20 keer voorkomt. 
-
-```sql
-select ISNULL(color, 'unknown'), count(*) from SalesLT.Product
-where ProductID > 800
-group by Color
-having count(*) > 20
-order by Color desc
-```
 
 ### Join
 
@@ -151,29 +128,6 @@ FROM
     LEFT OUTER JOIN SalesLT.CustomerAddress AS ca ON c.CustomerID = ca.CustomerID
     INNER JOIN SalesLT.Address AS a ON ca.AddressID = a.AddressID where City in ('Burnaby', 'Seattle')
 ```
-## Functions
-
-Zijn twee versies van Functions: Scalar Functions & Aggregate Functions
-
-Scalar functions (enkele rij functies):
-
--   LEN: Geeft de lengte van een string weer.
--   LOWER: Converteert een string naar lowercase.
--   UPPER: Converteert een string naar uppercase.
--   CAST: Converteert een expressie van het ene gegevenstype naar het andere gegevenstype.
--   SUBSTRING: Geeft een deel van een string terug.
-
-In t-SQL kun je scaler functions gebruiken om een enkele waarde te retourneren op basis van de ingevoerde parameters. Dit kan bijvoorbeeld handig zijn als je bepaalde berekeningen wilt uitvoeren op gegevens in een database of als je bepaalde waarden wilt manipuleren.
-
-Aggregate Functions (meerdere rijen functies):
-
--   SUM: Bereken de som van een kolom.
--   AVG: Bereken het gemiddelde van een kolom.
--   COUNT: Tel het aantal rijen in een kolom.
--   MAX: Zoek de maximale waarde in een kolom.
--   MIN: Zoek de minimale waarde in een kolom.
-
-Aggregate Functions in T-SQL zijn functies die worden gebruikt om berekeningen uit te voeren op een reeks waarden en een enkele waarde als uitvoer te retourneren, zoals het vinden van de som, het gemiddelde, de minimum- of maximumwaarde in een kolom of groep rijen.
 
 ## Volgorde van uitvoer
 
