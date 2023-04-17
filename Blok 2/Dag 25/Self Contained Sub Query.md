@@ -2,7 +2,8 @@
 Een self contained sub query of beter bekent als inner query.
 Een inner query kan je los van de outer query draaien. 
 
-In het voorbeeld hieronder wil je alle info hebben van het product met de hoogste listprice
+In het voorbeeld hieronder wil je alle info hebben van het product met de hoogste listprice.
+
 ```sql
 SELECT
     *
@@ -15,8 +16,8 @@ WHERE listprice =
 FROM
     SalesLT.Product AS p
 )
--- Doet hetzelfde alleen gebruikt top 1 en order by ipv. inner query
 
+-- Doet hetzelfde alleen gebruikt top 1 en order by ipv. inner query
 SELECT
     TOP 1 WITH TIES
     *
