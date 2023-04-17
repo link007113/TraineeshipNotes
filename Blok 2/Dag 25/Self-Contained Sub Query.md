@@ -25,3 +25,9 @@ FROM
     SalesLT.Product
 ORDER BY listprice DESC
 ```
+Dit is een singled valued sub query. Dat betekent dat hij een enkele waarde terug geeft.
+hier kan je in principe alle operators gebruiken. 
+
+Als je meerdere waardes terug krijgt heet het een multi valued sub query.
+Hierop kan je alleen IN en NOT IN operators gebruiken.
+
