@@ -20,6 +20,18 @@
             }
           },
           {
+            "id": "f95c43b51b4cdc68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 25/Self Contained Sub Query.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "1a3b8f90794b99c2",
             "type": "leaf",
             "state": {
@@ -43,7 +55,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -120,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 25/Group By + Having.md",
+                "file": "Blok 2/Dag 25/Self Contained Sub Query.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -137,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 25/Group By + Having.md",
+                "file": "Blok 2/Dag 25/Self Contained Sub Query.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 25/Group By + Having.md"
+                "file": "Blok 2/Dag 25/Self Contained Sub Query.md"
               }
             }
           }
@@ -171,11 +184,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a3354cdc68057a87",
+  "active": "f95c43b51b4cdc68",
   "lastOpenFiles": [
+    "Blok 2/Dag 25/Group By + Having.md",
+    "Blok 2/Dag 25/Self Contained Sub Query.md",
     "Blok 2/Dag 22/Functions.md",
     "Blok 2/Dag 21/Introductie SQL.md",
-    "Blok 2/Dag 25/Group By + Having.md",
     "Blok 2/Dag 25/Schema.md",
     "Blok 2/Dag 25/Results.md",
     "Blok 2/Dag 22/Data Types.pdf",
@@ -209,7 +223,6 @@
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "Blok 1/Dag08/Interfaces.md",
     "Blok 1/Dag09/Records.md",
-    "Blok 1/Dag06/CTS.md",
     "Pasted image 20230403113353.png",
     "WhatsApp Image 2023-04-03 at 11.18.24 1.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24.jpeg",
