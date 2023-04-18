@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 21/Introductie SQL.md",
+                "file": "Blok 2/Dag 26/Table Expressions.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 21/Introductie SQL.md",
+                "file": "Blok 2/Dag 26/Table Expressions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 21/Introductie SQL.md",
+                "file": "Blok 2/Dag 26/Table Expressions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 21/Introductie SQL.md"
+                "file": "Blok 2/Dag 26/Table Expressions.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   },
   "active": "275e8ac09d898313",
   "lastOpenFiles": [
+    "Blok 2/Dag 21/Introductie SQL.md",
     "Blok 2/Dag 22/Self Join.md",
     "Blok 2/Dag 22/Null waarden.md",
     "Blok 2/Dag 22/Functions.md",
@@ -171,7 +172,6 @@
     "Blok 2/Dag 25/Date and Time-0d3af12e-6e8c-40b8-9cad-459b910afe6d.pdf",
     "Blok 2/Dag 26",
     "Blok 2/Dag 22/Data Types.pdf",
-    "Blok 2/Dag 21/Introductie SQL.md",
     "Blok 2/Dag 25/Results.md",
     "Blok 2/Dag 25",
     "Blok 2/Dag 21/Blok Doel.md",

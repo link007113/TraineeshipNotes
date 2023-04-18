@@ -13,6 +13,8 @@ FROM table_name
 WHERE condition;
 
 ```
+Zet om de view twee GO statements om de error `Incorrect syntax: 'CREATE VIEW' must be the only statement in the batch.` op te lossen. 
+
 
 ## Table Valued Function
 
