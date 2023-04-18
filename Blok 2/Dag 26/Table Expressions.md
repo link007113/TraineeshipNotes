@@ -5,12 +5,14 @@ Table Expressions zijn logische tabellen die worden gedefinieerd binnen een t-SQ
 Een View is een virtuele tabel die is gebaseerd op een SELECT-statement. Het definieert een set kolommen en rijen die kunnen worden gebruikt als een normale tabel. Een voorbeeld van het maken van een View zou zijn:
 
 ```sql
-CREATE VIEW view_name
+GO
+CREATE VIEW SalesLT.StateProvincesEnAantallen
 AS
-SELECT column1
-	, column2
-FROM table_name
-WHERE condition;
+SELECT StateProvince
+	, count(*) AS aantal
+FROM SalesLT.Address AS a
+GROUP BY StateProvince
+GO
 
 ```
 Zet om de view twee GO statements om de error `Incorrect syntax: 'CREATE VIEW' must be the only statement in the batch.` op te lossen. 
