@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 26/Table Expressions.md",
+                "file": "Blok 2/Dag 26/Set Operators.md",
                 "mode": "source",
                 "source": false
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 26/Table Expressions.md",
+                "file": "Blok 2/Dag 26/Set Operators.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 26/Table Expressions.md",
+                "file": "Blok 2/Dag 26/Set Operators.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 26/Table Expressions.md"
+                "file": "Blok 2/Dag 26/Set Operators.md"
               }
             }
           }
@@ -222,11 +222,11 @@
   },
   "active": "275e8ac09d898313",
   "lastOpenFiles": [
+    "Blok 2/Dag 26/Table Expressions.md",
     "Blok 2/Dag 27/Programming in T-SQL.md",
     "Blok 2/Dag 27/Window functions.md",
     "Blok 2/Dag 27/Grouping Sets.md",
     "Blok 2/Dag 27/Pivot and Unpivot.md",
-    "Blok 2/Dag 26/Table Expressions.md",
     "Blok 2/Dag 27",
     "Blok 2/Dag 26/Set Operators.md",
     "Blok 2/Dag 22/Functions.md",
