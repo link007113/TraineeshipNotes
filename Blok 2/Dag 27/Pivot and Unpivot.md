@@ -1,4 +1,5 @@
 PIVOT en UNPIVOT zijn twee T-SQL-operaties die worden gebruikt om gegevens in rijen en kolommen om te zetten of omgekeerd.
+
 ## PIVOT
 
 PIVOT wordt gebruikt om gegevens in rijen om te zetten naar kolommen op basis van een aggregatiefunctie.
