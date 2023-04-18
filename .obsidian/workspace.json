@@ -11,8 +11,12 @@
             "id": "a2f54533683326d3",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 25/DateTime.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -92,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Blok 2/Dag 25/DateTime.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Blok 2/Dag 25/DateTime.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Blok 2/Dag 25/DateTime.md"
+              }
             }
           }
         ],
@@ -141,18 +149,18 @@
   },
   "active": "a2f54533683326d3",
   "lastOpenFiles": [
-    "Blok 2/Dag 22/Data Types.pdf",
-    "Blok 2/Dag 25/Date and Time-0d3af12e-6e8c-40b8-9cad-459b910afe6d.pdf",
-    "Blok 2/Dag 25/Like.md",
-    "Blok 2/Dag 25/DML Statements.md",
-    "Blok 2/Dag 22/Statement Famillies.md",
-    "Blok 2/Dag 25/DateTime.md",
-    "Blok 2/Dag 21/Introductie SQL.md",
-    "Blok 2/Dag 25/Exists.md",
-    "Blok 2/Dag 22/Functions.md",
     "Blok 2/Dag 25/Self-Contained Sub Query.md",
-    "Blok 2/Dag 25/Group By + Having.md",
     "Blok 2/Dag 25/Schema.md",
+    "Blok 2/Dag 25/Like.md",
+    "Blok 2/Dag 25/Group By + Having.md",
+    "Blok 2/Dag 25/Exists.md",
+    "Blok 2/Dag 25/DML Statements.md",
+    "Blok 2/Dag 25/DateTime.md",
+    "Blok 2/Dag 25/Date and Time-0d3af12e-6e8c-40b8-9cad-459b910afe6d.pdf",
+    "Blok 2/Dag 22/Statement Famillies.md",
+    "Blok 2/Dag 22/Data Types.pdf",
+    "Blok 2/Dag 21/Introductie SQL.md",
+    "Blok 2/Dag 22/Functions.md",
     "Blok 2/Dag 25/Results.md",
     "Blok 2/Dag 22/Standaard Databases (System Databases).md",
     "Blok 2/Dag 22/Self Join.md",

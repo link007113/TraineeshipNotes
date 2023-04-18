@@ -1,4 +1,4 @@
-
+DML statements (Data Manipulation Language) in t-SQL worden gebruikt om gegevens in een database te manipuleren. 
 
 ```sql
 use adventureworks
@@ -15,9 +15,12 @@ maxSnelHeid DECIMAL(5,2) NULL
 GO
 
 ```
+
+Er zijn vier soorten DML statements met simpele voorbeelden:
+
 ## Insert
 
-Met een insert kan je data toevoegen aan je tabellen. 
+Met een insert kan je nieuwe gegevens toevoegen aan je database. 
 
 ```sql
 INSERT into RaceAutos
@@ -27,6 +30,8 @@ VALUES
 ('AEG12',670)
 ```
 
+Dit statement zal een nieuwe rij in de tabel "RaceAutos" invoegen met de opgegeven waarden voor Naam en maxSnelHeid.
+
 Je kan ook data overhevelen naar een andere tabel:
 ```sql
 INSERT into RaceAutos
@@ -35,7 +40,7 @@ select top 10 left(FirstName, 15), 100 + CustomerID from SalesLT.Customer
 ```
 
 ## Update
-Update kan je gebruiken om data te manipuleren
+Update kan je gebruiken om data te manipuleren. Wordt dus gebruikt om bestaande gegevens in een database bij te werken.
 ```sql
 UPDATE RaceAutos set naam = CONCAT(naam, '!')
 WHERE id BETWEEN 1 and 447
@@ -47,3 +52,5 @@ Delete gebruik je om data te verwijderen.
 DELETE FROM RaceAutos
 WHERE id BETWEEN 1 AND 447
 ```
+
+Let op: Dit zijn hele korte en eenvoudige voorbeelden van de DML statements, in werkelijkheid kunnen deze statements veel complexer zijn en kunnen ze ook gecombineerd worden met andere SQL statements om uitgebreide gegevensmanipulaties uit te voeren.
