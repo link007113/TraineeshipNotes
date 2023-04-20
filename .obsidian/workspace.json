@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 27/Normaliserings regels.md",
+                "file": "Blok 2/Dag 27/Normaliseren.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 27/Tabellen creeeren.md",
+                "file": "Blok 2/Dag 27/Normaliseren.md",
                 "mode": "source",
                 "source": false
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 27/Tabellen creeeren.md",
+                "file": "Blok 2/Dag 27/Normaliseren.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 27/Tabellen creeeren.md",
+                "file": "Blok 2/Dag 27/Normaliseren.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 27/Tabellen creeeren.md"
+                "file": "Blok 2/Dag 27/Normaliseren.md"
               }
             }
           }
@@ -201,7 +201,7 @@
     "Blok 2/Dag 27/Constraints.md",
     "Blok 2/Dag 27/Tabellen creeeren.md",
     "Blok 2/Dag 27/Type Databases.md",
-    "Blok 2/Dag 27/Normaliserings regels.md",
+    "Blok 2/Dag 27/Normaliseren.md",
     "Blok 2/Dag 27/OLTP.md",
     "Blok 2/Dag 27/OLAP.md",
     "Blok 2/Dag 26/Table Expressions.md",
