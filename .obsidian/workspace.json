@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 26/Table Expressions.md",
+                "file": "Blok 2/Dag 26/Set Operators.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 26/Table Expressions.md",
+                "file": "Blok 2/Dag 26/Set Operators.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 26/Table Expressions.md",
+                "file": "Blok 2/Dag 26/Set Operators.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 26/Table Expressions.md"
+                "file": "Blok 2/Dag 26/Set Operators.md"
               }
             }
           }
@@ -147,14 +147,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0e9fa094df768502",
+  "active": "6b7835a1eeed2631",
   "lastOpenFiles": [
+    "Blok 2/Dag 26/Table Expressions.md",
     "Blok 2/Dag 26/Set Operators.md",
     "Blok 2/Dag 25/Date and Time-0d3af12e-6e8c-40b8-9cad-459b910afe6d.pdf",
     "Blok 2/Dag 25/DateTime.md",
     "Blok 2/Dag 22/Data Types.pdf",
     "Blok 2/Dag 22/Functions.md",
-    "Blok 2/Dag 26/Table Expressions.md",
     "Blok 2/Dag 21/Introductie SQL.md",
     "Blok 2/Dag 22/Self Join.md",
     "Blok 2/Dag 22/Null waarden.md",
