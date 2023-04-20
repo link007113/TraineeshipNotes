@@ -51,8 +51,8 @@ GO
 
 -- NO ACTION = doe niks = standaard = foutmelding
 -- CASCADE  = doe hetzelfde in de andere tabel
--- NULL = zet in de andere tabel NULL
--- DEFAULT = Zet in andere tabel default waarde
+-- SET NULL = zet in de andere tabel NULL
+-- SET DEFAULT = Zet in andere tabel default waarde
 
 
 CREATE TABLE Medewerkers (
