@@ -1,5 +1,5 @@
 
-
+in de volgende tabel maken we een tabel met een primary key die zelf optelt:
 
 ```sql
 USE tempdb;
@@ -27,3 +27,5 @@ SELECT *
 FROM Huisdieren
 
 ```
+
+
