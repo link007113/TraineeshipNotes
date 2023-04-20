@@ -28,4 +28,42 @@ FROM Huisdieren
 
 ```
 
+In het volgende voorbeeld maken we een Foreign key aan
 
+```sql
+USE tempdb;
+GO
+
+DROP TABLE IF EXISTS Afdelingen
+CREATE TABLE Afdelingen (
+	id  INT IDENTITY 
+        CONSTRAINT PK_Afdeling_ID 
+        PRIMARY KEY
+	, naam NVARCHAR(50) NOT NULL
+	);
+GO
+
+DROP TABLE IF EXISTS Medewerkers
+CREATE TABLE Medewerkers (
+	id  INT IDENTITY 
+        CONSTRAINT PK_Medewerker_ID
+        PRIMARY KEY 
+	, naam NVARCHAR(50) NOT NULL
+    , afdeling_id INT 
+                  CONSTRAINT FK_medewe_afdid_afdelingenid
+                  FOREIGN KEY REFERENCES Afdelingen(id)
+	);
+GO
+
+INSERT INTO Afdelingen (naam)
+VALUES ('HR')
+	, ('Aangefites')
+	, ('IV');
+GO
+
+SELECT *
+FROM Afdelingen
+
+SELECT *
+FROM Medewerkers
+```
