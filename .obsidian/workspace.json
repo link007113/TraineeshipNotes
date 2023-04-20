@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "fa048a3d2a3fcaee",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 27/Constraints.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -121,7 +133,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 27/Type Databases.md",
+                "file": "Blok 2/Dag 27/Constraints.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +150,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 27/Type Databases.md",
+                "file": "Blok 2/Dag 27/Constraints.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 27/Type Databases.md"
+                "file": "Blok 2/Dag 27/Constraints.md"
               }
             }
           }
@@ -172,12 +184,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0e9fa094df768502",
+  "active": "fa048a3d2a3fcaee",
   "lastOpenFiles": [
-    "Blok 2/Dag 27/OLTP.md",
     "Blok 2/Dag 27/Type Databases.md",
-    "Blok 2/Dag 27/OLAP.md",
+    "Blok 2/Dag 27/Constraints.md",
     "Blok 2/Dag 27/Normaliserings regels.md",
+    "Blok 2/Dag 27/OLTP.md",
+    "Blok 2/Dag 27/OLAP.md",
     "Blok 2/Dag 26/Table Expressions.md",
     "Blok 2/Dag 27",
     "Blok 1/Blok1.BlackJack/Pasted image 20230403113353.png",
@@ -206,7 +219,6 @@
     "Blok 2/Dag 25/Results.md",
     "Blok 2/Dag 25",
     "Blok 2/Dag 21/Blok Doel.md",
-    "Blok 2/Dag 22/Scalar Functions.md",
     "Blok 2/Dag 22",
     "Blok 2/Dag 21",
     "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Player/PlayerBase.cs",
