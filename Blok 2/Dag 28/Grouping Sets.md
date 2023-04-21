@@ -9,9 +9,6 @@ FROM SalesData
 GROUP BY GROUPING SETS ((Region, Year), (Region), ())
 ORDER BY Region, Year;
 ```
-
-
-
 In dit voorbeeld gebruiken we de `GROUP BY`-clausule met de `GROUPING SETS`-optie om subtotalen en totalen te genereren voor elke combinatie van regio's en jaren. De eerste groeperingsset bevat beide kolommen, waardoor subtotalen worden gegenereerd voor elke combinatie van regio's en jaren. De tweede groeperingsset bevat alleen de regio-kolom, waardoor subtotalen worden gegenereerd voor elke regio. De derde groeperingsset bevat geen kolommen, waardoor het totaal voor alle verkoopgegevens wordt berekend.
 
 Kortom, Grouping Sets in t-SQL is een handige feature om snel subtotalen en totalen te genereren voor meerdere kolommen in een resultaatset, en kan worden gebruikt om complexe queries te vereenvoudigen en te verduidelijken.
