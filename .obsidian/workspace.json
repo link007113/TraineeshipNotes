@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "581a64b8e2b2b018",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 28/Pivot and Unpivot.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -109,7 +121,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 28/Window functions.md",
+                "file": "Blok 2/Dag 28/Pivot and Unpivot.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +138,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 28/Window functions.md",
+                "file": "Blok 2/Dag 28/Pivot and Unpivot.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 28/Window functions.md"
+                "file": "Blok 2/Dag 28/Pivot and Unpivot.md"
               }
             }
           }
@@ -160,15 +172,20 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "7fcbfe7d77febc76",
+  "active": "581a64b8e2b2b018",
   "lastOpenFiles": [
+    "Blok 2/Dag 28/Dynamic SQL.md",
+    "Blok 2/Dag 28/Window functions.md",
+    "Blok 2/Dag 21/Introductie SQL.md",
+    "Blok 2/Dag 21/Blok Doel.md",
+    "Blok 1/Dag10/Delegates.md",
+    "Blok 1/Dag10/Events.md",
     "Blok 2/Dag 28/Stored Procedures.md",
     "chart.md",
     "Blok 2/Dag 28/SQL carriage return en line feed invoegen  in een string.md",
     "Blok 2/Dag 28/Error handeling.md",
     "Blok 2/Dag 28/Control Flow.md",
     "Blok 2/Dag 28/Pivot and Unpivot.md",
-    "Blok 2/Dag 28/Window functions.md",
     "Blok 2/Dag 27/IIF.md",
     "Blok 2/Dag 28/Variables.md",
     "Blok 2/Dag 28/Transactions.md",
@@ -183,15 +200,10 @@
     "Blok 2/Dag 28/Programming in T-SQL.md",
     "Blok 2/Dag 26/Set Operators.md",
     "Blok 2/Dag 27/Type Databases.md",
-    "Blok 2/Dag 27/OLTP.md",
-    "Blok 2/Dag 27/OLAP.md",
     "Blok 2/Dag 27",
     "Blok 1/Blok1.BlackJack/Pasted image 20230403113353.png",
     "Blok 2/Dag 25/Date and Time-0d3af12e-6e8c-40b8-9cad-459b910afe6d.pdf",
-    "Blok 2/Dag 25/DateTime.md",
     "Blok 2/Dag 22/Data Types.pdf",
-    "Blok 2/Dag 22/Functions.md",
-    "Blok 2/Dag 21/Introductie SQL.md",
     "Blok 2/Dag 28",
     "Blok 2/Dag 26",
     "Blok 2/Dag 25",
