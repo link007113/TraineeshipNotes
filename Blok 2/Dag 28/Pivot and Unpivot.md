@@ -4,10 +4,9 @@ PIVOT en UNPIVOT zijn twee T-SQL-operaties die worden gebruikt om gegevens in ri
 
 PIVOT wordt gebruikt om gegevens in rijen om te zetten naar kolommen op basis van een aggregatiefunctie.
 
-Bijvoorbeeld, laten we zeggen dat we een tabel hebben met verkoopgegevens per maand:MaandVerkoopJanuari100Februari200Maart150
+Bijvoorbeeld, laten we zeggen dat we een tabel hebben met verkoopgegevens per maand
 
 We willen de verkoopgegevens per kwartaal weergeven met behulp van PIVOT:
-
 ```sql
 
 SELECT *
@@ -20,10 +19,9 @@ PIVOT (
     FOR Kwartaal IN ([Kwartaal 1], [Kwartaal 2], [Kwartaal 3], [Kwartaal 4])
 ) AS pvt;
 ```
-
-
-
 In dit voorbeeld wordt de maandwaarde omgezet naar een kwartaalwaarde met behulp van de `DATEPART`-functie en vervolgens samengevoegd met de verkoopgegevens. De `PIVOT`-clausule voert de omzetting uit door de waarden van de kolom 'Kwartaal' te gebruiken als kolomkoppen en de bijbehorende verkoopwaarden op te tellen.
+
+
 ## UNPIVOT
 
 UNPIVOT wordt gebruikt om gegevens in kolommen om te zetten naar rijen.
@@ -32,7 +30,7 @@ Bijvoorbeeld, laten we zeggen dat we een tabel hebben met verkoopgegevens per kw
 
 We willen de verkoopgegevens per maand weergeven met behulp van UNPIVOT:
 
-```css
+```sql
 
 SELECT Maand, Verkoop
 FROM (
