@@ -16,4 +16,18 @@ END CATCH
 
 Door Error handeling in T-SQL te gebruiken, kunt u ervoor zorgen dat uw code onverwachte fouten netjes afhandelt en een betere gebruikerservaring biedt door nuttige foutmeldingen weer te geven.
 
+Om een transactie te gebruiken binnen een try-catch blok in T-SQL, kunt u deze algemene structuur volgen:
 
+```sql
+BEGIN TRY
+    BEGIN TRANSACTIE;
+    -- code die een fout kan veroorzaken
+    COMMIT TRANSACTIE;
+END TRY
+BEGIN CATCH    
+        ROLLBACK TRANSACTIE;
+    -- Uw foutbehandelingscode hier
+EINDE CATCH
+```
+
+In de bovenstaande structuur worden de BEGIN TRY en BEGIN CATCH blokken gebruikt voor foutafhandeling, en de BEGIN TRANSACTION en COMMIT TRANSACTION statements worden gebruikt om respectievelijk een transactie te starten en vast te leggen. Als er een fout optreedt, zal het ROLLBACK TRANSACTION statement alle wijzigingen in de transactie ongedaan maken.
