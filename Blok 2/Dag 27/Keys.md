@@ -9,7 +9,6 @@ GO
 
 DROP TABLE IF EXISTS Huisdieren
 
-
 CREATE TABLE Huisdieren (
 	id  INT IDENTITY -- Zorgt voor een oplopend nummer. Begint bij 1 en telt bij elke iteratie 1 op
         CONSTRAINT PK_Huisdier_ID -- Naamgeving aan de constraint
