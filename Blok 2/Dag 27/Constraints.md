@@ -19,48 +19,9 @@ CREATE TABLE Logs (
 GO
 ```
 
+Dit SQL-query maakt een nieuwe tabel genaamd 'Logs' met drie kolommen: 'id', 'logdatum' en 'message'.
+De eerste kolom 'id' is een identiteitskolom, wat betekent dat SQL Server automatisch een unieke waarde toewijst aan deze kolom wanneer een nieuwe rij wordt ingevoegd. De CONSTRAINT PK_Log_ID maakt de 'id' kolom de primaire sleutel van de tabel, zodat elke rij een unieke identificatie heeft.
+De tweede kolom 'logdatum' kan niet leeg zijn en wordt standaard ingesteld op de huidige datum en tijd met de DEFAULT SYSDATETIME() constraint.
+De derde kolom 'message' is een gewone NVARCHAR-kolom waarin tekst kan worden opgeslagen.
+Samengevat zorgt deze SQL-query voor het creëren van een nieuwe tabel voor het opslaan van logs, waarbij elke rij uniek geïdentificeerd kan worden door een automatisch gegenereerde ID, terwijl de datum van de log automatisch wordt toegevoegd en het logbericht kan worden opgeslagen in de 'message' kolom.
 
-
-In dit voorbeeld stelt de PRIMARY KEY constraint in dat de UserID kolom uniek moet zijn en de unieke identificatie van elke rij. De NOT NULL constraint stelt in dat zowel de FirstName als de LastName kolommen verplicht zijn. De UNIQUE constraint op de Email kolom zorgt ervoor dat elke waarde uniek moet zijn. De CHECK constraint op de Age kolom stelt een voorwaarde op waaraan de waarde moet voldoen. En tot slot verwijst de FOREIGN KEY constraint op de CountryCode kolom naar de PRIMARY KEY van een andere tabel.
-
-
-
-
-```sql
-Set NOCOUNT ON;
-USE master;
-Go
-
-DROP DATABASE If EXISTS Huisdieren
-
-Create DATABASE Huisdieren;
-GO
-
-Use Huisdieren
-GO
-
-DROP TABLE IF EXISTS Logs
-GO
-
-CREATE TABLE Logs (
-	id  INT IDENTITY 
-        CONSTRAINT PK_Log_ID 
-        PRIMARY KEY
-	, logdatum DATETIME2(0) NOT NULL
-    CONSTRAINT default_LogDate DEFAULT SYSDATETIME()
-    , message NVARCHAR(2000)
-    )	;
-GO
-
-
-INSERT INTO Logs ([message])
-VALUES ('Hoi')
-	, ('test')
-	, ('huh');
-GO
-
-
-
-select * from Logs
-
-```
