@@ -1,14 +1,34 @@
-Een variabele in T-SQL is een tijdelijke opslagplaats voor gegevens die binnen een script worden gebruikt. Het wordt gebruikt om waarden op te slaan die later in het script kunnen worden gebruikt.
+ Er zijn drie manieren om variabelen te definiëren en te gebruiken in t-SQL: 
+ 
+ - DECLARE statement: hiermee kunt u een variabele declareren en een waarde toewijzen.
 
-Een voorbeeld van een variabele in T-SQL zou kunnen zijn:
-
+Voorbeeld:
 ```sql
-
-DECLARE @naam VARCHAR(50)
-SET @naam = 'Jan'
-SELECT 'Hallo ' + @naam
+DECLARE @myVariable INT;
+SET @myVariable = 10;
 ```
 
+Dit declareert een variabele genaamd @myVariable van het type INT en wijst de waarde 10 toe. 
+ - SET statement: hiermee kunt u een waarde toewijzen aan een bestaande variabele.
+ 
+Voorbeeld:
+```sql
+DECLARE @myVariable INT;
+SET @myVariable = 10;
+SET @myVariable = @myVariable + 5;
+```
 
+Dit declareert een variabele genaamd @myVariable van het type INT, wijst de waarde 10 toe en voegt vervolgens 5 toe aan de bestaande waarde van @myVariable. 
 
-In dit voorbeeld hebben we een variabele genaamd `@naam` gedeclareerd en geïnitialiseerd met de waarde "Jan". Vervolgens gebruiken we deze variabele in een SELECT-statement om de zin "Hallo Jan" te maken. Door het gebruik van variabelen wordt het gemakkelijker om waarden door te geven en te gebruiken in verschillende delen van een script.
+ - SELECT statement: hiermee kunt u een query uitvoeren en het resultaat toewijzen aan een variabele. Dit wordt meestal gebruikt wanneer u een enkelvoudig resultaat verwacht.
+ 
+Voorbeeld:
+
+```sql
+DECLARE @myVariable INT;
+SELECT @myVariable = COUNT(*) FROM myTable;
+```
+
+Dit declareert een variabele genaamd @myVariable van het type INT en wijst het aantal rijen in myTable toe aan@myVariable.
+
+Het gebruik van variabelen maakt het gemakkelijker om waarden op te slaan en te gebruiken in verschillende delen van uw query.
