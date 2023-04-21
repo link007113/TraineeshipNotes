@@ -20,3 +20,33 @@ EXEC GetCustomerById @customerId = 1
 ```
 
 In dit voorbeeld wordt de Stored Procedure uitgevoerd met de parameter @customerId gelijk aan 1. Dit zal resulteren in een SELECT-statement dat alle gegevens ophaalt van de klant met een Id van 1.
+
+## Output
+
+Je kunt ook stored procedures gebruiken met een output parameter.
+Een output parameter is een parameter in een stored procedure die een waarde teruggeeft aan de gebruiker of aan de aanroepende procedure.
+
+Hier is een voorbeeld van een stored procedure met een output parameter:
+```sql
+CREATE PROCEDURE GetTotalSales
+    @startdate DATE,
+    @enddate DATE,
+    @totalSales INT OUTPUT
+AS
+BEGIN
+    SELECT @totalSales = SUM(TotalAmount)
+    FROM Sales
+    WHERE SaleDate BETWEEN @startdate AND @enddate
+END
+```
+In dit voorbeeld hebben we een stored procedure genaamd GetTotalSales gemaakt. De stored procedure accepteert twee invoerparameters, @startdate en @enddate, die worden gebruikt om de verkoopgegevens op te halen tussen de opgegeven data. Er is ook een uitvoerparameter @totalSales gedefinieerd die de totale verkoopwaarde zal teruggeven.
+
+Binnen de stored procedure wordt de SUM-functie gebruikt om de totale verkoopwaarde tussen de gegeven data te berekenen en wordt deze waarde toegewezen aan de @totalSales-parameter.
+
+Om deze stored procedure uit te voeren en de totale verkoopwaarde terug te krijgen, kan het volgende statement worden gebruikt:
+```sql
+DECLARE @totalSales INT
+EXEC GetTotalSales '2022-01-01', '2022-01-31', @totalSales OUTPUT
+SELECT @totalSales
+```
+In dit voorbeeld wordt de stored procedure uitgevoerd door de EXEC-opdracht en worden de invoerparameters @startdate en @enddate doorgegeven. De uitvoerparameter @totalSales wordt als laatste parameter doorgegeven met de sleutelwoord OUTPUT. Na het uitvoeren van de stored procedure, wordt de waarde van de @totalSales-parameter weergegeven met de SELECT-opdracht.
