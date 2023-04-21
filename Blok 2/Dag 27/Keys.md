@@ -98,7 +98,6 @@ Een composite key in t-SQL is een combinatie van twee of meer kolommen die samen
 Een voorbeeld:
 
 ```sql
-
 CREATE TABLE Orders (
     OrderID int,
     CustomerID int,
@@ -106,7 +105,4 @@ CREATE TABLE Orders (
     PRIMARY KEY (OrderID, CustomerID)
 );
 ```
-
-
-
 In dit voorbeeld vormen de kolommen OrderID en CustomerID samen de composite key voor de Orders-tabel. Elke combinatie van OrderID en CustomerID moet uniek zijn in de tabel.

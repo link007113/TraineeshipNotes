@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 27/Normaliseren.md",
+                "file": "Blok 2/Dag 27/Type Databases.md",
                 "mode": "source",
                 "source": false
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 27/Normaliseren.md",
+                "file": "Blok 2/Dag 27/Type Databases.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 27/Normaliseren.md",
+                "file": "Blok 2/Dag 27/Type Databases.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 27/Normaliseren.md"
+                "file": "Blok 2/Dag 27/Type Databases.md"
               }
             }
           }
@@ -198,19 +198,19 @@
   },
   "active": "4807d7ecf1c3b9a9",
   "lastOpenFiles": [
-    "Blok 2/Dag 27/Keys.md",
-    "Blok 2/Dag 27/Type Databases.md",
+    "Blok 2/Dag 26/Table Expressions.md",
+    "Blok 2/Dag 26/Set Operators.md",
     "Blok 2/Dag 27/Constraints.md",
+    "Blok 2/Dag 27/Type Databases.md",
     "Blok 2/Dag 27/Normaliseren.md",
+    "Blok 2/Dag 27/Keys.md",
+    "Blok 2/Dag 28/Grouping Sets.md",
     "Blok 2/Dag 27/OLTP.md",
     "Blok 2/Dag 27/OLAP.md",
-    "Blok 2/Dag 26/Table Expressions.md",
     "Blok 2/Dag 27",
     "Blok 1/Blok1.BlackJack/Pasted image 20230403113353.png",
-    "Blok 2/Dag 28/Grouping Sets.md",
     "Blok 2/Dag 28/Pivot and Unpivot.md",
     "Blok 2/Dag 28/Window functions.md",
-    "Blok 2/Dag 26/Set Operators.md",
     "Blok 2/Dag 25/Date and Time-0d3af12e-6e8c-40b8-9cad-459b910afe6d.pdf",
     "Blok 2/Dag 25/DateTime.md",
     "Blok 2/Dag 22/Data Types.pdf",
