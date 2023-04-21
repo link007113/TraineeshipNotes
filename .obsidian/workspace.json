@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 27/Constraints.md",
+                "file": "Blok 2/Dag 28/Stored Procedures.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7fcbfe7d77febc76",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 27/IIF.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -96,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 27/Constraints.md",
+                "file": "Blok 2/Dag 27/IIF.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 27/Constraints.md",
+                "file": "Blok 2/Dag 27/IIF.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 27/Constraints.md"
+                "file": "Blok 2/Dag 27/IIF.md"
               }
             }
           }
@@ -147,11 +160,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "57cbd53eddc957c8",
+  "active": "7fcbfe7d77febc76",
   "lastOpenFiles": [
+    "Blok 2/Dag 28/Stored Procedures.md",
+    "Blok 2/Dag 27/IIF.md",
+    "Blok 2/Dag 27/Constraints.md",
     "Blok 2/Dag 27/Keys.md",
     "Blok 2/Dag 27/Normaliseren.md",
-    "Blok 2/Dag 28/Stored Procedures.md",
     "Blok 2/Dag 28/Control Flow.md",
     "Blok 2/Dag 28/Window functions.md",
     "Blok 2/Dag 28/Variables.md",
@@ -162,7 +177,6 @@
     "Blok 2/Dag 28/Programming in T-SQL.md",
     "Blok 2/Dag 26/Set Operators.md",
     "Blok 2/Dag 27/Type Databases.md",
-    "Blok 2/Dag 27/Constraints.md",
     "Blok 2/Dag 26/Table Expressions.md",
     "Blok 2/Dag 28/Grouping Sets.md",
     "Blok 2/Dag 27/OLTP.md",
@@ -178,7 +192,6 @@
     "Blok 2/Dag 22/Null waarden.md",
     "Blok 2/Dag 25/Exists.md",
     "Blok 2/Dag 25/DML Statements.md",
-    "Blok 2/Dag 22/Standaard Databases (System Databases).md",
     "Blok 2/Dag 28",
     "Blok 2/Dag 26",
     "Blok 2/Dag 25",
