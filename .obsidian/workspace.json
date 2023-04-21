@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 28/Variables.md",
+                "file": "Blok 2/Dag 28/Control Flow.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 28/Variables.md",
+                "file": "Blok 2/Dag 28/Control Flow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 28/Variables.md",
+                "file": "Blok 2/Dag 28/Control Flow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 28/Variables.md"
+                "file": "Blok 2/Dag 28/Control Flow.md"
               }
             }
           }
@@ -149,11 +149,12 @@
   },
   "active": "57cbd53eddc957c8",
   "lastOpenFiles": [
-    "Blok 2/Dag 28/GO.md",
+    "Blok 2/Dag 28/Error handeling.md",
+    "Blok 2/Dag 28/Pivot and Unpivot.md",
     "Blok 2/Dag 28/Variables.md",
     "Blok 2/Dag 28/Transactions.md",
+    "Blok 2/Dag 28/GO.md",
     "Blok 2/Dag 28/Control Flow.md",
-    "Blok 2/Dag 28/Error handeling.md",
     "Blok 2/Dag 28/Stored Procedures.md",
     "Blok 2/Dag 28/Programming in T-SQL.md",
     "Blok 2/Dag 28/Window functions.md",
@@ -168,7 +169,6 @@
     "Blok 2/Dag 27/OLAP.md",
     "Blok 2/Dag 27",
     "Blok 1/Blok1.BlackJack/Pasted image 20230403113353.png",
-    "Blok 2/Dag 28/Pivot and Unpivot.md",
     "Blok 2/Dag 25/Date and Time-0d3af12e-6e8c-40b8-9cad-459b910afe6d.pdf",
     "Blok 2/Dag 25/DateTime.md",
     "Blok 2/Dag 22/Data Types.pdf",
