@@ -26,7 +26,7 @@ BEGIN TRY
 END TRY
 BEGIN CATCH    
         ROLLBACK TRANSACTIE;
-    -- Uw foutbehandelingscode hier
+    -- Uw error handeling code hier
 EINDE CATCH
 ```
 

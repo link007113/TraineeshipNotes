@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 28/Pivot and Unpivot.md",
+                "file": "Blok 2/Dag 28/Error handeling.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 28/Pivot and Unpivot.md",
+                "file": "Blok 2/Dag 28/Error handeling.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 28/Pivot and Unpivot.md",
+                "file": "Blok 2/Dag 28/Error handeling.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 28/Pivot and Unpivot.md"
+                "file": "Blok 2/Dag 28/Error handeling.md"
               }
             }
           }
@@ -162,14 +162,14 @@
   },
   "active": "7fcbfe7d77febc76",
   "lastOpenFiles": [
+    "Blok 2/Dag 28/Control Flow.md",
+    "Blok 2/Dag 28/Pivot and Unpivot.md",
     "Blok 2/Dag 28/Window functions.md",
     "Blok 2/Dag 28/Error handeling.md",
-    "Blok 2/Dag 28/Control Flow.md",
     "Blok 2/Dag 27/IIF.md",
     "Blok 2/Dag 28/Variables.md",
     "Blok 2/Dag 28/Transactions.md",
     "Blok 2/Dag 28/Stored Procedures.md",
-    "Blok 2/Dag 28/Pivot and Unpivot.md",
     "Blok 2/Dag 28/Grouping Sets.md",
     "Blok 2/Dag 28/GO.md",
     "Blok 2/Dag 26/Table Expressions.md",
