@@ -7,10 +7,12 @@ Er zijn drie normaalvormen (1NV, 2NV en 3NV) die vaak worden gebruikt om de mate
 - Er mogen geen duplicaten van dezelfde gegevens in een tabel staan.
 - Er mogen geen afgeleide gegevens in een tabel staan.
 - Elke rij in de tabel moet uniek identificeerbaar zijn.
+
 ## 2NV (Second Normal Form) - The Whole Key
 - Voldoen aan de 1NV.
 - Alle niet-sleutelvelden in de tabel moeten volledig afhankelijk zijn van de primaire sleutel.
 - Er mogen geen gedeeltelijke afhankelijkheden zijn tussen de kolommen van de primaire sleutel.
+
 ## 3NV (Third Normal Form) - Nothing but the key
 - Voldoen aan de 2NV.
 - Alle niet-sleutelvelden in de tabel moeten uitsluitend afhankelijk zijn van de primaire sleutel en niet van andere niet-sleutelvelden.
