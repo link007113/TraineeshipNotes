@@ -8,67 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "6b7835a1eeed2631",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 26/Table Expressions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8784209c646ae464",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 27/Normaliseren.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8aa4c751cba699d8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 27/Type Databases.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "fa048a3d2a3fcaee",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 27/Constraints.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "4807d7ecf1c3b9a9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 27/Keys.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "adc47fbd03b8e423",
+            "id": "57cbd53eddc957c8",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,57 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "6c9123d6574e377b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 28/Stored Procedures.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e4121456fdf4614e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 28/Error handeling.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1bfed077b61b01ff",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 28/Control Flow.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "57cbd53eddc957c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 28/Transactions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 9
+        ]
       }
     ],
     "direction": "vertical"
@@ -205,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 28/Transactions.md",
+                "file": "Blok 2/Dag 28/Variables.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -222,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 28/Transactions.md",
+                "file": "Blok 2/Dag 28/Variables.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -234,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 28/Transactions.md"
+                "file": "Blok 2/Dag 28/Variables.md"
               }
             }
           }
@@ -256,10 +147,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0e9fa094df768502",
+  "active": "57cbd53eddc957c8",
   "lastOpenFiles": [
-    "Blok 2/Dag 28/Control Flow.md",
     "Blok 2/Dag 28/Transactions.md",
+    "Blok 2/Dag 28/Control Flow.md",
     "Blok 2/Dag 28/Error handeling.md",
     "Blok 2/Dag 28/Stored Procedures.md",
     "Blok 2/Dag 28/Variables.md",
