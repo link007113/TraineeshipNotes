@@ -68,19 +68,67 @@
             }
           },
           {
-            "id": "ea849d330220cbf2",
+            "id": "adc47fbd03b8e423",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 28/GO.md",
+                "file": "Blok 2/Dag 28/Variables.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6c9123d6574e377b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 28/Stored Procedures.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e4121456fdf4614e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 28/Error handeling.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "1bfed077b61b01ff",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 28/Control Flow.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "57cbd53eddc957c8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 28/Transactions.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -157,7 +205,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 28/GO.md",
+                "file": "Blok 2/Dag 28/Transactions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +222,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 28/GO.md",
+                "file": "Blok 2/Dag 28/Transactions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +234,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 28/GO.md"
+                "file": "Blok 2/Dag 28/Transactions.md"
               }
             }
           }
@@ -208,22 +256,28 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ea849d330220cbf2",
+  "active": "0e9fa094df768502",
   "lastOpenFiles": [
+    "Blok 2/Dag 28/Control Flow.md",
+    "Blok 2/Dag 28/Transactions.md",
+    "Blok 2/Dag 28/Error handeling.md",
+    "Blok 2/Dag 28/Stored Procedures.md",
+    "Blok 2/Dag 28/Variables.md",
+    "Blok 2/Dag 28/Programming in T-SQL.md",
+    "Blok 2/Dag 28/Window functions.md",
     "Blok 2/Dag 27/Keys.md",
+    "Blok 2/Dag 26/Set Operators.md",
     "Blok 2/Dag 28/GO.md",
     "Blok 2/Dag 27/Normaliseren.md",
     "Blok 2/Dag 27/Type Databases.md",
     "Blok 2/Dag 27/Constraints.md",
     "Blok 2/Dag 26/Table Expressions.md",
-    "Blok 2/Dag 26/Set Operators.md",
     "Blok 2/Dag 28/Grouping Sets.md",
     "Blok 2/Dag 27/OLTP.md",
     "Blok 2/Dag 27/OLAP.md",
     "Blok 2/Dag 27",
     "Blok 1/Blok1.BlackJack/Pasted image 20230403113353.png",
     "Blok 2/Dag 28/Pivot and Unpivot.md",
-    "Blok 2/Dag 28/Window functions.md",
     "Blok 2/Dag 25/Date and Time-0d3af12e-6e8c-40b8-9cad-459b910afe6d.pdf",
     "Blok 2/Dag 25/DateTime.md",
     "Blok 2/Dag 22/Data Types.pdf",
@@ -233,13 +287,7 @@
     "Blok 2/Dag 22/Null waarden.md",
     "Blok 2/Dag 25/Exists.md",
     "Blok 2/Dag 25/DML Statements.md",
-    "Blok 2/Dag 28/Programming in T-SQL.md",
     "Blok 2/Dag 22/Standaard Databases (System Databases).md",
-    "Blok 2/Dag 22/Statement Famillies.md",
-    "Blok 2/Dag 25/Group By + Having.md",
-    "Blok 2/Dag 25/Like.md",
-    "Blok 2/Dag 25/Schema.md",
-    "Blok 2/Dag 25/Self-Contained Sub Query.md",
     "Blok 2/Dag 28",
     "Blok 2/Dag 26",
     "Blok 2/Dag 25",
