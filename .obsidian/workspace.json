@@ -61,14 +61,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 27/Type Databases.md",
+                "file": "Blok 2/Dag 27/Keys.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ea849d330220cbf2",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 28/GO.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -145,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 27/Type Databases.md",
+                "file": "Blok 2/Dag 28/GO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 27/Type Databases.md",
+                "file": "Blok 2/Dag 28/GO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 27/Type Databases.md"
+                "file": "Blok 2/Dag 28/GO.md"
               }
             }
           }
@@ -196,12 +208,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4807d7ecf1c3b9a9",
+  "active": "ea849d330220cbf2",
   "lastOpenFiles": [
-    "Blok 2/Dag 27/Constraints.md",
-    "Blok 2/Dag 27/Normaliseren.md",
     "Blok 2/Dag 27/Keys.md",
+    "Blok 2/Dag 28/GO.md",
+    "Blok 2/Dag 27/Normaliseren.md",
     "Blok 2/Dag 27/Type Databases.md",
+    "Blok 2/Dag 27/Constraints.md",
     "Blok 2/Dag 26/Table Expressions.md",
     "Blok 2/Dag 26/Set Operators.md",
     "Blok 2/Dag 28/Grouping Sets.md",
@@ -229,7 +242,6 @@
     "Blok 2/Dag 25/Self-Contained Sub Query.md",
     "Blok 2/Dag 28",
     "Blok 2/Dag 26",
-    "Blok 2/Dag 25/Results.md",
     "Blok 2/Dag 25",
     "Blok 2/Dag 22",
     "Blok 2/Dag 21",
