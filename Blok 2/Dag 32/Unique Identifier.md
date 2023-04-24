@@ -4,14 +4,27 @@ Groot nummer, gegarandeerd uniek
 Security omdat het nauwelijks voorspelbaar is
 
 ```sql
+CREATE TABLE test (
+	ticketnr UNIQUEIDENTIFIER NOT NULL
+	, plaats NVARCHAR(50) NOT NULL
+	)
 
-create table test
-(
-ticketnr uniqueidentifier Not Null
-, plaats nvarchar(50) not null
+INSERT INTO test (
+	ticketnr
+	, plaats
+	)
+VALUES (
+	NEWID()
+	, 'Urk'
+	)
 
-)
-
-insert into test
-()
+SELECT *
+FROM test
 ```
+
+|ticketnr|plaats|
+|---|---|
+|5d6fa1f9-efa2-4991-a379-2a72bf5f7901|Urk|
+
+
+
