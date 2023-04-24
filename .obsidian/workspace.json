@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 32/Computed Column.md",
+                "file": "Blok 2/Dag 32/Indexes.md",
                 "mode": "source",
                 "source": false
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 32/Computed Column.md",
+                "file": "Blok 2/Dag 32/Indexes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 32/Computed Column.md",
+                "file": "Blok 2/Dag 32/Indexes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 32/Computed Column.md"
+                "file": "Blok 2/Dag 32/Indexes.md"
               }
             }
           }
@@ -222,10 +222,10 @@
   },
   "active": "2f828e32df36bffa",
   "lastOpenFiles": [
+    "Blok 2/Dag 32/Computed Column.md",
     "Blok 2/Dag 32/Unique Identifier.md",
     "Blok 2/Dag 32/Indexes.md",
     "Blok 2/Dag 32/User defined functions.md",
-    "Blok 2/Dag 32/Computed Column.md",
     "Misc/markdown-cheat-sheet.md",
     "Blok 2/Dag 25/Like.md",
     "Blok 2/Dag 29/Window functions.md",
