@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 28/Stored Procedures.md",
+                "file": "Blok 2/Dag 29/Stored Procedures.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,19 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 28/Window functions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "581a64b8e2b2b018",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 28/SQL carriage return en line feed invoegen  in een string.md",
+                "file": "Blok 2/Dag 29/Window functions.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,14 +37,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 28/Dynamic SQL.md",
+                "file": "Blok 2/Dag 29/Dynamic SQL.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d59c368632b4a7fd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 25/Like.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "44ebc1ed8bc97b20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 32/Unique Identifier.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3c1080b67a333ef1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 32/Computed Column.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2f828e32df36bffa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 32/User defined functions.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -133,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 28/Dynamic SQL.md",
+                "file": "Blok 2/Dag 32/User defined functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -150,7 +186,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 28/Dynamic SQL.md",
+                "file": "Blok 2/Dag 32/User defined functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 28/Dynamic SQL.md"
+                "file": "Blok 2/Dag 32/User defined functions.md"
               }
             }
           }
@@ -184,45 +220,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e998b05433da8f11",
+  "active": "2f828e32df36bffa",
   "lastOpenFiles": [
-    "Blok 2/Dag 28/Variables.md",
-    "Blok 2/Dag 28/GO.md",
-    "Blok 2/Dag 28/Pivot and Unpivot.md",
-    "Blok 2/Dag 28/Grouping Sets.md",
-    "Blok 2/Dag 28/Window functions.md",
-    "Blok 2/Dag 28/Dynamic SQL.md",
-    "Blok 2/Dag 28/SQL carriage return en line feed invoegen  in een string.md",
-    "Blok 2/Dag 28/While.md",
-    "Blok 2/Dag 21/Introductie SQL.md",
-    "Blok 2/Dag 21/Blok Doel.md",
-    "Blok 1/Dag10/Delegates.md",
-    "Blok 1/Dag10/Events.md",
-    "Blok 2/Dag 28/Stored Procedures.md",
-    "chart.md",
-    "Blok 2/Dag 28/Error handeling.md",
-    "Blok 2/Dag 28/Control Flow.md",
-    "Blok 2/Dag 27/IIF.md",
-    "Blok 2/Dag 28/Transactions.md",
-    "Blok 2/Dag 26/Table Expressions.md",
-    "Blok 2/Dag 22/Statement Famillies.md",
-    "Blok 2/Dag 25/DML Statements.md",
-    "Blok 2/Dag 27/Constraints.md",
-    "Blok 2/Dag 27/Keys.md",
-    "Blok 2/Dag 27/Normaliseren.md",
-    "Blok 2/Dag 28/Programming in T-SQL.md",
+    "Blok 2/Dag 32/Computed Column.md",
+    "Blok 2/Dag 32/User defined functions.md",
+    "Blok 2/Dag 32/Unique Identifier.md",
+    "Blok 2/Dag 25/Like.md",
+    "Blok 2/Dag 29/Window functions.md",
+    "Blok 2/Dag 28/Keys.md",
+    "Blok 2/Dag 28/Normaliseren.md",
+    "Blok 2/Dag 28/Type Databases.md",
     "Blok 2/Dag 26/Set Operators.md",
-    "Blok 2/Dag 27",
+    "Blok 2/Dag 28/Constraints.md",
+    "Blok 2/Dag 25/Self-Contained Sub Query.md",
+    "Blok 2/Dag 25/DML Statements.md",
+    "Blok 2/Dag 25/Exists.md",
+    "Blok 2/Dag 26/Table Expressions.md",
+    "Blok 2/Dag 29/Dynamic SQL.md",
+    "Blok 2/Dag 29/While.md",
+    "Blok 2/Dag 29/Untitled.md",
+    "Blok 2/Dag 29/Transactions.md",
+    "Blok 2/Dag 29/Control Flow.md",
+    "Blok 2/Dag 29/Error handeling.md",
+    "Blok 2/Dag 29/Grouping Sets.md",
+    "Blok 2/Dag 29/Pivot and Unpivot.md",
+    "Blok 2/Dag 29/SQL carriage return en line feed invoegen  in een string.md",
+    "Blok 2/Dag 32/Indexes.md",
+    "Blok 2/Dag 32",
+    "Blok 2/Dag 29/Variables.md",
+    "Blok 2/Dag 29/GO.md",
+    "Blok 2/Dag 28",
     "Blok 1/Blok1.BlackJack/Pasted image 20230403113353.png",
     "Blok 2/Dag 25/Date and Time-0d3af12e-6e8c-40b8-9cad-459b910afe6d.pdf",
     "Blok 2/Dag 22/Data Types.pdf",
-    "Blok 2/Dag 28",
+    "Blok 2/Dag 29",
     "Blok 2/Dag 26",
     "Blok 2/Dag 25",
     "Blok 2/Dag 22",
     "Blok 2/Dag 21",
     "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Player/PlayerBase.cs",
-    "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Player/Player.cs",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24 1.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24.jpeg",
