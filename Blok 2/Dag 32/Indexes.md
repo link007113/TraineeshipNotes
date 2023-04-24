@@ -15,4 +15,4 @@ standaard bij een primaire key
 
 non-clustered index:
 index only
-gebruik je om de primaire sleutel te vinden en daarbij de rest van de record.
+gebruik je om de primaire sleutel te vinden die gebruikt kan worden door de Clustered index. 
