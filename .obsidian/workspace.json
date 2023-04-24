@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 32/Indexes.md",
+                "file": "Blok 2/Dag 33/User defined functions.md",
                 "mode": "source",
                 "source": false
               }
@@ -169,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 32/Indexes.md",
+                "file": "Blok 2/Dag 33/User defined functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 32/Indexes.md",
+                "file": "Blok 2/Dag 33/User defined functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 32/Indexes.md"
+                "file": "Blok 2/Dag 33/User defined functions.md"
               }
             }
           }
@@ -222,10 +222,11 @@
   },
   "active": "2f828e32df36bffa",
   "lastOpenFiles": [
+    "Blok 2/Dag 32/Indexes.md",
+    "Blok 2/Dag 33",
+    "Blok 2/Dag 33/User defined functions.md",
     "Blok 2/Dag 32/Computed Column.md",
     "Blok 2/Dag 32/Unique Identifier.md",
-    "Blok 2/Dag 32/Indexes.md",
-    "Blok 2/Dag 32/User defined functions.md",
     "Misc/markdown-cheat-sheet.md",
     "Blok 2/Dag 25/Like.md",
     "Blok 2/Dag 29/Window functions.md",
@@ -248,7 +249,6 @@
     "Blok 2/Dag 29/Pivot and Unpivot.md",
     "Blok 2/Dag 29/SQL carriage return en line feed invoegen  in een string.md",
     "Blok 2/Dag 32",
-    "Blok 2/Dag 29/Variables.md",
     "Blok 2/Dag 28",
     "Blok 1/Blok1.BlackJack/Pasted image 20230403113353.png",
     "Blok 2/Dag 25/Date and Time-0d3af12e-6e8c-40b8-9cad-459b910afe6d.pdf",
@@ -258,7 +258,6 @@
     "Blok 2/Dag 25",
     "Blok 2/Dag 22",
     "Blok 2/Dag 21",
-    "Blok 1/Blok1.BlackJack/Blok1.BlackJack/Player/PlayerBase.cs",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24 1.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24.jpeg",
