@@ -9,5 +9,6 @@ Heap:
 no index, table scan, langzaam voor grote tabellen
 
 Clustered index:
-Binary tree
+Binary tree met een diepte van 4
+Index seek
 
