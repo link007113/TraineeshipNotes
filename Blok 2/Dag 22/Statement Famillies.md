@@ -13,7 +13,7 @@ De volgende statements horen bij de DDL famillie:
 - Create
 - Alter
 - Drop
-- Truncate
+- Truncate - delete alle rijen en reset evt. Identity
 
 ## Data Control Language (DCL) - Wordt niet behandeld
 
