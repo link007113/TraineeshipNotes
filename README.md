@@ -20,10 +20,10 @@ Deze notities heb ik gemaakt met [Obsidian](https://obsidian.md/) (bedankt [Daan
 - [Developing ASP.NET Core Web Applications using Razor Pages and Blazor Components](https://training.infosupport.com/trainingen/RAZOR/developing-aspnet-core-web-applications-using-razor-pages-and-blazor-components/)
 
 # Blok 4
-- Agile-Project Start-up
-- Docker Essentials
-- Azure DevOps Engineer
-- Modern Software Engineering Practices
+- [Agile-Project Start-up](https://training.infosupport.com/trainingen/msep/modern-software-engineering-practices/)
+- [Docker Essentials](https://training.infosupport.com/trainingen/DOCKERESS/docker-essentials/)
+- [Azure DevOps Engineer](https://training.infosupport.com/trainingen/MSAZ400/azure-devops-engineer-az-400/)
+- [Modern Software Engineering Practices](https://training.infosupport.com/trainingen/MSEP/modern-software-engineering-practices/)
 
 # Blok 5
 - [Multithreading, Parallel Programming and Asynchronous Programming in C# .NET](https://training.infosupport.com/trainingen/THREADS/multithreading-parallel-programming-and-asynchronous-programming-in-c-net/)

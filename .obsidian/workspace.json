@@ -11,8 +11,12 @@
             "id": "b6d491bf63be3244",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "README.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -92,6 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -108,6 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "README.md"
+              }
             }
           }
         ],
@@ -141,20 +149,20 @@
   },
   "active": "b6d491bf63be3244",
   "lastOpenFiles": [
+    "Blok 2/Dag 33/Transactions.md",
+    "Blok 2/Dag 33/Statistics.md",
+    "Blok 2/Dag 32/Indexes.md",
+    "Blok 2/Dag 32/Binary Tree.md",
+    "Blok 2/Dag 32/User defined functions.md",
     "2023-04-25.md",
     "Untitled.canvas",
-    "Blok 2/Dag 32/Indexes.md",
     "Blok 2/Dag 32/Unique Identifier.md",
     "Blok 2/Dag 32/Computed Column.md",
-    "Blok 2/Dag 32/User defined functions.md",
-    "Blok 2/Dag 32/Binary Tree.md",
-    "Blok 2/Dag 33/Statistics.md",
     "Blok 2/Dag 33/Reorganize.md",
     "README.md",
     "Blok 2/Dag 33/Check Constraint.md",
     "Blok 2/Dag 33/Triggers.md",
     "Blok 2/Dag 33/Isolation Levels.md",
-    "Blok 2/Dag 33/Transactions.md",
     "Blok 2/Dag 33/Updateable View.md",
     "Blok 2/Dag 33/Rebuild.md",
     "Blok 2/Dag 22/Null waarden.md",
