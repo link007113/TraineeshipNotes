@@ -31,6 +31,23 @@ Samengevat zorgt deze SQL-query voor het creëren van een nieuwe tabel voor het 
 
 ## Tabel Constraints
 
+Table constraints in T-SQL zijn regels die worden toegepast op een tabel om de gegevensintegriteit te behouden en te beperken tot alleen geldige gegevens. Ze worden gebruikt om ervoor te zorgen dat de gegevens in een tabel correct en consistent zijn en voldoen aan bepaalde vereisten.
+
+Een voorbeeld van een table constraint kan zijn het beperken van de waarde van een bepaalde kolom onder bepaalde omstandigheden. Bijvoorbeeld, als we de volgende tabel hebben:
+
+```sql
+	CREATE TABLE Leveranciers (
+		id INT NOT NULL, 
+        achternaam NVARCHAR(255) NULL, 
+		status SMALLINT NULL, 
+        plaats NVARCHAR(255) NULL
+		, 
+        CONSTRAINT chk_status CHECK (plaats != 'Veenendaal' OR STATUS = 20
+			)
+		)
+
+```
+
 
 
 
