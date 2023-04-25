@@ -27,6 +27,7 @@ END TRY
 BEGIN CATCH    
         ROLLBACK TRANSACTIE;
     -- Uw error handeling code hier
+    THROW;
 EINDE CATCH
 ```
 
