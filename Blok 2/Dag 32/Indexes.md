@@ -29,3 +29,22 @@ Enkele use cases voor non-clustered indexes zijn:
 -   Zoekopdrachten die vaak worden uitgevoerd op een specifieke kolom.
 -   Het verbeteren van de prestaties bij het samenvoegen van meerdere tabellen in één query.
 -   Bij tabellen met veel updates of inserts, omdat het bijwerken van een non-clustered index minder belastend is dan het bijwerken van een clustered index.
+
+### Include Index
+
+Een "include index" is een type index in T-SQL waarmee extra kolommen worden toegevoegd aan een non-clustered index. Deze extra kolommen zijn niet opgenomen in de indexboom, maar kunnen wel worden gebruikt om te voorkomen dat SQL Server de bijbehorende gegevenspagina's moet opzoeken wanneer de query wordt uitgevoerd.
+
+Een index met alleen sleutelkolommen kan bijvoorbeeld worden gebruikt om zoekopdrachten uit te voeren, maar wanneer er extra kolommen nodig zijn voor de SELECT, GROUP BY of ORDER BY clausules, moet SQL Server de gegevenspagina's lezen, wat kan leiden tot prestatieproblemen.
+
+Met een include index worden de extra kolommen opgenomen in de index, waardoor SQL Server de informatie niet hoeft op te zoeken in de bijbehorende gegevenspagina's. Dit kan de queryprestaties aanzienlijk verbeteren.
+
+Een eenvoudig voorbeeld van een include index zou kunnen zijn:
+
+```sql
+CREATE NONCLUSTERED INDEX IX_SalesOrderDetail_ProductID
+ON Sales.SalesOrderDetail (ProductID)
+INCLUDE (OrderQty, UnitPrice)
+```
+In dit voorbeeld is de sleutelkolom 'ProductID' opgenomen in de indexboom en worden de extra kolommen 'OrderQty' en 'UnitPrice' opgenomen als include kolommen. Dit betekent dat SQL Server de extra informatie kan ophalen uit de index zelf, zonder de bijbehorende gegevenspagina's te hoeven lezen.
+
+Een ander voorbeeld van het gebruik van een include index zou kunnen zijn bij een zoekopdracht die een WHERE, ORDER BY en GROUP BY clausule heeft op verschillende kolommen in dezelfde tabel. In dit geval kan een include index op de relevante kolommen helpen om de queryprestaties te verbeteren.
