@@ -29,3 +29,9 @@ De derde kolom 'message' is een gewone NVARCHAR-kolom waarin tekst kan worden op
 
 Samengevat zorgt deze SQL-query voor het creëren van een nieuwe tabel voor het opslaan van logs, waarbij elke rij uniek geïdentificeerd kan worden door een automatisch gegenereerde ID, terwijl de datum van de log automatisch wordt toegevoegd en het logbericht kan worden opgeslagen in de 'message' kolom.
 
+## Tabel Constraints
+
+
+
+
+
