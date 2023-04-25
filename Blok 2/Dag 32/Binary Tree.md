@@ -2,3 +2,6 @@ Een binaire boomstructuur is een manier om data op te slaan en te organiseren in
 
 Een binaire boomstructuur bestaat uit een wortelknoop, die het beginpunt van de boom is, en takken die uit de wortelknoop voortkomen. Elke tak heeft hoogstens twee kindertakken, die op hun beurt ook weer hoogstens twee kindertakken hebben en zo verder. De takken die geen kindertakken meer hebben, worden bladknopen genoemd.
 
+![[Voorbeeld Binary Tree.png]]
+
+[B-Tree Test](https://www.cs.usfca.edu/~galles/visualization/BTree.html)
