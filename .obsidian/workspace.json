@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 33/Isolation Levels.md",
+                "file": "Blok 2/Dag 33/Triggers.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 33/Isolation Levels.md",
+                "file": "Blok 2/Dag 33/Triggers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 33/Isolation Levels.md",
+                "file": "Blok 2/Dag 33/Triggers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 33/Isolation Levels.md"
+                "file": "Blok 2/Dag 33/Triggers.md"
               }
             }
           }
@@ -162,6 +162,7 @@
   },
   "active": "3f5a183a47508500",
   "lastOpenFiles": [
+    "Blok 2/Dag 33/Isolation Levels.md",
     "Blok 2/Dag 33/Transactions.md",
     "Blok 2/Dag 33/Updateable View.md",
     "Blok 2/Dag 33/Statistics.md",
@@ -178,7 +179,6 @@
     "Blok 2/Dag 32/Binary Tree.md",
     "Blok 2/Dag 28/Constraints.md",
     "2023-04-25.md",
-    "Blok 2/Dag 33/Isolation Levels.md",
     "Blok 2/Dag 22/Statement Famillies.md",
     "Blok 2/Dag 32/Voorbeeld Binary Tree.png",
     "Blok 2/Dag 32/Unique Identifier.md",
