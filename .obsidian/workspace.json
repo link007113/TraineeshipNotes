@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 33/Transactions.md",
+                "file": "Blok 2/Dag 33/Triggers.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 33/Transactions.md",
+                "file": "Blok 2/Dag 33/Triggers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 33/Transactions.md",
+                "file": "Blok 2/Dag 33/Triggers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 33/Transactions.md"
+                "file": "Blok 2/Dag 33/Triggers.md"
               }
             }
           }
@@ -149,9 +149,11 @@
   },
   "active": "b6d491bf63be3244",
   "lastOpenFiles": [
-    "Blok 2/Dag 29/Error handeling.md",
-    "Blok 2/Dag 33/Transactions.md",
     "Blok 2/Dag 33/Isolation Levels.md",
+    "Blok 2/Dag 33/Check Constraint.md",
+    "Blok 2/Dag 33/Triggers.md",
+    "Blok 2/Dag 33/Transactions.md",
+    "Blok 2/Dag 29/Error handeling.md",
     "Blok 2/Dag 33/Updateable View.md",
     "README.md",
     "Blok 2/Dag 33/Statistics.md",
@@ -163,8 +165,6 @@
     "Blok 2/Dag 32/Unique Identifier.md",
     "Blok 2/Dag 32/Computed Column.md",
     "Blok 2/Dag 33/Reorganize.md",
-    "Blok 2/Dag 33/Check Constraint.md",
-    "Blok 2/Dag 33/Triggers.md",
     "Blok 2/Dag 33/Rebuild.md",
     "Blok 2/Dag 22/Null waarden.md",
     "Blok 2/Dag 26/Table Expressions.md",
