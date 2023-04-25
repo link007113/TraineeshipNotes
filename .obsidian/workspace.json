@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 32/Indexes.md",
+                "file": "Blok 2/Dag 33/Statistics.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 32/Indexes.md",
+                "file": "Blok 2/Dag 33/Statistics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 32/Indexes.md",
+                "file": "Blok 2/Dag 33/Statistics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 32/Indexes.md"
+                "file": "Blok 2/Dag 33/Statistics.md"
               }
             }
           }
@@ -162,15 +162,15 @@
   },
   "active": "3f5a183a47508500",
   "lastOpenFiles": [
+    "Blok 2/Dag 33/Rebuild.md",
+    "Blok 2/Dag 33/Reorganize.md",
+    "Blok 2/Dag 32/Indexes.md",
     "Blok 2/Dag 33/Transactions.md",
     "Blok 2/Dag 33/Isolation Levels.md",
     "Blok 2/Dag 33/Triggers.md",
     "Blok 2/Dag 33/Check Constraint.md",
-    "Blok 2/Dag 32/Indexes.md",
     "Blok 2/Dag 33/Updateable View.md",
     "Blok 2/Dag 33/Statistics.md",
-    "Blok 2/Dag 33/Rebuild.md",
-    "Blok 2/Dag 33/Reorganize.md",
     "Blok 2/Dag 22/Null waarden.md",
     "Blok 2/Dag 32/User defined functions.md",
     "Blok 2/Dag 32/Computed Column.md",

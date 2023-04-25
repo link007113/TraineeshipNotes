@@ -14,5 +14,18 @@ Een clustered index ordent de gegevens in de tabel op basis van de waarden in ee
 
 ## Non-clustered index
 
-Een non-clustered index ordent de waarden van een bepaalde kolom op een aparte plaats. Dit maakt het mogelijk om snel op deze kolom te zoeken, omdat de index niet door de hele tabel gescand hoeft te worden. Hierbij wordt er alleen in de index gezocht en wordt de data page opgezocht waar de gezochte data zich bevindt. Non-clustered indexes worden vaak gebruikt om de primaire sleutel te vinden die gebruikt kan worden door de clustered index.
+Een non-clustered index in t-SQL is een manier om de zoekprestaties van een database te verbeteren door de indexering van specifieke kolommen van een tabel. Het verschil tussen een clustered index en een non-clustered index is dat bij een clustered index de data wordt opgeslagen op basis van de index, terwijl bij een non-clustered index de data gescheiden blijft van de index en deze alleen verwijst naar de fysieke locatie van de data.
 
+Een eenvoudig voorbeeld van het maken van een non-clustered index op een kolom in een tabel is als volgt:
+
+```sql
+CREATE NONCLUSTERED INDEX IX_Customers_LastName ON Customers (LastName);
+```
+
+In dit voorbeeld wordt er een non-clustered index aangemaakt op de kolom LastName in de tabel Customers. Hiermee worden de zoekprestaties verbeterd wanneer er veelvuldig gezocht wordt op de achternaam van een klant.
+
+Enkele use cases voor non-clustered indexes zijn:
+
+-   Zoekopdrachten die vaak worden uitgevoerd op een specifieke kolom.
+-   Het verbeteren van de prestaties bij het samenvoegen van meerdere tabellen in één query.
+-   Bij tabellen met veel updates of inserts, omdat het bijwerken van een non-clustered index minder belastend is dan het bijwerken van een clustered index.
