@@ -32,9 +32,7 @@ Nog een voorbeeld. Deze kan vanuit een url het protocol halen en deze terug geve
 
 GO
 
-CREATE OR
-
-ALTER FUNCTION dbo.ProtocolUitURL (@url AS NVARCHAR(1000))
+CREATE OR ALTER FUNCTION dbo.ProtocolUitURL (@url AS NVARCHAR(1000))
 RETURNS NVARCHAR(1000)
 AS
 BEGIN

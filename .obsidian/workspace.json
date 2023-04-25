@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 33/Reorganize.md",
+                "file": "Blok 2/Dag 32/User defined functions.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 33/Reorganize.md",
+                "file": "Blok 2/Dag 32/User defined functions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 33/Reorganize.md",
+                "file": "Blok 2/Dag 32/User defined functions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 33/Reorganize.md"
+                "file": "Blok 2/Dag 32/User defined functions.md"
               }
             }
           }
@@ -162,10 +162,10 @@
   },
   "active": "3f5a183a47508500",
   "lastOpenFiles": [
-    "Blok 2/Dag 28/Constraints.md",
-    "Blok 2/Dag 33/Reorganize.md",
-    "2023-04-25.md",
     "Blok 2/Dag 32/Binary Tree.md",
+    "Blok 2/Dag 33/Reorganize.md",
+    "Blok 2/Dag 28/Constraints.md",
+    "2023-04-25.md",
     "Blok 2/Dag 33/Rebuild.md",
     "Blok 2/Dag 33/Statistics.md",
     "Blok 2/Dag 33/Updateable View.md",
