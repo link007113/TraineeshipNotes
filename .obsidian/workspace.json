@@ -8,78 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "57cbd53eddc957c8",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 29/Stored Procedures.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "7fcbfe7d77febc76",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 29/Window functions.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e998b05433da8f11",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 29/Dynamic SQL.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d59c368632b4a7fd",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 25/Like.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "44ebc1ed8bc97b20",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 32/Unique Identifier.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "3c1080b67a333ef1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 32/Computed Column.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "2f828e32df36bffa",
             "type": "leaf",
             "state": {
@@ -90,9 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "3f5a183a47508500",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/Dag 32/Binary Tree.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -169,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 32/Indexes.md",
+                "file": "Blok 2/Dag 32/Binary Tree.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 32/Indexes.md",
+                "file": "Blok 2/Dag 32/Binary Tree.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 32/Indexes.md"
+                "file": "Blok 2/Dag 32/Binary Tree.md"
               }
             }
           }
@@ -220,10 +160,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2f828e32df36bffa",
+  "active": "3f5a183a47508500",
   "lastOpenFiles": [
-    "Blok 2/Dag 32/Computed Column.md",
     "Blok 2/Dag 32/Indexes.md",
+    "Blok 2/Dag 32/Binary Tree.md",
+    "Blok 2/Dag 32/Computed Column.md",
+    "Blok 2/Dag 32/Unique Identifier.md",
     "Blok 2/Dag 29/Window functions.md",
     "Blok 2/Dag 29/Variables.md",
     "Blok 2/Dag 29/Stored Procedures.md",
@@ -233,7 +175,6 @@
     "Blok 2/Dag 29/SQL carriage return en line feed invoegen  in een string.md",
     "Blok 2/Dag 29/Dynamic SQL.md",
     "Blok 2/Dag 32/User defined functions.md",
-    "Blok 2/Dag 32/Unique Identifier.md",
     "Blok 2/Dag 33",
     "Misc/markdown-cheat-sheet.md",
     "Blok 2/Dag 25/Like.md",
@@ -248,7 +189,6 @@
     "Blok 2/Dag 26/Table Expressions.md",
     "Blok 2/Dag 29/While.md",
     "Blok 2/Dag 29/Untitled.md",
-    "Blok 2/Dag 29/Grouping Sets.md",
     "Blok 2/Dag 32",
     "Blok 2/Dag 28",
     "Blok 1/Blok1.BlackJack/Pasted image 20230403113353.png",
