@@ -18,21 +18,8 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "3f5a183a47508500",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 2/Dag 33/Statistics.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -109,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 33/Statistics.md",
+                "file": "Blok 2/Dag 32/Indexes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 33/Statistics.md",
+                "file": "Blok 2/Dag 32/Indexes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 33/Statistics.md"
+                "file": "Blok 2/Dag 32/Indexes.md"
               }
             }
           }
@@ -160,35 +147,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3f5a183a47508500",
+  "active": "2f828e32df36bffa",
   "lastOpenFiles": [
-    "Blok 2/Dag 33/Rebuild.md",
-    "Blok 2/Dag 33/Reorganize.md",
-    "Blok 2/Dag 32/Indexes.md",
-    "Blok 2/Dag 33/Transactions.md",
-    "Blok 2/Dag 33/Isolation Levels.md",
-    "Blok 2/Dag 33/Triggers.md",
-    "Blok 2/Dag 33/Check Constraint.md",
-    "Blok 2/Dag 33/Updateable View.md",
-    "Blok 2/Dag 33/Statistics.md",
-    "Blok 2/Dag 22/Null waarden.md",
+    "Blok 2/Dag 32/Binary Tree.md",
     "Blok 2/Dag 32/User defined functions.md",
     "Blok 2/Dag 32/Computed Column.md",
+    "Blok 2/Dag 32/Unique Identifier.md",
+    "Blok 2/Dag 32/Indexes.md",
+    "2023-04-25.md",
+    "README.md",
+    "Blok 2/Dag 33/Check Constraint.md",
+    "Blok 2/Dag 33/Triggers.md",
+    "Blok 2/Dag 33/Isolation Levels.md",
+    "Blok 2/Dag 33/Transactions.md",
+    "Blok 2/Dag 33/Updateable View.md",
+    "Blok 2/Dag 33/Statistics.md",
+    "Blok 2/Dag 33/Rebuild.md",
+    "Blok 2/Dag 33/Reorganize.md",
+    "Blok 2/Dag 22/Null waarden.md",
     "Blok 2/Dag 26/Table Expressions.md",
     "Blok 2/Dag 26/Set Operators.md",
-    "Blok 2/Dag 32/Binary Tree.md",
     "Blok 2/Dag 28/Constraints.md",
-    "2023-04-25.md",
     "Blok 2/Dag 22/Statement Famillies.md",
     "Blok 2/Dag 32/Voorbeeld Binary Tree.png",
-    "Blok 2/Dag 32/Unique Identifier.md",
     "Blok 2/Dag 29/Window functions.md",
     "Blok 2/Dag 29/Variables.md",
     "Blok 2/Dag 29/Stored Procedures.md",
     "Blok 2/Dag 29/Error handeling.md",
     "Blok 2/Dag 29/Control Flow.md",
     "Blok 2/Dag 29/Transactions.md",
-    "Blok 2/Dag 29/SQL carriage return en line feed invoegen  in een string.md",
     "Blok 2/Dag 33",
     "Blok 2/Dag 32",
     "Blok 2/Dag 28",

@@ -10,11 +10,11 @@ Een heap is een tabel zonder index. Hierbij wordt er geen speciale volgorde aang
 
 ## Clustered index
 
-Een clustered index ordent de gegevens in de tabel op basis van de waarden in een specifieke kolom, meestal de primaire sleutel. Hierdoor kan t-SQL veel sneller gegevens vinden omdat er niet meer door de hele tabel gescand hoeft te worden. Een clustered index heeft een binaire boomstructuur van maximaal 3 niveaus en biedt snel toegang tot de data page die de gezochte data bevat. Standaard wordt er bij een primaire sleutel een clustered index aangemaakt.
+Een clustered index ordent de gegevens in de tabel op basis van de waarden in een specifieke kolom, meestal de primaire sleutel. Hierdoor kan t-SQL veel sneller gegevens vinden omdat er niet meer door de hele tabel gescand hoeft te worden. Een clustered index heeft een binaire boomstructuur van maximaal 3 niveaus en biedt snel toegang tot de data page die de gezochte data bevat. Standaard wordt er bij een primaire sleutel een clustered index aangemaakt. Kort gezegd is een clustered index een combinatie van binary tree en alle data
 
 ## Non-clustered index
 
-Een non-clustered index in t-SQL is een manier om de zoekprestaties van een database te verbeteren door de indexering van specifieke kolommen van een tabel. Het verschil tussen een clustered index en een non-clustered index is dat bij een clustered index de data wordt opgeslagen op basis van de index, terwijl bij een non-clustered index de data gescheiden blijft van de index en deze alleen verwijst naar de fysieke locatie van de data.
+Een non-clustered index in t-SQL is een manier om de zoekprestaties van een database te verbeteren door de indexering van specifieke kolommen van een tabel. Het verschil tussen een clustered index en een non-clustered index is dat bij een clustered index de data wordt opgeslagen op basis van de index, terwijl bij een non-clustered index de data gescheiden blijft van de index en deze alleen verwijst naar de fysieke locatie van de data. Kort gezegd is dit een alleen een binary tree 
 
 Een eenvoudig voorbeeld van het maken van een non-clustered index op een kolom in een tabel is als volgt:
 
