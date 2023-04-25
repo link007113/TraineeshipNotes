@@ -1,4 +1,5 @@
 
+Een computed column in t-SQL is een kolom die automatisch wordt berekend op basis van andere kolommen in dezelfde tabel. Dit kan handig zijn als je bijvoorbeeld altijd een bepaalde berekening wilt uitvoeren op een set data.
 
 ```sql
 Drop table if EXISTS Engineers
@@ -20,7 +21,8 @@ FROM Engineers
 
 ```
 
-Persisted is een keyword die ervoor zorgt dat de data wordt opgeslagen als de data de eerste keer wordt opgevraagd.
-Zorgt voor een snelle select maar een langzame update.
+Een computed column kan ook worden opgeslagen in de database door gebruik te maken van het keyword "Persisted". Dit zorgt ervoor dat de berekende waarde wordt opgeslagen in de database, waardoor het sneller is om de data op te halen. Het nadeel is wel dat het updaten van de data langzamer kan worden omdat de waarde opnieuw moet worden berekend.
 
-Zonder heb je een langzamere select en een snellere update.
+Als je geen "Persisted" gebruikt, dan wordt de berekende kolom niet opgeslagen in de database en wordt het elke keer opnieuw berekend wanneer het wordt opgevraagd. Dit kan leiden tot een langzamere select, maar wel een snellere update.
+
+Computed columns kunnen nuttig zijn bij het vereenvoudigen van complexe berekeningen, het verminderen van redundante data en het verbeteren van queryprestaties.
