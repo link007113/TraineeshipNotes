@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 28/Constraints.md",
+                "file": "Blok 2/Dag 33/Reorganize.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 28/Constraints.md",
+                "file": "Blok 2/Dag 33/Reorganize.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 28/Constraints.md",
+                "file": "Blok 2/Dag 33/Reorganize.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 28/Constraints.md"
+                "file": "Blok 2/Dag 33/Reorganize.md"
               }
             }
           }
@@ -162,6 +162,7 @@
   },
   "active": "3f5a183a47508500",
   "lastOpenFiles": [
+    "Blok 2/Dag 28/Constraints.md",
     "Blok 2/Dag 33/Reorganize.md",
     "2023-04-25.md",
     "Blok 2/Dag 32/Binary Tree.md",
@@ -189,7 +190,6 @@
     "Blok 2/Dag 33",
     "Misc/markdown-cheat-sheet.md",
     "Blok 2/Dag 25/Like.md",
-    "Blok 2/Dag 28/Keys.md",
     "Blok 2/Dag 32",
     "Blok 2/Dag 28",
     "Blok 1/Blok1.BlackJack/Pasted image 20230403113353.png",

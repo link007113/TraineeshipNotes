@@ -29,7 +29,7 @@ De derde kolom 'message' is een gewone NVARCHAR-kolom waarin tekst kan worden op
 
 Samengevat zorgt deze SQL-query voor het creëren van een nieuwe tabel voor het opslaan van logs, waarbij elke rij uniek geïdentificeerd kan worden door een automatisch gegenereerde ID, terwijl de datum van de log automatisch wordt toegevoegd en het logbericht kan worden opgeslagen in de 'message' kolom.
 
-## Tabel Constraints
+## Table Constraints
 
 Table constraints in T-SQL zijn regels die worden toegepast op een tabel om de gegevensintegriteit te behouden en te beperken tot alleen geldige gegevens. Ze worden gebruikt om ervoor te zorgen dat de gegevens in een tabel correct en consistent zijn en voldoen aan bepaalde vereisten.
 
@@ -42,13 +42,17 @@ Een voorbeeld van een table constraint kan zijn het beperken van de waarde van e
 		status SMALLINT NULL, 
         plaats NVARCHAR(255) NULL
 		, 
-        CONSTRAINT chk_status CHECK (plaats != 'Veenendaal' OR STATUS = 20
-			)
+        CONSTRAINT chk_status 
+        CHECK (plaats <> 'Veenendaal' OR STATUS = 20)
 		)
 
 ```
 
+Dan zorgt de CONSTRAINT ervoor dat als de waarde van 'plaats' in een bepaalde rij 'Veenendaal' is, de waarde van 'STATUS' in dezelfde rij altijd 20 moet zijn, anders zal het invoegen of bijwerken van de rij mislukken.
 
+Dit kan handig zijn in een situatie waarin we ervoor willen zorgen dat een bepaalde kolom altijd een bepaalde waarde heeft onder bepaalde omstandigheden. In dit geval willen we bijvoorbeeld dat de status van een leverancier altijd 20 is als de leverancier in Veenendaal is gevestigd.
+
+Andere voorbeelden van table constraints zijn PRIMARY KEY, UNIQUE, FOREIGN KEY en NOT NULL constraints. Deze constraints zorgen ervoor dat er unieke waarden worden ingevoerd in de betreffende kolommen en dat er geen NULL-waarden worden ingevoerd in kolommen die verplicht moeten zijn.
 
 
 
