@@ -1,17 +1,18 @@
-tabellen kan je opslaan als Heap of Clustered index
-data page
-IAM
+In t-SQL zijn indexes hulpmiddelen die je kunt gebruiken om zoekopdrachten sneller uit te voeren. Stel je bijvoorbeeld een telefoonboek voor zonder een index: als je op zoek bent naar de contactgegevens van een persoon, moet je het boek doorbladeren tot je de juiste pagina hebt gevonden. Dit kan lang duren als er veel namen in het boek staan.
 
-Heap: -- niet relevant
-no index, 
-table scan, 
-langzaam voor grote tabellen
+Met een index kun je de zoekopdracht versnellen door een soort inhoudsopgave toe te voegen aan het telefoonboek. Hiermee kun je snel de juiste pagina vinden waar de persoon die je zoekt zich bevindt. In t-SQL zijn er drie soorten indexes: heap, clustered en non-clustered indexes.
 
-Clustered index:
-Binary tree met een diepte van 4
-Index seek
-standaard bij een primaire key
+Indexen zijn nuttig wanneer je veel zoekopdrachten uitvoert op grote tabellen. Door het toevoegen van indexen kun je deze zoekopdrachten veel sneller maken en de algehele prestaties van de database verbeteren. Het is echter belangrijk om voorzichtig te zijn met het toevoegen van indexen, omdat deze ook nadelen kunnen hebben, zoals extra opslagruimte en langere invoertijd.
 
-non-clustered index:
-index only
-gebruik je om de primaire sleutel te vinden die gebruikt kan worden door de Clustered index. 
+## Heap
+
+Een heap is een tabel zonder index. Hierbij wordt er geen speciale volgorde aangebracht in de manier waarop gegevens in de tabel zijn opgeslagen. Dit kan handig zijn voor kleine tabellen, maar voor grote tabellen kan het langzaam zijn omdat er bij elke zoekopdracht een volledige tabelscan nodig is.
+
+## Clustered index
+
+Een clustered index ordent de gegevens in de tabel op basis van de waarden in een specifieke kolom, meestal de primaire sleutel. Hierdoor kan t-SQL veel sneller gegevens vinden omdat er niet meer door de hele tabel gescand hoeft te worden. Een clustered index heeft een binaire boomstructuur van maximaal 4 niveaus en biedt snel toegang tot de data page die de gezochte data bevat. Standaard wordt er bij een primaire sleutel een clustered index aangemaakt.
+
+## Non-clustered index
+
+Een non-clustered index ordent de waarden van een bepaalde kolom op een aparte plaats. Dit maakt het mogelijk om snel op deze kolom te zoeken, omdat de index niet door de hele tabel gescand hoeft te worden. Hierbij wordt er alleen in de index gezocht en wordt de data page opgezocht waar de gezochte data zich bevindt. Non-clustered indexes worden vaak gebruikt om de primaire sleutel te vinden die gebruikt kan worden door de clustered index.
+
