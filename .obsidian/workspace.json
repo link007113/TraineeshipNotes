@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 32/User defined functions.md",
+                "file": "Blok 2/Dag 32/Indexes.md",
                 "mode": "source",
                 "source": false
               }
@@ -142,7 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 288.5
+    "width": 200
   },
   "right": {
     "id": "2514d144f4ae1650",
@@ -169,7 +169,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 32/User defined functions.md",
+                "file": "Blok 2/Dag 32/Indexes.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +186,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 32/User defined functions.md",
+                "file": "Blok 2/Dag 32/Indexes.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +198,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 32/User defined functions.md"
+                "file": "Blok 2/Dag 32/Indexes.md"
               }
             }
           }
@@ -222,15 +222,21 @@
   },
   "active": "2f828e32df36bffa",
   "lastOpenFiles": [
-    "Blok 2/Dag 32/Indexes.md",
-    "Blok 2/Dag 32/Unique Identifier.md",
     "Blok 2/Dag 32/Computed Column.md",
+    "Blok 2/Dag 32/Indexes.md",
+    "Blok 2/Dag 29/Window functions.md",
+    "Blok 2/Dag 29/Variables.md",
+    "Blok 2/Dag 29/Stored Procedures.md",
+    "Blok 2/Dag 29/Error handeling.md",
     "Blok 2/Dag 29/Control Flow.md",
+    "Blok 2/Dag 29/Transactions.md",
+    "Blok 2/Dag 29/SQL carriage return en line feed invoegen  in een string.md",
+    "Blok 2/Dag 29/Dynamic SQL.md",
     "Blok 2/Dag 32/User defined functions.md",
+    "Blok 2/Dag 32/Unique Identifier.md",
     "Blok 2/Dag 33",
     "Misc/markdown-cheat-sheet.md",
     "Blok 2/Dag 25/Like.md",
-    "Blok 2/Dag 29/Window functions.md",
     "Blok 2/Dag 28/Keys.md",
     "Blok 2/Dag 28/Normaliseren.md",
     "Blok 2/Dag 28/Type Databases.md",
@@ -240,14 +246,9 @@
     "Blok 2/Dag 25/DML Statements.md",
     "Blok 2/Dag 25/Exists.md",
     "Blok 2/Dag 26/Table Expressions.md",
-    "Blok 2/Dag 29/Dynamic SQL.md",
     "Blok 2/Dag 29/While.md",
     "Blok 2/Dag 29/Untitled.md",
-    "Blok 2/Dag 29/Transactions.md",
-    "Blok 2/Dag 29/Error handeling.md",
     "Blok 2/Dag 29/Grouping Sets.md",
-    "Blok 2/Dag 29/Pivot and Unpivot.md",
-    "Blok 2/Dag 29/SQL carriage return en line feed invoegen  in een string.md",
     "Blok 2/Dag 32",
     "Blok 2/Dag 28",
     "Blok 1/Blok1.BlackJack/Pasted image 20230403113353.png",

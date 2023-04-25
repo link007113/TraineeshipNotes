@@ -10,7 +10,7 @@ Een heap is een tabel zonder index. Hierbij wordt er geen speciale volgorde aang
 
 ## Clustered index
 
-Een clustered index ordent de gegevens in de tabel op basis van de waarden in een specifieke kolom, meestal de primaire sleutel. Hierdoor kan t-SQL veel sneller gegevens vinden omdat er niet meer door de hele tabel gescand hoeft te worden. Een clustered index heeft een binaire boomstructuur van maximaal 4 niveaus en biedt snel toegang tot de data page die de gezochte data bevat. Standaard wordt er bij een primaire sleutel een clustered index aangemaakt.
+Een clustered index ordent de gegevens in de tabel op basis van de waarden in een specifieke kolom, meestal de primaire sleutel. Hierdoor kan t-SQL veel sneller gegevens vinden omdat er niet meer door de hele tabel gescand hoeft te worden. Een clustered index heeft een binaire boomstructuur van maximaal 3 niveaus en biedt snel toegang tot de data page die de gezochte data bevat. Standaard wordt er bij een primaire sleutel een clustered index aangemaakt.
 
 ## Non-clustered index
 
