@@ -24,3 +24,31 @@ END
 ```
 
 UDFs kunnen gebruikt worden voor verschillende doeleinden, zoals het uitvoeren van complexe berekeningen, het uitvoeren van herhaalde taken en het transformeren van gegevens. Ze kunnen worden gebruikt in query's, views en opgeslagen procedures om de functionaliteit van de database uit te breiden. UDFs helpen bij het verminderen van codeherhaling en zorgen voor een betere onderhoudsbaarheid van de code.
+
+Nog een voorbeeld. Deze kan vanuit een url het protocol halen en deze terug geven:
+
+
+```sql
+
+GO
+
+CREATE OR
+
+ALTER FUNCTION dbo.ProtocolUitURL (@url AS NVARCHAR(1000))
+RETURNS NVARCHAR(1000)
+AS
+BEGIN
+	DECLARE @protocol NVARCHAR(1000)
+
+	SET @protocol = IIF(@url LIKE 'http:%', 'http', 
+                    IIF(@url LIKE 'https:%', 'https', 
+                    IIF(@url LIKE 'ftp:%', 'ftp', NULL)))
+
+	RETURN (@protocol)
+
+	RETURN (@protocol)
+END
+GO
+
+SELECT dbo.ProtocolUitURL('http://google.nl')
+```
