@@ -114,26 +114,28 @@ go
 Voor Lazy loading moet in de context Lazy loading aangezet worden:
 Microsoft.EntityFrameworkCore.Proxies
 ```c#
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            string connectionString = @"Server=localhost;User=SA;Password=3Erfoom1992!;Database=MagazijnDB;TrustServerCertificate=true";
-            optionsBuilder
-                .UseLazyLoadingProxies()
-                .UseSqlServer(connectionString);
-        }
-
+protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+{
+    string connectionString = @"Server=localhost;User=SA;Password=*****;Database=MagazijnDB;TrustServerCertificate=true;MultipleActiveResultSets=true";
+    optionsBuilder
+        .UseLazyLoadingProxies()
+        .UseSqlServer(connectionString);
+}
 ```
 Daarna kan het alsvolgt gebruikt worden:
 
 ```c#
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            string connectionString = @"Server=localhost;User=SA;Password=3Erfoom1992!;Database=MagazijnDB;TrustServerCertificate=true";
-            optionsBuilder
-                .UseLazyLoadingProxies()
-                .UseSqlServer(connectionString);
-        }
-
+using (WorldCup2018Context context = new WorldCup2018Context())
+{
+    context.Database.EnsureCreated();
+    var query = from player in context.Players
+                where player.FamilyName.StartsWith("R")
+                select player;
+    foreach (var person in query)
+    {
+        Console.WriteLine($"{person.FirstName} {person.FamilyName} {person.Country?.CountryName}");
+    }
+}
 ```
 Dit wordt de query 
 
