@@ -26,3 +26,6 @@ Entity Framework kan hiermee een database generenen inclusief tabellen
 Dit is de prefered way.
 Dit omdat het ook Test-Driven gedaan kan worden. 
 Kan alleen als er nog geen bestaande database is.
+
+
+BBOM
