@@ -50,8 +50,9 @@ dit kan door het volgend commando te gebruiken en naar wens aanpassen :
 ```bash
 dotnet ef dbcontext scaffold "Server=localhost;User=SA;Password=********;TrustServerCertificate=true" --output-dir "DAL" Microsoft.EntityFrameworkCore.SqlServer
 ```
-
+### Eager Loading
 ```c#
+// Eager Loading
 using (WorldCup2018Context context = new WorldCup2018Context())
 {
     context.Database.EnsureCreated();
@@ -64,7 +65,6 @@ using (WorldCup2018Context context = new WorldCup2018Context())
     }
 }
 ```
-
 Dit wordt de query 
 
 ```sql
@@ -75,6 +75,14 @@ WHERE [p].[FamilyName] LIKE N'R%'
 go
 
 ```
+
+### Precise Loading
+
+
+
+
+
+
 
 ## Code First
 
