@@ -152,11 +152,29 @@ Mag je niet gebruiken. Tenzij niet anders kan
 
 ### Explicit Loading
 
+```c#
+// Explicit Loading
+using (WorldCup2018Context context = new WorldCup2018Context())
+{
+    context.Database.EnsureCreated();
+    var query = from player in context.Players
+                where player.FamilyName.StartsWith("R")
+                select player;
+    foreach (var person in query)
+    {
+    context.Entry(person).Reference(p => p.Country).Load();
+        Console.WriteLine($"{person.FirstName} {person.FamilyName} {person.Country.CountryName}");
+    }
+}
+```
+Dit wordt de query
+```sql
+SELECT [p].[PlayerId], [p].[BirthDate], [p].[CountryId], [p].[FamilyName], [p].[FirstName], [c].[CountryId], [c].[CountryName], [c].[Qualified]
+FROM [Persons].[Players] AS [p]
+INNER JOIN [Other].[Countries] AS [c] ON [p].[CountryId] = [c].[CountryId]
+WHERE [p].[FamilyName] LIKE N'R%'
 
-
-
-
-
+```
 
 ## Code First
 
