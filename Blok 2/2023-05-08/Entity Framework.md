@@ -44,6 +44,9 @@ De nuget libs die we gebruiken is Microsoft.EntityFrameworkCore, Microsoft.Entit
 Database bestaat al, inclusief tabellen, data, enz. 
 Op basis hiervan kan je C# datamodel laten genereren die je kan gebruiken om data uit de database te halen en te muteren.
 
+```c#
+```
+
 ## Code First
 
 Applicatie maken inclusief datamodel.
