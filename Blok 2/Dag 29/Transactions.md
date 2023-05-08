@@ -13,4 +13,5 @@ VALUES (1, '2023-04-21');
 
 COMMIT TRANSACTION;
 ```
+
 In dit voorbeeld bevatten de instructies UPDATE en INSERT een transactie die wordt gestart met de opdracht `BEGIN TRANSACTION` en eindigt met de opdracht `COMMIT TRANSACTION`. Als er tijdens het uitvoeren van deze transactie een fout optreedt, bijvoorbeeld als er een probleem is met het invoegen van de bestelling, worden alle wijzigingen die zijn aangebracht in de transactie teruggedraaid en wordt de database in de oorspronkelijke staat hersteld. Dit helpt om de consistentie van de database te behouden en eventuele fouten te voorkomen die kunnen optreden bij het uitvoeren van complexe bewerkingen.

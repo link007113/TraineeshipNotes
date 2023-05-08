@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 33/Triggers.md",
+                "file": "Blok 2/Dag 29/Control Flow.md",
                 "mode": "source",
                 "source": false
               }
@@ -96,7 +96,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 33/Triggers.md",
+                "file": "Blok 2/Dag 29/Control Flow.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +113,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 33/Triggers.md",
+                "file": "Blok 2/Dag 29/Control Flow.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 33/Triggers.md"
+                "file": "Blok 2/Dag 29/Control Flow.md"
               }
             }
           }
@@ -149,23 +149,27 @@
   },
   "active": "b6d491bf63be3244",
   "lastOpenFiles": [
-    "Blok 2/Dag 33/Isolation Levels.md",
-    "Blok 2/Dag 33/Check Constraint.md",
-    "Blok 2/Dag 33/Triggers.md",
-    "Blok 2/Dag 33/Transactions.md",
-    "Blok 2/Dag 29/Error handeling.md",
+    "Blok 2/Dag 29/Transactions.md",
+    "Blok 2/Dag 29/Control Flow.md",
+    "Blok 2/Dag 29/Stored Procedures.md",
     "Blok 2/Dag 33/Updateable View.md",
-    "README.md",
+    "Blok 2/Dag 33/Reorganize.md",
+    "Blok 2/Dag 33/Rebuild.md",
     "Blok 2/Dag 33/Statistics.md",
     "Blok 2/Dag 32/Indexes.md",
+    "Blok 2/Dag 33/Triggers.md",
+    "Blok 2/Untitled",
+    "Blok 2/Dag 33/Isolation Levels.md",
+    "Blok 2/Dag 33/Check Constraint.md",
+    "Blok 2/Dag 33/Transactions.md",
+    "Blok 2/Dag 29/Error handeling.md",
+    "README.md",
     "Blok 2/Dag 32/Binary Tree.md",
     "Blok 2/Dag 32/User defined functions.md",
     "2023-04-25.md",
     "Untitled.canvas",
     "Blok 2/Dag 32/Unique Identifier.md",
     "Blok 2/Dag 32/Computed Column.md",
-    "Blok 2/Dag 33/Reorganize.md",
-    "Blok 2/Dag 33/Rebuild.md",
     "Blok 2/Dag 22/Null waarden.md",
     "Blok 2/Dag 26/Table Expressions.md",
     "Blok 2/Dag 26/Set Operators.md",
@@ -174,8 +178,6 @@
     "Blok 2/Dag 32/Voorbeeld Binary Tree.png",
     "Blok 2/Dag 29/Window functions.md",
     "Blok 2/Dag 29/Variables.md",
-    "Blok 2/Dag 29/Stored Procedures.md",
-    "Blok 2/Dag 29/Control Flow.md",
     "Blok 2/Dag 33",
     "Blok 2/Dag 32",
     "Blok 2/Dag 28",
@@ -186,7 +188,6 @@
     "Blok 2/Dag 26",
     "Blok 2/Dag 25",
     "Blok 2/Dag 22",
-    "Blok 2/Dag 21",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24 1.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24.jpeg",
