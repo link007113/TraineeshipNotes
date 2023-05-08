@@ -17,7 +17,7 @@ flowchart LR
 ## DB First
 
 Database bestaat al, inclusief tabellen, data, enz. 
-Op basis hiervan kan je C# code laten genereren die je kan gebruiken om data uit de database te halen en te muteren.
+Op basis hiervan kan je C# datamodel laten genereren die je kan gebruiken om data uit de database te halen en te muteren.
 
 ## Code First
 
