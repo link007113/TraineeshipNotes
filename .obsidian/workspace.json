@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-08/Mapping.md",
+                "file": "Blok 2/2023-05-08/Entity Framework.md",
                 "mode": "source",
                 "source": false
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/2023-05-08/Mapping.md",
+                "file": "Blok 2/2023-05-08/Entity Framework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/2023-05-08/Mapping.md",
+                "file": "Blok 2/2023-05-08/Entity Framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/2023-05-08/Mapping.md"
+                "file": "Blok 2/2023-05-08/Entity Framework.md"
               }
             }
           }
@@ -198,9 +198,9 @@
   },
   "active": "d3baaefc92ee522e",
   "lastOpenFiles": [
+    "Blok 2/2023-05-08/Mapping.md",
     "Blok 2/2023-05-08/Entity Framework.md",
     "Blok 2/2023-05-08/Queries.md",
-    "Blok 2/2023-05-08/Mapping.md",
     "Blok 2/2023-05-08/Context.md",
     "Blok 2/Dag 29/Window functions.md",
     "Blok 2/Dag 32/Indexes.md",
