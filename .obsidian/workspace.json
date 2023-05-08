@@ -13,13 +13,62 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/Dag 29/Control Flow.md",
+                "file": "Blok 2/Dag 29/Window functions.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "0601475a652617cd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/2023-05-08/Entity Framework.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f66cca494d79496b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/2023-05-08/Entity Framework.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "da2f35d58e443713",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/2023-05-08/Mapping.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d3baaefc92ee522e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/2023-05-08/Entity Framework.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -96,7 +145,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/Dag 29/Control Flow.md",
+                "file": "Blok 2/2023-05-08/Entity Framework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +162,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/Dag 29/Control Flow.md",
+                "file": "Blok 2/2023-05-08/Entity Framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/Dag 29/Control Flow.md"
+                "file": "Blok 2/2023-05-08/Entity Framework.md"
               }
             }
           }
@@ -147,37 +196,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b6d491bf63be3244",
+  "active": "d3baaefc92ee522e",
   "lastOpenFiles": [
-    "Blok 2/Dag 29/Transactions.md",
-    "Blok 2/Dag 29/Control Flow.md",
-    "Blok 2/Dag 29/Stored Procedures.md",
-    "Blok 2/Dag 33/Updateable View.md",
+    "Blok 2/2023-05-08/Queries.md",
+    "Blok 2/2023-05-08/Mapping.md",
+    "Blok 2/2023-05-08/Entity Framework.md",
+    "Blok 2/2023-05-08/Context.md",
+    "Blok 2/Dag 29/Window functions.md",
+    "Blok 2/Dag 32/Indexes.md",
     "Blok 2/Dag 33/Reorganize.md",
     "Blok 2/Dag 33/Rebuild.md",
-    "Blok 2/Dag 33/Statistics.md",
-    "Blok 2/Dag 32/Indexes.md",
-    "Blok 2/Dag 33/Triggers.md",
-    "Blok 2/Untitled",
-    "Blok 2/Dag 33/Isolation Levels.md",
-    "Blok 2/Dag 33/Check Constraint.md",
+    "Blok 2/Dag 32/User defined functions.md",
+    "Blok 2/Dag 29/Stored Procedures.md",
+    "Blok 2/Dag 32/Computed Column.md",
+    "Blok 2/Dag 29/Dynamic SQL.md",
     "Blok 2/Dag 33/Transactions.md",
+    "Blok 2/Dag 32/Binary Tree.md",
+    "Blok 2/Dag 33/Check Constraint.md",
+    "Blok 2/Dag 33/Isolation Levels.md",
+    "Blok 2/Dag 33/Updateable View.md",
+    "Blok 2/Dag 33/Statistics.md",
+    "Blok 2/Dag 29/Control Flow.md",
+    "Blok 2/Dag 29/Transactions.md",
+    "Blok 2/Dag 33/Triggers.md",
+    "Blok 2/2023-05-08",
     "Blok 2/Dag 29/Error handeling.md",
     "README.md",
-    "Blok 2/Dag 32/Binary Tree.md",
-    "Blok 2/Dag 32/User defined functions.md",
     "2023-04-25.md",
     "Untitled.canvas",
     "Blok 2/Dag 32/Unique Identifier.md",
-    "Blok 2/Dag 32/Computed Column.md",
     "Blok 2/Dag 22/Null waarden.md",
-    "Blok 2/Dag 26/Table Expressions.md",
-    "Blok 2/Dag 26/Set Operators.md",
-    "Blok 2/Dag 28/Constraints.md",
-    "Blok 2/Dag 22/Statement Famillies.md",
     "Blok 2/Dag 32/Voorbeeld Binary Tree.png",
-    "Blok 2/Dag 29/Window functions.md",
-    "Blok 2/Dag 29/Variables.md",
     "Blok 2/Dag 33",
     "Blok 2/Dag 32",
     "Blok 2/Dag 28",
