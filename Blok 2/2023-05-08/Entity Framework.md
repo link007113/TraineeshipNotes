@@ -33,3 +33,8 @@ Kan alleen als er nog geen bestaande database is.
 
 
 BBOM
+
+
+### Meer info:
+
+[Getting Started with EF Core](https://learn.microsoft.com/en-us/ef/core/get-started/overview/first-app?tabs=netcore-cli)
