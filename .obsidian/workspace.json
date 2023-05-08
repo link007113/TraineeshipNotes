@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-08/Entity Framework.md",
+                "file": "Blok 1/Dag14/Garbage Collection.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -160,10 +159,11 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b7dfbde60803d1d2",
+  "active": "d0eb0ae1f154fd14",
   "lastOpenFiles": [
-    "Blok 2/2023-05-08/Mapping.md",
+    "Blok 1/Dag14/Garbage Collection.md",
     "Blok 2/2023-05-08/Entity Framework.md",
+    "Blok 2/2023-05-08/Mapping.md",
     "Blok 1/Dag13/LINQ.md",
     "Blok 1/Dag14/Files.md",
     "Blok 2/2023-05-08/DotNET vs Core.md",
@@ -189,7 +189,6 @@
     "Blok 2/Dag 29/Transactions.md",
     "Blok 2/Dag 33/Triggers.md",
     "Blok 2/2023-05-08",
-    "Blok 2/Dag 29/Error handeling.md",
     "Untitled.canvas",
     "Blok 2/Dag 32/Voorbeeld Binary Tree.png",
     "Blok 2/Dag 33",
