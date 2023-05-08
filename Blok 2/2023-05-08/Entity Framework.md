@@ -2,3 +2,4 @@ Is een library van Microsoft en die is bedoeld als abstractie laag zodat je als 
 
 Vanuit C# kan je LINQ gebruiken om via de EF data uit een SQL database te halen. EF vertaald LINQ naar SQL query's en vertaald het resultaat weer terug naar een C# object.
 
+Mermaid 
