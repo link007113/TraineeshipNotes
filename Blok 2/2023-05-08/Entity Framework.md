@@ -52,6 +52,30 @@ dotnet ef dbcontext scaffold "Server=localhost;User=SA;Password=********;TrustSe
 ```
 
 ```c#
+            using (WorldCup2018Context context = new WorldCup2018Context())
+            {
+                context.Database.EnsureCreated();
+
+                var query = from player in context.Players
+                            where player.FamilyName.StartsWith("R")
+                            select new PersonData { Player = player, Country = player.Country };
+
+                foreach (var person in query)
+                {
+                    Console.WriteLine($"{person.Player.FirstName} {person.Player.FamilyName} {person.Country.CountryName}");
+                }
+            }
+```
+
+Dit wordt de query 
+
+```sql
+SELECT [p].[PlayerId], [p].[BirthDate], [p].[CountryId], [p].[FamilyName], [p].[FirstName], [c].[CountryId], [c].[CountryName], [c].[Qualified]
+FROM [Persons].[Players] AS [p]
+INNER JOIN [Other].[Countries] AS [c] ON [p].[CountryId] = [c].[CountryId]
+WHERE [p].[FamilyName] LIKE N'R%'
+go
+
 ```
 
 ## Code First
