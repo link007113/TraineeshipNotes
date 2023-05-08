@@ -45,6 +45,11 @@ Database bestaat al, inclusief tabellen, data, enz.
 Op basis hiervan kan je C# datamodel laten genereren die je kan gebruiken om data uit de database te halen en te muteren.
 
 Het generereren wordt gedaan door middel van Scaffolding (Reverse Engineering)
+dit kan door het volgend commando te gebruiken en naar wens aanpassen :
+
+```bash
+dotnet ef dbcontext scaffold "Server=localhost;User=SA;Password=********;TrustServerCertificate=true" --output-dir "DAL" Microsoft.EntityFrameworkCore.SqlServer
+```
 
 ```c#
 ```
