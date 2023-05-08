@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-08/Entity Framework.md",
+                "file": "Blok 2/2023-05-08/Mapping.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +109,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/2023-05-08/Entity Framework.md",
+                "file": "Blok 2/2023-05-08/Mapping.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +126,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/2023-05-08/Entity Framework.md",
+                "file": "Blok 2/2023-05-08/Mapping.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/2023-05-08/Entity Framework.md"
+                "file": "Blok 2/2023-05-08/Mapping.md"
               }
             }
           }
@@ -162,9 +162,9 @@
   },
   "active": "b7dfbde60803d1d2",
   "lastOpenFiles": [
+    "Blok 2/2023-05-08/Entity Framework.md",
     "Blok 1/Dag13/LINQ.md",
     "Blok 1/Dag14/Files.md",
-    "Blok 2/2023-05-08/Entity Framework.md",
     "Blok 2/2023-05-08/DotNET vs Core.md",
     "Blok 2/2023-05-08/Migrations.md",
     "Blok 2/2023-05-08/Untitled",

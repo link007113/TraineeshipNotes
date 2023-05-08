@@ -24,9 +24,7 @@ C# gebruikt LINQ statements om aan de DBContext aan te geven welke data er opgeh
 
 Deze providers leveren de data aan als C# Object. Meestal vraag je data als Class op. De relatie zou je kunnen zien als de naam van de class is de naam van de tabel en de namen van de verschillende kollommen zijn de namen van de properties.
 
-
-
-
+Hier moet er dus wel rekening gehouden worden van de Relationele wereld van SQL en de Object Georienteerde wereld van C#.
 
 ## DB First
 
