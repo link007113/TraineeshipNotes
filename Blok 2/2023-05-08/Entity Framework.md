@@ -52,19 +52,17 @@ dotnet ef dbcontext scaffold "Server=localhost;User=SA;Password=********;TrustSe
 ```
 
 ```c#
-            using (WorldCup2018Context context = new WorldCup2018Context())
-            {
-                context.Database.EnsureCreated();
-
-                var query = from player in context.Players
-                            where player.FamilyName.StartsWith("R")
-                            select new PersonData { Player = player, Country = player.Country };
-
-                foreach (var person in query)
-                {
-                    Console.WriteLine($"{person.Player.FirstName} {person.Player.FamilyName} {person.Country.CountryName}");
-                }
-            }
+using (WorldCup2018Context context = new WorldCup2018Context())
+{
+    context.Database.EnsureCreated();
+    var query = from player in context.Players.Include(p => p.Country)
+                where player.FamilyName.StartsWith("R")
+                select player;
+    foreach (var person in query)
+    {
+        Console.WriteLine($"{person.FirstName} {person.FamilyName} {person.Country.CountryName}");
+    }
+}
 ```
 
 Dit wordt de query 
