@@ -14,6 +14,8 @@ flowchart LR
     B --> |Objecten| A
 ```
 
+Het is vergelijkbaar met de ORM Framework uit JAVA. 
+
 ## DB First
 
 Database bestaat al, inclusief tabellen, data, enz. 
