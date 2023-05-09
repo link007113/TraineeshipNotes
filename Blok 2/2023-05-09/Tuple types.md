@@ -29,23 +29,3 @@ Tuple types zijn handig wanneer je een tijdelijke groepering van waarden nodig h
 
 Bovendien kun je met C# 7.0 en hoger tuple types ook benoemen. In plaats van de waarden te definiëren als (int, string, bool), kunt je ze bijvoorbeeld definiëren als (int myInt, string myString, bool myBool). Dit maakt het gemakkelijker om de betekenis van elke waarde te begrijpen zonder naar de definitie van de tuple te hoeven kijken.
 
-
-Tuple types kunnen in Entity Framework worden gebruikt om meerdere resultaten van een query terug te geven. Stel dat we een entiteit hebben genaamd "Person" met de eigenschappen "Id", "Name" en "Age". We willen nu een query uitvoeren die de naam en leeftijd van elke persoon in onze database teruggeeft als een Tuple.
-
-We kunnen de Tuple types gebruiken in combinatie met de "Select" methode van Entity Framework om een nieuwe lijst te maken van Tuples met daarin de naam en leeftijd van elke persoon. Het voorbeeld hieronder laat zien hoe je dit kunt doen:
-
-```csharp
-
-using (var context = new MyDbContext())
-{
-    var personData = context.Persons
-        .Select(p => Tuple.Create(p.Name, p.Age))
-        .ToList();
-
-    foreach (var data in personData)
-    {
-        Console.WriteLine($"Name: {data.Item1}, Age: {data.Item2}");
-    }
-}
-```
-In dit voorbeeld maken we gebruik van de "Select" methode van Entity Framework om de gegevens van elke persoon om te zetten in een Tuple. We maken een nieuwe lijst van Tuples door gebruik te maken van de "Tuple.Create" methode. Vervolgens kunnen we de lijst van Tuples doorlopen en de naam en leeftijd van elke persoon afdrukken met behulp van de "Item1" en "Item2" eigenschappen van de Tuple.
