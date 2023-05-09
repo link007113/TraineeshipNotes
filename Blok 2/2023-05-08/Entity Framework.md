@@ -1,6 +1,6 @@
-Is een library van Microsoft en die is bedoeld als abstractie laag zodat je als developer eigenlijk niet veel kennis nodig hebt van SQL zelf. 
+Entity Framework is een framework ontwikkeld door Microsoft dat gebruikt wordt om te communiceren met relationele databases. Het stelt ontwikkelaars in staat om te werken met databases als objecten in plaats van directe SQL queries te schrijven. Dit maakt het eenvoudiger om te werken met databases en vereenvoudigt het proces van het ophalen en opslaan van gegevens in een database.
 
-Vanuit C# kan je LINQ gebruiken om via de EF data uit een SQL database te halen. EF vertaald LINQ naar SQL query's en vertaald het resultaat weer terug naar een C# object:
+Entity Framework creëert een abstractielaag tussen de applicatie en de database, wat betekent dat ontwikkelaars niet langer directe SQL queries hoeven te schrijven om gegevens op te halen en op te slaan. In plaats daarvan kunnen ontwikkelaars queries schrijven in C# en Entity Framework zal deze vertalen naar SQL en uitvoeren op de database.
 
 ```mermaid
 flowchart LR
@@ -40,6 +40,12 @@ De nuget libs die we gebruiken is Microsoft.EntityFrameworkCore, Microsoft.Entit
   </ItemGroup>
 ```
 
+
+**Wat zijn de voordelen van Entity Framework?** 
+- Entity Framework vereenvoudigt het werken met databases door abstractie te bieden van de onderliggende database-engine.
+- Het minimaliseert de hoeveelheid code die nodig is om te communiceren met een database, waardoor ontwikkelaars sneller en efficiënter kunnen werken.
+- Entity Framework is ook handig voor het maken van testgegevens voor een applicatie, omdat het mogelijk is om gegevens te genereren vanuit de objecten in plaats van rechtstreeks in de database te werken.
+- Het ondersteunt verschillende database-engines, waaronder SQL Server, MySQL, Oracle en PostgreSQL.
 
 BBOM
 
