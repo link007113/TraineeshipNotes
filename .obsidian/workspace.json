@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-09/Snapshot van DbContext.md",
+                "file": "Blok 2/2023-05-09/Tuple types.md",
                 "mode": "source",
                 "source": false
               }
@@ -193,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/2023-05-09/Snapshot van DbContext.md",
+                "file": "Blok 2/2023-05-09/Tuple types.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +210,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/2023-05-09/Snapshot van DbContext.md",
+                "file": "Blok 2/2023-05-09/Tuple types.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/2023-05-09/Snapshot van DbContext.md"
+                "file": "Blok 2/2023-05-09/Tuple types.md"
               }
             }
           }
@@ -246,17 +246,17 @@
   },
   "active": "cf269023367df6ba",
   "lastOpenFiles": [
-    "Blok 2/2023-05-09/Crud Operaties.md",
     "Blok 2/2023-05-09/Snapshot van DbContext.md",
-    "Blok 2/2023-05-08/BBOM.md",
+    "Blok 2/2023-05-09/Crud Operaties.md",
+    "Blok 2/2023-05-09/Tuple types.md",
     "Blok 2/2023-05-08/Loading.md",
+    "Blok 2/2023-05-08/BBOM.md",
     "Blok 2/2023-05-08/Database-First Mapping.md",
     "Blok 2/2023-05-08/Code First Mapping.md",
     "Blok 2/2023-05-08/DotNET vs Core.md",
     "Blok 2/2023-05-08/Context.md",
     "Blok 2/2023-05-08/Mapping.md",
     "Blok 2/2023-05-08/Entity Framework.md",
-    "Blok 2/2023-05-09/Tuple types.md",
     "Blok 2/2023-05-08/Untitled",
     "Blok 2/2023-05-09",
     "Blok 2/2023-05-08/Queries.md",

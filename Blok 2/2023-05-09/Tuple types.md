@@ -3,8 +3,7 @@ Tuple types zijn een relatief nieuwe functie in C# en bieden een eenvoudige mani
 Een tuple is in wezen een geordende reeks waarden van verschillende typen die samen worden gegroepeerd als één enkel object. In C# kun je tuples maken door de naam van het type en de waarden tussen haakjes te plaatsen, zoals bijvoorbeeld:
 
 ```c#
-
-var myTuple = (42, "hello", true);
+var tuple = (42, "hello", true);
 ```
 
 In dit voorbeeld hebben we een tuple met drie waarden, een int met de waarde 42, een string met de waarde "hello" en een bool met de waarde true. je kunt de waarden van de tuple afzonderlijk benaderen met behulp van de namen van de tuple-elementen, zoals bijvoorbeeld:
