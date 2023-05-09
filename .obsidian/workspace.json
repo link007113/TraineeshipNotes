@@ -25,7 +25,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-08/Loading.md",
+                "file": "Blok 2/2023-05-08/Entity Framework.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "02b6bd954ebf6a70",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Blok 2/2023-05-08/BBOM.md",
                 "mode": "source",
                 "source": false
               }
@@ -68,7 +80,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -145,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/2023-05-08/Loading.md",
+                "file": "Blok 2/2023-05-08/BBOM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -162,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/2023-05-08/Loading.md",
+                "file": "Blok 2/2023-05-08/BBOM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/2023-05-08/Loading.md"
+                "file": "Blok 2/2023-05-08/BBOM.md"
               }
             }
           }
@@ -196,21 +208,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c12de4f77cdaeece",
+  "active": "02b6bd954ebf6a70",
   "lastOpenFiles": [
-    "Blok 2/2023-05-08/Database-First Mapping.md",
+    "Blok 2/2023-05-08/Entity Framework.md",
+    "Blok 2/2023-05-08/BBOM.md",
+    "Blok 2/2023-05-08/Untitled",
+    "Blok 2/2023-05-09",
+    "Blok 2/2023-05-08/Mapping.md",
+    "Blok 2/2023-05-08/Context.md",
     "Blok 2/2023-05-08/Loading.md",
+    "Blok 2/2023-05-08/Database-First Mapping.md",
     "Blok 2/2023-05-08/Code First Mapping.md",
     "Blok 2/2023-05-08/DotNET vs Core.md",
-    "Blok 2/2023-05-08/Context.md",
     "Blok 2/2023-05-08/Queries.md",
-    "Blok 2/2023-05-08/Mapping.md",
-    "Blok 2/2023-05-08/Entity Framework.md",
     "Blok 1/Dag14/Garbage Collection.md",
     "Blok 1/Dag13/LINQ.md",
     "Blok 1/Dag14/Files.md",
     "Blok 2/2023-05-08/Migrations.md",
-    "Blok 2/2023-05-08/Untitled",
     "Blok 2/Dag 29/Window functions.md",
     "Blok 2/Dag 32/Indexes.md",
     "Blok 2/Dag 33/Reorganize.md",
@@ -224,7 +238,6 @@
     "Blok 2/Dag 33/Check Constraint.md",
     "Blok 2/Dag 33/Isolation Levels.md",
     "Blok 2/Dag 33/Updateable View.md",
-    "Blok 2/Dag 33/Statistics.md",
     "Blok 2/2023-05-08",
     "Untitled.canvas",
     "Blok 2/Dag 32/Voorbeeld Binary Tree.png",
@@ -236,7 +249,6 @@
     "Blok 2/Dag 22/Data Types.pdf",
     "Blok 2/Dag 29",
     "Blok 2/Dag 26",
-    "Blok 2/Dag 25",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24 1.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24.jpeg",

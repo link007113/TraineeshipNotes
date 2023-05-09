@@ -47,7 +47,7 @@ De nuget libs die we gebruiken is Microsoft.EntityFrameworkCore, Microsoft.Entit
 - Entity Framework is ook handig voor het maken van testgegevens voor een applicatie, omdat het mogelijk is om gegevens te genereren vanuit de objecten in plaats van rechtstreeks in de database te werken.
 - Het ondersteunt verschillende database-engines, waaronder SQL Server, MySQL, Oracle en PostgreSQL.
 
-BBOM
+
 
 ### Meer info:
 
