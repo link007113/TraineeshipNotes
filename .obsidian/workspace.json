@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-08/Mapping.md",
+                "file": "Blok 2/2023-05-08/Context.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-08/DB First.md",
+                "file": "Blok 2/2023-05-08/Database-First Mapping.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-08/Code First.md",
+                "file": "Blok 2/2023-05-08/Code First Mapping.md",
                 "mode": "source",
                 "source": false
               }
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/2023-05-08/Mapping.md",
+                "file": "Blok 2/2023-05-08/Context.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/2023-05-08/Mapping.md",
+                "file": "Blok 2/2023-05-08/Context.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/2023-05-08/Mapping.md"
+                "file": "Blok 2/2023-05-08/Context.md"
               }
             }
           }
@@ -185,16 +185,16 @@
   },
   "active": "d0eb0ae1f154fd14",
   "lastOpenFiles": [
-    "Blok 2/2023-05-08/Entity Framework.md",
-    "Blok 2/2023-05-08/Context.md",
-    "Blok 2/2023-05-08/Mapping.md",
     "Blok 2/2023-05-08/Queries.md",
-    "Blok 2/2023-05-08/DB First.md",
-    "Blok 2/2023-05-08/Code First.md",
+    "Blok 2/2023-05-08/Context.md",
+    "Blok 2/2023-05-08/DotNET vs Core.md",
+    "Blok 2/2023-05-08/Mapping.md",
+    "Blok 2/2023-05-08/Code First Mapping.md",
+    "Blok 2/2023-05-08/Database-First Mapping.md",
+    "Blok 2/2023-05-08/Entity Framework.md",
     "Blok 1/Dag14/Garbage Collection.md",
     "Blok 1/Dag13/LINQ.md",
     "Blok 1/Dag14/Files.md",
-    "Blok 2/2023-05-08/DotNET vs Core.md",
     "Blok 2/2023-05-08/Migrations.md",
     "Blok 2/2023-05-08/Untitled",
     "Blok 2/Dag 29/Window functions.md",

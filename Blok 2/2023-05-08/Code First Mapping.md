@@ -1,5 +1,7 @@
 ## Code First
 
+ In Code-First Mapping worden de entiteiten eerst gedefinieerd in de code, waarna Entity Framework de database-schema's genereert op basis van de code. In deze benadering wordt gebruik gemaakt van conventies en attributen om de mapping te definiëren. 
+
 Applicatie maken inclusief datamodel.
 Entity Framework kan hiermee een database generenen inclusief tabellen 
 Dit is de prefered way.
