@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-09/Tuple types.md",
+                "file": "Blok 1/Dag08/Inheritance.md",
                 "mode": "source",
                 "source": false
               }
@@ -193,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/2023-05-09/Tuple types.md",
+                "file": "Blok 1/Dag08/Inheritance.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +210,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/2023-05-09/Tuple types.md",
+                "file": "Blok 1/Dag08/Inheritance.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +222,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/2023-05-09/Tuple types.md"
+                "file": "Blok 1/Dag08/Inheritance.md"
               }
             }
           }
@@ -246,9 +246,18 @@
   },
   "active": "cf269023367df6ba",
   "lastOpenFiles": [
+    "Blok 1/Dag08/InheritanceUitleg.jpeg",
+    "Blok 1/Dag08/Inheritance.md",
+    "Blok 1/Dag08/Abstract classes.md",
+    "Blok 1/Dag06/Structs.md",
+    "Blok 1/Dag06/Operator Overloading & Overrides.md",
+    "Blok 1/Dag06/Enum.md",
+    "Blok 1/Dag06/Custom Exceptions.md",
+    "Blok 1/Dag06/CTS.md",
+    "Blok 1/Dag06/Casting & Boxing.md",
+    "Blok 2/2023-05-09/Tuple types.md",
     "Blok 2/2023-05-09/Snapshot van DbContext.md",
     "Blok 2/2023-05-09/Crud Operaties.md",
-    "Blok 2/2023-05-09/Tuple types.md",
     "Blok 2/2023-05-08/Loading.md",
     "Blok 2/2023-05-08/BBOM.md",
     "Blok 2/2023-05-08/Database-First Mapping.md",
@@ -265,15 +274,6 @@
     "Blok 1/Dag14/Files.md",
     "Blok 2/2023-05-08/Migrations.md",
     "Blok 2/Dag 29/Window functions.md",
-    "Blok 2/Dag 32/Indexes.md",
-    "Blok 2/Dag 33/Reorganize.md",
-    "Blok 2/Dag 33/Rebuild.md",
-    "Blok 2/Dag 32/User defined functions.md",
-    "Blok 2/Dag 29/Stored Procedures.md",
-    "Blok 2/Dag 32/Computed Column.md",
-    "Blok 2/Dag 29/Dynamic SQL.md",
-    "Blok 2/Dag 33/Transactions.md",
-    "Blok 2/Dag 32/Binary Tree.md",
     "Blok 2/2023-05-08",
     "Untitled.canvas",
     "Blok 2/Dag 32/Voorbeeld Binary Tree.png",
@@ -285,7 +285,6 @@
     "Blok 2/Dag 22/Data Types.pdf",
     "Blok 2/Dag 29",
     "Blok 2/Dag 26",
-    "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24 1.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24.jpeg",
     "Blok 1/Dag13/LinqVolgorde.png",

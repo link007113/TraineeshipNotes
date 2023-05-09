@@ -86,6 +86,36 @@ Om basis functionaliteit te overschrijven van de methodes uit de basis-Class is 
     }
 ```
 
+```mermaid
+
+classDiagram
+    class Animal{
+        +name: string
+        +age: number
+        +breed(): string
+    }
+    class Mammal{
+        +furColor: string
+        +feedMilk(): void
+    }
+    class Bird{
+        +wingspan: number
+        +fly(): void
+    }
+    class Dog{
+        +bark(): void
+    }
+    class Cat{
+        +meow(): void
+    }
+
+    Animal <|-- Mammal
+    Animal <|-- Bird
+    Mammal <|-- Dog
+    Mammal <|-- Cat
+```
+
+
 ![alt text](https://github.com/link007113/TraineeshipNotes/blob/main/Blok%201/Dag08/InheritanceUitleg.jpeg?raw=true)
 
 
