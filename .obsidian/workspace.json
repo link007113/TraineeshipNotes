@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-08/Context.md",
+                "file": "Blok 2/2023-05-08/DotNET vs Core.md",
                 "mode": "source",
                 "source": false
               }
@@ -132,7 +132,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/2023-05-08/Context.md",
+                "file": "Blok 2/2023-05-08/DotNET vs Core.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +149,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/2023-05-08/Context.md",
+                "file": "Blok 2/2023-05-08/DotNET vs Core.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -161,7 +161,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/2023-05-08/Context.md"
+                "file": "Blok 2/2023-05-08/DotNET vs Core.md"
               }
             }
           }
@@ -185,8 +185,8 @@
   },
   "active": "d0eb0ae1f154fd14",
   "lastOpenFiles": [
-    "Blok 2/2023-05-08/Queries.md",
     "Blok 2/2023-05-08/Context.md",
+    "Blok 2/2023-05-08/Queries.md",
     "Blok 2/2023-05-08/DotNET vs Core.md",
     "Blok 2/2023-05-08/Mapping.md",
     "Blok 2/2023-05-08/Code First Mapping.md",
