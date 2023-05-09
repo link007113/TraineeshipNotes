@@ -56,3 +56,7 @@ using (var context = new MyDbContext())
 }
 ```
 Dit voorbeeld roept een stored procedure aan die alle mensen ophaalt die ouder zijn dan een bepaalde leeftijd.
+
+De reden waarom je voor SqlQuery zou kiezen in plaats van ExecuteSql is dat SqlQuery je in staat stelt om het resultaat van de query direct in te lezen in een lijst van objecten, terwijl ExecuteSql alleen een integer teruggeeft die het aantal rijen beïnvloedt.
+
+Dus als je gegevens uit de database wilt halen en deze wilt gebruiken in je code, dan kun je beter SqlQuery gebruiken. Als je daarentegen een bewerking wilt uitvoeren op de database (bijvoorbeeld een INSERT, UPDATE of DELETE) en je bent niet geïnteresseerd in de resultaten, dan kun je ExecuteSql gebruiken.
