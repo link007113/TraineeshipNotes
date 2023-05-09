@@ -57,8 +57,8 @@ Een class kan maar van 1 Base class derived zijn.
 
         }
     }
-
 ```
+
 Om basis functionaliteit te overschrijven van de methodes uit de basis-Class is het de gewoonte om in de basis de Method virtual te maken:
 
 ```c#
@@ -85,14 +85,14 @@ Om basis functionaliteit te overschrijven van de methodes uit de basis-Class is 
         }
     }
 ```
+Een ander voorbeeld van Inheritance is:
 
 ```mermaid
-
 classDiagram
     class Animal{
         +name: string
         +age: number
-        +breed(): string
+        +MakeNoise(): string
     }
     class Mammal{
         +furColor: string
@@ -114,9 +114,9 @@ classDiagram
     Mammal <|-- Dog
     Mammal <|-- Cat
 ```
+Met deze Mermaid-flowchart kun je zien hoe inheritance werkt in object-georiënteerde programmeertalen zoals C#. In dit voorbeeld is Animal de superklasse, waarvan de subklassen Mammal en Bird afgeleid zijn. Mammal heeft op zijn beurt twee subklassen, Dog en Cat. Dit betekent dat Dog en Cat zowel de eigenschappen en methoden van Animal als die van Mammal erven.
 
 
-![alt text](https://github.com/link007113/TraineeshipNotes/blob/main/Blok%201/Dag08/InheritanceUitleg.jpeg?raw=true)
 
 
 ### Meer info:

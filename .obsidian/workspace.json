@@ -61,19 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-09/Snapshot van DbContext.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "cf269023367df6ba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blok 1/Dag08/Inheritance.md",
+                "file": "Blok 1/Dag09/Collections.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -193,7 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 1/Dag08/Inheritance.md",
+                "file": "Blok 1/Dag09/Collections.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -210,7 +198,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 1/Dag08/Inheritance.md",
+                "file": "Blok 1/Dag09/Collections.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -222,7 +210,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 1/Dag08/Inheritance.md"
+                "file": "Blok 1/Dag09/Collections.md"
               }
             }
           }
@@ -244,10 +232,16 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cf269023367df6ba",
+  "active": "d84d9287a8910982",
   "lastOpenFiles": [
-    "Blok 1/Dag08/InheritanceUitleg.jpeg",
+    "Blok 1/Dag09/YieldUitleg.png",
+    "Blok 1/Dag09/Records.md",
+    "Blok 1/Dag09/Generics.md",
+    "Blok 1/Dag09/Composition.md",
+    "Blok 1/Dag09/Collections.md",
+    "Blok 1/Dag08/Interfaces.md",
     "Blok 1/Dag08/Inheritance.md",
+    "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "Blok 1/Dag08/Abstract classes.md",
     "Blok 1/Dag06/Structs.md",
     "Blok 1/Dag06/Operator Overloading & Overrides.md",
@@ -269,11 +263,6 @@
     "Blok 2/2023-05-08/Untitled",
     "Blok 2/2023-05-09",
     "Blok 2/2023-05-08/Queries.md",
-    "Blok 1/Dag14/Garbage Collection.md",
-    "Blok 1/Dag13/LINQ.md",
-    "Blok 1/Dag14/Files.md",
-    "Blok 2/2023-05-08/Migrations.md",
-    "Blok 2/Dag 29/Window functions.md",
     "Blok 2/2023-05-08",
     "Untitled.canvas",
     "Blok 2/Dag 32/Voorbeeld Binary Tree.png",
@@ -288,7 +277,6 @@
     "WhatsApp Image 2023-04-03 at 11.18.24 1.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24.jpeg",
     "Blok 1/Dag13/LinqVolgorde.png",
-    "Blok 1/Dag09/YieldUitleg.png",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
     "Pasted image 20230323132714.png",
