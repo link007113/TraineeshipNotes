@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-08/Entity Framework.md",
+                "file": "Blok 2/2023-05-08/Database-First Mapping.md",
                 "mode": "source",
                 "source": false
               }
@@ -157,7 +157,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/2023-05-08/Entity Framework.md",
+                "file": "Blok 2/2023-05-08/Database-First Mapping.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -174,7 +174,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/2023-05-08/Entity Framework.md",
+                "file": "Blok 2/2023-05-08/Database-First Mapping.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -186,7 +186,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/2023-05-08/Entity Framework.md"
+                "file": "Blok 2/2023-05-08/Database-First Mapping.md"
               }
             }
           }
@@ -211,12 +211,12 @@
   "active": "02b6bd954ebf6a70",
   "lastOpenFiles": [
     "Blok 2/2023-05-08/Code First Mapping.md",
+    "Blok 2/2023-05-08/Mapping.md",
+    "Blok 2/2023-05-08/BBOM.md",
     "Blok 2/2023-05-08/Entity Framework.md",
     "Blok 2/2023-05-08/Loading.md",
-    "Blok 2/2023-05-08/BBOM.md",
     "Blok 2/2023-05-08/Untitled",
     "Blok 2/2023-05-09",
-    "Blok 2/2023-05-08/Mapping.md",
     "Blok 2/2023-05-08/Context.md",
     "Blok 2/2023-05-08/Database-First Mapping.md",
     "Blok 2/2023-05-08/DotNET vs Core.md",

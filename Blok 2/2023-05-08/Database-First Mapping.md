@@ -7,8 +7,6 @@ De generatie van de entiteiten wordt gedaan door middel van Scaffolding (Reverse
 dotnet ef dbcontext scaffold "Server=localhost;User=SA;Password=********;TrustServerCertificate=true" --output-dir "DAL" Microsoft.EntityFrameworkCore.SqlServer
 ```
 
-
-
 Dit commando genereert de entiteiten op basis van de database-schema's en slaat ze op in de opgegeven map (in dit geval "DAL"). Hierbij wordt gebruik gemaakt van de provider voor SQL Server van Microsoft.EntityFrameworkCore.SqlServer.
 
 Op deze manier kunnen de entiteiten worden gegenereerd zonder handmatig de code te hoeven schrijven, wat kan zorgen voor een efficiëntere ontwikkeling en minder kans op fouten.
