@@ -1,0 +1,7 @@
+Een Big Ball Of Mud (BBOM) is een term die wordt gebruikt om een softwarearchitectuur te beschrijven die is ontstaan door het stapelen van code zonder enig duidelijk architecturaal patroon. Het resultaat is een systeem dat moeilijk te begrijpen en te onderhouden is, met vaak veel duplicatie, spaghetti-code, en andere problemen.
+
+Een BBOM kan ontstaan als een project groeit en evolueert zonder duidelijke richtlijnen en zonder regelmatig refactoring. Vaak wordt er geïmproviseerd om nieuwe functies toe te voegen of problemen op te lossen, wat leidt tot tijdelijke oplossingen die uiteindelijk blijvend worden.
+
+Een BBOM is problematisch omdat het de complexiteit van het systeem vergroot en de kosten van onderhoud en verandering verhoogt. Het kan ook de ontwikkeling vertragen, omdat het moeilijk is om nieuwe functies te implementeren of fouten op te lossen zonder onverwachte neveneffecten te veroorzaken.
+
+Om de effecten van BBOM te vermijden, is het belangrijk om een solide softwarearchitectuur te hebben die de evolutie van het systeem kan begeleiden en die regelmatig wordt geëvalueerd en aangepast. Ook is het belangrijk om regelmatig refactoring uit te voeren en om code reviews te houden om de kwaliteit van de code te behouden en te verbeteren.
