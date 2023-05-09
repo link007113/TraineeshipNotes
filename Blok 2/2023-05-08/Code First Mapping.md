@@ -44,6 +44,9 @@ using (MagazijnDbContext magazijnDbContext = new MagazijnDbContext())
     magazijnDbContext.SaveChanges();
 }
 ```
+
+
+
 In de bovenstaande code wordt de database MagazijnDB aangemaakt met de tabel Voorraad en de inhoud van de tabel wordt gevuld met twee records. De DbContext class wordt gebruikt om de database te maken en te communiceren met de database. Door de EnsureCreated() methode te gebruiken, kan je de database creëren als deze nog niet bestaat.
 
 Kortom, Code-First Mapping is een krachtige manier om databases te maken en te onderhouden met behulp van Entity Framework. Het maakt het gemakkelijker om Test-Driven te werken en maakt het mogelijk om een database te maken zonder dat er al een bestaande database nodig is.
