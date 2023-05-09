@@ -10,9 +10,9 @@ var newCustomer = new Customer { Name = "John Doe", Email = "john.doe@example.co
 dbContext.Customers.Add(newCustomer);
 dbContext.SaveChanges();
 ```
-- **Read** (lezen): om gegevens uit de database te lezen, kun je LINQ gebruiken om een query te bouwen die de gegevens ophaalt die je nodig hebt. Bijvoorbeeld:
+- **Read** (lezen): om gegevens uit de database te lezen, kun je LINQ gebruiken om een query te bouwen die de gegevens ophaalt die je nodig hebt.  De AsNoTracking zorgt ervoor dat er niet in de cache gekeken Bijvoorbeeld:
 ```csharp
-var customers = dbContext.Customers.Where(c => c.Name.Contains("Doe")).ToList();
+var customers = dbContext.Customers.AsNoTracking().Where(c => c.Name.Contains("Doe")).ToList();
 ``` 
 - **Update** (bijwerken): om een bestaande record bij te werken, moet je het object ophalen uit de database en de gewenste wijzigingen aanbrengen. Entity Framework houdt automatisch bij welke eigenschappen zijn gewijzigd en past de wijzigingen toe wanneer SaveChanges() wordt aangeroepen. Bijvoorbeeld:
 ```csharp
