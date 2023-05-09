@@ -2,7 +2,7 @@ Code-First Mapping is een methode van het maken van databases met behulp van Ent
 
 In tegenstelling tot Database-First Mapping, waarbij de database eerst wordt gemaakt en vervolgens het datamodel wordt gegenereerd, maakt Code-First Mapping het mogelijk om een database te genereren op basis van de gedefinieerde code. Dit is de prefered way, omdat het gemakkelijker is om Test-Driven development toe te passen en omdat er geen bestaande database nodig is.
 
-Om dit te doen, moet je eerst een datamodel maken in de code. Dit kan gedaan worden met behulp van classes zoals de `Voorraad` class in de gegeven code:
+Om dit te doen, moet je eerst een datamodel maken in de code. Dit kan gedaan worden met behulp van classes zoals de Voorraad class in de gegeven code:
 ```c#
 
 public class Voorraad
