@@ -16,4 +16,6 @@ Dan kan je in de map waar de csproj file staat het volgende commando runnen:
 ```bash
 dotnet ef migrations add "InitialCreate"
 ```
-
+```bash
+dotnet ef migrations add "InitialCreate"
+```
