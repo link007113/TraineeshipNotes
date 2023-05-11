@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-11/Repository Pattern.md",
+                "file": "Blok 2/2023-05-08/Entity Framework.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/2023-05-11/Repository Pattern.md",
+                "file": "Blok 2/2023-05-08/Entity Framework.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/2023-05-11/Repository Pattern.md",
+                "file": "Blok 2/2023-05-08/Entity Framework.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/2023-05-11/Repository Pattern.md"
+                "file": "Blok 2/2023-05-08/Entity Framework.md"
               }
             }
           }
@@ -157,12 +157,12 @@
   },
   "active": "cd445ea1de611198",
   "lastOpenFiles": [
+    "Blok 2/2023-05-11/Repository Pattern.md",
     "Blok 2/2023-05-09/ChangeTracker van DBContext.md",
     "Blok 2/2023-05-09/Queries.md",
     "Blok 2/2023-05-09/Tuple types.md",
     "Blok 2/2023-05-09/Snapshot van DbContext.md",
     "Blok 2/2023-05-09/Crud Operaties.md",
-    "Blok 2/2023-05-11/Repository Pattern.md",
     "Blok 2/2023-05-11/Fluent Api.md",
     "Blok 2/2023-05-11/Migrations.md",
     "Blok 2/2023-05-11/Testing.md",
