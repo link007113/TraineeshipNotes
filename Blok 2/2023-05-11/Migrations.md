@@ -1,5 +1,5 @@
 - Microsoft.EntityFrameworkCore.Design
-- DBContext heeft een default constructor nodig
+- DBContext heeft een default constructor nodig die boven aan staat
 - OnConfiguring:
   ```c#
           protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
