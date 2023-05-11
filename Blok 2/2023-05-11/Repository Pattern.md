@@ -3,7 +3,7 @@ Voorbeeld van BlackJack Database met SpelerRepository. Applicatie implementeert 
 
 Dit komt in de Model  map in de solution:
 Speler class heeft een ID, Naam, Saldo, Tafel
-Tafel Class heeft een ID, Nummer, Naam, Naam Dealer
+Tafel Class heeft een ID, Nummer, Naam, Naam Dealer, List<Speler> Spelers
 Op Tafel wordt nooit direct gequeried. 
 
 In de DAL map in de solution komen:
