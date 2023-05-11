@@ -4,6 +4,8 @@ Voorbeeld van BlackJack Database met SpelerRepository. Applicatie implementeert 
 Speler class heeft een ID, Naam, Saldo, Tafel
 Tafel Class heeft een ID, Naam, Naam Dealer
 
+Op Tafel wordt nooit direct gequeried. 
+
 
 
 ```c#
