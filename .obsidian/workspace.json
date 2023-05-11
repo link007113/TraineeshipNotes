@@ -102,6 +102,16 @@
             }
           },
           {
+            "id": "9c98f5f0b884b7a9",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.2.8"
+              }
+            }
+          },
+          {
             "id": "22941c14d272fd42",
             "type": "leaf",
             "state": {
@@ -138,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 8
       }
     ],
     "direction": "vertical"
@@ -274,7 +284,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f1f7f2bd47a164a7",
+  "active": "9c98f5f0b884b7a9",
   "lastOpenFiles": [
     "Blok 2/2023-05-09/Crud Operaties.md",
     "Blok 2/2023-05-09/ChangeTracker van DBContext.md",
