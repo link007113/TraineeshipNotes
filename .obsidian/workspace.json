@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-11/Repository Pattern.md",
+                "file": "Blok 2/2023-05-11/EF Testing.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/2023-05-11/Repository Pattern.md",
+                "file": "Blok 2/2023-05-11/EF Testing.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/2023-05-11/Repository Pattern.md",
+                "file": "Blok 2/2023-05-11/EF Testing.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/2023-05-11/Repository Pattern.md"
+                "file": "Blok 2/2023-05-11/EF Testing.md"
               }
             }
           }
@@ -157,16 +157,16 @@
   },
   "active": "cd445ea1de611198",
   "lastOpenFiles": [
-    "Blok 2/2023-05-08/Entity Framework.md",
+    "Blok 2/2023-05-11/Fluent Api.md",
+    "Blok 2/2023-05-11/Migrations.md",
     "Blok 2/2023-05-11/Repository Pattern.md",
+    "Blok 2/2023-05-08/Entity Framework.md",
     "Blok 2/2023-05-09/ChangeTracker van DBContext.md",
     "Blok 2/2023-05-09/Queries.md",
     "Blok 2/2023-05-09/Tuple types.md",
     "Blok 2/2023-05-09/Snapshot van DbContext.md",
     "Blok 2/2023-05-09/Crud Operaties.md",
-    "Blok 2/2023-05-11/Fluent Api.md",
-    "Blok 2/2023-05-11/Migrations.md",
-    "Blok 2/2023-05-11/Testing.md",
+    "Blok 2/2023-05-11/EF Testing.md",
     "Blok 2/2023-05-11",
     "Blok 1/2023-03-31/Garbage Collection.md",
     "Blok 2/2023-05-08/Code First Mapping.md",

@@ -10,7 +10,7 @@ In de DAL map in de solution komen:
 
 De SpelerRepository
 
-
+Datamapper VS Repository
 
 ```c#
 ```
