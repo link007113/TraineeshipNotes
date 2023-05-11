@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-08/Entity Framework.md",
+                "file": "Blok 2/2023-05-11/Repository Pattern.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/2023-05-08/Entity Framework.md",
+                "file": "Blok 2/2023-05-11/Repository Pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/2023-05-08/Entity Framework.md",
+                "file": "Blok 2/2023-05-11/Repository Pattern.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/2023-05-08/Entity Framework.md"
+                "file": "Blok 2/2023-05-11/Repository Pattern.md"
               }
             }
           }
@@ -157,6 +157,7 @@
   },
   "active": "cd445ea1de611198",
   "lastOpenFiles": [
+    "Blok 2/2023-05-08/Entity Framework.md",
     "Blok 2/2023-05-11/Repository Pattern.md",
     "Blok 2/2023-05-09/ChangeTracker van DBContext.md",
     "Blok 2/2023-05-09/Queries.md",
@@ -173,7 +174,6 @@
     "Blok 2/2023-05-08/Loading.md",
     "Blok 2/2023-05-08/Context.md",
     "Blok 2/2023-05-08/Mapping.md",
-    "Blok 2/2023-05-08/Entity Framework.md",
     "Blok 2/2023-04-25/Transactions.md",
     "Blok 1/2023-03-31/Files.md",
     "Blok 2/2023-04-21/Grouping Sets.md",
