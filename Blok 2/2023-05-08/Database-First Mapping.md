@@ -4,7 +4,7 @@ Database-First Mapping is een benadering waarbij eerst de database wordt gedefin
 De generatie van de entiteiten wordt gedaan door middel van Scaffolding (Reverse Engineering). Dit kan worden gedaan met behulp van het commando dotnet ef dbcontext scaffold gevolgd door de connectionstring en de provider die wordt gebruikt. Bijvoorbeeld:
 
 ```bash
-dotnet ef dbcontext scaffold "Server=localhost;User=SA;Password=********;TrustServerCertificate=true" --output-dir "DAL" Microsoft.EntityFrameworkCore.SqlServer
+dotnet ef dbcontext scaffold "Server=localhost;User=SA;Password=Geheim101!;Initial Catalog=WegUitHamelen;TrustServerCertificate=true" --output-dir "DAL" Microsoft.EntityFrameworkCore.SqlServer
 ```
 
 Dit commando genereert de entiteiten op basis van de database-schema's en slaat ze op in de opgegeven map (in dit geval "DAL"). Hierbij wordt gebruik gemaakt van de provider voor SQL Server van Microsoft.EntityFrameworkCore.SqlServer.
