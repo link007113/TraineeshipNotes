@@ -15,13 +15,12 @@ protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     }
 }
 ```
-In dit voorbeeld wordt de `DbContextOptionsBuilder` geconfigureerd om SQL Server als de databaseprovider te gebruiken en de verbindingssnaar "YourConnectionString" te gebruiken. Je moet de juiste verbindingssnaar voor jouw databaseconfiguratie opgeven.
+In dit voorbeeld wordt de DbContextOptionsBuilder geconfigureerd om SQL Server als de databaseprovider te gebruiken en de verbindingssnaar "YourConnectionString" te gebruiken. Je moet de juiste verbindingssnaar voor jouw databaseconfiguratie opgeven.
 
 Om migraties te maken en toe te passen, kun je de volgende stappen volgen: 
 1. Open een terminal of de opdrachtprompt en navigeer naar de map waarin het .csproj-bestand van je project zich bevindt. 
 2. Voer het volgende commando uit om een migratie toe te voegen met een specifieke naam (bijvoorbeeld "InitialCreate"):
 ```bash
-
 dotnet ef migrations add InitialCreate
 ```
 Dit commando zal een migratiebestand genereren met de nodige wijzigingen in je model en een bijbehorende database-updateklasse. 
