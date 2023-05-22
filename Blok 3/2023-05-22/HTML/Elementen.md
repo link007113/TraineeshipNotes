@@ -11,10 +11,19 @@ Block element = nemen de hele breedte van de pagina in beslag
 - Heading
 - Div
 - HR = horizontale lijn
+- P
+- UL
+- FORM
+- HEADER
+- NAV
+- LI
+- TABLE
 
 Inline element = neemt alleen de ruimte van zichzelf in
 - Input
 - Span
+- Img
+- A = Anchor = Link
 
 ```css
 div
