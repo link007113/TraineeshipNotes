@@ -41,3 +41,8 @@ Form voorbeeld
 - checkbox
 - radio
 - Select 
+- email
+- telephone
+- Range
+- url
+- 
