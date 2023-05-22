@@ -32,7 +32,7 @@ namespace Blok2.HamelenTravelDocus.Tests.DAL
             // Act
             var reisdocumenten = reisdocumentenRepository.GetAllOpenReisdocumenten();
             // Assert
-            Assert.IsTrue(reisdocumenten.Where(r => r.DocumentStatus?.DocumentStatusNaam == "Aangevraagd").Count() > 0);
+            Assert.IsTrue(reisdocumenten.Any(r => r.DocumentStatus?.DocumentStatusNaam == "Aangevraagd"));
         }
 
         [TestMethod]
@@ -54,7 +54,7 @@ namespace Blok2.HamelenTravelDocus.Tests.DAL
             // Act
             var reisdocumenten = reisdocumentenRepository.GetAllReisdocumenten();
             // Assert
-            Assert.IsTrue(reisdocumenten.Count() > 0);
+            Assert.IsTrue(reisdocumenten.Any());
         }
 
         [TestMethod]
@@ -122,19 +122,6 @@ namespace Blok2.HamelenTravelDocus.Tests.DAL
             // Assert
             Assert.AreEqual(null, documentType);
         }
-
-        //[TestMethod] Wordt nu getest door de Init
-        //public void InsertNewReisDocument_AddsAndSavesReisdocument()
-        //{
-        //    // Arrange
-        //    ReisdocumentenRepository reisdocumentenRepository = new ReisdocumentenRepository(_options);
-
-        //    // Act
-        //    reisdocumentenRepository.InsertNewReisDocument(reisdocument, GetPersoon().Bsn, GetMedewerker().Voornaam, _documentType);
-
-        //    // Assert
-        //    Assert.IsTrue(reisdocumentenRepository.GetAllReisdocumenten().Any(r => r.DocumentNr == reisdocument.DocumentNr));
-        //}
 
         [TestMethod]
         public void InsertNewReisDocument_DoesNotAddReisdocumentWhenMedewerkerNotFound()
@@ -221,6 +208,39 @@ namespace Blok2.HamelenTravelDocus.Tests.DAL
             // Assert
             Assert.AreEqual("Opgehaald", reisdocumentenRepository.GetAllReisdocumenten().First(r => r.DocumentId == _reisdocument.DocumentId).DocumentStatus.DocumentStatusNaam);
         }
+
+        [TestMethod]
+        public void DeleteReisDocument_ExistingId_DeletesReisdocumentAndReturnsTrue()
+        {
+            // Arrange
+            var reisdocumentId = _reisdocument.DocumentId;
+            var reisdocumentNummer = _reisdocument.DocumentNr;
+            ReisdocumentenRepository reisdocumentenRepository = new ReisdocumentenRepository(_options);
+            // Act
+            bool result = reisdocumentenRepository.DeleteReisDocument(reisdocumentId);
+
+            // Assert
+            Assert.IsTrue(result);
+            // Verify that the reisdocument was deleted from the database
+            Assert.IsNull(reisdocumentenRepository.GetReisDocumentByDocumentNumber(reisdocumentNummer));
+        }
+
+        [TestMethod]
+        public void DeleteReisDocument_NonExistingId_ReturnsFalse()
+        {
+            // Arrange
+            var reisdocumentId = -1;
+
+            ReisdocumentenRepository reisdocumentenRepository = new ReisdocumentenRepository(_options);
+
+            // Act
+            bool result = reisdocumentenRepository.DeleteReisDocument(reisdocumentId);
+
+            // Assert
+            Assert.IsFalse(result);
+        }
+
+        #region TestHelpers
 
         private static void FillReisDocument(ReisdocumentenRepository reisdocumentenRepository, Reisdocument reisdocument)
         {
@@ -319,5 +339,7 @@ namespace Blok2.HamelenTravelDocus.Tests.DAL
                 Geboorteplaats = "Hamelen",
             };
         }
+
+        #endregion TestHelpers
     }
 }

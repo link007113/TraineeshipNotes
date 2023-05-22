@@ -82,8 +82,8 @@ namespace Blok2.HamelenTravelDocus.Migrations
                     Postcode = table.Column<string>(type: "varchar(7)", unicode: false, maxLength: 7, nullable: false),
                     Woonplaats = table.Column<string>(type: "varchar(50)", unicode: false, maxLength: 50, nullable: false),
                     OorspronkelijkeNaam = table.Column<string>(type: "nvarchar(128)", maxLength: 128, nullable: false),
-                    Geboorteplaats = table.Column<string>(type: "varchar(50)", unicode: false, maxLength: 50, nullable: false),
-                    Geboorteland = table.Column<string>(type: "varchar(2)", unicode: false, maxLength: 2, nullable: false)
+                    Geboorteplaats = table.Column<string>(type: "varchar(50)", unicode: false, maxLength: 50, nullable: false, defaultValueSql: "('Hamelen')"),
+                    Geboorteland = table.Column<string>(type: "varchar(2)", unicode: false, maxLength: 2, nullable: false, defaultValueSql: "('NL')")
                 },
                 constraints: table =>
                 {
@@ -234,16 +234,18 @@ namespace Blok2.HamelenTravelDocus.Migrations
                 column: "DocumentStatusId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Reisdocumenten_DocumentTypeID",
-                schema: "Documenten",
-                table: "Reisdocumenten",
-                column: "DocumentTypeID");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Reisdocumenten_PersoonID",
                 schema: "Documenten",
                 table: "Reisdocumenten",
                 column: "PersoonID");
+
+            migrationBuilder.CreateIndex(
+                name: "UIX_Reisdocumenten_DocumentType_DocumentStatus_PersoonID",
+                schema: "Documenten",
+                table: "Reisdocumenten",
+                columns: new[] { "DocumentTypeID", "DocumentStatusId", "PersoonID" },
+                unique: true,
+                filter: "[DocumentStatusId] IS NOT NULL");
         }
 
         /// <inheritdoc />

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Blok2.HamelenTravelDocus.Migrations
 {
     [DbContext(typeof(WegUitHamelenContext))]
-    [Migration("20230516085345_InitialCreate")]
+    [Migration("20230519092315_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -175,15 +175,19 @@ namespace Blok2.HamelenTravelDocus.Migrations
 
                     b.Property<string>("Geboorteland")
                         .IsRequired()
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(2)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(2)");
+                        .HasColumnType("varchar(2)")
+                        .HasDefaultValueSql("('NL')");
 
                     b.Property<string>("Geboorteplaats")
                         .IsRequired()
+                        .ValueGeneratedOnAdd()
                         .HasMaxLength(50)
                         .IsUnicode(false)
-                        .HasColumnType("varchar(50)");
+                        .HasColumnType("varchar(50)")
+                        .HasDefaultValueSql("('Hamelen')");
 
                     b.Property<string>("OorspronkelijkeNaam")
                         .IsRequired()
@@ -287,9 +291,11 @@ namespace Blok2.HamelenTravelDocus.Migrations
 
                     b.HasIndex("DocumentStatusId");
 
-                    b.HasIndex("DocumentTypeId");
-
                     b.HasIndex("PersoonId");
+
+                    b.HasIndex(new[] { "DocumentTypeId", "DocumentStatusId", "PersoonId" }, "UIX_Reisdocumenten_DocumentType_DocumentStatus_PersoonID")
+                        .IsUnique()
+                        .HasFilter("[DocumentStatusId] IS NOT NULL");
 
                     b.ToTable("Reisdocumenten", "Documenten");
                 });

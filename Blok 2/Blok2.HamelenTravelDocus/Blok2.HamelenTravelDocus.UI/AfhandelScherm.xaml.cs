@@ -13,14 +13,6 @@ namespace Blok2.HamelenTravelDocus.UI
     /// </summary>
     public partial class AfhandelScherm : Window
     {
-        internal Persoon GetPersoon() => _persoon;
-
-        private const string _aangevraagd = "Aangevraagd";
-        private const string _afgehandeld = "Opgehaald";
-        private const string _afgekeurd = "Afgekeurd";
-
-        private static DbContextOptions<WegUitHamelenContext> _options = ContextHelper.GetOptions();
-
         public AfhandelScherm()
         {
             InitializeComponent();
@@ -29,11 +21,23 @@ namespace Blok2.HamelenTravelDocus.UI
             SetTitle();
         }
 
+        internal Persoon GetPersoon() => _persoon;
+
+        private const string _aangevraagd = "Aangevraagd";
+        private const string _afgehandeld = "Opgehaald";
+        private const string _afgekeurd = "Afgekeurd";
+
+        private static DbContextOptions<WegUitHamelenContext> _options = ContextHelper.GetOptions();
         private static Persoon _persoon;
 
         private void AfhandelKnop_Click(object sender, RoutedEventArgs e)
         {
             UpdateStatus(_afgehandeld);
+        }
+
+        private void AfhandelScherm_Closing(object? sender, System.ComponentModel.CancelEventArgs e)
+        {
+            _persoon = null;
         }
 
         private void AfkeurKnop_Click(object sender, RoutedEventArgs e)
@@ -48,9 +52,10 @@ namespace Blok2.HamelenTravelDocus.UI
             this.Closing += AfhandelScherm_Closing;
         }
 
-        private void AfhandelScherm_Closing(object? sender, System.ComponentModel.CancelEventArgs e)
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            _persoon = null;
+            NieuwReisDocument nieuw = new NieuwReisDocument();
+            nieuw.Show();
         }
 
         private void FillDataFields()
@@ -155,12 +160,6 @@ namespace Blok2.HamelenTravelDocus.UI
                     }
                 }
             }
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            NieuwReisDocument nieuw = new NieuwReisDocument();
-            nieuw.Show();
         }
     }
 }

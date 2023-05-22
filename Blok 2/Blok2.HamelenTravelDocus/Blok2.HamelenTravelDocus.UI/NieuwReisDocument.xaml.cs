@@ -1,9 +1,11 @@
 ﻿using Blok2.HamelenTravelDocus.DAL;
+using Blok2.HamelenTravelDocus.Helpers;
 using Blok2.HamelenTravelDocus.Model;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Diagnostics;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Media;
 
 namespace Blok2.HamelenTravelDocus.UI
@@ -16,6 +18,9 @@ namespace Blok2.HamelenTravelDocus.UI
         private const string _aangevraagd = "Aangevraagd";
         private Persoon _persoon;
         private static DbContextOptions<WegUitHamelenContext> _options = ContextHelper.GetOptions();
+        private static Brush _validColor = Brushes.LightGreen;
+        private static Brush _notValidColor = Brushes.LightPink;
+        private static Brush _clearColor = Brushes.White;
 
         public NieuwReisDocument()
         {
@@ -39,7 +44,7 @@ namespace Blok2.HamelenTravelDocus.UI
             reisdocument.AfgiftePlaats = "Hamelen";
 
             reisdocument.DocumentNr = GetDocumentNumber(persoon);
-            reisdocument.BetaaldePrijs = reisdocument.DocumentType.Prijs;
+            reisdocument.BetaaldePrijs = documentType.Prijs;
 
             reisdocumentenRepository.InsertNewReisDocument(reisdocument, persoon.Bsn, "Els", documentType.DocumentTypeNaam);
         }
@@ -110,12 +115,9 @@ namespace Blok2.HamelenTravelDocus.UI
             }
         }
 
-        private void LoadTextBox(bool searchPerson = true)
+        private void LoadTextBox()
         {
-            if (searchPerson)
-            {
-                GetPersonInfo();
-            }
+            GetPersonInfo();
 
             if (_persoon != null)
             {
@@ -131,15 +133,20 @@ namespace Blok2.HamelenTravelDocus.UI
             {
                 if (Debugger.IsAttached)
                 {
-                    TextboxFirstname.Text = "Rattenvanger";
-                    TextboxMiddlename.Text = "van";
-                    TextboxLastname.Text = "Hamelen";
-                    TextboxBSN.Text = BSNValidator.GenerateValidBSN();
-                    TextboxAdress.Text = "Teststraat 1";
-                    TextboxCity.Text = "Hamelen";
-                    TextboxPostcode.Text = "7312NE";
+                    GetTestPerson();
                 }
             }
+        }
+
+        private void GetTestPerson()
+        {
+            TextboxFirstname.Text = "Rattenvanger";
+            TextboxMiddlename.Text = "van";
+            TextboxLastname.Text = "Hamelen";
+            TextboxBSN.Text = BSNValidator.GenerateValidBSN();
+            TextboxAdress.Text = "Teststraat 1";
+            TextboxCity.Text = "Hamelen";
+            TextboxPostcode.Text = "7312NE";
         }
 
         private void Clear_Click(object sender, RoutedEventArgs e)
@@ -147,11 +154,29 @@ namespace Blok2.HamelenTravelDocus.UI
             try
             {
                 _persoon = null;
-                LoadTextBox(false);
+                ClearFields();
             }
             catch (Exception ex)
             {
                 ShowError(ex.Message);
+            }
+        }
+
+        private void ClearFields()
+        {
+            if (Debugger.IsAttached)
+            {
+                GetTestPerson();
+            }
+            else
+            {
+                TextboxFirstname.Clear();
+                TextboxMiddlename.Clear();
+                TextboxLastname.Clear();
+                TextboxBSN.Clear();
+                TextboxAdress.Clear();
+                TextboxCity.Clear();
+                TextboxPostcode.Clear();
             }
         }
 
@@ -185,14 +210,73 @@ namespace Blok2.HamelenTravelDocus.UI
         {
             if (BSNValidator.ValidateBSN(TextboxBSN.Text))
             {
-                TextboxBSN.Background = Brushes.LightGreen;
+                TextboxBSN.Background = _validColor;
                 SaveButton.IsEnabled = true;
             }
             else
             {
-                TextboxBSN.Background = Brushes.LightPink;
+                TextboxBSN.Background = _notValidColor;
                 SaveButton.IsEnabled = false;
             }
+        }
+
+        private void AreFieldsFilled()
+        {
+            bool canSave = !string.IsNullOrWhiteSpace(TextboxFirstname.Text) &&
+           !string.IsNullOrWhiteSpace(TextboxLastname.Text) &&
+           !string.IsNullOrWhiteSpace(TextboxBSN.Text) &&
+           !string.IsNullOrWhiteSpace(TextboxAdress.Text) &&
+           !string.IsNullOrWhiteSpace(TextboxCity.Text) &&
+           !string.IsNullOrWhiteSpace(TextboxPostcode.Text);
+
+            SaveButton.IsEnabled = canSave;
+            SaveButton.ToolTip = "Alle velden moeten ingevuld worden voordat je kan opslaan";
+        }
+
+        private void TextboxFirstname_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            AreFieldsFilled();
+            TextboxFirstname.Background = GetTextBoxColor(TextboxFirstname);
+        }
+
+        private Brush GetTextBoxColor(TextBox textBox, bool onlyNullCheck = false)
+        {
+            if (onlyNullCheck)
+            {
+                return textBox.Text == null ? _notValidColor : _validColor;
+            }
+
+            return string.IsNullOrWhiteSpace(textBox.Text) ? _notValidColor : _validColor;
+        }
+
+        private void TextboxMiddlename_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            AreFieldsFilled();
+            TextboxMiddlename.Background = GetTextBoxColor(TextboxMiddlename, true);
+        }
+
+        private void TextboxLastname_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            AreFieldsFilled();
+            TextboxLastname.Background = GetTextBoxColor(TextboxLastname);
+        }
+
+        private void TextboxAdress_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            AreFieldsFilled();
+            TextboxAdress.Background = GetTextBoxColor(TextboxAdress);
+        }
+
+        private void TextboxCity_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            AreFieldsFilled();
+            TextboxCity.Background = GetTextBoxColor(TextboxCity);
+        }
+
+        private void TextboxPostcode_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
+        {
+            AreFieldsFilled();
+            TextboxPostcode.Background = GetTextBoxColor(TextboxPostcode);
         }
     }
 }

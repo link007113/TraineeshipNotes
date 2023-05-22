@@ -13,13 +13,11 @@ namespace Blok2.HamelenTravelDocus.UI
     /// </summary>
     public partial class MainWindow : Window
     {
-        internal Persoon GetPersoon() => _persoon;
-
         internal Reisdocument GetReisdocument() => _reisdocument;
 
+        private static DbContextOptions<WegUitHamelenContext> _options = ContextHelper.GetOptions();
         private static Persoon _persoon;
         private static Reisdocument _reisdocument;
-        private static DbContextOptions<WegUitHamelenContext> _options = ContextHelper.GetOptions();
 
         public MainWindow()
         {
@@ -28,6 +26,8 @@ namespace Blok2.HamelenTravelDocus.UI
             FillDataGrids();
             SetTitle();
         }
+
+        internal Persoon GetPersoon() => _persoon;
 
         private void allReisdocumentGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {

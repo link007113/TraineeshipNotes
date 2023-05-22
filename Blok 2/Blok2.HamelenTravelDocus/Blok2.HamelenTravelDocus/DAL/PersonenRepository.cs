@@ -1,11 +1,5 @@
 ﻿using Blok2.HamelenTravelDocus.Model;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Options;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Blok2.HamelenTravelDocus.DAL
 {
@@ -40,12 +34,26 @@ namespace Blok2.HamelenTravelDocus.DAL
           .ThenInclude(r => r.DocumentStatus)
           .OrderBy(p => p.Voornaam);
 
-        public void InsertNewPersoon(Persoon persoon)
+        public bool InsertNewPersoon(Persoon persoon)
         {
             using (var context = ContextHelper.GetContext(_options))
             {
-                context.Personen.Add(persoon);
-                context.SaveChanges();
+                bool canInsert = !context.Personen
+                                .Any(p => p.Bsn == persoon.Bsn
+                                       && p.Voornaam == persoon.Voornaam
+                                       && p.Tussenvoegsel == persoon.Tussenvoegsel
+                                       && p.Achternaam == persoon.Achternaam);
+
+                if (canInsert)
+                {
+                    context.Personen.Add(persoon);
+                    context.SaveChanges();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
             }
         }
 

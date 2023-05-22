@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using Blok2.HamelenTravelDocus.Model;
-using Microsoft.Data.Sqlite;
+﻿using Blok2.HamelenTravelDocus.Model;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal;
 
 namespace Blok2.HamelenTravelDocus.DAL;
 

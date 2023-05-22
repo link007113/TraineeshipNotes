@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Blok2.HamelenTravelDocus.Model
+﻿namespace Blok2.HamelenTravelDocus.Helpers
 {
     public class BSNValidator
     {
@@ -34,7 +28,7 @@ namespace Blok2.HamelenTravelDocus.Model
             }
 
             int lastDigit = int.Parse(bsn[bsn.Length - 1].ToString());
-            sum += (-1) * lastDigit;
+            sum += -1 * lastDigit;
 
             return sum % 11 == 0;
         }

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Nieuw Reisdocument" Height="192" Width="541" ResizeMode="NoResize">
     <Grid>
-        <Button x:Name="SaveButton" Content="Opslaan" HorizontalAlignment="Center" Margin="0,113,0,0" VerticalAlignment="Top" Click="Save_Click" />
+        <Button x:Name="SaveButton" Content="Opslaan" IsEnabled="False" HorizontalAlignment="Center" Margin="0,113,0,0" VerticalAlignment="Top" Click="Save_Click" />
         <Button x:Name="ClearButton" Content="Clear" HorizontalAlignment="Left" Margin="311,113,0,0" VerticalAlignment="Top" Click="Clear_Click" />
         <Label Content="Voornaam:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" />
         <Label Content="Achternaam:" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" />
@@ -18,16 +18,16 @@
             <ComboBoxItem>Visum</ComboBoxItem>
         </ComboBox>
         <Label Content="Tussenvoegsel:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" />
-        <TextBox x:Name="TextboxFirstname" HorizontalAlignment="Left" Margin="111,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="TextboxMiddlename" HorizontalAlignment="Left" Margin="111,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="TextboxLastname" HorizontalAlignment="Left" Margin="111,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="TextboxFirstname" HorizontalAlignment="Left" Margin="111,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextboxFirstname_TextChanged" />
+        <TextBox x:Name="TextboxMiddlename" HorizontalAlignment="Left" Margin="111,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextboxMiddlename_TextChanged" />
+        <TextBox x:Name="TextboxLastname" HorizontalAlignment="Left" Margin="111,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextboxLastname_TextChanged" />
         <Label Content="BSN:" HorizontalAlignment="Left" Margin="10,85,0,0" VerticalAlignment="Top" />
         <TextBox x:Name="TextboxBSN" HorizontalAlignment="Left" Margin="111,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextboxBSN_TextChanged" />
         <Label Content="Adres:" HorizontalAlignment="Left" Margin="245,10,0,0" VerticalAlignment="Top" />
         <Label Content="Postcode:" HorizontalAlignment="Left" Margin="245,62,0,0" VerticalAlignment="Top" />
         <Label Content="Plaats:" HorizontalAlignment="Left" Margin="245,36,0,0" VerticalAlignment="Top" />
-        <TextBox x:Name="TextboxAdress" HorizontalAlignment="Left" Margin="346,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="TextboxCity" HorizontalAlignment="Left" Margin="346,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
-        <TextBox x:Name="TextboxPostcode" HorizontalAlignment="Left" Margin="346,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" />
+        <TextBox x:Name="TextboxAdress" HorizontalAlignment="Left" Margin="346,18,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextboxAdress_TextChanged" />
+        <TextBox x:Name="TextboxCity" HorizontalAlignment="Left" Margin="346,44,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextboxCity_TextChanged" />
+        <TextBox x:Name="TextboxPostcode" HorizontalAlignment="Left" Margin="346,67,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="TextboxPostcode_TextChanged" />
     </Grid>
 </Window>

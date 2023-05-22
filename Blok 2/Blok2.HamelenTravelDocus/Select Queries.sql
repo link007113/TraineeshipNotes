@@ -127,5 +127,3 @@ WHERE DocumentStatusID = 2
 -- Wijs een rijnummer toe aan elk document binnen elke groep, waarbij de documenten worden geordend op basis van de uitgifte datum.
 -- Selecteer alleen de documenten waarvan het rijnummer kleiner is dan of gelijk is aan 3, dit zijn de eerste drie documenten van elke week.
 
-
-select * from Documenten.Reisdocumenten where PersoonID = 10

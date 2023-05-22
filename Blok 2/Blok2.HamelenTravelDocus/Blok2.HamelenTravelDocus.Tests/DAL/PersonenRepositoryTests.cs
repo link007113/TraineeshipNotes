@@ -1,13 +1,7 @@
 ﻿using Blok2.HamelenTravelDocus.DAL;
+using Blok2.HamelenTravelDocus.Helpers;
 using Blok2.HamelenTravelDocus.Model;
-using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Blok2.HamelenTravelDocus.Tests.DAL
 {
@@ -31,7 +25,7 @@ namespace Blok2.HamelenTravelDocus.Tests.DAL
             // Act
             var personen = personenRepository.GetAllPersons();
             // Assert
-            Assert.IsTrue(personen.Count() > 0);
+            Assert.IsTrue(personen.Any());
         }
 
         [TestMethod]
@@ -58,27 +52,45 @@ namespace Blok2.HamelenTravelDocus.Tests.DAL
             Assert.AreEqual(null, persoon);
         }
 
-        //[TestMethod] // Wordt nu getest door de Init
-        //public void InsertNewPersoon_ShouldInsertNewPersoon()
-        //{
-        //    // Arrange
-        //    PersonenRepository personenRepository = new PersonenRepository(_options);
-        //    var persoon = GetPersoon();
-        //    // Act
-        //    personenRepository.InsertNewPersoon(persoon);
-        //    // Assert
-        //    var persoonFromDb = personenRepository.GetPersoonByBsn(persoon.Bsn);
-        //    Assert.AreEqual(persoon.Voornaam, persoonFromDb.Voornaam);
-        //    Assert.AreEqual(persoon.Tussenvoegsel, persoonFromDb.Tussenvoegsel);
-        //    Assert.AreEqual(persoon.Achternaam, persoonFromDb.Achternaam);
-        //    Assert.AreEqual(persoon.OorspronkelijkeNaam, persoonFromDb.OorspronkelijkeNaam);
-        //    Assert.AreEqual(persoon.Bsn, persoonFromDb.Bsn);
-        //    Assert.AreEqual(persoon.Adres, persoonFromDb.Adres);
-        //    Assert.AreEqual(persoon.Woonplaats, persoonFromDb.Woonplaats);
-        //    Assert.AreEqual(persoon.Postcode, persoonFromDb.Postcode);
-        //    Assert.AreEqual(persoon.Geboorteland, persoonFromDb.Geboorteland);
-        //    Assert.AreEqual(persoon.Geboorteplaats, persoonFromDb.Geboorteplaats);
-        //}
+        [TestMethod]
+        public void InsertNewPersoon_ShouldInsertNewPersoon()
+        {
+            // Arrange
+            PersonenRepository personenRepository = new PersonenRepository(_options);
+            Persoon persoon = GetPersoon();
+            persoon.Bsn = BSNValidator.GenerateValidBSN();
+            // Act
+            var result = personenRepository.InsertNewPersoon(persoon);
+
+            // Assert
+            var persoonFromDb = personenRepository.GetPersoonByBsn(persoon.Bsn);
+            Assert.AreEqual(persoon.Voornaam, persoonFromDb.Voornaam);
+            Assert.AreEqual(persoon.Tussenvoegsel, persoonFromDb.Tussenvoegsel);
+            Assert.AreEqual(persoon.Achternaam, persoonFromDb.Achternaam);
+            Assert.AreEqual(persoon.OorspronkelijkeNaam, persoonFromDb.OorspronkelijkeNaam);
+            Assert.AreEqual(persoon.Bsn, persoonFromDb.Bsn);
+            Assert.AreEqual(persoon.Adres, persoonFromDb.Adres);
+            Assert.AreEqual(persoon.Woonplaats, persoonFromDb.Woonplaats);
+            Assert.AreEqual(persoon.Postcode, persoonFromDb.Postcode);
+            Assert.AreEqual(persoon.Geboorteland, persoonFromDb.Geboorteland);
+            Assert.AreEqual(persoon.Geboorteplaats, persoonFromDb.Geboorteplaats);
+            Assert.IsTrue(result);
+        }
+
+        [TestMethod]
+        public void InsertNewPersoon_ShouldNotInsertExistingPersoon()
+        {
+            // Arrange
+            PersonenRepository personenRepository = new PersonenRepository(_options);
+            Persoon persoon = GetPersoon();
+
+            // Act
+            var result = personenRepository.InsertNewPersoon(persoon);
+
+            // Assert
+
+            Assert.IsFalse(result);
+        }
 
         [TestMethod]
         public void GetMedeWerkerByName_ShouldReturnMedewerkerWhenExists()
@@ -103,6 +115,8 @@ namespace Blok2.HamelenTravelDocus.Tests.DAL
             // Assert
             Assert.AreEqual(null, medewerker);
         }
+
+        #region TestHelpers
 
         internal static void CreateTestData()
         {
@@ -159,5 +173,7 @@ namespace Blok2.HamelenTravelDocus.Tests.DAL
                 Geboorteplaats = "Hamelen",
             };
         }
+
+        #endregion TestHelpers
     }
 }

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/Untitled.md",
+                "file": "Blok 3/2023-05-22/Acccessibility.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/Untitled.md",
+                "file": "Blok 3/2023-05-22/Acccessibility.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/Untitled.md",
+                "file": "Blok 3/2023-05-22/Acccessibility.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/Untitled.md"
+                "file": "Blok 3/2023-05-22/Acccessibility.md"
               }
             }
           }
@@ -157,22 +157,26 @@
   },
   "active": "cd445ea1de611198",
   "lastOpenFiles": [
-    "Blok 2/2023-05-11/EF Testing.md",
+    "Blok 3/2023-05-22/Formulieren.md",
+    "Blok 3/2023-05-22/Acccessibility.md",
+    "Blok 3/2023-05-22/Inline vs block elementen.md",
+    "Blok 3/2023-05-22/Elementen.md",
+    "Blok 2/Blok2.HamelenTravelDocus/DatabaseDiagram.png",
+    "Blok 3/2023-05-22/Untitled",
     "Blok 3/Untitled.md",
-    "Blok 3",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/NieuwReisDocument.xaml",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/NieuwReisDocument.xaml.cs",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/MainWindow.xaml",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/MainWindow.xaml.cs",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/Hamelen.ico",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/Blok2.HamelenTravelDocus.UI.csproj.user",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/Blok2.HamelenTravelDocus.UI.csproj",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/AssemblyInfo.cs",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/App.xaml",
+    "Blok 2/2023-05-11/EF Testing.md",
     "Blok 2/2023-05-11/Repository Pattern.md",
     "Blok 2/2023-05-11/Migrations.md",
     "Blok 2/2023-05-11/Fluent Api.md",
-    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/Reisdocument.cs",
-    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/Persoon.cs",
-    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/Medewerker.cs",
-    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/IReisdocumentenRepository.cs",
-    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/IPersonenRepository.cs",
-    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/DocumentType.cs",
-    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/DocumentStatus.cs",
-    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Migrations/20230516085345_InitialCreate.cs",
-    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/BSNValidator.cs",
-    "Blok 2/Blok2.HamelenTravelDocus/DatabaseDiagram.png",
     "Blok 2/2023-05-09/Crud Operaties.md",
     "Blok 2/2023-05-09/Queries.md",
     "Blok 2/2023-05-09/ChangeTracker van DBContext.md",
@@ -190,11 +194,7 @@
     "Blok 2/2023-05-08/Code First Mapping.md",
     "Blok 2/2023-05-08/Mapping.md",
     "Blok 2/2023-04-25/Transactions.md",
-    "Blok 1/2023-03-31/Files.md",
-    "Blok 2/2023-04-21/Grouping Sets.md",
-    "Blok 1/2023-03-27/Collections.md",
     "Blok 1/2023-03-27/YieldUitleg.png",
-    "Blok 1/2023-03-27/Records.md",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "Untitled.canvas",
     "Blok 2/2023-04-24/Voorbeeld Binary Tree.png",

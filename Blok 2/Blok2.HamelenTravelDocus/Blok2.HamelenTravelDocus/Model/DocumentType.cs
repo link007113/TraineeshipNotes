@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace Blok2.HamelenTravelDocus.Model;
+﻿namespace Blok2.HamelenTravelDocus.Model;
 
 public partial class DocumentType
 {

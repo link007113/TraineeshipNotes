@@ -1,11 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Blok2.HamelenTravelDocus.Model
+﻿namespace Blok2.HamelenTravelDocus.Model
 {
     public interface IReisdocumentenRepository
     {
