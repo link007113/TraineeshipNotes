@@ -1,0 +1,3 @@
+- local en session storage
+- JSON stringify() en parse()
+- (fetch API)

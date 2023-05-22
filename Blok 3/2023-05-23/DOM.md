@@ -1,0 +1,5 @@
+- javascript koppelen
+- queryselector()
+- innerText, innerHTML, value
+- css class plaatsen
+- events
