@@ -35,3 +35,9 @@ Form voorbeeld
 </html>
 
 ```
+- text
+- password
+- submit
+- checkbox
+- radio
+- Select 
