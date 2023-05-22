@@ -25,6 +25,10 @@ Inline element = neemt alleen de ruimte van zichzelf in
 - Img
 - A = Anchor = Link
 
+Je kan van een inline element altijd als block laten renderen.
+Dit kan je doen door display: block; toe te voegen aan de css voor je inline document
+
+
 ```css
 div
 {
