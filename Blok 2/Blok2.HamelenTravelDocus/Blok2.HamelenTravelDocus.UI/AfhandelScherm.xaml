@@ -1,0 +1,48 @@
+﻿<Window x:Class="Blok2.HamelenTravelDocus.UI.AfhandelScherm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Blok2.HamelenTravelDocus.UI"
+        mc:Ignorable="d"
+        Title="AfhandelScherm" Height="450" Width="800">
+    <Grid>
+        <Label Content="Naam Burger:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" />
+        <Label x:Name="NameLabel" Content="" HorizontalAlignment="Left" Margin="147,10,0,0" VerticalAlignment="Top" />
+        <Label Content="Oorspronkelijke naam:" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" />
+        <Label x:Name="OriginalNameLabel" Content="" HorizontalAlignment="Left" Margin="147,36,0,0" VerticalAlignment="Top" />
+        <Label Content="BSN:" HorizontalAlignment="Left" Margin="10,62,0,0" VerticalAlignment="Top" />
+        <Label x:Name="BsnLabel" Content="" HorizontalAlignment="Left" Margin="147,62,0,0" VerticalAlignment="Top" />
+        <Button Content="Handel Af" x:Name="AfhandelKnop" Background="LightGreen" IsEnabled="False" HorizontalAlignment="Right" Margin="0,68,320,0" VerticalAlignment="Top" Width="80" Click="AfhandelKnop_Click" />
+        <Button Content="Keur Af" x:Name="AfkeurKnop" Background="LightPink" IsEnabled="False" HorizontalAlignment="Right" Margin="0,68,235,0" VerticalAlignment="Top" Width="80" Click="AfkeurKnop_Click" />
+        <DataGrid x:Name="persoonReisdocumentGrid"  AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" Margin="10,98,10,53" SelectionChanged="persoonReisdocumentGrid_SelectionChanged">
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding DocumentStatus.DocumentStatusNaam}" Value="Aangevraagd">
+                            <Setter Property="Background" Value="LightGreen"></Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding DocumentStatus.DocumentStatusNaam}" Value="Opgehaald">
+                            <Setter Property="Background" Value="LightGray"></Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding DocumentStatus.DocumentStatusNaam}" Value="Afgekeurd">
+                            <Setter Property="Background" Value="LightPink"></Setter>
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding DocumentStatus.DocumentStatusNaam}" Value="Verlopen">
+                            <Setter Property="Background" Value="GoldenRod"></Setter>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Aanvraag Nummer" Binding="{Binding DocumentId}" />
+                <DataGridTextColumn Header="Datum/Tijd Aanvraag" Binding="{Binding AanvraagDatumTijd}" />
+                <DataGridTextColumn Header="Geldig Tot" Binding="{Binding VerloopDatum}" />
+                <DataGridTextColumn Header="Reisdocument Type" Binding="{Binding DocumentType.DocumentTypeNaam}" />
+                <DataGridTextColumn Header="Reisdocument Status" Binding="{Binding DocumentStatus.DocumentStatusNaam}" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label x:Name="NoRequestMessage" Content="Geen lopende aanvragen voor deze burger." Visibility="Hidden" HorizontalAlignment="Center" Margin="10,386,0,0" VerticalAlignment="Center" Width="248" />
+        <Button Content="Aanmaken" HorizontalAlignment="Left" Margin="10,386,0,0" VerticalAlignment="Top" Width="80" Click="Button_Click" />
+    </Grid>
+</Window>

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 2/2023-05-11/Migrations.md",
+                "file": "Blok 3/Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/2023-05-11/Migrations.md",
+                "file": "Blok 3/Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/2023-05-11/Migrations.md",
+                "file": "Blok 3/Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/2023-05-11/Migrations.md"
+                "file": "Blok 3/Untitled.md"
               }
             }
           }
@@ -157,12 +157,25 @@
   },
   "active": "cd445ea1de611198",
   "lastOpenFiles": [
+    "Blok 2/2023-05-11/EF Testing.md",
+    "Blok 3/Untitled.md",
+    "Blok 3",
+    "Blok 2/2023-05-11/Repository Pattern.md",
+    "Blok 2/2023-05-11/Migrations.md",
+    "Blok 2/2023-05-11/Fluent Api.md",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/Reisdocument.cs",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/Persoon.cs",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/Medewerker.cs",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/IReisdocumentenRepository.cs",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/IPersonenRepository.cs",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/DocumentType.cs",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/DocumentStatus.cs",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Migrations/20230516085345_InitialCreate.cs",
+    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus/Model/BSNValidator.cs",
+    "Blok 2/Blok2.HamelenTravelDocus/DatabaseDiagram.png",
     "Blok 2/2023-05-09/Crud Operaties.md",
     "Blok 2/2023-05-09/Queries.md",
     "Blok 2/2023-05-09/ChangeTracker van DBContext.md",
-    "Blok 2/2023-05-11/Migrations.md",
-    "Blok 2/2023-05-11/EF Testing.md",
-    "Blok 2/2023-05-11/Repository Pattern.md",
     "Blok 2/2023-05-08/Loading.md",
     "Blok 2/2023-05-09/Snapshot van DbContext.md",
     "Blok 2/2023-05-08/Context.md",
@@ -172,9 +185,7 @@
     "Blok 2/2023-04-12/Self Join.md",
     "Blok 2/2023-04-17/Exists.md",
     "Blok 2/2023-04-24/Computed Column.md",
-    "Blok 2/2023-05-11/Fluent Api.md",
     "Blok 2/2023-05-09/Tuple types.md",
-    "Blok 2/2023-05-11",
     "Blok 1/2023-03-31/Garbage Collection.md",
     "Blok 2/2023-05-08/Code First Mapping.md",
     "Blok 2/2023-05-08/Mapping.md",
@@ -184,20 +195,10 @@
     "Blok 1/2023-03-27/Collections.md",
     "Blok 1/2023-03-27/YieldUitleg.png",
     "Blok 1/2023-03-27/Records.md",
-    "Blok 1/2023-03-27/Generics.md",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
-    "Blok 2/2023-05-08/Untitled",
-    "Blok 2/2023-05-09",
-    "Blok 2/2023-05-08",
     "Untitled.canvas",
     "Blok 2/2023-04-24/Voorbeeld Binary Tree.png",
-    "Blok 2/2023-04-25",
-    "Blok 2/2023-04-24",
-    "Blok 2/2023-04-20",
     "Blok 1/Blok1.BlackJack/Pasted image 20230403113353.png",
-    "Blok 2/2023-04-17/Date and Time-0d3af12e-6e8c-40b8-9cad-459b910afe6d.pdf",
-    "Blok 2/2023-04-12/Data Types.pdf",
-    "Blok 2/2023-04-21",
     "WhatsApp Image 2023-04-03 at 11.18.24 1.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24.jpeg",
     "Blok 1/2023-03-30/LinqVolgorde.png",
