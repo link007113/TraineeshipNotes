@@ -1,0 +1,3 @@
+- Mensen zonder visuele beperking
+- Mensen met visuele beperking
+- Zoekmachines
