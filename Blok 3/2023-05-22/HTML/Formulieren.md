@@ -45,4 +45,5 @@ Form voorbeeld
 - telephone
 - Range
 - url
-- 
+- number
+-
