@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
+                "file": "Blok 3/2023-05-22/HTML/Introductie.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
+                "file": "Blok 3/2023-05-22/HTML/Introductie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
+                "file": "Blok 3/2023-05-22/HTML/Introductie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-05-22/CSS/Css selectors en specificity.md"
+                "file": "Blok 3/2023-05-22/HTML/Introductie.md"
               }
             }
           }
@@ -157,9 +157,9 @@
   },
   "active": "cd445ea1de611198",
   "lastOpenFiles": [
+    "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
     "Blok 3/2023-05-22/HTML/Introductie.md",
     "Blok 3/2023-05-22/CSS/Css.md",
-    "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
     "Blok 3/2023-05-22/HTML/Elementen.md",
     "Blok 3/2023-05-22/cheatsheet-a5.pdf",
     "Blok 3/2023-05-23/Bootstrap.md",
