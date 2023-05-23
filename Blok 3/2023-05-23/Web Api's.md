@@ -1,5 +1,41 @@
-- local en session storage
-- JSON stringify() en parse()
+## Local en session storage
+
+LocalStorage en SessionStorage zijn JavaScript-API's die webontwikkelaars in staat stellen om gegevens lokaal op te slaan in de browser van de gebruiker. Beide bieden een eenvoudige manier om gegevens op te slaan en op te halen zonder afhankelijk te zijn van een server.
+
+LocalStorage:
+- LocalStorage is een permanente opslagplaats voor gegevens die behouden blijven, zelfs nadat de browser is afgesloten.
+- De opgeslagen gegevens zijn beschikbaar op alle pagina's binnen hetzelfde domein.
+- De gegevens worden opgeslagen als een sleutel-waarde-paar, waarbij zowel de sleutel als de waarde worden opgeslagen als een tekenreeks.
+- Je kunt gegevens opslaan in LocalStorage met behulp van de `localStorage.setItem(key, value)`-methode en ophalen met behulp van `localStorage.getItem(key)`.
+- Voorbeeld van het opslaan en ophalen van gegevens in LocalStorage:
+```javascript
+// Gegevens opslaan in LocalStorage
+localStorage.setItem('username', 'John Doe');
+
+// Gegevens ophalen uit LocalStorage
+const username = localStorage.getItem('username');
+console.log(username); // Output: "John Doe"
+```
+
+SessionStorage:
+- SessionStorage is vergelijkbaar met LocalStorage, maar de opgeslagen gegevens zijn alleen beschikbaar tijdens de sessie van de gebruiker en worden verwijderd zodra de sessie eindigt (bijvoorbeeld wanneer de browser wordt gesloten).
+- De opgeslagen gegevens zijn beperkt tot de huidige tabblad of het huidige venster.
+- Net als LocalStorage worden de gegevens opgeslagen als een sleutel-waarde-paar en kunnen ze worden ingesteld met `sessionStorage.setItem(key, value)` en opgehaald met `sessionStorage.getItem(key)`.
+- Voorbeeld van het opslaan en ophalen van gegevens in SessionStorage:
+```javascript
+// Gegevens opslaan in SessionStorage
+sessionStorage.setItem('language', 'JavaScript');
+
+// Gegevens ophalen uit SessionStorage
+const language = sessionStorage.getItem('language');
+console.log(language); // Output: "JavaScript"
+```
+
+Zowel LocalStorage als SessionStorage bieden een eenvoudige manier om gegevens op te slaan en op te halen in de browser van de gebruiker. Ze kunnen handig zijn voor het opslaan van gebruikersvoorkeuren, tijdelijke gegevens of andere informatie die lokaal moet worden bewaard. Het is belangrijk op te merken dat hoewel ze nuttig zijn voor het opslaan van kleine hoeveelheden gegevens, ze niet moeten worden gebruikt voor het opslaan van gevoelige informatie, zoals wachtwoorden of vertrouwelijke gegevens, vanwege beveiligingsrisico's.
+
+## JSON stringify() en parse()
+
+
 
 
 ## Fetch API
