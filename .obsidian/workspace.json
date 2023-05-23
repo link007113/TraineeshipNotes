@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-05-22/Layouts.md",
+                "file": "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6ff1c9876bc1c23e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -104,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-05-22/Layouts.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-05-22/Layouts.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-05-22/Layouts.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -155,17 +168,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "cd445ea1de611198",
+  "active": "6ff1c9876bc1c23e",
   "lastOpenFiles": [
-    "Blok 3/2023-05-22/cheatsheet-a5.pdf",
+    "Blok 3/2023-05-22/CSS/Css koppelen.md",
+    "Untitled.md",
+    "Blok 3/2023-05-22/HTML/Elementen.md",
+    "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
     "Blok 3/2023-05-22/Layouts.md",
+    "Blok 3/2023-05-22/cheatsheet-a5.pdf",
     "Blok 3/2023-05-22/Positioning.md",
     "Blok 3/2023-05-22/HTML/Acccessibility.md",
-    "Blok 3/2023-05-22/HTML/Elementen.md",
     "Blok 3/2023-05-22/HTML/Formulieren.md",
     "Blok 3/2023-05-22/HTML/Introductie.md",
-    "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
-    "Blok 3/2023-05-22/CSS/Css koppelen.md",
     "Blok 3/2023-05-22/HTML/Inline vs block elementen.md",
     "Blok 3/2023-05-22/CSS/Css.md",
     "Blok 3/2023-05-23/Bootstrap.md",
