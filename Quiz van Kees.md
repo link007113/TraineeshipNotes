@@ -115,7 +115,7 @@ Bekijk de card **Bedrijf**. Klik met de rechtermuisknop op de pagina en kies `Vi
 1. Waarom wordt de class "login-form" gebruikt?  Zodat hij de opmaak krijgt die in css is gedefineerd
 1. Leg de betekenis uit van alle attributen in het `<form>` element.  
 1. Waarom en hoe zijn er labels gebruikt?  
-1. Waarom staan `<label>` en `<input>` binnen een `<div>`?  
+1. Waarom staan `<label>` en `<input>` binnen een `<div>`?  om ze te groeperen
 1. Leg de betekenis uit van alle attributen in het `<input>` element.
 
 Open van deze website het bestand `style.css`.
