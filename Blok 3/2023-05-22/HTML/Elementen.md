@@ -1,6 +1,6 @@
 Hier is een uitbreiding van de uitleg over de verschillende elementen in HTML:
 
-### Semantische elementen:  
+## Semantische elementen:  
 Semantische elementen zijn HTML-elementen die specifieke betekenissen en functies hebben, waardoor ze de structuur en betekenis van de inhoud op een webpagina duidelijker maken voor zowel ontwikkelaars als browsers.
 
 - Header: Het header-element wordt gebruikt om de inleidende inhoud van een pagina of een sectie ervan te definiëren. Het bevat vaak het logo, de paginatitel en het navigatiemenu.
@@ -11,7 +11,7 @@ Semantische elementen zijn HTML-elementen die specifieke betekenissen en functie
 - Section: Het section-element wordt gebruikt om een logisch gedeelte of een thematische groepering van inhoud te definiëren. Het kan bijvoorbeeld worden gebruikt om verschillende hoofdstukken in een artikel of verschillende secties van een pagina te markeren.
 - Article: Het article-element wordt gebruikt om een zelfstandig, volledig begrijpelijk stuk inhoud te definiëren. Dit kan een blogpost, een nieuwsartikel of een gebruikerscommentaar zijn.
 
-### Block-elementen:
+## Block-elementen:
 Block-elementen nemen de hele breedte van de pagina in beslag en beginnen op een nieuwe regel. Hier zijn enkele voorbeelden:
 - Heading: De h1 tot h6-elementen worden gebruikt om verschillende niveaus van koppen aan te geven, waarbij h1 de hoogste prioriteit heeft en h6 de laagste.
 - Div: Het div-element wordt gebruikt als een container om andere elementen te groeperen en te stylen.
@@ -26,7 +26,7 @@ Block-elementen nemen de hele breedte van de pagina in beslag en beginnen op een
  om een item in een lijst weer te geven.
 - TABLE: Het table-element wordt gebruikt voor het maken van een tabel om gegevens in rijen en kolommen weer te geven.
 
-### Inline-elementen:
+## Inline-elementen:
 Inline-elementen nemen alleen de ruimte in die ze nodig hebben en worden naast elkaar weergegeven. Hier zijn enkele voorbeelden:
 - Input: Het input-element wordt gebruikt voor verschillende soorten invoervelden, zoals tekst, wachtwoord, checkbox, enz.
 - Span: Het span-element wordt gebruikt om een deel van een tekst in te kapselen en apart te stylen.
