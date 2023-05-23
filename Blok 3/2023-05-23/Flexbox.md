@@ -8,6 +8,7 @@
   <style>
     .container {
       display: flex;
+      flex-wrap: wrap; -- default to nowrap
     }
 
     .item {
