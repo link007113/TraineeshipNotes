@@ -176,3 +176,4 @@ margin-top: 20px !important;
 ```
 
 Leg uit wat de bedoeling is van deze media query? Wordt in dit css bestand een 'mobile-first' benadering gehanteerd?
+Ja er wordt 
