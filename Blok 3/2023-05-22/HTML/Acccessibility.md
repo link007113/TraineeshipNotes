@@ -1,3 +1,10 @@
-- Mensen zonder visuele beperking
-- Mensen met visuele beperking
-- Zoekmachines
+Acccessibility in HTML verwijst naar het ontwerpen en ontwikkelen van webpagina's op een manier die zorgt voor een optimale gebruikservaring voor alle gebruikers, inclusief mensen zonder visuele beperking, mensen met visuele beperking en zoekmachines. Hier is hoe elk van deze groepen wordt beïnvloed:
+
+- Mensen zonder visuele beperking: Voor mensen zonder visuele beperking zorgt toegankelijkheid ervoor dat de inhoud duidelijk en gemakkelijk leesbaar is, de navigatie intuïtief is en interactieve elementen goed werken. Dit omvat het gebruik van juiste kleurcontrasten, goed leesbare teksten, begrijpelijke navigatie en responsieve lay-outs die goed werken op verschillende apparaten en schermgroottes.
+
+- Mensen met visuele beperking: Voor mensen met visuele beperking is het belangrijk dat de inhoud van een webpagina ook toegankelijk is. Dit kan worden bereikt door het gebruik van tekstuele alternatieven voor afbeeldingen (zoals alt-tags), het correct gebruik van koppen en het structureren van de inhoud met semantische HTML-elementen zoals `<h1>` voor koppen en `<p>` voor paragrafen. Daarnaast kunnen aanvullende technieken zoals ARIA-attributen (Accessible Rich Internet Applications) worden gebruikt om interactieve elementen toegankelijker te maken, bijvoorbeeld door ze van extra beschrijvingen te voorzien.
+
+- Zoekmachines: Zoekmachines, zoals Google, indexeren webpagina's en gebruiken complexe algoritmes om relevante zoekresultaten te genereren. Toegankelijkheid speelt hierbij een rol omdat goed gestructureerde en semantische HTML-code zoekmachines helpt de inhoud van een pagina beter te begrijpen en te indexeren. Door het gebruik van correcte HTML-elementen, beschrijvende alt-tags voor afbeeldingen en logische structuur kan de zichtbaarheid en vindbaarheid van een webpagina in zoekmachines worden verbeterd.
+
+
+Kortom, toegankelijkheid in HTML zorgt ervoor dat webpagina's bruikbaar en begrijpelijk zijn voor alle gebruikers, ongeacht eventuele beperkingen, en dat ze ook goed geïnterpreteerd kunnen worden door zoekmachines voor een betere zichtbaarheid en vindbaarheid op het web.
