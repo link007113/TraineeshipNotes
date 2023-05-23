@@ -110,14 +110,22 @@ https://belastingen.arnhem.nl/auth/resources/7.2.4.ga/login/arnhemV8/css/style.c
 
 Bekijk de card **Bedrijf**. Klik met de rechtermuisknop op de pagina en kies `View page source` (CTRL+U). Vind de html van het form **Bedrijf**.
 
-1. Waarom is het belangrijk dat een `<h2>` heading is gebruikt bij Bedrijf?  Voor screen readers
-1. Waarom staat _U kunt hier namens het bedrijf inloggen._ in een `<p>` element?  
+1. Waarom is het belangrijk dat een `<h2>` heading is gebruikt bij Bedrijf?  Het geeft structuur, makkelijk om te stylen met css en handig voor screen readers
+1. Waarom staat _U kunt hier namens het bedrijf inloggen._ in een `<p>` element?  Het zorgt voor de juiste structuur aangezien het hier om een stukje tekst gaat. 
 1. Waarom wordt de class "login-form" gebruikt?  Zodat hij de opmaak krijgt die in css is gedefineerd
 1. Leg de betekenis uit van alle attributen in het `<form>` element.  
-1. Waarom en hoe zijn er labels gebruikt?  
-1. Waarom staan `<label>` en `<input>` binnen een `<div>`?  om ze te groeperen
-1. Leg de betekenis uit van alle attributen in het `<input>` element.
-
+ -   id: Hiermee wordt een unieke identificatie (ID) gegeven aan het formulier, wat handig kan zijn bij het targeten van het formulier met behulp van JavaScript of CSS.
+-   action Hiermee wordt de URL opgegeven waarnaar de gegevens van het formulier worden verzonden wanneer het wordt ingediend.
+-   method="post": Geeft aan dat de gegevens van het formulier moeten worden verzonden met behulp van de POST-methode.
+3. Waarom en hoe zijn er labels gebruikt?  Voor beschrijvingen van de invoer velden
+4. Waarom staan `<label>` en `<input>` binnen een `<div>`?  om ze te groeperen en stijl toe te passen
+5. Leg de betekenis uit van alle attributen in het `<input>` element.
+-   id="username": Hiermee wordt een unieke identificatie (ID) gegeven aan het inputveld, wat handig kan zijn bij het targeten van het veld met behulp van JavaScript of CSS.
+-   class="form-input": Hiermee wordt een CSS-klasse toegepast op het inputveld, waardoor het element specifieke stijlen kan krijgen.
+-   name="username": Geeft de naam van het inputveld,
+-   type="text": Specificeert het type van het inputveld als een tekstveld. 
+-   autofocus="": Geeft aan dat het inputveld automatisch de focus moet krijgen wanneer de pagina wordt geladen.
+-   autocomplete="off": Schakelt de automatische aanvulling of suggestie van waarden voor het inputveld uit.
 Open van deze website het bestand `style.css`.
 
 1. Er staat o.a:
