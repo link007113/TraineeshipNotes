@@ -39,5 +39,3 @@ In deze code wordt de initiële stijl van de `body` ingesteld op rode tekst op e
 Met andere woorden, wanneer de schermgrootte groter is dan of gelijk is aan 768 pixels, worden de stijlen binnen de media query toegepast. Anders blijven de initiële stijlen behouden.
 
 Dit stelt ons in staat om responsieve ontwerpen te maken waarbij de lay-out en stijlen van een webpagina worden aangepast op basis van de schermgrootte. Hierdoor kunnen we een betere gebruikerservaring bieden op verschillende apparaten, zoals desktops, tablets en smartphones.
-
-## Flex Box
