@@ -33,3 +33,6 @@ Er zijn drie manieren om CSS aan een HTML-pagina te koppelen:
    In dit voorbeeld wordt een extern CSS-bestand met de naam "styles.css" gekoppeld aan de HTML-pagina. Het externe CSS-bestand bevat de stijlinstructies voor de pagina.
 
 De externe stijlmethode is de meest gebruikelijke en aanbevolen manier om CSS aan een HTML-pagina te koppelen, omdat het zorgt voor een betere scheiding van inhoud en presentatie, maakt hergebruik van stijlen mogelijk en vergemakkelijkt het onderhoud van de CSS-code.
+
+
+Reset CSS
