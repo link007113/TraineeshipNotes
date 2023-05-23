@@ -21,9 +21,7 @@ Block-elementen nemen de hele breedte van de pagina in beslag en beginnen op een
 - FORM: Het form-element wordt gebruikt voor het maken van een formulier om gegevens van gebruikers te verzamelen.
 - HEADER: Het header-element wordt gebruikt om de inleidende inhoud van een pagina of een sectie ervan te definiëren.
 - NAV: Het nav-element wordt gebruikt om een blok met navigatielinks naar andere delen van de website weer te geven.
-- LI: Het li-element wordt gebruikt in combinatie met ul of ol
-
- om een item in een lijst weer te geven.
+- LI: Het li-element wordt gebruikt in combinatie met ul of ol  om een item in een lijst weer te geven.
 - TABLE: Het table-element wordt gebruikt voor het maken van een tabel om gegevens in rijen en kolommen weer te geven.
 
 ## Inline-elementen:
