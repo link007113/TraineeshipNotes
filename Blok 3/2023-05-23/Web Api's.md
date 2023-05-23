@@ -35,6 +35,35 @@ Zowel LocalStorage als SessionStorage bieden een eenvoudige manier om gegevens o
 
 ## JSON stringify() en parse()
 
+JSON.stringify() is een JavaScript-methode die wordt gebruikt om een JavaScript-object of waarde om te zetten in een JSON-string. Het neemt een object of waarde als input en retourneert een JSON-geformatteerde tekenreeks. JSON.stringify() kan worden gebruikt om complexe JavaScript-objecten om te zetten in een JSON-string, zodat ze kunnen worden opgeslagen, verzonden of gedeeld met andere systemen.
+
+Hier is een voorbeeld van het gebruik van JSON.stringify():
+
+```javascript
+const person = {
+  name: 'John Doe',
+  age: 30,
+  profession: 'Developer'
+};
+
+const jsonStr = JSON.stringify(person);
+console.log(jsonStr);
+// Output: {"name":"John Doe","age":30,"profession":"Developer"}
+```
+
+JSON.parse() is een JavaScript-methode die wordt gebruikt om een JSON-string om te zetten in een JavaScript-object of waarde. Het neemt een JSON-geformatteerde tekenreeks als input en retourneert het overeenkomstige JavaScript-object of de waarde.
+
+Hier is een voorbeeld van het gebruik van JSON.parse():
+
+```javascript
+const jsonStr = '{"name":"John Doe","age":30,"profession":"Developer"}';
+
+const person = JSON.parse(jsonStr);
+console.log(person);
+// Output: { name: 'John Doe', age: 30, profession: 'Developer' }
+```
+
+JSON.stringify() en JSON.parse() werken samen om gegevens om te zetten tussen JavaScript-objecten en JSON-strings. JSON.stringify() zet een object om in een JSON-string en JSON.parse() zet een JSON-string om in een JavaScript-object. Dit is handig wanneer je gegevens wilt opslaan of verzenden in de JSON-indeling en deze wilt gebruiken als JavaScript-objecten in je code.
 
 
 
