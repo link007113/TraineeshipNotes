@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-05-22/HTML/Elementen.md",
+                "file": "Quiz van Kees.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-05-22/HTML/Elementen.md",
+                "file": "Quiz van Kees.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-05-22/HTML/Elementen.md",
+                "file": "Quiz van Kees.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-05-22/HTML/Elementen.md"
+                "file": "Quiz van Kees.md"
               }
             }
           }
@@ -170,9 +170,10 @@
   },
   "active": "6ff1c9876bc1c23e",
   "lastOpenFiles": [
+    "Blok 3/2023-05-22/Holy grail (web design).md",
     "Quiz van Kees.md",
-    "Blok 3/2023-05-22/CSS/Css koppelen.md",
     "Blok 3/2023-05-22/HTML/Elementen.md",
+    "Blok 3/2023-05-22/CSS/Css koppelen.md",
     "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
     "Blok 3/2023-05-22/Layouts.md",
     "Blok 3/2023-05-22/cheatsheet-a5.pdf",
@@ -206,7 +207,6 @@
     "Blok 2/2023-05-09/ChangeTracker van DBContext.md",
     "Blok 2/2023-05-08/Loading.md",
     "Blok 2/2023-05-09/Snapshot van DbContext.md",
-    "Blok 2/2023-05-08/Context.md",
     "Blok 1/2023-03-27/YieldUitleg.png",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "Untitled.canvas",
