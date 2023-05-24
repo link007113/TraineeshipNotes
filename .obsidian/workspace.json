@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-05-22/Positioning.md",
+                "file": "Blok 3/2023-05-23/DOM.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-05-22/Positioning.md",
+                "file": "Blok 3/2023-05-23/DOM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-05-22/Positioning.md",
+                "file": "Blok 3/2023-05-23/DOM.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-05-22/Positioning.md"
+                "file": "Blok 3/2023-05-23/DOM.md"
               }
             }
           }
@@ -170,14 +170,15 @@
   },
   "active": "6ff1c9876bc1c23e",
   "lastOpenFiles": [
-    "Blok 3/2023-05-22/Layouts.md",
-    "Blok 3/2023-05-23/DOM.md",
     "Blok 3/2023-05-23/Web Api's.md",
-    "Blok 3/2023-05-23/Sass.md",
     "Blok 3/2023-05-23/Flexbox.md",
     "Blok 3/2023-05-23/Bootstrap.md",
-    "Blok 3/2023-05-22/Holy grail (web design).md",
+    "Blok 3/2023-05-23/Sass.md",
+    "Blok 3/2023-05-23/DOM.md",
+    "Blok 3/2023-05-24",
     "Blok 3/2023-05-22/Positioning.md",
+    "Blok 3/2023-05-22/Layouts.md",
+    "Blok 3/2023-05-22/Holy grail (web design).md",
     "Blok 3/2023-05-22/HTML/Introductie.md",
     "Blok 3/2023-05-22/HTML/Formulieren.md",
     "Blok 3/2023-05-22/HTML/Acccessibility.md",
@@ -198,7 +199,6 @@
     "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/MainWindow.xaml",
     "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/MainWindow.xaml.cs",
     "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/Hamelen.ico",
-    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/Blok2.HamelenTravelDocus.UI.csproj.user",
     "Blok 2/2023-05-11/EF Testing.md",
     "Blok 2/2023-05-11/Repository Pattern.md",
     "Blok 2/2023-05-11/Migrations.md",
@@ -206,7 +206,6 @@
     "Blok 2/2023-05-09/Crud Operaties.md",
     "Blok 2/2023-05-09/Queries.md",
     "Blok 2/2023-05-09/ChangeTracker van DBContext.md",
-    "Blok 2/2023-05-08/Loading.md",
     "Blok 1/2023-03-27/YieldUitleg.png",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "Untitled.canvas",

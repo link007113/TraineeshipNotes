@@ -1,9 +1,25 @@
+De Document Object Model (DOM) is een programmeerinterface voor webpagina's. Het is een platform- en taalonafhankelijke representatie van de structuur van een HTML- of XML-document. Met behulp van de DOM kunnen programmeurs dynamisch en interactief de inhoud, structuur en stijl van een webpagina manipuleren.
+
+Kort gezegd is de DOM een boomachtige structuur waarin elk element, attribuut en tekstknooppunt van een webpagina wordt vertegenwoordigd als een object. Elk element in de DOM kan worden gemanipuleerd met behulp van JavaScript-methoden en -eigenschappen.
+
+Met de DOM kunnen ontwikkelaars het volgende doen:
+- Elementen selecteren en wijzigen op basis van hun ID, klasse, tag of andere attributen.
+- Elementen maken, verwijderen of verplaatsen op de webpagina.
+- Inhoud van elementen wijzigen, zoals tekst, HTML, attributen, stijlen en meer.
+- Interactie toevoegen aan de webpagina door het vastleggen en reageren op gebeurtenissen, zoals klikken, scrollen, formulierinzendingen, enz.
+- Dynamisch nieuwe elementen en inhoud toevoegen aan de webpagina.
+- De structuur en stijl van de webpagina aanpassen op basis van gebruikersinteracties of andere voorwaarden.
+
+Kortom, de DOM fungeert als een interface tussen webpagina's en JavaScript-code, waardoor ontwikkelaars de mogelijkheid hebben om webpagina's te manipuleren en interactieve en dynamische ervaringen te creëren.
+
+
 ## JavaScript koppelen:
 Om JavaScript-code aan een HTML-document te koppelen, kan je de `<script>`-tag gebruiken. Door de `src`-attribuutwaarde in te stellen op de locatie van het JavaScript-bestand, kan je het externe scriptbestand aanroepen. Het toevoegen van het `defer`-attribuut zorgt ervoor dat het script wordt uitgesteld in de uitvoering totdat de HTML-parsing is voltooid.
 
 ```html
 <script defer src="script.js"></script>
 ```
+
 
 ## querySelector():
 `querySelector()` is een methode van het `Document`-object in JavaScript waarmee je een element in de DOM (Document Object Model) kunt selecteren op basis van een CSS-selector. Het retourneert het eerste element dat overeenkomt met de opgegeven selector.
