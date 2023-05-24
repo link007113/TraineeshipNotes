@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-05-24/Java script Baseline Questions.md",
+                "file": "Blok 3/2023-05-24/Onderwerpen vanuit Baseline.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-05-24/Java script Baseline Questions.md",
+                "file": "Blok 3/2023-05-24/Onderwerpen vanuit Baseline.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-05-24/Java script Baseline Questions.md",
+                "file": "Blok 3/2023-05-24/Onderwerpen vanuit Baseline.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-05-24/Java script Baseline Questions.md"
+                "file": "Blok 3/2023-05-24/Onderwerpen vanuit Baseline.md"
               }
             }
           }
@@ -169,6 +169,8 @@
   },
   "active": "cd445ea1de611198",
   "lastOpenFiles": [
+    "Blok 3/2023-05-24/Java script Baseline Questions.md",
+    "Blok 3/2023-05-24/Onderwerpen vanuit Baseline.md",
     "Pasted image 20230524102719.png",
     "Blok 3/2023-05-23/DOM.md",
     "Blok 3/2023-05-23/Web Api's.md",
@@ -194,7 +196,6 @@
     "Blok 1/2023-03-24/Abstract classes.md",
     "Blok 1/2023-03-23/Operator Overloading & Overrides.md",
     "Blok 1/2023-03-23/Custom Exceptions.md",
-    "Blok 1/2023-03-23/Enum.md",
     "Blok 3/2023-05-24",
     "Blok 3/2023-05-22/cheatsheet-a5.pdf",
     "Blok 3/2023-05-23",

@@ -33,40 +33,58 @@ return a + 5
 23. typeof test
 24. test.toString()
 
-## Eerste antwoorden
+## Eerste antwoorden van mij
 
-1. true      V
-2. true      V
-3. false     X 
-4. false     X
-5. true      V
-6. 22        V
-7. 4         V
-8. ---       X
-9. false     V
-10. true      X
-11. true      X 
-12. ---       X 
-13. ---       X 
-14. ---       X 
-15. ---       X 
-16. ---       X 
-17. ---       X 
-18. ---       X 
-19. ---       X 
-20. 8         V
-21. 25        V
-22. ---       X 
+1. true  
+2. true  
+3. false  
+4. false 
+5. true  
+6. 22    
+7. 4     
+8. ---   
+9. false 
+10. true 
+11. true  
+12. ---  
+13. ---  
+14. ---
+15. ---
+16. ---
+17. --- 
+18. --- 
+19. --- 
+20. 8 
+21. 25      
+22. ---       
 23. number        
-24. function    
+24. function  
 
-## Onderwerpen vanuit de antwoorden
+## Echte antwoorden:
 
-- two complements system
-- bitwise operator
- + + prefereert string
- + truefiy en falsey waardes
- + verschil tussen == en ===
+1. true
+2. true
+3. false
+4. false
+5. true
+6. "22"
+7. 4
+8. TypeError: Cannot mix BigInt and other types, use explicit conversions
+9. false
+10. 4
+11. 2
+12. 7
+13. NaN
+14. 18
+15. { x: null }
+16. [1,2,3]
+17. -5
+18. false
+19. false
+20. 8
+21. "25"
+22. 9 (Extra argumenten worden genegeerd)
+23. "function"
+24. "function test(a) { return a + 5; }"
 
-
-
+Let op: Voor punt 8 treedt er een fout op omdat het proberen te vermenigvuldigen van een normaal getal met een BigInt niet is toegestaan. Bij punt 13 resulteert de operatie in een NaN-waarde vanwege een ongeldige bitwise operator met een object.

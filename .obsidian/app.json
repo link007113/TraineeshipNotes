@@ -4,5 +4,8 @@
   "spellcheckLanguages": [
     "en-US",
     "nl"
+  ],
+  "spellcheckDictionary": [
+    "Hier"
   ]
 }
