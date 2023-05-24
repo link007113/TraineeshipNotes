@@ -1,4 +1,0 @@
-Javascript object
-Javascript collection
-javascript string propragering
-javascript functions
