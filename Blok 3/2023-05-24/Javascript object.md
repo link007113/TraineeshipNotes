@@ -6,22 +6,38 @@ In JavaScript kan je gebruik maken van objects.  Een object is een verzameling v
 JavaScript-arrays zijn objecten die een geordende verzameling van waarden bevatten. Ze kunnen worden gebruikt om meerdere waarden in één enkele variabele op te slaan. Hier is een voorbeeld van het maken en gebruiken van een array:
 
 ```javascript
-// Array-initialisatie
-const fruits = ['apple', 'banana', 'orange'];
+const monitors = ["monitor_a", "monitor_b", "monitor_c"];
 
-// Toegang tot array-elementen
-console.log(fruits[0]); // Output: 'apple'
+monitors.push('monitor_d'); // Voeg toe
+console.log(monitors);
+monitors.pop(); // haal het laatste element weg
+console.log(monitors);
 
-// Array-lengte
-console.log(fruits.length); // Output: 3
+// good old fastest way to iterate over an array
+for (let teller = 0; teller < monitors.length; teller++) {
+  console.log(monitors[teller]);
+}
 
-// Itereren over een array
-fruits.forEach((fruit) => {
-  console.log(fruit);
-});
+// for each in c# is for of in javascript
+for (const monitor of monitors) {
+  console.log(monitor);
+}
+
+// like foreach in c# but with arrow function
+monitors.forEach((monitor) => console.log(monitor));
+
+// for in loopt door de prop van een object, NIET gebruiken bij arrays wel bij objects
+const medewerker = {
+  naam: "Anthony",
+  leeftijd: 31,
+  functie: "programmeur",
+  intern: true,
+};
+for (const prop in medewerker) {
+  console.log(prop + ": " + medewerker[prop]);
+}
+
 ```
-
-In dit voorbeeld wordt een array `fruits` gemaakt en worden enkele basisbewerkingen uitgevoerd, zoals het toegang krijgen tot een element via de index en het itereren over de array met behulp van de `forEach`-methode.
 
 ## JavaScript Functions
 
