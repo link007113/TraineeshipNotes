@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-05-24/Onderwerpen vanuit Baseline.md",
+                "file": "Blok 3/2023-05-24/Java Type System.md",
                 "mode": "source",
                 "source": false
               }
@@ -116,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-05-24/Onderwerpen vanuit Baseline.md",
+                "file": "Blok 3/2023-05-24/Java Type System.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-05-24/Onderwerpen vanuit Baseline.md",
+                "file": "Blok 3/2023-05-24/Java Type System.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -145,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-05-24/Onderwerpen vanuit Baseline.md"
+                "file": "Blok 3/2023-05-24/Java Type System.md"
               }
             }
           }
@@ -169,15 +169,16 @@
   },
   "active": "cd445ea1de611198",
   "lastOpenFiles": [
-    "Blok 3/2023-05-24/Java script Baseline Questions.md",
     "Blok 3/2023-05-24/Onderwerpen vanuit Baseline.md",
+    "Blok 3/2023-05-24/Java Type System.md",
+    "Blok 3/2023-05-24/Java script Baseline Questions.md",
+    "Blok 3/2023-05-23/JavaScript introductie.md",
     "Pasted image 20230524102719.png",
     "Blok 3/2023-05-23/DOM.md",
     "Blok 3/2023-05-23/Web Api's.md",
     "Blok 3/2023-05-23/Sass.md",
     "Blok 3/2023-05-23/Bootstrap.md",
     "Blok 3/2023-05-23/Flexbox.md",
-    "Blok 3/2023-05-23/JavaScript introductie.md",
     "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
     "Blok 2/2023-04-25/Triggers.md",
     "Blok 2/2023-04-25/Transactions.md",
@@ -195,7 +196,6 @@
     "Blok 1/2023-03-24/Inheritance.md",
     "Blok 1/2023-03-24/Abstract classes.md",
     "Blok 1/2023-03-23/Operator Overloading & Overrides.md",
-    "Blok 1/2023-03-23/Custom Exceptions.md",
     "Blok 3/2023-05-24",
     "Blok 3/2023-05-22/cheatsheet-a5.pdf",
     "Blok 3/2023-05-23",
