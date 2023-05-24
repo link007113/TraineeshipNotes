@@ -4,8 +4,6 @@ Om JavaScript-code aan een HTML-document te koppelen, kan je de `<script>`-tag g
 <script defer src="script.js"></script>
 ```
 
-
-
 ## querySelector():
 `querySelector()` is een methode van het `Document`-object in JavaScript waarmee je een element in de DOM (Document Object Model) kunt selecteren op basis van een CSS-selector. Het retourneert het eerste element dat overeenkomt met de opgegeven selector.
 
