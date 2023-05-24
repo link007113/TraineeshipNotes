@@ -1,5 +1,5 @@
 
 Javascript collection
-
 javascript functions
 javascript classes
+javascript operations
