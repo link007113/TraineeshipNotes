@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
+                "file": "Blok 3/2023-05-23/JavaScript introductie.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,14 +25,13 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-05-23/DOM.md",
+                "file": "Blok 3/2023-05-23/JavaScript introductie.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -117,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-05-23/DOM.md",
+                "file": "Blok 3/2023-05-23/JavaScript introductie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-05-23/DOM.md",
+                "file": "Blok 3/2023-05-23/JavaScript introductie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +145,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-05-23/DOM.md"
+                "file": "Blok 3/2023-05-23/JavaScript introductie.md"
               }
             }
           }
@@ -168,44 +167,45 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "6ff1c9876bc1c23e",
+  "active": "cd445ea1de611198",
   "lastOpenFiles": [
+    "Blok 3/2023-05-23/DOM.md",
+    "Blok 3/2023-05-23/JavaScript introductie.md",
+    "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
+    "Blok 2/2023-04-25/Triggers.md",
+    "Blok 2/2023-04-25/Transactions.md",
+    "Blok 2/2023-04-25/Rebuild.md",
+    "Blok 2/2023-04-25/Isolation Levels.md",
+    "Blok 2/2023-04-21/While.md",
+    "Blok 2/2023-04-21/Dynamic SQL.md",
+    "Blok 2/2023-04-21/SQL carriage return en line feed invoegen  in een string.md",
+    "Blok 2/2023-04-21/Stored Procedures.md",
+    "Blok 2/2023-04-21/Control Flow.md",
+    "Blok 2/2023-04-21/GO.md",
+    "Blok 2/2023-04-21/Pivot and Unpivot.md",
+    "Blok 2/2023-04-21/Grouping Sets.md",
+    "Blok 1/2023-03-24/Unit Testing.md",
+    "Blok 1/2023-03-24/Inheritance.md",
+    "Blok 1/2023-03-24/Abstract classes.md",
+    "Blok 1/2023-03-23/Operator Overloading & Overrides.md",
+    "Blok 1/2023-03-23/Custom Exceptions.md",
+    "Blok 1/2023-03-23/Enum.md",
+    "Blok 1/2023-03-23/CTS.md",
+    "Blok 1/2023-03-23/Casting & Boxing.md",
+    "Blok 3/2023-05-24/Bla.md",
     "Blok 3/2023-05-23/Web Api's.md",
     "Blok 3/2023-05-23/Flexbox.md",
-    "Blok 3/2023-05-23/Bootstrap.md",
-    "Blok 3/2023-05-23/Sass.md",
-    "Blok 3/2023-05-23/DOM.md",
     "Blok 3/2023-05-24",
-    "Blok 3/2023-05-22/Positioning.md",
-    "Blok 3/2023-05-22/Layouts.md",
-    "Blok 3/2023-05-22/Holy grail (web design).md",
-    "Blok 3/2023-05-22/HTML/Introductie.md",
-    "Blok 3/2023-05-22/HTML/Formulieren.md",
-    "Blok 3/2023-05-22/HTML/Acccessibility.md",
-    "Blok 3/2023-05-22/HTML/Elementen.md",
-    "Blok 3/2023-05-22/CSS/Css koppelen.md",
-    "Quiz van Kees.md",
-    "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
     "Blok 3/2023-05-22/cheatsheet-a5.pdf",
-    "Blok 3/2023-05-22/HTML/Inline vs block elementen.md",
-    "Blok 3/2023-05-22/CSS/Css.md",
     "Blok 3/2023-05-23",
     "Blok 3/2023-05-22/CSS",
     "Blok 3/2023-05-22/HTML",
     "Blok 2/Blok2.HamelenTravelDocus/DatabaseDiagram.png",
-    "Blok 3/Untitled.md",
     "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/NieuwReisDocument.xaml",
     "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/NieuwReisDocument.xaml.cs",
     "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/MainWindow.xaml",
     "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/MainWindow.xaml.cs",
     "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/Hamelen.ico",
-    "Blok 2/2023-05-11/EF Testing.md",
-    "Blok 2/2023-05-11/Repository Pattern.md",
-    "Blok 2/2023-05-11/Migrations.md",
-    "Blok 2/2023-05-11/Fluent Api.md",
-    "Blok 2/2023-05-09/Crud Operaties.md",
-    "Blok 2/2023-05-09/Queries.md",
-    "Blok 2/2023-05-09/ChangeTracker van DBContext.md",
     "Blok 1/2023-03-27/YieldUitleg.png",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "Untitled.canvas",
