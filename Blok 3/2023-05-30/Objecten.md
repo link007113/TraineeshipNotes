@@ -16,13 +16,22 @@ const auto = {
     stoppen: function() {
         console.log('De auto stopt.');
     },
-    claxonneren: function() {
-        console.log('De auto claxonneert.');
-    }
+    toeter: function() {
+        console.log('De auto toetert.');
+        
+    },
+    toString: function() {
+        return `De auto is een ${this.merk} ${this.model} uit ${this.bouwjaar} en heeft de kleur ${this.kleur}.`
+        }
 };
 
-console.log(auto.merk); // Geeft 'Toyota' terug.
-auto.rijden(); // Geeft 'De auto rijdt.' terug.
+console.log(auto);
+console.log(auto.toString());
+
+auto.rijden();
+auto.stoppen();
+auto.toeter();
+
 ```
 
 In dit voorbeeld is `auto` een object. De eigenschappen van `auto` zijn `merk`, `model`, `kleur`, en `bouwjaar`, en de functies zijn `rijden`, `stoppen`, en `claxonneren`. 
