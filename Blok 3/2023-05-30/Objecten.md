@@ -36,6 +36,21 @@ auto.rijden();
 auto.stoppen();
 auto.toeter();
 
+
+
+const passpoort = {
+    id: 1,
+    bsn: 123456789,
+    afgifteplaats: 'Apeldoorn',
+    toString: function () {
+        return `BSN: ${this.bsn}, Afgifteplaats: ${this.afgifteplaats}`;
+    },
+    valueOf: function () {
+        return this.bsn;
+    }
+};
+const mijnafgifteplaats = passpoort?.afgifteplaats ?? "onbekend";
+
 ```
 
 In dit voorbeeld is `auto` een object. De eigenschappen van `auto` zijn `merk`, `model`, `kleur`, en `bouwjaar`, en de functies zijn `rijden`, `stoppen`, en `claxonneren`. 
