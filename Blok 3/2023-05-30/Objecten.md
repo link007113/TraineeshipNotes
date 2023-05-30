@@ -6,27 +6,31 @@ In JavaScript kun je een object maken dat deze eigenschappen en functies vertege
 
 ```javascript
 const auto = {
-    merk: 'Toyota',
-    model: 'Corolla',
-    kleur: 'rood',
-    bouwjaar: 2020,
-    rijden: function() {
-        console.log('De auto rijdt.');
-    },
-    stoppen: function() {
-        console.log('De auto stopt.');
-    },
-    toeter: function() {
-        console.log('De auto toetert.');
-        
-    },
-    toString: function() {
-        return `De auto is een ${this.merk} ${this.model} uit ${this.bouwjaar} en heeft de kleur ${this.kleur}.`
-        }
+  merk: "Toyota",
+  model: "Corolla",
+  kleur: "rood",
+  bouwjaar: 2020,
+  rijden: function () {
+    console.log("De auto rijdt.");
+  },
+  stoppen: function () {
+    console.log("De auto stopt.");
+  },
+  toeter: function () {
+    console.log("De auto toetert.");
+  },
+  toString: function () {
+    return `De auto is een ${this.merk} ${this.model} uit ${this.bouwjaar} en heeft de kleur ${this.kleur}.`;
+  },
+  valueOf: function () {
+    return 2023 - this.bouwjaar;
+  },
 };
 
 console.log(auto);
 console.log(auto.toString());
+console.log(auto.valueOf());
+
 
 auto.rijden();
 auto.stoppen();
