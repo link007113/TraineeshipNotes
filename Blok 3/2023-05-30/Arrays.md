@@ -19,3 +19,5 @@ Een array kan ook veranderd worden. Je kan een item toevoegen, verwijderen of ve
 mijnDieren.push("hamster");
 ```
 Nu is de array `mijnDieren` ["hond", "kat", "vogel", "hamster"].
+
+Arrays zijn type loos, dus je kan verschillende types in een array stoppen. In typescript kan dit weer niet, dus lijkt me ook niet handig om daadwerkelijk te doen. 
