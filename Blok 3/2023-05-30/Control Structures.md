@@ -73,5 +73,3 @@ switch (kleur) {
 }
 ```
 Dit zal "De kleur is rood." printen omdat de variabele `kleur` de waarde "rood" heeft.
-
-Ik hoop dat dit helpt! Laat het me weten als je vragen hebt over deze of andere controlestructuren.
