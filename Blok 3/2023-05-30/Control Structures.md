@@ -25,6 +25,16 @@ if (appels > 0) {
 } else {
     console.log("We hebben geen appels.");
 }
+
+
+// if controle
+if('afgifteplaats' in passpoort) {
+    console.log('afgifteplaats bestaat');
+}
+
+// tenary om te controleren of afgifteplaats bestaat
+console.log('afgifteplaats' in passpoort ? 'afgifteplaats bestaat' : 'afgifteplaats bestaat niet');
+
 ```
 Omdat we geen appels hebben, zal de console "We hebben geen appels." printen.
 

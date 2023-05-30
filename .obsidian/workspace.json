@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-05-30/Symbols.md",
+                "file": "Blok 3/2023-05-30/Control Structures.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "LAG",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-05-30/Symbols.md",
+                "file": "Blok 3/2023-05-30/Control Structures.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-05-30/Symbols.md",
+                "file": "Blok 3/2023-05-30/Control Structures.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-05-30/Symbols.md"
+                "file": "Blok 3/2023-05-30/Control Structures.md"
               }
             }
           }
@@ -157,26 +157,27 @@
   },
   "active": "fe372d2d6be21ee2",
   "lastOpenFiles": [
-    "Blok 3/2023-05-30/Objecten.md",
-    "Blok 3/2023-05-30/Symbols.md",
-    "Blok 3/2023-05-30/Functions.md",
-    "Blok 3/2023-05-30/Conversions.md",
     "Blok 3/2023-05-30/Operators.md",
+    "Blok 3/2023-05-30/Conversions.md",
+    "Blok 3/2023-05-24/Javascript string propragering.md",
+    "Blok 3/2023-05-24/Javascript object.md",
+    "Blok 3/2023-05-24/Onderwerpen vanuit Baseline.md",
+    "Blok 3/2023-05-24/Java script Baseline Questions.md",
+    "Blok 3/2023-05-23/JavaScript introductie.md",
+    "Blok 3/2023-05-23/Flexbox.md",
+    "Blok 3/2023-05-23/Bootstrap.md",
+    "Blok 3/2023-05-23/Web Api's.md",
+    "Blok 3/2023-05-23/Sass.md",
+    "2023-05-30.md",
     "Blok 3/2023-05-30/Control Structures.md",
     "Blok 3/2023-05-30/Arrays.md",
-    "Blok 3/2023-05-24/Javascript string propragering.md",
-    "Blok 3/2023-05-24/Onderwerpen vanuit Baseline.md",
-    "Blok 3/2023-05-23/Flexbox.md",
+    "Blok 3/2023-05-30/Objecten.md",
+    "Blok 3/2023-05-30/Functions.md",
+    "Blok 3/2023-05-30/Symbols.md",
     "Blok 3/2023-05-23/DOM.md",
-    "Blok 3/2023-05-23/Bootstrap.md",
-    "Blok 3/2023-05-23/JavaScript introductie.md",
-    "Blok 3/2023-05-24/Java script Baseline Questions.md",
-    "Blok 3/2023-05-24/Javascript object.md",
     "Blok 3/2023-05-24/Pasted image 20230524102719.png",
     "Blok 3/2023-05-30",
-    "Blok 3/2023-05-23/Web Api's.md",
     "Blok 3/2023-05-24/Java Type System.md",
-    "Blok 3/2023-05-23/Sass.md",
     "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
     "Blok 2/2023-04-25/Triggers.md",
     "Blok 2/2023-04-25/Transactions.md",
@@ -184,7 +185,6 @@
     "Blok 2/2023-04-25/Isolation Levels.md",
     "Blok 2/2023-04-21/While.md",
     "Blok 2/2023-04-21/Dynamic SQL.md",
-    "Blok 2/2023-04-21/SQL carriage return en line feed invoegen  in een string.md",
     "Blok 3/2023-05-24",
     "Blok 3/2023-05-22/cheatsheet-a5.pdf",
     "Blok 3/2023-05-23",
