@@ -1,6 +1,0 @@
-Conversions
-Operators
-Control Structures
-Arrays
-Objecten
-Functions
