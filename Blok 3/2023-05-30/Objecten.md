@@ -5,7 +5,7 @@ Stel je voor dat je een auto hebt. Deze auto heeft verschillende eigenschappen z
 In JavaScript kun je een object maken dat deze eigenschappen en functies vertegenwoordigt. Hier is een voorbeeld:
 
 ```javascript
-let auto = {
+const auto = {
     merk: 'Toyota',
     model: 'Corolla',
     kleur: 'rood',
