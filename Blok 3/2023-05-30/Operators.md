@@ -76,3 +76,37 @@ In het bovenstaande voorbeeld geeft `'naam' in persoon` en `'leeftijd' in persoo
 
 
 ## Spread en Rest operator
+
+### Spread Operator (`...`)
+
+De spread operator in JavaScript wordt gebruikt om elementen van een array (of eigenschappen van een object) uit te spreiden of te verdelen. Het is bijzonder nuttig bij het maken van kopieën van arrays of objecten zonder dat deze gekoppeld zijn aan het origineel (wat een veelvoorkomend probleem is bij het toewijzen van arrays en objecten).
+
+Hier is een voorbeeld met arrays:
+```javascript
+let arr1 = [1, 2, 3];
+let arr2 = [...arr1, 4, 5]; // arr2 is nu [1, 2, 3, 4, 5]
+```
+
+En hier is een voorbeeld met objecten:
+```javascript
+let obj1 = {a: 1, b: 2};
+let obj2 = {...obj1, c: 3}; // obj2 is nu {a: 1, b: 2, c: 3}
+```
+
+### Rest Operator (`...`)
+
+De rest operator in JavaScript wordt ook aangeduid met `...`, maar wordt op een iets andere manier gebruikt dan de spread operator. De rest operator wordt gebruikt om een onbepaald aantal argumenten in een array te groeperen.
+
+Hier is een voorbeeld van hoe je het kunt gebruiken in een functie:
+
+```javascript
+function som(...nummers) {
+    return nummers.reduce((acc, huidig) => acc + huidig, 0);
+}
+
+console.log(som(1, 2, 3, 4, 5)); // Output: 15
+```
+
+In dit voorbeeld neemt de functie `som` een onbepaald aantal argumenten (aangeduid met `...nummers`) en groepeert deze argumenten in een array. De `reduce` functie wordt vervolgens gebruikt om de som van deze getallen te berekenen.
+
+Hoewel de spread en rest operators op het eerste gezicht misschien verwarrend lijken, omdat ze hetzelfde symbool gebruiken, is het verschil eigenlijk vrij eenvoudig: de spread operator "verspreidt" de elementen van een array (of de eigenschappen van een object), terwijl de rest operator een onbepaald aantal argumenten groepeert in een array.
