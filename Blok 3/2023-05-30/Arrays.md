@@ -72,8 +72,8 @@ console.log(arr); // Output: [1, 2, 3, 4, 5]
 
 7. **forEach()**: Voert een opgegeven functie uit voor elk element in een array.
 ```javascript
-const array = ["aap", "noot", "mies"];
-array.forEach((element) => console.log(element));
+const arr = [1, 2, 3, 4];
+arr.forEach((element) => console.log(element));
 ```
 
 8. **map()**: Creëert een nieuwe array met de resultaten van een functie die wordt uitgevoerd voor elk array-element.
