@@ -41,3 +41,6 @@ auto.toeter();
 In dit voorbeeld is `auto` een object. De eigenschappen van `auto` zijn `merk`, `model`, `kleur`, en `bouwjaar`, en de functies zijn `rijden`, `stoppen`, en `claxonneren`. 
 
 Je kunt toegang krijgen tot de eigenschappen van een object met de punt-notatie, zoals `auto.merk`, en je kunt de functies van een object oproepen met de punt-notatie gevolgd door haakjes, zoals `auto.rijden()`.
+
+
+
