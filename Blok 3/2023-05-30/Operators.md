@@ -50,3 +50,26 @@ console.log(!a); // NOT, output: false
 ```
 
 Deze voorbeelden zijn heel eenvoudig om te begrijpen, maar het is belangrijk om te onthouden dat deze operators in complexere situaties kunnen worden gebruikt, afhankelijk van wat je met je code wilt bereiken.
+
+
+## De "in" Operator in JavaScript
+
+De "in" operator in JavaScript wordt gebruikt om te controleren of een bepaalde eigenschap in een object bestaat.
+
+Laten we bijvoorbeeld eens kijken naar het volgende object:
+
+```javascript
+let persoon = {
+    naam: 'Jan',
+    leeftijd: 25
+};
+```
+
+We kunnen de "in" operator gebruiken om te controleren of 'naam' en 'leeftijd' eigenschappen zijn van het object "persoon":
+
+```javascript
+console.log('naam' in persoon); // Output: true
+console.log('leeftijd' in persoon); // Output: true
+console.log('beroep' in persoon); // Output: false
+```
+In het bovenstaande voorbeeld geeft `'naam' in persoon` en `'leeftijd' in persoon` waar (true) terug, omdat zowel 'naam' als 'leeftijd' eigenschappen zijn van het object "persoon". `'beroep' in persoon` geeft echter onwaar (false) terug, omdat 'beroep' geen eigenschap is van het object "persoon".

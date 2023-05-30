@@ -58,4 +58,20 @@ In dit voorbeeld is `auto` een object. De eigenschappen van `auto` zijn `merk`, 
 Je kunt toegang krijgen tot de eigenschappen van een object met de punt-notatie, zoals `auto.merk`, en je kunt de functies van een object oproepen met de punt-notatie gevolgd door haakjes, zoals `auto.rijden()`.
 
 
+## Method Chaining in JavaScript
+
+Method chaining is een veelgebruikte techniek in JavaScript, waarmee meerdere methoden in één regel kunnen worden aangeroepen. Het belangrijkste is dat elke methode een object moet retourneren, zodat de volgende methode daaraan kan worden gekoppeld.
+
+Hier is een eenvoudig voorbeeld:
+
+```javascript
+let naam = '    Hallo Wereld    ';
+
+// Verwijder witruimte aan beide uiteinden en maak het geheel in hoofdletters
+let resultaat = naam.trim().toUpperCase();
+console.log(resultaat); // Output: "HALLO WERELD"
+```
+In dit voorbeeld hebben we de `trim()` methode gebruikt om de witruimte aan beide uiteinden te verwijderen en daarna de `toUpperCase()` methode om alles in hoofdletters te zetten. Omdat elke methode een string retourneert, kunnen we ze aan elkaar koppelen in één regel.
+
+
 
