@@ -73,3 +73,6 @@ console.log('leeftijd' in persoon); // Output: true
 console.log('beroep' in persoon); // Output: false
 ```
 In het bovenstaande voorbeeld geeft `'naam' in persoon` en `'leeftijd' in persoon` waar (true) terug, omdat zowel 'naam' als 'leeftijd' eigenschappen zijn van het object "persoon". `'beroep' in persoon` geeft echter onwaar (false) terug, omdat 'beroep' geen eigenschap is van het object "persoon".
+
+
+## Spread en Rest operator

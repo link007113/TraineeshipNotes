@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-05-30/Arrays.md",
+                "file": "Blok 3/2023-05-30/Operators.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-05-30/Arrays.md",
+                "file": "Blok 3/2023-05-30/Operators.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-05-30/Arrays.md",
+                "file": "Blok 3/2023-05-30/Operators.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-05-30/Arrays.md"
+                "file": "Blok 3/2023-05-30/Operators.md"
               }
             }
           }
@@ -157,9 +157,9 @@
   },
   "active": "fe372d2d6be21ee2",
   "lastOpenFiles": [
+    "Blok 3/2023-05-30/Arrays.md",
     "Blok 3/2023-05-30/Control Structures.md",
     "Blok 3/2023-05-30/Operators.md",
-    "Blok 3/2023-05-30/Arrays.md",
     "Blok 3/2023-05-30/Use Strict.md",
     "Blok 3/2023-05-30/Functions.md",
     "Blok 3/2023-05-30/Objecten.md",
