@@ -1,0 +1,4 @@
+Object properties
+- get
+- set
+
