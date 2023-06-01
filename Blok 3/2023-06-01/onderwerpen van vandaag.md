@@ -1,5 +1,0 @@
-
-
-Closures
-Destructuring
-Classes
