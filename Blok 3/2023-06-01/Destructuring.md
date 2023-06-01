@@ -1,4 +1,4 @@
-## array
+## Array
 
 ```javascript
 const dieren = ["ezel", "ara", "slang"];
@@ -24,4 +24,20 @@ const { naam, belasting } = course1;
 // alias
 const { naam, belasting: moeilijkheeid } = course1;
 
+```
+## Array uit object
+
+```javascript
+let course1 = {
+  belasting: "medium",
+  naam: "Angular",
+  aantalDagen: 4,
+  trainers: ['Kees', 'JP'],
+};
+
+const [, trainer2] = course1.trainers;
+console.log(trainer2)
+
+const{trainers: [, trainer3]} = course1
+console.log(trainer3)
 ```
