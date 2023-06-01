@@ -38,3 +38,38 @@ class Employee extends Person{
 const e = new Employee('Bo', 'Urk', 'IV');
 e.toon();
 ```
+
+## Inheritance
+
+
+
+## Soort van abstracte class te maken
+
+```javascript
+class Person {
+  constructor(name, city) {
+    this.name = name;
+    this.city = city;
+
+    if (new.target === Person) {
+      throw "Error melding";
+    }
+  }
+}
+
+```
+
+Hierdoor kan je voorkomen dat je hem kan instantiëren, dus alleen inherited...
+
+## Member variables
+
+
+```javascript
+class Person {
+name = 'Joep';
+city = '';
+```
+
+## Private property
+
+`#prop`
