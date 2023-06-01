@@ -12,10 +12,12 @@ class Person {
   toon() {
     console.log(`${this.name} ${this.city}`);
   }
+  static create(name, city) {
+    return new Person(name, city);
+  }
 }
 
-const p = new Person("Anthony", "Apoldro");
-
-p.toon();
+const p1 = Person.create("Anthony", "Apoldro");
+p1.toon();
 
 ```
