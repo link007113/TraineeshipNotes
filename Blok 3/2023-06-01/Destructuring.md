@@ -1,3 +1,14 @@
+## array
+
+```javascript
+const dieren = ["ezel", "ara", "slang"];
+
+const [dier1, , dier2] = dieren;
+console.log(dier1, dier2);
+
+```
+
+## Object
 ```javascript
 let course1 = {
   belasting: "medium",
