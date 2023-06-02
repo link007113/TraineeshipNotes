@@ -1,28 +1,23 @@
-Unit Testing is een niveau van softwaretesten waarbij afzonderlijke eenheden/components van een software worden getest. Het doel is om te valideren dat elke unit van de software correct werkt. In JavaScript zijn er meerdere tools en bibliotheken om unit testing te vergemakkelijken. Hier zijn enkele van de belangrijkste concepten:
+Jasmine is een populair gedragsgestuurd framework voor het testen van JavaScript-code. Het heeft geen afhankelijkheden van andere JavaScript-frameworks en kan in combinatie met elke server- of clientside-technologie worden gebruikt.
 
-**1. Test Frameworks (Test Runners)**: Dit zijn tools die het uitvoeren van je tests automatiseren. Ze zorgen voor het instellen van je testomgeving, en bieden functies om te controleren of de tests geslaagd of mislukt zijn. Voorbeelden zijn Mocha, Jest, en Jasmine.
+Het doel van unit testing is om geïsoleerde stukken code te testen om te controleren of ze correct werken onder verschillende omstandigheden. In het geval van Jasmine, zijn dit de basisonderdelen:
 
-**2. Assertion Library**: Dit zijn bibliotheken die een set van functies bieden om te controleren of bepaalde condities waar zijn. Ze worden gebruikt in combinatie met een testrunner om tests te schrijven. Voorbeelden zijn Chai, en de ingebouwde assertie bibliotheek in Jest en Jasmine.
+- **Suites**: Een testsuite begint met een oproep aan de globale Jasmine-functie `describe` met twee parameters: een string en een functie. De string is een naam of titel voor een suite van specs (tests) en de functie is een blok code die de specs definieert.
+  
+- **Specs**: Specs worden gedefinieerd door een oproep aan de globale Jasmine-functie `it`, die evenals `describe` twee parameters accepteert: een string en een functie. De string is de titel van de spec en de functie is de spec zelf, of de test. Een spec kan meerdere verwachtingen bevatten die de test definiëren.
 
-**3. Mocking**: Dit is een techniek waarbij echte objecten worden vervangen door valse objecten (mocks) die je zelf controleert. Mocking wordt gebruikt om het gedrag van complexe objecten te simuleren en te controleren hoe functies interageren met deze objecten. Jest heeft ingebouwde mocking functionaliteiten.
+- **Expectations**: Expectations worden gedefinieerd met de functie `expect` die een waarde accepteert, bekend als de 'actual'. Het wordt gekoppeld aan een Matcher-functie, die het verwachte resultaat definieert.
 
-**4. Code Coverage**: Dit is een metriek die meet in welke mate je broncode wordt getest door je tests. Tools zoals Istanbul kunnen worden gebruikt om code coverage rapporten te genereren.
-
-Een eenvoudig voorbeeld van een unit test met Jest zou er zo uit kunnen zien:
+Een eenvoudig Jasmine test zou er als volgt kunnen uitzien:
 
 ```javascript
-// De functie die je wilt testen
-function sum(a, b) {
-  return a + b;
-}
-
-// De test
-test('sum adds numbers correctly', () => {
-  expect(sum(1, 2)).toBe(3);
-  expect(sum(-1, 2)).toBe(1);
+describe("Een suite", function() {
+  it("bevat een spec met een verwachting", function() {
+    expect(true).toBe(true);
+  });
 });
 ```
 
-In dit voorbeeld wordt de `test` functie geleverd door Jest om een nieuwe test te definiëren, en `expect` en `toBe` zijn Jest functies die worden gebruikt om de uitkomst van de test te controleren. 
+In dit voorbeeld is "Een suite" de naam van onze testsuite en "bevat een spec met een verwachting" is onze spec. De verwachting in deze test is dat de waarde true gelijk is aan true.
 
-Het uitvoeren van je tests kan zo eenvoudig zijn als het draaien van een commando in je terminal, zoals `npm test` als je Jest hebt geconfigureerd als je testrunner.
+Om Jasmine te gebruiken voor unit testing in uw JavaScript-code, moet u eerst de Jasmine-bibliotheek installeren en correct configureren in uw project. De officiële Jasmine-documentatie bevat gedetailleerde instructies en gidsen om je op weg te helpen: https://jasmine.github.io/index.html
