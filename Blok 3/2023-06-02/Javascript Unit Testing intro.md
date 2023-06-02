@@ -1,4 +1,4 @@
-Jasmine is een zeer populair JavaScript-testraamwerk dat een heldere en duidelijke syntax biedt voor het schrijven van unit tests. Hier is een korte introductie van hoe je Jasmine zou kunnen gebruiken om een `Car` klasse te testen:
+Jasmine is een zeer populair JavaScript-testframework dat een heldere en duidelijke syntax biedt voor het schrijven van unit tests. Hier is een korte introductie van hoe je Jasmine zou kunnen gebruiken om een `Car` klasse te testen:
 
 Eerst, hier is een eenvoudige `Car` klasse met een `makeSound` methode:
 
@@ -13,13 +13,30 @@ export default class Car {
 Om deze klasse te testen met Jasmine, zouden we een spec bestand maken. Een spec bestand is waar we onze tests definiëren in Jasmine. Hier is hoe het eruit zou kunnen zien:
 
 ```javascript
-import Car from './car.js';
+import Car from "./car.js";
 
-describe('Car', () => {
-  it('should make a vroom sound', () => {
-    const car = new Car();
-    expect(car.makeSound()).toEqual('vroom');
-  });
+  
+
+describe("Car", () => {
+
+  let car;
+
+  beforeEach(() => {
+
+    sut = new Car();
+
+  });
+
+  
+
+  it("should make a vroom sound", () => {
+
+    c;
+
+    expect(car.makeSound()).toEqual("vroom");
+
+  });
+
 });
 ```
 
