@@ -1,4 +1,4 @@
-De `this` keyword in JavaScript kan inderdaad wat mysterieus en verwarrend zijn, vooral voor beginners. Maar als je eenmaal begrijpt hoe het werkt, wordt het een krachtig en nuttig onderdeel van de taal.
+De `this` keyword in JavaScript kan inderdaad wat raar zijn, vooral voor beginners zoals mijzelf. Maar als je eenmaal begrijpt hoe het werkt, wordt het een krachtig en nuttig onderdeel van de taal, schijnbaar.
 
 1. **Globale context**: Wanneer `this` buiten een functie wordt gebruikt, verwijst het naar het globale object (`window` in een browser, `global` in Node.js).
 
