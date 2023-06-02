@@ -1,4 +1,4 @@
-Jasmine is een zeer populair JavaScript-testframework dat een heldere en duidelijke syntax biedt voor het schrijven van unit tests. Hier is een korte introductie van hoe je Jasmine zou kunnen gebruiken om een `Car` klasse te testen:
+Jasmine is een zeer populair JavaScript-testraamwerk dat een heldere en duidelijke syntax biedt voor het schrijven van unit tests. Hier is een korte introductie van hoe je Jasmine zou kunnen gebruiken om een `Car` klasse te testen:
 
 Eerst, hier is een eenvoudige `Car` klasse met een `makeSound` methode:
 
@@ -15,29 +15,18 @@ Om deze klasse te testen met Jasmine, zouden we een spec bestand maken. Een spec
 ```javascript
 import Car from "./car.js";
 
-  
-
 describe("Car", () => {
+  let car;
+  beforeEach(() => {
+    sut = new Car();
+  });
 
-  let car;
-
-  beforeEach(() => {
-
-    sut = new Car();
-
-  });
-
-  
-
-  it("should make a vroom sound", () => {
-
-    c;
-
-    expect(car.makeSound()).toEqual("vroom");
-
-  });
-
+  it("should make a vroom sound", () => {
+    c;
+    expect(car.makeSound()).toEqual("vroom");
+  });
 });
+
 ```
 
 In deze test maken we een nieuwe instantie van de `Car` klasse en roepen we de `makeSound` methode aan. We verwachten dat deze methode 'vroom' teruggeeft.
@@ -59,14 +48,20 @@ Je `car.spec.js` zou er als volgt uit moeten zien:
 
 ```javascript
 // car.spec.js
-import Car from '../car.js';
+import Car from "../car.js";
 
-describe('Car', () => {
-  it('should make a vroom sound', () => {
-    const car = new Car();
-    expect(car.makeSound()).toEqual('vroom');
+describe("Car", () => {
+  let car;
+  beforeEach(() => {
+    sut = new Car();
+  });
+
+  it("should make a vroom sound", () => {
+    c;
+    expect(car.makeSound()).toEqual("vroom");
   });
 });
+
 ```
 
 In dit geval betekent `../` "ga één directory niveau omhoog". Dit is noodzakelijk omdat `car.js` zich in de bovenliggende directory van `car.spec.js` bevindt.
