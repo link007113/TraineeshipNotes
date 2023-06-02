@@ -15,19 +15,12 @@ Om deze klasse te testen met Jasmine, zouden we een spec bestand maken. Een spec
 ```javascript
 // car.spec.js
 
-// Eerst laden we de Car klasse in
-const Car = require('./car');
 
-// Dan definiëren we een 'describe' blok voor de Car klasse
+import Car from './car';
+
 describe('Car', () => {
-
-  // We definiëren een 'it' blok voor elke test
-  it('should make a vroom sound', () => {
-  
-    // We maken een nieuwe instantie van de Car klasse
-    const car = new Car();
-    
-    // We voeren een verwachting uit
+  it('should make a vroom sound', () => {  
+    const car = new Car(); 
     expect(car.makeSound()).toEqual('vroom');
   });
 });
