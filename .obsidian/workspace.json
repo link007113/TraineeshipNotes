@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-06-01/Classes.md",
+                "file": "Blok 3/2023-05-23/Flexbox.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-06-01/Classes.md",
+                "file": "Blok 3/2023-05-23/Flexbox.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-06-01/Classes.md",
+                "file": "Blok 3/2023-05-23/Flexbox.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-06-01/Classes.md"
+                "file": "Blok 3/2023-05-23/Flexbox.md"
               }
             }
           }
@@ -158,10 +158,12 @@
   "active": "fe372d2d6be21ee2",
   "lastOpenFiles": [
     "Blok 3/2023-06-01/Functions (vervolg).md",
-    "Blok 3/2023-06-01/Closures.md",
-    "Blok 3/2023-06-01/Destructuring.md",
-    "Blok 3/2023-06-01/Classes.md",
     "Blok 3/2023-06-01/Objects (vervolg).md",
+    "Blok 3/2023-06-01/Classes.md",
+    "Blok 3/2023-06-01/Destructuring.md",
+    "Blok 3/2023-06-02/smurf.md",
+    "Blok 3/2023-06-02",
+    "Blok 3/2023-06-01/Closures.md",
     "Blok 3/2023-05-30/Arrays.md",
     "Blok 3/2023-05-30/Use Strict.md",
     "Blok 3/2023-05-30/Objecten.md",
@@ -185,7 +187,6 @@
     "Blok 3/2023-05-24/Pasted image 20230524102719.png",
     "Blok 3/2023-05-30",
     "Blok 3/2023-05-24/Java Type System.md",
-    "Blok 3/2023-05-22/CSS/Css selectors en specificity.md",
     "Blok 3/2023-05-24",
     "Blok 3/2023-05-22/cheatsheet-a5.pdf",
     "Blok 3/2023-05-23",
@@ -194,7 +195,6 @@
     "Blok 2/Blok2.HamelenTravelDocus/DatabaseDiagram.png",
     "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/NieuwReisDocument.xaml",
     "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/NieuwReisDocument.xaml.cs",
-    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/MainWindow.xaml",
     "Blok 1/2023-03-27/YieldUitleg.png",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "Untitled.canvas",
