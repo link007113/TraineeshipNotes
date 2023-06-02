@@ -1,75 +1,80 @@
-Class is een nieuw iets. Eerder was het een function die gebruikt werd als een soort class.
-Als je method functions wou gebruiken in je class function, maar niet meerdere instanties van die method function moest je hem toevoegen aan het prototype.
+Classes in JavaScript zijn een manier om objecten te creëren die specifieke eigenschappen en methoden delen. Voordat classes in JavaScript werden geïntroduceerd, werd dit meestal gedaan met functies en het prototype van een object.
 
-Tegenwoordig kan je een class maken
+Een JavaScript class wordt gedefinieerd met het keyword `class`, gevolgd door de naam van de class. De class is in wezen een functie, en het gedraagt zich als een functie in JavaScript.
+
+In een class kunnen we de `constructor` methode definiëren, die wordt aangeroepen wanneer een nieuw object wordt gemaakt met deze class. De constructor methode kan parameters accepteren die kunnen worden gebruikt om de eigenschappen van het object te initialiseren.
 
 ```javascript
-
-"use strict";
-class Person {
-  constructor(name, city) {
-    this.name = name;
-    this.city = city;
-  }
-  toon() {
-    console.log(`${this.name} ${this.city}`);
-  }
-  static create(name, city) {
-    return new Person(name, city);
+class Persoon {
+  constructor(naam, stad) {
+    this.naam = naam;
+    this.stad = stad;
   }
 }
+```
 
-const p1 = Person.create("Anthony", "Apoldro");
-p1.toon();
+In een class kunnen we ook andere methoden definiëren die beschikbaar zijn voor objecten van deze class.
 
+```javascript
+class Persoon {
+  constructor(naam, stad) {
+    this.naam = naam;
+    this.stad = stad;
+  }
+  groet() {
+    console.log(`Hallo, ik ben ${this.naam} uit ${this.stad}.`);
+  }
+}
+```
 
-class Employee extends Person{
+**Inheritance** (overerving) is een concept waarbij we een nieuwe class kunnen definiëren die de eigenschappen en methoden van een bestaande class erft. Dit wordt gedaan met het `extends` keyword.
 
-    constructor(name, city, afdeling)
-    {
-        super(name, city);
-        this.afdeling = afdeling;
+```javascript
+class Werknemer extends Persoon {
+  constructor(naam, stad, positie) {
+    super(naam, stad);
+    this.positie = positie;
+  }
+  groet() {
+    super.groet();
+    console.log(`Ik werk als een ${this.positie}.`);
+  }
+}
+```
+
+De `super` keyword roept de constructor van de parent class (in dit geval Persoon) aan.
+
+JavaScript ondersteunt geen **abstracte klassen** direct, maar we kunnen het simuleren door een fout te gooien in de constructor van de class als deze direct wordt aangeroepen.
+
+```javascript
+class Persoon {
+  constructor(naam, stad) {
+    if (new.target === Persoon) {
+      throw new Error("Kan geen instantie van Abstract Class maken");
     }
-    toon() {
-        console.log(`${this.name} ${this.city} ${this.afdeling}`);
-      }
-}
-
-const e = new Employee('Bo', 'Urk', 'IV');
-e.toon();
-```
-
-## Inheritance
-
-
-
-## Soort van abstracte class te maken
-
-```javascript
-class Person {
-  constructor(name, city) {
-    this.name = name;
-    this.city = city;
-
-    if (new.target === Person) {
-      throw "Error melding";
-    }
+    this.naam = naam;
+    this.stad = stad;
   }
 }
-
 ```
 
-Hierdoor kan je voorkomen dat je hem kan instantiëren, dus alleen inherited...
-
-## Member variables
-
+Vanaf ES2022 kunnen we ook **member variables** direct in de class declareren buiten de constructor.
 
 ```javascript
-class Person {
-name = 'Joep';
-city = '';
+class Persoon {
+  naam = "Joep";
+  stad = "";
+}
 ```
 
-## Private property
+En tot slot, met de introductie van ES2020, kunnen we nu **private properties** in classes maken door het voorvoegsel `#` te gebruiken. Deze eigenschappen zijn alleen toegankelijk binnen de class.
 
-`#prop`
+```javascript
+class Persoon {
+  #geheimeId;
+  constructor(id) {
+    this.#geheimeId = id;
+  }
+}
+```
+In dit geval is `#geheimeId` een private property van de `Persoon` class en kan het niet buiten de class worden geopend.

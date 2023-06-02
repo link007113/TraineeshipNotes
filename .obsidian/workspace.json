@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-06-01/Classes.md",
+                "file": "Blok 3/2023-06-01/Objects (vervolg).md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-06-01/Classes.md",
+                "file": "Blok 3/2023-06-01/Objects (vervolg).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-06-01/Classes.md",
+                "file": "Blok 3/2023-06-01/Objects (vervolg).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-06-01/Classes.md"
+                "file": "Blok 3/2023-06-01/Objects (vervolg).md"
               }
             }
           }
@@ -157,11 +157,11 @@
   },
   "active": "fe372d2d6be21ee2",
   "lastOpenFiles": [
+    "Blok 3/2023-06-01/Classes.md",
     "Blok 3/2023-06-01/Destructuring.md",
     "Blok 3/2023-06-01/Closures.md",
     "Blok 3/2023-06-01/Functions (vervolg).md",
     "Blok 3/2023-06-01/Objects (vervolg).md",
-    "Blok 3/2023-06-01/Classes.md",
     "Blok 3/2023-05-30/Arrays.md",
     "Blok 3/2023-05-30/Use Strict.md",
     "Blok 3/2023-05-30/Objecten.md",
