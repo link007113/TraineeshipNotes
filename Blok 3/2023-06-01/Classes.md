@@ -1,4 +1,4 @@
-Classes in JavaScript zijn een manier om objecten te creëren die specifieke eigenschappen en methoden delen. Voordat classes in JavaScript werden geïntroduceerd, werd dit meestal gedaan met functies en het prototype van een object.
+Classes in JavaScript zijn een manier om objecten te creëren die specifieke eigenschappen en methoden delen. Voordat classes in JavaScript werden geïntroduceerd, werd dit meestal gedaan met functies en het prototype van een object. Een prototype in JavaScript is een interne eigenschap van een object, dat verwijst naar een ander object waaruit het eigenschappen en methoden kan erven.
 
 Een JavaScript class wordt gedefinieerd met het keyword `class`, gevolgd door de naam van de class. De class is in wezen een functie, en het gedraagt zich als een functie in JavaScript.
 
