@@ -3,7 +3,7 @@ Jasmine is een zeer populair JavaScript-testraamwerk dat een heldere en duidelij
 Eerst, hier is een eenvoudige `Car` klasse met een `makeSound` methode:
 
 ```javascript
-class Car {
+export default class Car {
   makeSound() {
     return 'vroom';
   }
@@ -13,14 +13,11 @@ class Car {
 Om deze klasse te testen met Jasmine, zouden we een spec bestand maken. Een spec bestand is waar we onze tests definiëren in Jasmine. Hier is hoe het eruit zou kunnen zien:
 
 ```javascript
-// car.spec.js
-
-
-import Car from './car';
+import Car from './car.js';
 
 describe('Car', () => {
-  it('should make a vroom sound', () => {  
-    const car = new Car(); 
+  it('should make a vroom sound', () => {
+    const car = new Car();
     expect(car.makeSound()).toEqual('vroom');
   });
 });
@@ -36,3 +33,23 @@ jasmine
 ```
 
 Als je de bovenstaande code correct hebt ingevoerd, zou je moeten zien dat de test slaagt.
+
+Doorgaans zet je de normale code in de root en de tests in een submap van de root die spec heet.
+
+Als `car.spec.js` in de `spec` map zit en `car.js` in de bovenliggende map, moet je het pad in de import instructie dienovereenkomstig aanpassen. Je moet een niveau omhoog gaan in de directory structuur om de `car.js` bestand te bereiken, wat je kunt doen met `../`:
+
+Je `car.spec.js` zou er als volgt uit moeten zien:
+
+```javascript
+// car.spec.js
+import Car from '../car.js';
+
+describe('Car', () => {
+  it('should make a vroom sound', () => {
+    const car = new Car();
+    expect(car.makeSound()).toEqual('vroom');
+  });
+});
+```
+
+In dit geval betekent `../` "ga één directory niveau omhoog". Dit is noodzakelijk omdat `car.js` zich in de bovenliggende directory van `car.spec.js` bevindt.
