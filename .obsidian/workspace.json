@@ -18,8 +18,19 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "f865913dea487286",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.3.5"
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -155,22 +166,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fe372d2d6be21ee2",
+  "active": "f865913dea487286",
   "lastOpenFiles": [
+    "Blok 3/2023-06-02/Javascript Unit Testing intro.md",
+    "Blok 3/2023-06-02/Mysterien rondom this.md",
     "Blok 3/2023-06-02/ES Modules.md",
     "Blok 3/2023-06-02/Prototyping.md",
+    "Blok 3/2023-06-01/Objects (vervolg).md",
+    "Blok 3/2023-06-01/Classes.md",
+    "Blok 3/2023-06-01/Closures.md",
+    "Blok 3/2023-06-01/Functions (vervolg).md",
+    "Blok 3/2023-06-01/Destructuring.md",
     "Blok 3/2023-06-05/Sets en Maps.md",
     "Blok 3/2023-06-05/Iterators and Generators.md",
     "Blok 3/2023-06-05/Promises.md",
-    "Blok 3/2023-06-02/Javascript Unit Testing intro.md",
-    "Blok 3/2023-06-02/Mysterien rondom this.md",
     "Jasmin insta.md",
     "Blok 3/2023-06-05",
-    "Blok 3/2023-06-01/Destructuring.md",
-    "Blok 3/2023-06-01/Closures.md",
-    "Blok 3/2023-06-01/Classes.md",
-    "Blok 3/2023-06-01/Objects (vervolg).md",
-    "Blok 3/2023-06-01/Functions (vervolg).md",
     "Blok 3/2023-05-30/Arrays.md",
     "Blok 3/2023-05-30/Functions.md",
     "Blok 3/2023-05-30/Control Structures.md",
