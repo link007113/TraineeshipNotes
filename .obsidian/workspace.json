@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-06-02/ES Modules.md",
+                "file": "Blok 3/2023-06-02/Prototyping.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-06-02/ES Modules.md",
+                "file": "Blok 3/2023-06-02/Prototyping.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-06-02/ES Modules.md",
+                "file": "Blok 3/2023-06-02/Prototyping.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-06-02/ES Modules.md"
+                "file": "Blok 3/2023-06-02/Prototyping.md"
               }
             }
           }
@@ -157,13 +157,14 @@
   },
   "active": "fe372d2d6be21ee2",
   "lastOpenFiles": [
-    "Blok 3/2023-06-02/Javascript Unit Testing intro.md",
     "Blok 3/2023-06-02/ES Modules.md",
-    "Blok 3/2023-06-02/Mysterien rondom this.md",
-    "Blok 3/2023-06-05/Webworkers.md",
-    "Blok 3/2023-06-05/Promises.md",
-    "Blok 3/2023-06-05/CSS Classes in DOM.md",
+    "Blok 3/2023-06-02/Mysterien rondom this in Javascript.md",
+    "Blok 3/2023-06-02/Javascript Unit Testing intro.md",
+    "Blok 3/2023-05-30/Use Strict.md",
     "Blok 3/2023-06-02/Prototyping.md",
+    "Blok 3/2023-06-05/Javascript Promises.md",
+    "Blok 3/2023-06-05/Webworkers.md",
+    "Blok 3/2023-06-05/CSS Classes in DOM.md",
     "Blok 3/2023-06-01/Objects (vervolg).md",
     "Blok 3/2023-06-01/Classes.md",
     "Blok 3/2023-06-01/Closures.md",
@@ -181,7 +182,6 @@
     "Blok 3/2023-05-30/Objecten.md",
     "Blok 3/2023-05-23/JavaScript introductie.md",
     "Blok 3/2023-05-23/Flexbox.md",
-    "Blok 3/2023-05-30/Use Strict.md",
     "Blok 3/2023-06-02",
     "Blok 3/2023-06-01",
     "Blok 3/2023-05-30/Symbols.md",

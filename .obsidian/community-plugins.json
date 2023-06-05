@@ -1,5 +1,7 @@
 [
   "obsidian-git",
   "obsidian-languagetool-plugin",
-  "text-snippets-obsidian"
+  "text-snippets-obsidian",
+  "chatgpt-md",
+  "obsidian-excel-to-markdown-table"
 ]

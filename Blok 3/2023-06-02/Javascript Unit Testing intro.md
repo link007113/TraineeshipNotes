@@ -108,3 +108,4 @@ In dit geval betekent `../` "ga één directory niveau omhoog". Dit is noodzakel
     ```
     npm test
     ```
+
