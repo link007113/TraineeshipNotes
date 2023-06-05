@@ -29,4 +29,6 @@ Er zijn een paar belangrijke dingen om te weten over ES6 modules:
 4. **Named en default exports**: Je kunt "named" exports hebben (waarbij je een specifieke naam aan elke export geeft, zoals in het bovenstaande voorbeeld), en/of een "default" export (wat het primaire ding is dat door de module wordt uitgevoerd).
 
 
+## Module bundler
+- Webpack
 
