@@ -3,7 +3,7 @@ De `this` keyword in JavaScript kan inderdaad wat raar zijn, vooral voor beginne
 1. **Globale context**: Wanneer `this` buiten een functie wordt gebruikt, verwijst het naar het globale object (`window` in een browser, `global` in Node.js).
 
 ```javascript
-console.log(this === window); // true in een browser script
+console.log(this === window); // true in een browser
 ```
 
 2. **Function Context**: In een gewone functie (niet een pijl functie of een method in een object) verwijst `this` standaard naar het globale object. Maar als je de functie aanroept met de `new` keyword om een nieuw object te creëren, zal `this` verwijzen naar het nieuw gecreëerde object.

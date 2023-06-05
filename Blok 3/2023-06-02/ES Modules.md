@@ -28,5 +28,5 @@ Er zijn een paar belangrijke dingen om te weten over ES6 modules:
 
 4. **Named en default exports**: Je kunt "named" exports hebben (waarbij je een specifieke naam aan elke export geeft, zoals in het bovenstaande voorbeeld), en/of een "default" export (wat het primaire ding is dat door de module wordt uitgevoerd).
 
-ES6 modules zijn nu de officiële standaard, maar de acceptatie ervan is enigszins vertraagd door de behoefte aan backwards compatibiliteit en de verschillende module systemen die al in gebruik waren voor ES6 werd gelanceerd. Het is echter goed om te weten hoe ze werken, omdat ze steeds meer de standaard worden.
+
 
