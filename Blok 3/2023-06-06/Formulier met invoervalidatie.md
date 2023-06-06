@@ -73,3 +73,86 @@ Wanneer de gebruiker het formulier indient, zal de `OnPost` methode in onze `Pag
 
 Voor validatie in Razor pagina's, kunnen we een combinatie van data-annotaties en tag helpers gebruiken. We kunnen data-annotaties gebruiken om validatieregels te definiëren voor de eigenschappen van onze modellen, en we kunnen tag helpers gebruiken om onze formulieren in de Razor-pagina te renderen en de validatieregels toe te passen.
 
+## FluentValidation
+
+Om FluentValidation te gebruiken, moet je een aparte validator klasse maken die de validatieregels bevat. Dit is hoe je het zou doen:
+
+Eerst, installeer de FluentValidation NuGet package door de volgende commando in je package manager console te draaien:
+
+```bash
+Install-Package FluentValidation
+```
+
+Vervolgens, maak een nieuwe validator klasse voor je `TodoList` model:
+
+```csharp
+using FluentValidation;
+using DemoProject.Models;
+
+public class TodoListValidator : AbstractValidator<TodoList>
+{
+    public TodoListValidator()
+    {
+        RuleFor(x => x.Description)
+            .NotEmpty().WithMessage("Vul AUB in")
+            .Length(0, 100);
+
+        RuleFor(x => x.DateDue)
+            .NotEmpty().WithMessage("Kies een datum");
+
+        RuleFor(x => x.Creator)
+            .NotEmpty().WithMessage("Vul AUB in")
+            .Length(0, 50);
+    }
+}
+```
+
+De `RuleFor` methode wordt gebruikt om validatieregels te definiëren voor specifieke eigenschappen. De `NotEmpty` methode controleert of de eigenschap niet leeg is, en de `WithMessage` methode stelt een aangepast foutbericht in. De `Length` methode controleert de lengte van de string.
+
+De `TodoList` klasse ziet er nu als volgt uit:
+
+```csharp
+using System;
+
+namespace DemoProject.Models
+{
+    public class TodoList
+    {
+        public string Description { get; set; }
+        public DateTime DateDue { get; set; }
+        public bool Done { get; set; }
+        public string Creator { get; set; } = "Anthony";
+    }
+}
+```
+
+Ten slotte, om de validatie toe te passen in je Razor pagina, voeg het volgende toe aan de `OnPostAddTodo` methode:
+
+```csharp
+public IActionResult OnPostAddTodo()
+{
+    var validator = new TodoListValidator();
+    var result = validator.Validate(new TodoList
+    {
+        Description = NewDescription,
+        DateDue = NewDateDue,
+        Creator = NewCreator,
+    });
+
+    if (!result.IsValid)
+    {
+        foreach (var error in result.Errors)
+        {
+            ModelState.AddModelError(error.PropertyName, error.ErrorMessage);
+        }
+
+        return Page();
+    }
+
+    // ... bestaande code om een nieuw TodoList object aan de lijst toe te voegen ...
+
+    return RedirectToPage();
+}
+```
+
+Dit zal de FluentValidation validator gebruiken om de gegevens te valideren voordat ze worden toegevoegd aan de lijst. Als de validatie faalt, worden de fouten toegevoegd aan de ModelState zodat ze kunnen worden weergegeven in de pagina.
