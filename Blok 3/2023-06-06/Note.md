@@ -1,5 +1,5 @@
-- Pagina maken met een tabbelletje data
-- formulier met invoervalidatie
+
+- 
 - repositories
 - EF Core integreren
 - 
