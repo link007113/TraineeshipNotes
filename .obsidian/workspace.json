@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-06-05/Async.md",
+                "file": "Blok 3/2023-06-06/Note.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-06-05/Async.md",
+                "file": "Blok 3/2023-06-06/Note.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-06-05/Async.md",
+                "file": "Blok 3/2023-06-06/Note.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-06-05/Async.md"
+                "file": "Blok 3/2023-06-06/Note.md"
               }
             }
           }
@@ -155,11 +155,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0e9fa094df768502",
+  "active": "fe372d2d6be21ee2",
   "lastOpenFiles": [
+    "Blok 3/2023-06-05/Async.md",
+    "Blok 3/2023-06-06/Note.md",
     "Blok 3/2023-06-06",
     "Blok 3/Untitled.md",
-    "Blok 3/2023-06-05/Async.md",
     "Blok 3/2023-06-05/Webworkers.md",
     "Blok 3/2023-06-05/CSS Classes in DOM.md",
     "Blok 3/2023-06-05/Iterators and Generators.md",
@@ -194,7 +195,6 @@
     "Blok 3/2023-05-22/CSS",
     "Blok 3/2023-05-22/HTML",
     "Blok 2/Blok2.HamelenTravelDocus/DatabaseDiagram.png",
-    "Blok 2/Blok2.HamelenTravelDocus/Blok2.HamelenTravelDocus.UI/NieuwReisDocument.xaml",
     "Blok 1/2023-03-27/YieldUitleg.png",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
     "Untitled.canvas",
