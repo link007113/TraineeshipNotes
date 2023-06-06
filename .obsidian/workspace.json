@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-06-05/HTML Template.md",
+                "file": "Blok 3/2023-06-06/ASP.NET CORE Intro.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-06-05/HTML Template.md",
+                "file": "Blok 3/2023-06-06/ASP.NET CORE Intro.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-06-05/HTML Template.md",
+                "file": "Blok 3/2023-06-06/ASP.NET CORE Intro.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-06-05/HTML Template.md"
+                "file": "Blok 3/2023-06-06/ASP.NET CORE Intro.md"
               }
             }
           }
@@ -157,11 +157,14 @@
   },
   "active": "fe372d2d6be21ee2",
   "lastOpenFiles": [
-    "Blok 3/2023-05-23/JavaScript introductie.md",
+    "Blok 3/2023-06-06/Note.md",
+    "Blok 3/2023-06-06/ASP.NET CORE Intro.md",
+    "Blok 3/2023-05-23/DOM.md",
+    "Blok 3/2023-05-23/Sass.md",
     "Blok 3/2023-06-05/HTML Template.md",
+    "Blok 3/2023-05-23/JavaScript introductie.md",
     "Blok 3/2023-06-05/Sets en Maps.md",
     "Blok 3/2023-06-05/Webworkers.md",
-    "Blok 3/2023-06-06/Note.md",
     "Blok 3/2023-06-05/Async.md",
     "Blok 3/2023-06-05/Iterators and Generators.md",
     "Blok 3/2023-06-06",
@@ -181,10 +184,7 @@
     "Blok 3/2023-06-01/Classes.md",
     "Blok 3/2023-06-01/Closures.md",
     "Blok 3/2023-06-01/Functions (vervolg).md",
-    "Blok 3/2023-06-01/Destructuring.md",
-    "Jasmin insta.md",
     "Blok 3/2023-06-05",
-    "Blok 3/2023-05-30/Functions.md",
     "Blok 3/2023-06-02",
     "Blok 3/2023-06-01",
     "Blok 3/2023-05-24/Pasted image 20230524102719.png",
