@@ -22,7 +22,7 @@ public class IndexModel : PageModel
         Studenten = new List<Student>
         {
             new Student { StudentNummer = 1, Naam = "Jan" },
-            new Student { StudentNummer = 2, Naam = "Peter" },
+            new Student { StudentNummer = 2, Naam = "Piet" },
             new Student { StudentNummer = 3, Naam = "Klaas" },
             // Voeg meer studenten toe zoals nodig
         };
