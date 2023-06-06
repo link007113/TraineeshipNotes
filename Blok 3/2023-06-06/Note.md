@@ -1,5 +1,5 @@
 
 - 
-- repositories
+- 
 - EF Core integreren
 - 
