@@ -1,4 +1,3 @@
-- ASP.NET CORE Intro
 - Pagina maken met een tabbelletje data
 - formulier met invoervalidatie
 - repositories
