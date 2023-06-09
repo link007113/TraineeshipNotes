@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-06-08/Repository.md",
+                "file": "Blok 3/2023-06-08/EF Core integreren.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-06-08/Repository.md",
+                "file": "Blok 3/2023-06-08/EF Core integreren.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-06-08/Repository.md",
+                "file": "Blok 3/2023-06-08/EF Core integreren.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-06-08/Repository.md"
+                "file": "Blok 3/2023-06-08/EF Core integreren.md"
               }
             }
           }
@@ -157,8 +157,14 @@
   },
   "active": "fe372d2d6be21ee2",
   "lastOpenFiles": [
+    "Blok 2/2023-05-08/Database-First Mapping.md",
+    "Blok 2/2023-05-08/Entity Framework.md",
     "Blok 3/2023-06-08/EF Core integreren.md",
     "Blok 3/2023-06-08/Repository.md",
+    "Blok 3/2023-06-09/Notes.md",
+    "Blok 3/2023-06-09",
+    "Blok 3/Untitled.md",
+    "Blok 3/2023.md",
     "Blok 3/2023-06-08/MS Test Unittests in Razor Pages.md",
     "Blok 3/2023-06-08/Middleware.md",
     "Blok 3/2023-06-08/Dependency Injection.md",
@@ -178,13 +184,8 @@
     "Blok 3/2023-06-05/Async.md",
     "Blok 3/2023-06-05/Iterators and Generators.md",
     "Blok 3/2023-06-06",
-    "Blok 3/Untitled.md",
     "Blok 3/2023-06-05/CSS Classes in DOM.md",
     "Blok 3/2023-06-05/Javascript Promises.md",
-    "Blok 3/2023-05-22/HTML/Introductie.md",
-    "Blok 3/2023-05-22/HTML/Elementen.md",
-    "Blok 3/2023-05-30/Arrays.md",
-    "Blok 3/2023-06-02/Mysterien rondom this in Javascript.md",
     "Blok 3/2023-06-05",
     "Blok 3/2023-06-02",
     "Blok 3/2023-06-01",
@@ -193,7 +194,6 @@
     "Blok 3/2023-05-24",
     "Blok 3/2023-05-22/cheatsheet-a5.pdf",
     "Blok 3/2023-05-23",
-    "Blok 3/2023-05-22/CSS",
     "Blok 2/Blok2.HamelenTravelDocus/DatabaseDiagram.png",
     "Blok 1/2023-03-27/YieldUitleg.png",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
