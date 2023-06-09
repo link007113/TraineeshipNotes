@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-06-08/EF Core integreren.md",
+                "file": "Blok 3/2023-06-08/MS Test Unittests in Razor Pages.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-06-08/EF Core integreren.md",
+                "file": "Blok 3/2023-06-08/MS Test Unittests in Razor Pages.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-06-08/EF Core integreren.md",
+                "file": "Blok 3/2023-06-08/MS Test Unittests in Razor Pages.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-06-08/EF Core integreren.md"
+                "file": "Blok 3/2023-06-08/MS Test Unittests in Razor Pages.md"
               }
             }
           }
@@ -157,11 +157,19 @@
   },
   "active": "fe372d2d6be21ee2",
   "lastOpenFiles": [
-    "Blok 2/2023-05-08/Database-First Mapping.md",
-    "Blok 2/2023-05-08/Entity Framework.md",
-    "Blok 3/2023-06-08/EF Core integreren.md",
-    "Blok 3/2023-06-08/Repository.md",
     "Blok 3/2023-06-09/Notes.md",
+    "Blok 2/2023-05-09/Crud Operaties.md",
+    "Blok 2/2023-05-11/Migrations.md",
+    "Blok 2/2023-05-08/Code First Mapping.md",
+    "Blok 2/2023-05-08/Context.md",
+    "Blok 2/2023-05-08/Entity Framework.md",
+    "Blok 2/2023-05-09/Queries.md",
+    "Blok 2/2023-05-09/Tuple types.md",
+    "Blok 2/2023-05-09/Snapshot van DbContext.md",
+    "Blok 2/2023-05-11/Fluent Api.md",
+    "Blok 3/2023-06-08/EF Core integreren.md",
+    "Blok 2/2023-05-08/Database-First Mapping.md",
+    "Blok 3/2023-06-08/Repository.md",
     "Blok 3/2023-06-09",
     "Blok 3/Untitled.md",
     "Blok 3/2023.md",
@@ -177,15 +185,7 @@
     "Blok 3/2023-05-22/CSS/Css koppelen.md",
     "Blok 3/2023-05-23/DOM.md",
     "Blok 3/2023-05-23/Sass.md",
-    "Blok 3/2023-06-05/HTML Template.md",
-    "Blok 3/2023-05-23/JavaScript introductie.md",
-    "Blok 3/2023-06-05/Sets en Maps.md",
-    "Blok 3/2023-06-05/Webworkers.md",
-    "Blok 3/2023-06-05/Async.md",
-    "Blok 3/2023-06-05/Iterators and Generators.md",
     "Blok 3/2023-06-06",
-    "Blok 3/2023-06-05/CSS Classes in DOM.md",
-    "Blok 3/2023-06-05/Javascript Promises.md",
     "Blok 3/2023-06-05",
     "Blok 3/2023-06-02",
     "Blok 3/2023-06-01",
