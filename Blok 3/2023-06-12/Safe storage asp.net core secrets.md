@@ -33,3 +33,8 @@ public void ConfigureServices(IServiceCollection services)
 ```
 
 In deze code wordt de connection string opgehaald uit de configuratie en gebruikt om de databasecontext te configureren.
+
+
+Het kan zijn dat je project nog geen UserSecretsId heeft toegewezen gekregen. Deze id is nodig om de geheimen die je hebt opgeslagen via de Secret Manager-tool te koppelen aan je project.
+
+Als je Visual Studio gebruikt, kun je eenvoudig met de rechtermuisknop op het project klikken in Solution Explorer, "Manage User Secrets" selecteren en Visual Studio zal automatisch een UserSecretsId voor je aanmaken en openen een geheimen bestand waarin je je geheimen kunt toevoegen.
