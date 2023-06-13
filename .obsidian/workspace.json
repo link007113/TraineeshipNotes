@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-06-13/DTO's.md",
+                "file": "Blok 3/2023-06-09/Middleware pijplijn.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-06-13/DTO's.md",
+                "file": "Blok 3/2023-06-09/Middleware pijplijn.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-06-13/DTO's.md",
+                "file": "Blok 3/2023-06-09/Middleware pijplijn.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-06-13/DTO's.md"
+                "file": "Blok 3/2023-06-09/Middleware pijplijn.md"
               }
             }
           }
@@ -157,8 +157,9 @@
   },
   "active": "fe372d2d6be21ee2",
   "lastOpenFiles": [
-    "Blok 3/2023-06-12/Safe storage asp.net core secrets.md",
     "Blok 3/2023-06-13/DTO's.md",
+    "Blok 3/2023-06-09/Middleware pijplijn.md",
+    "Blok 3/2023-06-12/Safe storage asp.net core secrets.md",
     "Blok 3/2023-06-13/Rest Client maken.md",
     "Blok 3/2023-06-12/Rest Api's.md",
     "Blok 3/2023-06-13/Deployment.md",
@@ -185,7 +186,6 @@
     "Blok 2/2023-05-08/Database-First Mapping.md",
     "Blok 3/2023-06-08/Repository.md",
     "Blok 3/2023-06-09",
-    "Blok 3/Untitled.md",
     "Blok 3/2023-06-08",
     "Blok 3/2023-06-06",
     "Blok 3/2023-06-05",
