@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-06-09/More view tricks.md",
+                "file": "Blok 3/2023-06-12/Safe storage asp.net core secrets.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-06-09/More view tricks.md",
+                "file": "Blok 3/2023-06-12/Safe storage asp.net core secrets.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-06-09/More view tricks.md",
+                "file": "Blok 3/2023-06-12/Safe storage asp.net core secrets.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-06-09/More view tricks.md"
+                "file": "Blok 3/2023-06-12/Safe storage asp.net core secrets.md"
               }
             }
           }
@@ -157,10 +157,10 @@
   },
   "active": "fe372d2d6be21ee2",
   "lastOpenFiles": [
-    "Blok 3/2023-06-09/Middleware maken en testen.md",
     "Blok 3/2023-06-09/More view tricks.md",
+    "Blok 3/2023-06-09/Middleware maken en testen.md",
     "Blok 3/2023-06-12/Rest Api's.md",
-    "Blok 3/2023-06-12/Untitled.md",
+    "Blok 3/2023-06-12/Safe storage asp.net core secrets.md",
     "Blok 3/2023-05-23/Flexbox.md",
     "Blok 3/2023-05-22/Layouts.md",
     "Blok 3/2023-05-22/Positioning.md",
