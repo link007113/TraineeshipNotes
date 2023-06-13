@@ -1,75 +1,79 @@
-Het maken van een REST API-client in .NET kan eenvoudig gedaan worden met behulp van de `HttpClient` klasse. Laten we eens kijken hoe we dit kunnen doen met betrekking tot onze Todo API. 
+Om een REST API-client te maken als console-applicatie met behulp van Flurl, volg je de volgende stappen:
 
-Allereerst, als we een nieuwe Todo willen aanmaken, zouden we een POST-verzoek sturen naar de endpoint `https://jouwwebsite.com/api/Todo`. Dit zou er in code ongeveer zo uit zien:
+1. Maak een nieuwe console-applicatie in Visual Studio of een andere code-editor.
+2. Voeg de Flurl.Http NuGet-pakketreferentie toe aan je project.
+3. Maak een nieuwe klasse aan die verantwoordelijk is voor het maken van API-verzoeken.
 
-```csharp
-var todo = new Todo
+   ```csharp
+using Flurl;
+using Flurl.Http;
+using DemoProject.Models;
+
+namespace DemoProject.RestClient
 {
-    Description = "My first Todo",
-    Creator = "User1",
-    DateDue = DateTime.Now.AddDays(7)
-};
-
-string todoAsJson = JsonSerializer.Serialize(todo);
-var httpContent = new StringContent(todoAsJson, Encoding.UTF8, "application/json");
-
-using (var httpClient = new HttpClient())
-{
-    var response = await httpClient.PostAsync("https://jouwwebsite.com/api/Todo", httpContent);
-
-    if(response.IsSuccessStatusCode)
+    public class ApiClient
     {
-        Console.WriteLine("Todo successfully created.");
-    }
-    else
-    {
-        Console.WriteLine("Unable to create Todo.");
-    }
-}
-```
+        private readonly string baseUrl;
 
-Vervolgens, als we een lijst van al onze Todos willen ontvangen, zouden we een GET-verzoek sturen naar dezelfde endpoint:
-
-```csharp
-using (var httpClient = new HttpClient())
-{
-    var response = await httpClient.GetAsync("https://jouwwebsite.com/api/Todo");
-
-    if(response.IsSuccessStatusCode)
-    {
-        var todosAsJson = await response.Content.ReadAsStringAsync();
-        var todos = JsonSerializer.Deserialize<List<Todo>>(todosAsJson);
-
-        foreach(var todo in todos)
+        public ApiClient(string baseUrl)
         {
-            Console.WriteLine($"Todo: {todo.Description}, Created by: {todo.Creator}, Due date: {todo.DateDue}");
+            this.baseUrl = baseUrl;
+        }
+
+        public async Task<IEnumerable<Todo>> GetTodos()
+        {
+            try
+            {
+                var response = await baseUrl.AppendPathSegment("todos").GetJsonListAsync();
+                List<Todo> todoList = new List<Todo>();
+
+                foreach (var todo in response)
+                {
+                    Todo newTodo = new Todo
+                    {
+                        Id = (int)todo.id,
+                        Description = todo.description,
+                        DateDue = todo.dateDue,
+                        Creator = todo.creator,
+                        Category = (TodoCategory)todo.category,
+                        Done = todo.done
+                    };
+
+                    todoList.Add(newTodo);
+                }
+
+                return todoList;
+            }
+            catch (FlurlHttpException ex)
+            {
+                Console.WriteLine($"Error: {ex.Message}");
+                return null;
+            }
         }
     }
-    else
-    {
-        Console.WriteLine("Unable to retrieve Todos.");
-    }
 }
-```
+   ```
 
-Tot slot, zouden we een DELETE-verzoek sturen naar de endpoint `https://jouwwebsite.com/api/Todo/{id}` om een Todo te verwijderen:
+4. In de `Main`-methode van je console-applicatie, maak een instantie van `ApiClient` aan en roep de gewenste API-methoden aan.
 
-```csharp
-int todoId = 1; // Het ID van de Todo die je wilt verwijderen.
-
-using (var httpClient = new HttpClient())
+   ```csharp
+namespace DemoProject.RestClient
 {
-    var response = await httpClient.DeleteAsync($"https://jouwwebsite.com/api/Todo/{todoId}");
+    internal class Program
+    {
+        private static async Task Main(string[] args)
+        {
+            var apiClient = new ApiClient("https://localhost:7216/api");
+            var todos = await apiClient.GetTodos();
+            foreach (var todo in todos)
+            {
+                Console.WriteLine($"{todo.Description} verloopt op {todo.DateDue.ToShortDateString()}");
+            }
 
-    if(response.IsSuccessStatusCode)
-    {
-        Console.WriteLine("Todo successfully deleted.");
-    }
-    else
-    {
-        Console.WriteLine("Unable to delete Todo.");
+            Console.ReadLine();
+        }
     }
 }
-```
+   ```
 
-Deze voorbeelden maken gebruik van de `HttpClient` klasse om HTTP-verzoeken te sturen, en de `JsonSerializer` klasse om objecten te converteren naar JSON-formaat en vice versa. Let op, het is aan te raden om een enkele instantie van `HttpClient` voor de gehele levensduur van de applicatie te gebruiken in plaats van een nieuwe instantie aan te maken voor elk verzoek, om de efficiëntie van het verbinden met de server te verbeteren. Dit kan bijvoorbeeld door middel van `HttpClientFactory` of door het injecteren van `HttpClient` via dependency injection.
+Op deze manier kun je een REST API-client maken met behulp van Flurl in een console-applicatie. Vergeet niet om de juiste URL's en HTTP-methoden te gebruiken voor de specifieke API waar je mee werkt.
