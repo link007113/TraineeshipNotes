@@ -25,11 +25,9 @@ Dit commando voegt een secret met de naam "Database:ConnectionString" toe en de 
 3. **Secrets gebruiken**: In je code kun je deze secrets gebruiken zoals je elke andere configuratie zou gebruiken:
 
 ```csharp
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddDbContext<MyDbContext>(options =>
-        options.UseSqlServer(Configuration.GetConnectionString("Database:ConnectionString")));
-}
+  builder.Services.AddDbContext<TodoContext>(
+                options => options.UseSqlServer(builder.Configuration["ConnectionStrings:SQL"])
+
 ```
 
 In deze code wordt de connection string opgehaald uit de configuratie en gebruikt om de databasecontext te configureren.
@@ -38,3 +36,14 @@ In deze code wordt de connection string opgehaald uit de configuratie en gebruik
 Het kan zijn dat je project nog geen UserSecretsId heeft toegewezen gekregen. Deze id is nodig om de geheimen die je hebt opgeslagen via de Secret Manager-tool te koppelen aan je project.
 
 Als je Visual Studio gebruikt, kun je eenvoudig met de rechtermuisknop op het project klikken in Solution Explorer, "Manage User Secrets" selecteren en Visual Studio zal automatisch een UserSecretsId voor je aanmaken en openen een geheimen bestand waarin je je geheimen kunt toevoegen.
+
+
+een voorbeeld van secrets.json :
+
+```json
+{
+  "ConnectionStrings": {
+    "SQL": "Server=localhost;User=SA;Password=Geheim101!;Database=Todo;TrustServerCertificate=true;MultipleActiveResultSets=True"
+  }
+}
+```
