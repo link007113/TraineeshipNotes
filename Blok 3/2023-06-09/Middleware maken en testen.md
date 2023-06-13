@@ -51,3 +51,18 @@ app.UsePageNotFoundLogger();
 ```
 
 Zorg ervoor dat je de middleware toevoegt in de juiste volgorde. Middleware wordt in volgorde uitgevoerd zoals ze zijn toegevoegd in de `Main` methode. In dit geval wil je waarschijnlijk de UsePageNotFoundLogger vroeg in de pipeline toevoegen, zodat het alle responses kan vangen.
+
+
+Hier is een eenvoudig diagram dat de flow van aanvragen en antwoorden door een reeks middlewarecomponenten illustreert:
+
+```mermaid
+graph LR
+    A[Aanvraag] --> B[MW1]
+    B --> C[MW2]
+    C --> D[MW3]
+    D --> E[Verwerkingsmethode Controller/Action]
+    E --> D
+    D --> C
+    C --> B
+    B --> F[Antwoord]
+```
