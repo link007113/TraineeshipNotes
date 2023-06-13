@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/2023-06-09/More view tricks.md",
+                "file": "Blok 3/2023-06-13/Authenticatie.md",
                 "mode": "source",
                 "source": false
               }
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/2023-06-09/More view tricks.md",
+                "file": "Blok 3/2023-06-13/Authenticatie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +121,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/2023-06-09/More view tricks.md",
+                "file": "Blok 3/2023-06-13/Authenticatie.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/2023-06-09/More view tricks.md"
+                "file": "Blok 3/2023-06-13/Authenticatie.md"
               }
             }
           }
@@ -155,12 +155,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0e9fa094df768502",
+  "active": "fe372d2d6be21ee2",
   "lastOpenFiles": [
+    "Blok 3/2023-06-13/Rest Client maken.md",
+    "Blok 3/2023-06-13/Authenticatie.md",
     "Blok 3/2023-06-12/Rest Api's.md",
+    "Blok 3/2023-06-13",
     "Blok 3/2023-06-12/Safe storage asp.net core secrets.md",
-    "Blok 3/2023-06-09/More view tricks.md",
     "Blok 3/2023-06-09/Middleware maken en testen.md",
+    "Blok 3/2023-06-09/More view tricks.md",
     "Blok 3/2023-05-23/Flexbox.md",
     "Blok 3/2023-05-22/Layouts.md",
     "Blok 3/2023-05-22/Positioning.md",
@@ -183,8 +186,6 @@
     "Blok 3/Untitled.md",
     "Blok 3/2023.md",
     "Blok 3/2023-06-08/Dependency Injection.md",
-    "Blok 3/2023-06-08/DB Context in combinatie met Razor.md",
-    "Blok 3/2023-06-06/Formulier met invoervalidatie.md",
     "Blok 3/2023-06-08",
     "Blok 3/2023-06-06",
     "Blok 3/2023-06-05",
@@ -193,7 +194,6 @@
     "Blok 3/2023-05-24/Pasted image 20230524102719.png",
     "Blok 3/2023-05-30",
     "Blok 3/2023-05-24",
-    "Blok 3/2023-05-22/cheatsheet-a5.pdf",
     "Blok 2/Blok2.HamelenTravelDocus/DatabaseDiagram.png",
     "Blok 1/2023-03-27/YieldUitleg.png",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
