@@ -1,13 +1,16 @@
+## API
+
 Api is te bereiken op https://localhost:7236/
 Deze accepteert de volgende endpoints
 
 Get api/cursusinstanties levert alle cursusinstanties op
 Get api/cursusinstanties/{year}/{week} levert alle cursusinstanties op voor die week van dat jaar
 GET api/cursusinstanties/{id} levert de cursusinstantie met dat id
-POST api/cursusinstanties/new voegt alle instanties toe die aangeleverd worden als List<CourseInstance>
+POST api/cursusinstanties/new voegt alle instanties toe die aangeleverd worden als List`<CourseInstance>
 POST api/cursusinstanties/date levert alle instanties die in het tijd bestek vallen van het aangeleverde Period object
 POST api/cursusinstanties/{id}/newstudent voegt nieuwe cursist toe ,die aangeleverd wordt met een Student object, aan de aangeleverde id 
 
+## FrontEnd
 
 Website is te bereiken op https://localhost:7200/
 Hoofdpagina is Index, hier krijg je wat informatie over de website zelf en uitleg over de twee verschillende tabjes
@@ -19,26 +22,39 @@ Met de "Meer Info" knop kan je de hele info van de instantie kijken, inclusief d
 
 De pagina Import kan gebruikt worden om bestanden aan te leveren om nieuwe instanties in de database te krijgen. De importer heeft nog geen functie om in een bepaalde periode te importeren. Ik was in de war en had de periode gebouwd voor de overzicht pagina. Hierdoor had ik geen tijd meer om de importer om te bouwen. Wel laat te pagina zijn in wat voor een formaat je het bestand moet aanleveren. 
 
+## Backlog-Items
+
 De volgende punten uit de backlog heb ik opgepakt:
 
-| Slice                                                                                                   | Priority | Use Case | Activity              | Step                     | Task                                                   | Note                                                                                                                                                                                                                          | Personas                    | Done |
-| ------------------------------------------------------------------------------------------------------- | -------- | -------- | --------------------- | ------------------------ | ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- | ---- |
-| 1 - Basis-functionaliteit om cursussen te importeren en te tonen (Walking Skeleton)                     | 1        | 1        | Cursusoverzicht tonen | Lijst tonen              | Ingeplande cursusinstanties bekijken                   | inclusief startdatum, duur, en titel                                                                                                                                                                                          | 2 - medewerker secretariaat |
-| 1 - Basis-functionaliteit om cursussen te importeren en te tonen (Walking Skeleton)                     | 2        | 2        | Cursussen invoeren    | file selecteren          | tekstbestand selecteren                                | 1 - coördinator opleidingen                                                                                                                                                                                                   |
-| 1 - Basis-functionaliteit om cursussen te importeren en te tonen (Walking Skeleton)                     | 2        | 2        | Cursussen invoeren    | importeren               | cursusplanning importeren                              | 1 - coördinator opleidingen                                                                                                                                                                                                   |
-| 1 - Basis-functionaliteit om cursussen te importeren en te tonen (Walking Skeleton)                     | 2        | 2        | Cursussen invoeren    | resultaat melden         | Resultaat bekijken                                     | ter controle toont het systeem hoeveel nieuwe cursussen en nieuwe cursus-instanties er zijn geimporteerd.                                                                                                                     | 1 - coördinator opleidingen |
-| 2 - Bruikbare functionaliteit om cursussen te importeren EN de geimporteerde lijst gesorteerd weergeven | 3        | 1        | Cursusoverzicht tonen | Lijst tonen              | Gesorteerde lijst bekijken                             | gesorteerd op startdatum, zodat de cursusinstanties die het eerst gegeven gaan worden boven aan staan.                                                                                                                        | 2 - medewerker secretariaat |
-| 2 - Bruikbare functionaliteit om cursussen te importeren EN de geimporteerde lijst gesorteerd weergeven | 4        | 2        | Cursussen invoeren    | importeren               | geen bestaande of dubbele cursus-instanties importeren | (zonder foutmelding)<br>zodat er geen dubbele planning in het systeem komt te staan.                                                                                                                                          | 1 - coördinator opleidingen |
-| 2 - Bruikbare functionaliteit om cursussen te importeren EN de geimporteerde lijst gesorteerd weergeven | 4        | 2        | Cursussen invoeren    | resultaat melden         | Melden hoveel duplicaten er zijn tegengekomen          | ter controle                                                                                                                                                                                                                  | 1 - coördinator opleidingen |
-| 2 - Bruikbare functionaliteit om cursussen te importeren EN de geimporteerde lijst gesorteerd weergeven | 5        | 2        | Cursussen invoeren    | importeren               | geen cursusplanning "in incorrect formaat" importeren  | geen enkele cursus of cursus-instantie ingevoeren als het tekstbestand niet in het juiste formaat staat<br>zodat er geen data in het systeem komt te staan dat mogelijk niet juist is                                         | 1 - coördinator opleidingen |
-| 2 - Bruikbare functionaliteit om cursussen te importeren EN de geimporteerde lijst gesorteerd weergeven | 5        | 2        | Cursussen invoeren    | resultaat melden         | Foutmelding bekijken                                   | als het tekstbestand niet in het juiste formaat staat, toont het systeem een foutmelding met daarin het regelnummer van het tekstbestand waarop de (eerste) fout optreedt<br>om de bron van de fout beter op te kunnen sporen | 1 - coördinator opleidingen |
-| 3 - geimporteerde lijst gesorteerd per week weergeven                                                   | 6        | 1        | Cursusoverzicht tonen | Lijst tonen              | Huidige week tonen                                     | zodat een lijst kan worden getoond in de ontvangsthal.                                                                                                                                                                        | 2 - medewerker secretariaat |
-| 3 - geimporteerde lijst gesorteerd per week weergeven                                                   | 7        | 1        | Cursusoverzicht tonen | Weeknummer kiezen        | Weeknummer (en jaar) kiezen                            | 2 - medewerker secretariaat                                                                                                                                                                                                   |
-| 3 - geimporteerde lijst gesorteerd per week weergeven                                                   | 7        | 1        | Cursusoverzicht tonen | Lijst tonen              | lijst in gekozen week tonen                            | om voorbereidingen te treffen voor cursussen die pas over een aantal weken gegeven worden.                                                                                                                                    | 2 - medewerker secretariaat |
-| 3 - geimporteerde lijst gesorteerd per week weergeven                                                   | 8        | 1        | Cursusoverzicht tonen | Weeknummer kiezen        | weekoverzicht in favorieten                            | link naar een specifieke week in mijn favorieten kunnen zetten                                                                                                                                                                | 2 - medewerker secretariaat |
-| 4 - Alleen cursusinstanties binnen periode importeren EN navigeren naar volgende en vorige week         | 9        | 1        | Cursusoverzicht tonen | Weeknummer kiezen        | Navigeren naar volgende en vorige week                 | 2 - medewerker secretariaat                                                                                                                                                                                                   |
-| 5 - Basis functionaliteit voor inschrijven van cursisten voor cursus                                    | 11       | 3        | Cursist inschrijven   | Cursusinstantie kiezen   | Cursusinstantie kiezen                                 | uit alle ingeplande cursussen                                                                                                                                                                                                 | 2 - medewerker secretariaat |
-| 5 - Basis functionaliteit voor inschrijven van cursisten voor cursus                                    | 11       | 3        | Cursist inschrijven   | Cursistgegevens invullen | Voor- en achternaam cursist invullen                   | 2 - medewerker secretariaat                                                                                                                                                                                                   |
-| 5 - Basis functionaliteit voor inschrijven van cursisten voor cursus                                    | 11       | 3        | Cursist inschrijven   | Inschrijven bevestigen   | Melding krijgen dat inschrijving gelukt is             | 2 - medewerker secretariaat                                                                                                                                                                                                   |
+| Slice                                                                                                   | Task                                                   |
+| ------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
+| 1 - Basis-functionaliteit om cursussen te importeren en te tonen (Walking Skeleton)                     | Ingeplande cursusinstanties bekijken                   |
+| 1 - Basis-functionaliteit om cursussen te importeren en te tonen (Walking Skeleton)                     | tekstbestand selecteren                                |
+| 1 - Basis-functionaliteit om cursussen te importeren en te tonen (Walking Skeleton)                     | cursusplanning importeren                              |
+| 1 - Basis-functionaliteit om cursussen te importeren en te tonen (Walking Skeleton)                     | Resultaat bekijken                                     |
+| 2 - Bruikbare functionaliteit om cursussen te importeren EN de geimporteerde lijst gesorteerd weergeven | Gesorteerde lijst bekijken                             |
+| 2 - Bruikbare functionaliteit om cursussen te importeren EN de geimporteerde lijst gesorteerd weergeven | geen bestaande of dubbele cursus-instanties importeren |
+| 2 - Bruikbare functionaliteit om cursussen te importeren EN de geimporteerde lijst gesorteerd weergeven | Melden hoveel duplicaten er zijn tegengekomen          |
+| 2 - Bruikbare functionaliteit om cursussen te importeren EN de geimporteerde lijst gesorteerd weergeven | geen cursusplanning "in incorrect formaat" importeren  |
+| 2 - Bruikbare functionaliteit om cursussen te importeren EN de geimporteerde lijst gesorteerd weergeven | Foutmelding bekijken                                   |
+| 3 - geimporteerde lijst gesorteerd per week weergeven                                                   | Huidige week tonen                                     |
+| 3 - geimporteerde lijst gesorteerd per week weergeven                                                   | Weeknummer (en jaar) kiezen                            |
+| 3 - geimporteerde lijst gesorteerd per week weergeven                                                   | lijst in gekozen week tonen                            |
+| 3 - geimporteerde lijst gesorteerd per week weergeven                                                   | weekoverzicht in favorieten                            |
+| 4 - Alleen cursusinstanties binnen periode importeren EN navigeren naar volgende en vorige week         | Navigeren naar volgende en vorige week                 |
+| 5 - Basis functionaliteit voor inschrijven van cursisten voor cursus                                    | Cursusinstantie kiezen                                 |
+| 5 - Basis functionaliteit voor inschrijven van cursisten voor cursus                                    | Voor- en achternaam cursist invullen                   |
+| 5 - Basis functionaliteit voor inschrijven van cursisten voor cursus                                    | Melding krijgen dat inschrijving gelukt is             |
+
+
+
+## Meer info
+
+Zoals in het stukje van de frontend geschreven was ik dus bezig met de periode selectie. Alleen omdat ik een foutje had gemaakt met lezen dacht ik dat het de bedoeling was om het alleen in een bepaalde periode te laten zien. Hierdoor had ik geen tijd meer om de twee tussenliggende tasks op te pakken:
+
+
+| 4 - Alleen cursusinstanties binnen periode importeren EN navigeren naar volgende en vorige week | 10 | 2 | Cursussen invoeren | filter aangeven | begin- en einddatum opgeven                       | zodat ik er voor kan kiezen dat alleen cursussen uit een bepaalde periode worden     |
+| ----------------------------------------------------------------------------------------------- | -- | - | ------------------ | --------------- | ------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| 4 - Alleen cursusinstanties binnen periode importeren EN navigeren naar volgende en vorige week | 10 | 2 | Cursussen invoeren | importeren      | alleen cursusinstanties binnen periode importeren | cursussen die eindigen op of na een startdatum, en beginnen op of voor een einddatum |
 
 
