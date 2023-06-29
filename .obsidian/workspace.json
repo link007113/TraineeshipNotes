@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README-CASE.md",
+                "file": "Blok 4/2023-06-29/Scrum.md",
                 "mode": "source",
                 "source": false
               }
@@ -61,7 +61,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "migrations",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README-CASE.md",
+                "file": "Blok 4/2023-06-29/Scrum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README-CASE.md",
+                "file": "Blok 4/2023-06-29/Scrum.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README-CASE.md"
+                "file": "Blok 4/2023-06-29/Scrum.md"
               }
             }
           }
@@ -170,10 +170,16 @@
   },
   "active": "4ae6ada1b06be310",
   "lastOpenFiles": [
-    "Blok 2/2023-05-11/Migrations.md",
-    "README-CASE.md",
-    "Blok 3/2023-06-12/Rest Api's.md",
+    "Blok 4/2023-06-29/Git.md",
+    "Blok 4/2023-06-29/Azure Dev Ops.md",
+    "Blok 4/2023-06-29/Scrum.md",
+    "Blok 4/2023-06-29",
     "Blok 3/2023-06-12/Safe storage asp.net core secrets.md",
+    "Blok 4",
+    "Misc/Tips.md",
+    "README-CASE.md",
+    "Blok 2/2023-05-11/Migrations.md",
+    "Blok 3/2023-06-12/Rest Api's.md",
     "Blok 1/2023-03-24/Unit Testing.md",
     "Blok 3/2023-06-13/Authenticatie.md",
     "Blok 3/2023-06-13/Rest Client maken.md",
@@ -194,10 +200,6 @@
     "Blok 2/2023-05-08/Code First Mapping.md",
     "Blok 2/2023-05-08/Context.md",
     "Blok 2/2023-05-08/Entity Framework.md",
-    "Blok 2/2023-05-09/Queries.md",
-    "Blok 2/2023-05-09/Tuple types.md",
-    "Blok 2/2023-05-09/Snapshot van DbContext.md",
-    "Blok 3/2023-06-08/EF Core integreren.md",
     "Blok 3/2023-06-09",
     "Blok 3/2023-06-08",
     "Blok 3/2023-06-06",
@@ -205,8 +207,6 @@
     "Blok 3/2023-06-02",
     "Blok 3/2023-06-01",
     "Blok 3/2023-05-24/Pasted image 20230524102719.png",
-    "Blok 3/2023-05-30",
-    "Blok 3/2023-05-24",
     "Blok 2/Blok2.HamelenTravelDocus/DatabaseDiagram.png",
     "Blok 1/2023-03-27/YieldUitleg.png",
     "Blok 1/Dag08/InheritanceUitleg.jpeg",
