@@ -4,16 +4,16 @@ RUP
 
 Agile:
 Agile manifesto
-Scrum Values
 
+Scrum Values
+- Courage
+- Focus
+- Commitment
+- Respect
+- Openness
 
 
 
 We tried Baseball and it didn't work
 
 
-- Courage
-- Focus
-- Commitment
-- Respect
-- Openness

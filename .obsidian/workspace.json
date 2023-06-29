@@ -168,11 +168,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "4ae6ada1b06be310",
+  "active": "0e9fa094df768502",
   "lastOpenFiles": [
-    "Blok 4/2023-06-29/Git.md",
+    "Blok 4/2023-06-30",
     "Blok 4/2023-06-29/Azure Dev Ops.md",
     "Blok 4/2023-06-29/Scrum.md",
+    "Blok 4/2023-06-30/Git.md",
     "Blok 4/2023-06-29",
     "Blok 3/2023-06-12/Safe storage asp.net core secrets.md",
     "Blok 4",
@@ -199,7 +200,6 @@
     "Blok 2/2023-05-09/Crud Operaties.md",
     "Blok 2/2023-05-08/Code First Mapping.md",
     "Blok 2/2023-05-08/Context.md",
-    "Blok 2/2023-05-08/Entity Framework.md",
     "Blok 3/2023-06-09",
     "Blok 3/2023-06-08",
     "Blok 3/2023-06-06",
