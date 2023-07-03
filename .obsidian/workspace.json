@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 4/2023-06-30/Git.md",
+                "file": "Blok 4/2023-07-03/Docker.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 4/2023-06-30/Git.md",
+                "file": "Blok 4/2023-07-03/Docker.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 4/2023-06-30/Git.md",
+                "file": "Blok 4/2023-07-03/Docker.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 4/2023-06-30/Git.md"
+                "file": "Blok 4/2023-07-03/Docker.md"
               }
             }
           }
@@ -170,15 +170,15 @@
   },
   "active": "4ae6ada1b06be310",
   "lastOpenFiles": [
-    "Blok 4/2023-07-03/Untitled.md",
+    "Blok 4/2023-06-29/Scrum.md",
+    "Blok 4/2023-06-29/Azure Dev Ops.md",
     "Blok 4/2023-06-30/Git.md",
+    "Blok 4/2023-07-03/Docker.md",
     "2023-05-30.md",
     "Blok 4/2023-07-03",
-    "Blok 4/2023-06-29/Azure Dev Ops.md",
     "Blok 4/2023-06-29/Definition of Ready voorbeeld.md",
     "Blok 4/2023-06-29/Intro.md",
     "Blok 4/2023-06-29/Definition of Done voorbeeld.md",
-    "Blok 4/2023-06-29/Scrum.md",
     "Blok 2/2023-05-11/Migrations.md",
     "Blok 4/2023-06-30",
     "Blok 4/2023-06-29",
