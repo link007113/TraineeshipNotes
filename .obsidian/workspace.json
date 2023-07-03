@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 2/2023-05-11/Migrations.md",
+                "file": "Blok 4/2023-06-29/Scrum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 2/2023-05-11/Migrations.md",
+                "file": "Blok 4/2023-06-29/Scrum.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 2/2023-05-11/Migrations.md"
+                "file": "Blok 4/2023-06-29/Scrum.md"
               }
             }
           }
@@ -168,8 +168,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0e9fa094df768502",
+  "active": "4ae6ada1b06be310",
   "lastOpenFiles": [
+    "Blok 4/2023-06-29/Intro.md",
+    "Blok 2/2023-05-11/Migrations.md",
     "Blok 4/2023-06-30",
     "Blok 4/2023-06-29/Azure Dev Ops.md",
     "Blok 4/2023-06-29/Scrum.md",
@@ -179,7 +181,6 @@
     "Blok 4",
     "Misc/Tips.md",
     "README-CASE.md",
-    "Blok 2/2023-05-11/Migrations.md",
     "Blok 3/2023-06-12/Rest Api's.md",
     "Blok 1/2023-03-24/Unit Testing.md",
     "Blok 3/2023-06-13/Authenticatie.md",
@@ -205,7 +206,6 @@
     "Blok 3/2023-06-06",
     "Blok 3/2023-06-05",
     "Blok 3/2023-06-02",
-    "Blok 3/2023-06-01",
     "Blok 3/2023-05-24/Pasted image 20230524102719.png",
     "Blok 2/Blok2.HamelenTravelDocus/DatabaseDiagram.png",
     "Blok 1/2023-03-27/YieldUitleg.png",
