@@ -1,4 +1,3 @@
-# Git
 
 Git is een gedistribueerd versiebeheersysteem. Het wordt gebruikt om de broncode van software bij te houden, waarbij het wijzigingen in bestanden bijhoudt en deze kan terugdraaien naar eerdere versies.
 
