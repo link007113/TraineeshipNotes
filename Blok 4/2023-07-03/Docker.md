@@ -17,6 +17,18 @@ C:\WORK\BD23\AnthonyEllenbroek\Blok 4\2023-07-03\ArgumentEcho\ArgumentEcho>docke
 
 docker run argument-echo hallo world
 ```
+```c#
+namespace ArgumentEcho
+{
+    internal class Program
+    {
+        private static void Main(string[] args)
+        {
+            Console.WriteLine(string.Join(", ", args));
+        }
+    }
+}
+```
 ASP.NET App
 
 ```dockerfile
@@ -31,4 +43,23 @@ ENTRYPOINT ["dotnet", "ArgumentEcho.Web.dll"]
 C:\WORK\BD23\AnthonyEllenbroek\Blok 4\2023-07-03\ArgumentEcho.Web\ArgumentEcho.Web>docker build -t argument-echo-web .
 
 docker run -d -p 3010:3000 argument-echo-web
+```
+
+
+```c#
+namespace ArgumentEcho.Web
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            var builder = WebApplication.CreateBuilder(args);
+            var app = builder.Build();
+
+            app.MapGet("/{*args}", (string? args) => String.Join(", ", (args ?? "").Split('/')));
+
+            app.Run("http://0.0.0.0:3000");
+        }
+    }
+}
 ```
