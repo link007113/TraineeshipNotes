@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 4/2023-07-03/Docker.md",
+                "file": "Blok 4/2023-07-04/Docker Network.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 4/2023-07-03/Docker.md",
+                "file": "Blok 4/2023-07-04/Docker Network.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 4/2023-07-03/Docker.md",
+                "file": "Blok 4/2023-07-04/Docker Network.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 4/2023-07-03/Docker.md"
+                "file": "Blok 4/2023-07-04/Docker Network.md"
               }
             }
           }
@@ -170,10 +170,14 @@
   },
   "active": "4ae6ada1b06be310",
   "lastOpenFiles": [
-    "Blok 4/2023-06-29/Scrum.md",
-    "Blok 4/2023-06-29/Azure Dev Ops.md",
-    "Blok 4/2023-06-30/Git.md",
+    "Blok 2/2023-04-11/Introductie SQL.md",
+    "Blok 4/2023-07-04/Docker Network.md",
     "Blok 4/2023-07-03/Docker.md",
+    "Blok 4/2023-07-04/Docker Compose.md",
+    "Blok 4/2023-06-30/Git.md",
+    "Blok 4/2023-06-29/Scrum.md",
+    "Blok 4/2023-07-04",
+    "Blok 4/2023-06-29/Azure Dev Ops.md",
     "2023-05-30.md",
     "Blok 4/2023-07-03",
     "Blok 4/2023-06-29/Definition of Ready voorbeeld.md",
@@ -198,14 +202,10 @@
     "Blok 3/2023-06-13",
     "Blok 3/2023-05-23/Flexbox.md",
     "Blok 3/2023-05-22/Layouts.md",
-    "Blok 3/2023-05-22/Positioning.md",
     "Blok 3/2023-06-12",
-    "Blok 2/2023-05-11/Fluent Api.md",
-    "Blok 3/2023-06-08/Middleware.md",
     "Blok 3/2023-06-09",
     "Blok 3/2023-06-08",
     "Blok 3/2023-06-06",
-    "Blok 3/2023-06-05",
     "Blok 3/2023-05-24/Pasted image 20230524102719.png",
     "Blok 2/Blok2.HamelenTravelDocus/DatabaseDiagram.png",
     "Blok 1/2023-03-27/YieldUitleg.png",
