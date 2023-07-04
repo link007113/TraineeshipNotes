@@ -12,3 +12,8 @@ docker run --name todo-app --network todonetwork -p 5001:80 -e 'ConnectionString
 ```bash
 docker exec -it {container-name} bash
 ```
+
+
+
+docker run -d -v list:/data redis
+docker volume create list
