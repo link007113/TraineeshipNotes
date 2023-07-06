@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 4/2023-07-04/Docker Compose.md",
+                "file": "Blok 4/2023-07-04/Isolation levels.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 4/2023-07-04/Docker Compose.md",
+                "file": "Blok 4/2023-07-04/Isolation levels.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 4/2023-07-04/Docker Compose.md",
+                "file": "Blok 4/2023-07-04/Isolation levels.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 4/2023-07-04/Docker Compose.md"
+                "file": "Blok 4/2023-07-04/Isolation levels.md"
               }
             }
           }
@@ -170,10 +170,11 @@
   },
   "active": "4ae6ada1b06be310",
   "lastOpenFiles": [
+    "Blok 4/2023-07-04/Docker Compose.md",
+    "Blok 4/2023-07-04/Isolation levels.md",
     "Blok 4/2023-07-04/Docker Network.md",
     "Blok 2/2023-04-11/Introductie SQL.md",
     "Blok 4/2023-07-03/Docker.md",
-    "Blok 4/2023-07-04/Docker Compose.md",
     "Blok 4/2023-06-30/Git.md",
     "Blok 4/2023-06-29/Scrum.md",
     "Blok 4/2023-07-04",
@@ -201,7 +202,6 @@
     "Blok 3/2023-06-13/DTO's.md",
     "Blok 3/2023-06-13",
     "Blok 3/2023-05-23/Flexbox.md",
-    "Blok 3/2023-05-22/Layouts.md",
     "Blok 3/2023-06-12",
     "Blok 3/2023-06-09",
     "Blok 3/2023-06-08",

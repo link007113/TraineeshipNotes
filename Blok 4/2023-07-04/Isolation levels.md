@@ -1,0 +1,5 @@
+- threads
+- process
+- container
+- virtualization
+- bare metal
