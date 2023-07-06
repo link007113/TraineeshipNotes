@@ -1,4 +1,4 @@
-- threads
+- Threads
 - process
 - container
 - virtualization
