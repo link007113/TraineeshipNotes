@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 4/2023-07-04/Isolation levels.md",
+                "file": "Blok 4/2023-07-06/Pipelines.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 4/2023-07-04/Isolation levels.md",
+                "file": "Blok 4/2023-07-06/Pipelines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 4/2023-07-04/Isolation levels.md",
+                "file": "Blok 4/2023-07-06/Pipelines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 4/2023-07-04/Isolation levels.md"
+                "file": "Blok 4/2023-07-06/Pipelines.md"
               }
             }
           }
@@ -170,9 +170,12 @@
   },
   "active": "4ae6ada1b06be310",
   "lastOpenFiles": [
+    "Blok 4/2023-07-06/CI.md",
+    "Blok 4/2023-07-06/Pipelines.md",
+    "Blok 4/2023-07-04/Isolation levels.md",
+    "Blok 4/2023-07-06",
     "Blok 4/2023-07-04/Docker Network.md",
     "Blok 4/2023-07-04/Docker Compose.md",
-    "Blok 4/2023-07-04/Isolation levels.md",
     "Blok 2/2023-04-11/Introductie SQL.md",
     "Blok 4/2023-07-03/Docker.md",
     "Blok 4/2023-06-30/Git.md",
@@ -199,13 +202,10 @@
     "Blok 3/2023-06-09/More view tricks.md",
     "Blok 3/2023-06-09/Middleware maken en testen.md",
     "Blok 3/2023-06-09/Middleware pijplijn.md",
-    "Blok 3/2023-06-13/DTO's.md",
     "Blok 3/2023-06-13",
-    "Blok 3/2023-05-23/Flexbox.md",
     "Blok 3/2023-06-12",
     "Blok 3/2023-06-09",
     "Blok 3/2023-06-08",
-    "Blok 3/2023-06-06",
     "Blok 3/2023-05-24/Pasted image 20230524102719.png",
     "Blok 2/Blok2.HamelenTravelDocus/DatabaseDiagram.png",
     "Blok 1/2023-03-27/YieldUitleg.png",
