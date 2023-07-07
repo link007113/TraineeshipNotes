@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 4/2023-07-06/CI.md",
+                "file": "Blok 4/2023-07-06/Pipelines.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 4/2023-07-06/CI.md",
+                "file": "Blok 4/2023-07-06/Pipelines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 4/2023-07-06/CI.md",
+                "file": "Blok 4/2023-07-06/Pipelines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 4/2023-07-06/CI.md"
+                "file": "Blok 4/2023-07-06/Pipelines.md"
               }
             }
           }
@@ -170,8 +170,8 @@
   },
   "active": "4ae6ada1b06be310",
   "lastOpenFiles": [
-    "Blok 4/2023-07-06/Pipelines.md",
     "Blok 4/2023-07-06/CI.md",
+    "Blok 4/2023-07-06/Pipelines.md",
     "Blok 4/2023-07-04/Isolation levels.md",
     "Blok 4/2023-07-06",
     "Blok 4/2023-07-04/Docker Network.md",
