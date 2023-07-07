@@ -1,4 +1,20 @@
-Azure-pipeline bestand in root van solution
+Azure DevOps Pipelines maken gebruik van een specifieke taal genaamd YAML (Yet Another Markup Language) om de stappen van de pipeline te definiëren. Deze taal is gemakkelijk leesbaar voor mensen en wordt vaak gebruikt voor configuratiebestanden.
+
+Hier is een kort overzicht van de belangrijkste concepten die je moet kennen:
+
+- **Stages**: Een pipeline kan meerdere stadia hebben, zoals `Build`, `Test`, en `Deploy`. Elk stadium bevat één of meerdere jobs.
+
+- **Jobs**: Jobs zijn de bouwstenen van een pipeline en bevatten een reeks stappen die worden uitgevoerd.
+
+- **Steps**: Een stap kan een script zijn dat je wilt uitvoeren of een taak die is gedefinieerd door Azure Pipelines.
+
+- **Variables**: Je kunt variabelen in je YAML-bestand definiëren die je kunt gebruiken in je stappen.
+
+- **Triggers**: Je kunt aangeven wanneer een pipeline moet worden uitgevoerd. Bijvoorbeeld bij elke commit naar een specifieke branch.
+
+- **Conditions**: Met conditions kun je bepaalde taken alleen onder bepaalde omstandigheden uitvoeren.
+
+Let op, dit is slechts een inleiding. YAML voor Azure DevOps Pipelines heeft veel meer mogelijkheden, zoals templates, environments, deployments, en nog veel meer.
 
 ```yaml
 trigger:
