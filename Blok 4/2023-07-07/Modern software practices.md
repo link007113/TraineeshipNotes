@@ -1,4 +1,3 @@
-# Moderne Software Ontwikkelingspraktijken
 
 Moderne software ontwikkelingspraktijken omvatten een aantal technieken en methodologieën die zijn ontworpen om de efficiëntie en effectiviteit van software ontwikkeling te verbeteren.
 
