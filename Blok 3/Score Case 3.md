@@ -35,6 +35,7 @@ Score: 7.5
   // het probleem dat hij de course en courseinstance wilt inserten.
   // Heb ik met JP naar gekeken, dit is de voorgestelde opplossing.
   ```
+  ```
   Mooie fix!
 * Hoop `private static`s in je repo
 * Je repo bevat business logica.
