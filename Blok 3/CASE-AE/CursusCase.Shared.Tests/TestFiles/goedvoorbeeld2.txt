@@ -1,0 +1,15 @@
+Titel: C# Programmeren
+Cursuscode: CNETIN
+Duur: 5 dagen
+Startdatum: 8/10/2018
+
+Titel: C# Programmeren
+Cursuscode: CNETIN
+Duur: 5 dagen
+Startdatum: 15/10/2020
+
+Titel: Blazor
+Cursuscode: BLZ
+Duur: 5 dagen
+Startdatum: 8/10/2018
+

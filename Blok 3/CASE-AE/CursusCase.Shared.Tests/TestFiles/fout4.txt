@@ -1,0 +1,5 @@
+Titel: C# Programmeren
+Cursuscode: CNETIN
+Duur: 5
+Startdatum: 8/10/2018
+

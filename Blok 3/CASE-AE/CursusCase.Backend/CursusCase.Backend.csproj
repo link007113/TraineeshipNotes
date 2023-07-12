@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>79afe470-ae3b-460c-9458-97c7ec34165a</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+
+
+  <ItemGroup>
+    <ProjectReference Include="..\CursusCase.Shared\CursusCase.Shared.csproj" />
+	  <PackageReference Include="Microsoft.Data.Sqlite.Core" Version="7.0.5" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.5">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	  </PackageReference>
+	  <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.5" />
+	  <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.2" />
+  </ItemGroup>
+
+	
+
+</Project>

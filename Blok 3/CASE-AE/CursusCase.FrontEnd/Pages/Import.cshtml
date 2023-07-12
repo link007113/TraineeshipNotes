@@ -1,0 +1,136 @@
+﻿@page "/Import"
+@model CursusCase.FrontEnd.Pages.ImportModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Importeren";
+}
+
+
+<h1>Importeren Pagina</h1>
+<p>Hier kun je een tekstbestand uploaden dat wordt opgeslagen als een cursusplanning.</p>
+<p>Belangrijk is om je te houden aan het volgende format:</p>
+<ul>
+    <li>Titel: [Cursus Titel]</li>
+    <li>Cursuscode: [Cursuscode]</li>
+    <li>Duur: [Aantal dagen]</li>
+    <li>Startdatum: [Startdatum]</li>
+</ul>
+<br />
+<p>Het format is eenvoudig en gestructureerd. Zorg ervoor dat je elke regel precies volgens het format invult. Hier is een voorbeeld:</p>
+<pre>
+Titel: Programmeren voor Dummies
+Cursuscode: PVD
+Duur: 5 dagen
+Startdatum: 12/06/2023
+</pre>
+<br />
+<p>Onderstaand formulier kan gebruikt worden om het bestand te selecteren</p>
+<p>Mocht je alleen instances uit een bepaalde periode willen importeren, geef dan de start datum en eind datum op</p>
+<p>Beide moeten ingevuld zijn om te werken, anders worden alle instanties getoond.</p>
+<br />
+@if (Model.CursusInstances == null && Model.Errors.Count == 0)
+{
+    <form method="post" enctype="multipart/form-data">
+        <label for="file">Selecteer een bestand:</label>
+        <input type="file" asp-for="Import" accept=".txt" required />
+        <br />
+     <label for="DateFrom">Kies de vanaf datum:</label>
+        <input type="date" id="DateFrom"
+               name="dateFrom" value="@DateTime.Now" min="2001-01-01" max="2099-12-32">
+        <br />
+        <label for="DateTo">Kies de tot/met datum:</label>
+        <input type="date" id="DateTo"
+               name="dateTo" value="@DateTime.Now.AddDays(7)" min="2001-01-01" max="2099-12-32">
+        <button asp-page-handler="ImportFile" type="submit">Importeren</button>
+    </form>
+}
+
+<div class="messages">
+    @if (Model.Errors.Count > 0)
+    {
+        <h2>De volgende foutmeldingen zijn opgetreden bij het verwerken van de geïmporteerde instanties:</h2>
+        @foreach (var error in Model.Errors)
+        {
+            <span class="text-danger">@error</span>
+            <br />
+        }
+
+        if (!Model.RetryButtonShown)
+        {
+        <form method="post">
+           <button asp-page-handler="Retry" type="submit">Opnieuw</button>
+        </form>
+            Model.RetryButtonShown = true;
+        }
+
+    }
+
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+        <span class="text-success">@Model.Message</span>
+    }
+</div>
+
+@if (Model.CursusInstances != null && Model.CursusInstances.Count > 0)
+{
+    @if (Model.Import != null)
+    {
+        <h2>Te importeren CursusInstances uit bestand @Model.Import.FileName</h2>
+    }
+    else
+    {
+        <h2>Te importeren CursusInstances </h2>
+    }
+    <table>
+        <thead>
+            <tr>
+                <th>Titel</th>
+                <th>Start Datum</th>
+                <th>Eind Datum</th>
+                <th>Cursuscode</th>
+                <th>Jaar/Week</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cursusInstance in Model.CursusInstances.OrderBy(ci => ci.StartDate))
+            {
+                <tr>
+                    <td>@cursusInstance.Cursus.Title</td>
+                    <td>@cursusInstance.StartDate.ToString("dd/MM/yyyy")</td>
+                    <td>@cursusInstance.StartDate.AddDays(cursusInstance.Cursus.DurationInDays).ToString("dd/MM/yyyy")</td>
+                    <td>@cursusInstance.Cursus.Code</td>
+                    <td>@cursusInstance.StartDate.Year / @System.Globalization.ISOWeek.GetWeekOfYear(cursusInstance.StartDate)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    @if (Model.IsSavedPressed || Model.Errors.Count > 0)
+    {
+        if (!Model.RetryButtonShown)
+        {
+            <form method="post">
+                <button asp-page-handler="Retry" type="submit">Opnieuw</button>
+            </form>
+            Model.RetryButtonShown = true;
+        }
+    }
+    else
+    {
+        <form method="post">
+            <button asp-page-handler="SaveList" type="submit">Opslaan</button>
+            <button asp-page-handler="Retry" type="submit">Opnieuw</button>
+        </form>     
+    }
+}
+
+@if (Model.CursusInstances != null && Model.CursusInstances.Count == 0)
+{
+
+    <span class="text-danger">In dit bestand zijn geen instantie gegevens gevonden. </span>
+    <form method="post">
+        <button asp-page-handler="Retry" type="submit">Opnieuw</button>
+    </form>
+    Model.RetryButtonShown = true;
+}

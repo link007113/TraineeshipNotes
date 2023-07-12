@@ -1,0 +1,35 @@
+Titel: Nieuwe Cursus 01
+Cursuscode: NIEUW01
+Duur: 1 dagen
+Startdatum: 09/07/2020
+
+Titel: Nieuwe Cursus 02
+Cursuscode: NIEUW02
+Duur: 5 dagen
+Startdatum: 06/07/2020
+
+Titel: Nieuwe Cursus 01
+Cursuscode: NIEUW01
+Duur: 1 dagen
+Startdatum: 13/07/2020
+
+Titel: Nieuwe Cursus 02
+Cursuscode: NIEUW02
+Duur: 5 dagen
+Startdatum: 13/07/2020
+
+Titel: Nieuwe Cursus 01
+Cursuscode: NIEUW01
+Duur: 1 dagen
+Startdatum: 09/07/2020
+
+Titel: Nieuwe Cursus 03
+Cursuscode: NIEUW03
+Duur: 5 dagen
+Startdatum: 23/12/2019
+
+Titel: Nieuwe Cursus 03
+Cursuscode: NIEUW03
+Duur: 5 dagen
+Startdatum: 30/12/2019
+

@@ -1,0 +1,167 @@
+﻿/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+/* End Reset CSS */
+/* Algemene stijlen */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+h1, h2 {
+    color: #00529F; /* Blauwe kleur van de belastingdienst */
+    margin-bottom: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #00529F;
+}
+
+/* Navbar stijlen */
+/* Navbar stijlen */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+    padding: 20px;
+    background-color: #00529F;
+    color: white;
+}
+
+    .navbar ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .navbar li {
+        list-style: none;
+    }
+
+.nav-item {
+    color: #ffffff;
+    margin: 0 10px;
+}
+
+    .nav-item:hover {
+        color: #cccccc;
+    }
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form and Table stijlen */
+form {
+    margin-bottom: 20px;
+}
+
+    form input[type="number"] {
+        margin-right: 10px;
+        padding: 5px;
+    }
+
+    form button {
+        padding: 5px 10px;
+        background-color: #00529F;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+        form button:hover {
+            background-color: #003366;
+        }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+}
+
+    table button {
+        padding: 10px;
+    }
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #e9e9e9;
+}
+
+/* Error & Success Messages */
+.text-danger, .text-success {
+    margin: 10px 0;
+}
+
+.text-danger {
+    color: #dc3545;
+}
+
+.text-success {
+    color: #28a745;
+}
+
+/* Responsieve stijlen */
+@media screen and (min-width: 600px) {
+    .navbar {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .navbar {
+        justify-content: flex-start;
+    }
+}

@@ -1,0 +1,76 @@
+﻿@page "/instantie/{id:int?}"
+@model CursusCase.FrontEnd.Pages.InstanceModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+
+
+<h1>Instansie Details</h1>
+@if (Model.Errors.Count > 0)
+{
+    <h2>De volgende foutmeldingen zijn opgetreden bij het ophalen van de cursusinstanties:</h2>
+    @foreach (var error in Model.Errors)
+    {
+        <span class="text-danger">@error</span>
+    }
+}
+else{
+<h3>Cursus Informatie</h3>
+<p><strong>Titel:</strong> @Model.CourseInstance.Cursus.Title</p>
+<p><strong>Code:</strong> @Model.CourseInstance.Cursus.Code</p>
+<p><strong>Duur in dagen:</strong> @Model.CourseInstance.Cursus.DurationInDays</p>
+
+<h3>Startdatum</h3>
+<p>@Model.CourseInstance.StartDate.ToString("dd/MM/yyyy")</p>
+
+<h3>Cursisten</h3>
+@if (Model.CourseInstance.Students != null && Model.CourseInstance.Students.Any())
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Voornaam</th>
+                <th>Achternaam</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model.CourseInstance.Students)
+            {
+                <tr>
+                    <td>@student.FirstName</td>
+                    <td>@student.LastName</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Geen cursisten bekend voor deze instantie.</p>
+}
+
+@if (Model.CourseInstance.Students != null && Model.CourseInstance.Students.Count < 12)
+{
+    <h3>Cursist toevoegen</h3>
+        <form method="post" asp-page-handler="AddStudent">
+        <div class="form-group">
+            <label for="firstName">Voornaam:</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Achternaam:</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" required>
+        </div>
+        <br />
+        <button type="submit" class="btn btn-primary">Voeg toe</button>
+    </form>
+}
+    <form action="/planning">
+        <button type="submit">Terug naar planning overzicht</button>
+    </form>
+    @if (!string.IsNullOrEmpty(Model.Message))
+    {
+    <span class="text-success">@Model.Message</span>    
+        
+    }
+}

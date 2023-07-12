@@ -1,0 +1,45 @@
+Titel: C# Programmeren
+Cursuscode: CNETIN
+Duur: 5 dagen
+Startdatum: 29/06/2020
+
+Titel: C# Programmeren
+Cursuscode: CNETIN
+Duur: 5 dagen
+Startdatum: 06/07/2020
+
+Titel: Java Persistence API
+Cursuscode: JPA
+Duur: 2 dagen
+Startdatum: 29/06/2020
+
+Titel: Java Persistence API
+Cursuscode: JPA
+Duur: 2 dagen
+Startdatum: 08/07/2020
+
+Titel: C# Programmeren
+Cursuscode: CNETIN
+Duur: 5 dagen
+Startdatum: 22/06/2020
+
+Titel: Azure Fundamentals
+Cursuscode: AZF
+Duur: 5 dagen
+Startdatum: 22/06/2020
+
+Titel: Azure Advanced
+Cursuscode: AZA
+Duur: 5 dagen
+Startdatum: 22/06/2020
+
+Titel: Azure Fundamentals
+Cursuscode: AZF
+Duur: 5 dagen
+Startdatum: 29/06/2020
+
+Titel: Azure Advanced
+Cursuscode: AZA
+Duur: 5 dagen
+Startdatum: 29/06/2020
+

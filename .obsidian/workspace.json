@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 3/Score Case 3.md",
+                "file": "Blok 4/2023-07-12/Story Mapping.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 3/Score Case 3.md",
+                "file": "Blok 4/2023-07-12/Story Mapping.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 3/Score Case 3.md",
+                "file": "Blok 4/2023-07-12/Story Mapping.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 3/Score Case 3.md"
+                "file": "Blok 4/2023-07-12/Story Mapping.md"
               }
             }
           }
@@ -170,42 +170,44 @@
   },
   "active": "4ae6ada1b06be310",
   "lastOpenFiles": [
-    "README-CASE.md",
     "Blok 3/Score Case 3.md",
+    "Blok 4/2023-07-12/Story Mapping.md",
+    "Blok 4/2023-07-12",
+    "Blok 4/Untitled.md",
+    "Blok 3/CASE-AE/Planning en Documentatie/README.md",
+    "Blok 3/CASE-AE/Planning en Documentatie/Pasted image 20230623134725.png",
+    "Blok 3/CASE-AE/Planning en Documentatie/Pasted image 20230623134711.png",
+    "Blok 3/CASE-AE/Planning en Documentatie",
+    "Blok 3/CASE-AE/CursusCase.Shared.Tests/TestFiles/goedvoorbeeld8.txt",
+    "Blok 3/CASE-AE/CursusCase.Shared.Tests/TestFiles/goedvoorbeeld7.txt",
+    "Blok 3/CASE-AE/CursusCase.Shared.Tests/TestFiles/goedvoorbeeld6.txt",
+    "Blok 3/CASE-AE/CursusCase.Shared.Tests/TestFiles/goedvoorbeeld5.txt",
+    "Blok 3/CASE-AE/CursusCase.Shared.Tests/TestFiles/goedvoorbeeld4.txt",
+    "Blok 3/CASE-AE/CursusCase.Shared.Tests/TestFiles/goedvoorbeeld3.txt",
+    "Blok 3/CASE-AE/CursusCase.Shared.Tests/TestFiles/goedvoorbeeld2.txt",
+    "Blok 3/CASE-AE/CursusCase.Shared.Tests/TestFiles/goedvoorbeeld1.txt",
+    "README-CASE.md",
     "README.md",
     "Blok 4/2023-07-07/Modern software practices.md",
     "Blok 4/2023-07-06/Pipelines.md",
     "Blok 4/2023-07-06/CI.md",
     "Blok 4/2023-06-30/Branches.md",
     "Blok 4/2023-06-30/Git.md",
-    "Blok 4/2023-07-07",
     "Blok 4/2023-07-04/Isolation levels.md",
-    "Blok 4/2023-07-06",
     "Blok 4/2023-07-04/Docker Network.md",
     "Blok 4/2023-07-04/Docker Compose.md",
     "Blok 2/2023-04-11/Introductie SQL.md",
     "Blok 4/2023-07-03/Docker.md",
     "Blok 4/2023-06-29/Scrum.md",
-    "Blok 4/2023-07-04",
     "Blok 4/2023-06-29/Azure Dev Ops.md",
     "2023-05-30.md",
-    "Blok 4/2023-07-03",
     "Blok 4/2023-06-29/Definition of Ready voorbeeld.md",
     "Blok 4/2023-06-29/Intro.md",
     "Blok 4/2023-06-29/Definition of Done voorbeeld.md",
     "Blok 2/2023-05-11/Migrations.md",
-    "Blok 4/2023-06-30",
-    "Blok 4/2023-06-29",
     "Blok 3/2023-06-12/Safe storage asp.net core secrets.md",
-    "Blok 4",
     "Misc/Tips.md",
     "Blok 3/2023-06-12/Rest Api's.md",
-    "Blok 1/2023-03-24/Unit Testing.md",
-    "Blok 3/2023-06-13/Authenticatie.md",
-    "Blok 3/2023-06-13/Rest Client maken.md",
-    "Blok 3/2023-06-13",
-    "Blok 3/2023-06-12",
-    "Blok 3/2023-06-09",
     "Blok 3/2023-05-24/Pasted image 20230524102719.png",
     "Blok 2/Blok2.HamelenTravelDocus/DatabaseDiagram.png",
     "Blok 1/2023-03-27/YieldUitleg.png",
@@ -215,10 +217,8 @@
     "Blok 1/Blok1.BlackJack/Pasted image 20230403113353.png",
     "WhatsApp Image 2023-04-03 at 11.18.24 1.jpeg",
     "WhatsApp Image 2023-04-03 at 11.18.24.jpeg",
-    "Blok 1/2023-03-30/LinqVolgorde.png",
     "Untitled 2.canvas",
     "Untitled 1.canvas",
-    "Pasted image 20230323132714.png",
     "Dag07/Untitled.canvas"
   ]
 }

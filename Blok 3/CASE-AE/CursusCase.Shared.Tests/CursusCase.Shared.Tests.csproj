@@ -1,0 +1,55 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="TestFiles\fout1.txt" />
+    <None Remove="TestFiles\fout2.txt" />
+    <None Remove="TestFiles\fout3.txt" />
+    <None Remove="TestFiles\fout4.txt" />
+    <None Remove="TestFiles\fout5.txt" />
+    <None Remove="TestFiles\goedvoorbeeld1.txt" />
+    <None Remove="TestFiles\goedvoorbeeld2.txt" />
+    <None Remove="TestFiles\goedvoorbeeld3.txt" />
+    <None Remove="TestFiles\goedvoorbeeld4.txt" />
+    <None Remove="TestFiles\goedvoorbeeld5.txt" />
+    <None Remove="TestFiles\goedvoorbeeld6.txt" />
+    <None Remove="TestFiles\goedvoorbeeld7.txt" />
+    <None Remove="TestFiles\goedvoorbeeld8.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.3.2" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.10" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.10" />
+    <PackageReference Include="coverlet.collector" Version="3.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CursusCase.Shared\CursusCase.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="TestFiles\fout1.txt" />
+    <EmbeddedResource Include="TestFiles\fout2.txt" />
+    <EmbeddedResource Include="TestFiles\fout3.txt" />
+    <EmbeddedResource Include="TestFiles\fout4.txt" />
+    <EmbeddedResource Include="TestFiles\fout5.txt" />
+    <EmbeddedResource Include="TestFiles\goedvoorbeeld1.txt" />
+    <EmbeddedResource Include="TestFiles\goedvoorbeeld2.txt" />
+    <EmbeddedResource Include="TestFiles\goedvoorbeeld3.txt" />
+    <EmbeddedResource Include="TestFiles\goedvoorbeeld4.txt" />
+    <EmbeddedResource Include="TestFiles\goedvoorbeeld5.txt" />
+    <EmbeddedResource Include="TestFiles\goedvoorbeeld6.txt" />
+    <EmbeddedResource Include="TestFiles\goedvoorbeeld7.txt" />
+    <EmbeddedResource Include="TestFiles\goedvoorbeeld8.txt" />
+  </ItemGroup>
+
+</Project>

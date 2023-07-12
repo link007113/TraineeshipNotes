@@ -1,0 +1,62 @@
+﻿@page "/Planning/{year:int?}/{week:int?}"
+@model CursusCase.FrontEnd.Pages.PlanningModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<h1>Planning</h1>
+ @if (Model.Errors.Count > 0)
+{
+    <h2>De volgende foutmeldingen zijn opgetreden bij het ophalen van de cursusinstanties:</h2>
+    @foreach (var error in Model.Errors)
+    {
+        <span class="text-danger">@error</span>
+    }
+}
+
+<a href="/Planning/@DateTime.Now.Year/@Model.CurrentWeek"><h1>Huidige Week: @DateTime.Now.Year - @Model.CurrentWeek</h1></a>
+    <form method="post">        
+        <input type="number" id="year" name="year" min="1900" max="2099" step="1" value=@Model.SearchYear />
+        <input type="number" name="week" min="1" max="52" step="1" value=@Model.SearchWeek />
+        <button asp-page-handler="SearchPerWeekAndYear" type="submit">Toon Lijst</button>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>Titel</th>
+                <th>Start Datum</th>
+                <th>Eind Datum</th>
+                <th>Cursuscode</th>
+                <th>Week</th>
+                <th>Aantal Cursisten</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>      
+        @if (Model.Errors.Count == 0 && Model.CursusInstances.Count() > 0)
+        {
+            @foreach (var cursusInstance in Model.CursusInstances.OrderBy(c => c.StartDate))
+            {
+                <tr>
+                    <td>@cursusInstance.Cursus.Title</td>
+                    <td>@cursusInstance.StartDate.ToString("dd/MM/yyyy")</td>
+                    <td>@cursusInstance.StartDate.AddDays(cursusInstance.Cursus.DurationInDays).ToString("dd/MM/yyyy")</td>
+                    <td>@cursusInstance.Cursus.Code</td>
+                    <td>@System.Globalization.ISOWeek.GetWeekOfYear(cursusInstance.StartDate)</td>
+                    <td>@cursusInstance.Students.Count</td>
+                    <td>
+                        <form action="/instantie/@cursusInstance.Id">
+                            <button type="submit">Meer info</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+
+        }
+        else
+        {
+            <span class="text-danger">Voor deze week zijn geen gegevens bekend.</span>
+        }
+        </tbody>
+    </table>
+    
+ 
+}
