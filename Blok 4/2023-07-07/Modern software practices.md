@@ -34,3 +34,5 @@ BDD is een uitbreiding van TDD die het schrijven van tests benadert vanuit het p
 ## Code reviews
 
 Code reviews zijn een praktijk waarbij andere ontwikkelaars de code van een collega bekijken en feedback geven. Dit helpt om de codekwaliteit te verhogen, fouten te vangen voordat ze problemen veroorzaken, en om kennisoverdracht binnen het team te bevorderen.
+
+![[Pasted image 20230712093436.png]]

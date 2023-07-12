@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Blok 4/2023-07-12/Story Mapping.md",
+                "file": "Blok 4/2023-07-07/Modern software practices.md",
                 "mode": "source",
                 "source": false
               }
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Blok 4/2023-07-12/Story Mapping.md",
+                "file": "Blok 4/2023-07-07/Modern software practices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -134,7 +134,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Blok 4/2023-07-12/Story Mapping.md",
+                "file": "Blok 4/2023-07-07/Modern software practices.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -146,7 +146,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Blok 4/2023-07-12/Story Mapping.md"
+                "file": "Blok 4/2023-07-07/Modern software practices.md"
               }
             }
           }
@@ -170,8 +170,11 @@
   },
   "active": "4ae6ada1b06be310",
   "lastOpenFiles": [
-    "Blok 3/Score Case 3.md",
+    "Pasted image 20230712093436.png",
+    "Blok 4/2023-07-06/Pipelines.md",
+    "Blok 4/2023-07-07/Modern software practices.md",
     "Blok 4/2023-07-12/Story Mapping.md",
+    "Blok 3/Score Case 3.md",
     "Blok 4/2023-07-12",
     "Blok 4/Untitled.md",
     "Blok 3/CASE-AE/Planning en Documentatie/README.md",
@@ -188,8 +191,6 @@
     "Blok 3/CASE-AE/CursusCase.Shared.Tests/TestFiles/goedvoorbeeld1.txt",
     "README-CASE.md",
     "README.md",
-    "Blok 4/2023-07-07/Modern software practices.md",
-    "Blok 4/2023-07-06/Pipelines.md",
     "Blok 4/2023-07-06/CI.md",
     "Blok 4/2023-06-30/Branches.md",
     "Blok 4/2023-06-30/Git.md",
@@ -207,7 +208,6 @@
     "Blok 2/2023-05-11/Migrations.md",
     "Blok 3/2023-06-12/Safe storage asp.net core secrets.md",
     "Misc/Tips.md",
-    "Blok 3/2023-06-12/Rest Api's.md",
     "Blok 3/2023-05-24/Pasted image 20230524102719.png",
     "Blok 2/Blok2.HamelenTravelDocus/DatabaseDiagram.png",
     "Blok 1/2023-03-27/YieldUitleg.png",
