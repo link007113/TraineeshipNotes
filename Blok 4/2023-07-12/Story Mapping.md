@@ -21,3 +21,51 @@ Een story map is een visueel model van de reis van een gebruiker door een produc
 - Het helpt teams om prioriteiten te stellen en te beslissen wat het eerst gebouwd moet worden.
 - Het stimuleert samenwerking en begrip binnen het team.
 - Het helpt om gaten of omissies in de product backlog te identificeren.
+
+
+Een story map in Mermaid voor een Black Jack spel zou er als volgt uit kunnen zien. 
+
+```mermaid
+graph TB
+    Start(Start Spel) --> Login[Login of Registreer]
+    Login --> SetBet[Zet in]
+    SetBet --> Deal[Verdeel Kaarten]
+    Deal --> UserTurn[Gebruikersbeurt]
+    UserTurn --> UserAction{Gebruiker Actie}
+    UserAction --> Hit[Hit]
+    UserAction --> Stand[Stand]
+    Hit --> CheckBust{Check Bust}
+    CheckBust --> Bust[Bust]
+    CheckBust --> UserAction
+    Stand --> DealerTurn[Dealer Beurt]
+    DealerTurn --> DealerAction{Dealer Actie}
+    DealerAction --> DealerHit[Dealer Hit]
+    DealerAction --> DealerStand[Dealer Stand]
+    DealerHit --> CheckDealerBust{Check Dealer Bust}
+    CheckDealerBust --> DealerBust[Dealer Bust]
+    CheckDealerBust --> DealerAction
+    DealerStand --> End[End Spel]
+    Bust --> End
+    DealerBust --> End
+    End --> Results[Resultaten tonen]
+    Results --> PlayAgain{Speel opnieuw?}
+    PlayAgain --> Yes[Ja]
+    PlayAgain --> No[Nee]
+    Yes --> SetBet
+    No --> Logout[Logout]
+```
+
+In dit diagram zijn de volgende stappen opgenomen:
+
+- Het spel start met de gebruiker die inlogt of zich registreert.
+- Vervolgens zet de gebruiker een inzet.
+- De kaarten worden gedeeld.
+- Het is de beurt aan de gebruiker. Ze kunnen beslissen om te "hitten" of te "standen".
+- Als de gebruiker besluit te "hitten", wordt er gecontroleerd of ze "bust" zijn gegaan (hun kaarten hebben een totaal van meer dan 21).
+- Als ze "bust" zijn gegaan, eindigt het spel. Als ze niet "bust" zijn gegaan, is het weer hun beurt.
+- Als de gebruiker besluit te "standen", is het de beurt aan de dealer.
+- De dealer kan beslissen om te "hitten" of te "standen".
+- Als de dealer besluit te "hitten", wordt er gecontroleerd of ze "bust" zijn gegaan.
+- Als ze "bust" zijn gegaan, eindigt het spel. Als ze niet "bust" zijn gegaan, is het weer hun beurt.
+- Als de dealer besluit te "standen", eindigt het spel.
+- De resultaten worden getoond en de gebruiker kan beslissen of ze opnieuw willen spelen of uitloggen.
