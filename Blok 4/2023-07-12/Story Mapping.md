@@ -1,4 +1,3 @@
-
 Story mapping is een visuele oefening die teams helpt om te bepalen hoe software functies in de loop van de tijd zullen worden ontwikkeld. Het is een techniek die gebruikt wordt in Agile en Lean software ontwikkelingsmethodologieën, vooral in Scrum en Kanban.
 
 ## Wat is Story Mapping?
